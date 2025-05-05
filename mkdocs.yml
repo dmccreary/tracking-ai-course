@@ -14,7 +14,15 @@ nav:
     - chapters/skepticism-of-the-llm-only-path.md
   - Stories:
     - Intro: stories/index.md
+    - AI Winters: stories/ai-winters/index.md
     - Yann LeCun: stories/yann-lecun/index.md
+  - MicroSims:
+    - Intro: sims/index.md
+    - sims/four-futures/index.md
+    - sims/learning-graph/index.md
+    - sims/templates/index.md
+    - sims/timeline/index.md
+
   - Checklist: checklist.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
