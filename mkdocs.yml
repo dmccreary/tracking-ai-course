@@ -8,8 +8,14 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
+  - Chapters:
+    - chapters/index.md
+    - chapters/current-state.md
+    - chapters/skepticism-of-the-llm-only-path.md
+  - Stories:
+    - Intro: stories/index.md
+    - Yann LeCun: stories/yann-lecun/index.md
   - Checklist: checklist.md
-  - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
