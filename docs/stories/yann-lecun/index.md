@@ -3,11 +3,16 @@
 <details><summary>Show Image Prompt</summary>
 Cover Image:
 Create a vibrant, tech-optimistic wide-landscape graphic novel cover featuring Yann LeCun as the central figure, depicted in a heroic pose with his arms outstretched toward twin horizons representing past and future. The left horizon shows early computing (1970s-1980s) with vintage computers, handwritten digits, and primitive neural network diagrams, rendered in warm sepia tones. The right horizon explodes with modern AI technology - glowing neural networks, holographic data streams, and interconnected global nodes, rendered in brilliant cyans, magentas, and electric blues.
+
 Behind LeCun, create a dramatic split background where the upper half shows the physical world with realistic buildings, labs, and libraries, while the lower half reveals the digital realm of mathematical concepts materialized as floating equations, converging networks, and architectural visualizations of CNNs. These two realms should blend seamlessly through LeCun's silhouette, with light streaming from his head and heart to represent the flow of ideas.
+
 Above the scene, incorporate three distinct layers: the bottom layer shows early perceptrons and simple neural networks, the middle layer displays complex CNN architectures, and the top layer hints at future world models with intricate cause-and-effect relationships. Use flowing energy lines and glowing nodes to connect these layers, suggesting evolution and continuity.
 The title 'THE VISIONARY WHO SAW THE FUTURE: YANN LECUN'S QUEST FOR INTELLIGENT MACHINES' should be integrated organically into the design, perhaps formed by neural pathways or data streams. Use a bold, modern typeface that complements the tech-forward aesthetic.
+
 The overall color palette should be bright and optimistic, featuring deep blues for computational elements, warm golds for human insight and eureka moments, vibrant greens for growth and innovation, and luminous whites for breakthrough moments. The style should blend technical accuracy with artistic interpretation, making complex AI concepts visually accessible and inspiring.
+
 Include subtle Easter eggs like the iconic handwritten '5' and '7' digits from his early work, equations floating in the background, and miniature depictions of key moments from his career. The composition should draw the reader's eye in a circular motion, starting from LeCun's determined expression, sweeping through the technological landscape, and returning to his visionary gaze toward the future.
+
 The entire image must be rendered in a wide-landscape format suitable for a graphic novel cover, with dramatic lighting that emphasizes the contrast between challenges overcome and possibilities ahead.
 </details>
 
@@ -42,15 +47,22 @@ Image 1: A colorful, bright wide-landscape drawing showing a young Yann LeCun as
 
 In the early 1970s, while most teenagers dreamed of rock concerts and fast cars, young Yann LeCun spent his evenings in the local library in suburban Paris, devouring books on mathematics, computer science, and the emerging field of artificial intelligence. His friends thought he was eccentric – who dreams of teaching machines to think? But Yann's vision was clear: machines could learn like humans do, through observation and experience.
 
-## Chapter 1: The Spark of Innovation
+## Chapter 1: Bell Labs: The Spark of Innovation
 
+![](./holmdell-graphic-novel.png)
+<details><summary>Show Image Prompt</summary>
+Please create a new version of [this image](./holmdell-1980.jpeg) using a drawing that might appear in a colorful bright graphic novel. 
+</details>
+In 1988, LeCun joined the legendary AT&T Bell Laboratories in Holmdel New Jersey were over 6,000 engineers and researchers did some of the most groundbreaking research in computer science.
+
+![](./02.png)
 <details><summary>Show Image Prompt</summary>
 Image 2:
 Please generate a new drawing.  It is a wide-landscape drawing that might appear in a graphic novel. 
 A tech-optimistic graphic novel panel showing LeCun as a young researcher at AT&T Bell Labs in 1988, working late at night surrounded by early computers and neural network diagrams on whiteboards. The scene should depict him animated and excited, gesturing toward holographic representations of digits floating above a primitive neural network diagram. The setting should have the warm orange glow of desk lamps and the blue light of computer monitors, creating an atmosphere of discovery.
 </details>
 
-In 1988, LeCun joined the legendary AT&T Bell Laboratories, a place where innovation flowed like electricity through the halls. While others worked on traditional software, LeCun's office became a laboratory of the future. His colleagues often found him staring intently at a screen filled with handwritten digits, muttering about "convolutional filters" and "local receptive fields." 
+Holmdel was a place where innovation flowed like electricity through the halls. While others worked on traditional software, LeCun's office became a laboratory of the future. His colleagues often found him staring intently at a screen filled with handwritten digits, muttering about "convolutional filters" and "local receptive fields." 
 
 "Why are you trying to reinvent image recognition?" his skeptical colleagues would ask. "Rule-based systems work just fine for reading zip codes."
 
@@ -147,9 +159,25 @@ Today, Yann LeCun continues his quest for truly intelligent machines. His journe
 As he likes to say, "The best way to predict the future is to create it." And for Yann LeCun, the future of artificial intelligence is still being written.
 
 ---
-![](.)
+![](./11.png)
 <details><summary>Show Image Prompt</summary>
 Image 11: 
 Please generate a new drawing.  It is a wide-landscape drawing that might appear in a graphic novel. 
 A symbolic closing panel showing hands passing a torch between generations of AI researchers. In the background, the evolution of neural networks can be seen as a spiral timeline, from simple perceptrons to modern CNNs to future world models. The torch itself should be rendered as a glowing neural network, symbolizing the continuous flow of knowledge and innovation. The style should be hopeful and inspiring, suggesting that the story continues with each new generation of researchers.
 </details>
+
+## References
+
+Here are the references reformatted:
+
+1. [Yann LeCun Personal Website](http://yann.lecun.com/)
+1.  [Gradient-based learning applied to document recognition](hhttp://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf) - 1998 - Proceedings of the IEEE - LeCun's seminal CNN paper describing implementation at AT&T Bell Labs
+2.  [MNIST Database of Handwritten Digits](http://yann.lecun.com/exdb/mnist/) - 2010 (Updated) - Online Database - Original dataset created from Bell Labs work on postal code recognition
+3.  [Handwritten Digit Recognition with a Back-Propagation Network](http://yann.lecun.com/exdb/publis/pdf/lecun-90c.pdf) - 1990 - Advances in Neural Information Processing Systems - Early AT&T Bell Labs application work
+4.  [ACM Turing Award Winners](https://amturing.acm.org/award_winners/lecun_1576916.cfm) - 2019 - ACM Official Page - Official announcement of 2018 Turing Award to LeCun, Bengio, and Hinton
+5.  [NYU Center for Data Science Launch](https://cds.nyu.edu/about/) - 2012 - NYU Official Page - Founding of center with LeCun as inaugural director
+6.  [ICLR Conference History](https://iclr.cc/About) - 2013 - ICLR Official Website - Co-founded by LeCun and Bengio as premier ML conference
+7.  [LeCun's NYU Profile](https://cs.nyu.edu/~yann/) - Current - NYU CS Department - Official position at NYU and CV
+8.  [LeCun on AI and World Models](https://www.technologyreview.com/2022/03/25/1048261/yann-lecun-meta-ai-large-language-models-agi/) - 2022 - MIT Technology Review - Recent interview on LLM limitations and AGI
+9.  [Facebook AI Research Appointment](https://research.facebook.com/blog/2013/12/facebook-ai-lab-new-york-is-hiring/) - 2013 - Meta Research Blog - Announcement of LeCun as FAIR director at Meta
+10.  [LeCun at Bell Labs Research](https://www.alcatel-lucent.com/bell-labs-history) - 1988-2003 - Bell Labs Archives - Documentation of LeCun's tenure and achievements at AT&T Bell Labs
