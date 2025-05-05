@@ -145,6 +145,9 @@ Please generate a new drawing.  It is a wide-landscape drawing that might appear
 A visionary scene showing LeCun's concept of future AI systems. The panel should illustrate a split reality: above, current AI systems performing specific tasks (language, image recognition, etc.), and below, an integrated AI system with a comprehensive world model. This lower level should be depicted as a sophisticated machine understanding the physical world, social dynamics, causal relationships, and abstract reasoning – all connected in a harmonious, glowing network of understanding.
 </details>
 
+![](./world-model.png)
+Yann's vision is an AI system that mimics regions of the human brain.  At the center of this is models of the real world.  LLMs are good models of language, but they are not precise models of the world.
+
 ## Epilogue: The Continuing Quest
 
 ![](./10.png)
