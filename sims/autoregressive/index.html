@@ -396,6 +396,8 @@
       
         
       
+        
+      
     
     
     
@@ -606,6 +608,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layout-of-the-neural-network-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout of the neural network graph
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -631,10 +650,29 @@
 <h1 id="autoregressive-animation">Autoregressive Animation</h1>
 <div class="admonition prompt">
 <p class="admonition-title">Prompt</p>
-<p>Please create a new MicroSim that simulates the prediction of the next token from a sequence of words.</p>
-<p>Step 1.  Wen the animation has the following five rows, each with 16 columns of circles.  The leftMargin is 150 for drawing the labels.
-    - the top row at y = 100 has a label on the left called "Output" and has 16 orange circles with a thin black border
-    - there are three middle rows call "Hidden Layers".  Each of the hidden layers has 16 gray circles with a thin black border.  </p>
+<p>Please create a new MicroSim that simulates the prediction of the next token from a sequence of words using a neural network.  The simulation works in phases, with five steps per phase.</p>
+<h2 id="layout-of-the-neural-network-graph">Layout of the neural network graph</h2>
+<ol>
+<li>The animation has the five horizontal rows, each with 20 columns of circles.</li>
+<li>The labels for each row is on the left.</li>
+<li>The leftMargin is 150 for drawing the labels.</li>
+<li>The labels on the left column are:
+    4.1 "Output" at y = 100
+    4.2 "Hidden Layer" at y = 200, 300 and 400
+    4.3 "Input" at y = 500</li>
+<li>The "Output" layer has light orange filled circles with r=8.</li>
+<li>The "Hidden Layers" has gray filled circles with r=8</li>
+<li>The "Input Layer" has light blue filled circles with r=8</li>
+<li>All circles have a thin 1pm black border</li>
+</ol>
+<p>Only 16 of the columns are active at any time showing the context window of 16 in the input row.</p>
+<p>Step 1: Draw 16 arrows from the left-most 16 bottom input layer up to the first hidden layer.  The arrows merge to alternating 8 circles on the lower hidden layer.  Keep the arrows visible for each phase.</p>
+<p>Step 2: Draw 8 arrows from the lower hidden layer to the middle hidden layer.  Draw them to alternate nodes so the left-most nodes shift one to the right.</p>
+<p>Step 3. Draw 4 arrows from the middle hidden layer to the top hidden layer.  </p>
+<p>Step 4. Draw 2 arrows from the top hidden layer to the node in column 17 on the top output row.</p>
+<p>Step 5. Animate the circle just generated in the 17th row moving to the 17th circle on the bottom row.  Erase all the arrows on the screen.</p>
+<p>Repeat this animation three times shifting to the right one column each time.</p>
+<p>Add buttons for Start/Stop and Reset in the control area at the bottom of the animation.</p>
 </div>
 
 
