@@ -41,7 +41,7 @@ let data = [
   }
   
   function draw() {
-    background(255);
+    background('aliceblue');
     graphW = width - 2 * margin;
     graphH = height - 2 * margin - 40;
   
