@@ -14,6 +14,7 @@ nav:
     - Introduction: chapters/index.md
     - Current State: chapters/current-state.md
     - Benchmarking AI: chapters/benchmarking-ai.md
+    - MMLU: chapters/mmlu/index.md
     - AGI Predicted Dates: chapters/agi-predicted-dates.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
   - Stories:
@@ -25,11 +26,12 @@ nav:
     - Four AI Futures: sims/four-futures/index.md
     - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
     - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
+    - MMLU Timeline: sims/mmlu-timeline/index.md
     - Learning Graph: sims/learning-graph/index.md
-    - sims/autoregressive/index.md
-    - sims/templates/index.md
+    - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
-
+  - Prompts:
+    - Intro: prompts/index.md
   - Checklist: checklist.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
