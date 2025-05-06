@@ -14,6 +14,7 @@ nav:
     - Introduction: chapters/index.md
     - Current State: chapters/current-state.md
     - Benchmarking AI: chapters/benchmarking-ai.md
+    - AGI Predicted Dates: chapters/agi-predicted-dates.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
   - Stories:
     - Intro: stories/index.md
