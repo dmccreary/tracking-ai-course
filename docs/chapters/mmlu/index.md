@@ -2,7 +2,13 @@
 
 The **MMLU (Massive Multitask Language Understanding)** benchmark is currently the **most referenced** and **most reputable** benchmark for evaluating the general intelligence of large language models (LLMs), regardless of size.
 
----
+## About the MMLU
+
+The MMLU rating consists of 16,000 multiple-choice questions across 57 academic subjects.  Questions are given to a LLM in the form of text.  The LLM must return the correct answer to get a point.
+
+Note that most human's do not get a perfect score.  The average person only gets a score of 89.6% correct.
+
+Because the MMLU is so popular, many people feel that some LLM builders pre-train their models on MMLU questions.  This will skew the results and make some models appear more capable than they really are.
 
 ### ✅ **Why MMLU is the Most Trusted Benchmark**
 

@@ -15,6 +15,7 @@ nav:
     - Current State: chapters/current-state.md
     - Benchmarking AI: chapters/benchmarking-ai.md
     - MMLU: chapters/mmlu/index.md
+    - LM Arena: chapters/lm-arena/index.md
     - AGI Predicted Dates: chapters/agi-predicted-dates.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
   - Stories:
@@ -27,6 +28,7 @@ nav:
     - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
     - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
     - MMLU Timeline: sims/mmlu-timeline/index.md
+    - LM Arena Timeline: sims/lm-arena-timeline/index.md
     - Learning Graph: sims/learning-graph/index.md
     - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
@@ -71,10 +73,14 @@ markdown_extensions:
   - attr_list
   - pymdownx.highlight:
       linenums: true
+  # enable LaTeX equation rendering
+  - pymdownx.arithmatex:
+      generic: true
 extra_css:
    - css/extra.css
 extra_javascript:
    - js/extra.js
+   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 #extra:
 #  analytics:
 #    provider: google
