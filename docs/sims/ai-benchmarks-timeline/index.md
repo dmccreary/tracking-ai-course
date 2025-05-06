@@ -14,7 +14,7 @@ hide:
 
 [Run the MicroSim](./main.html){ .md-button .md-button--primary }
 
-[Edit the MicroSim]()
+[Edit the MicroSim](https://editor.p5js.org/dmccreary/sketches/0fxIbT1A4)
 
 
 
