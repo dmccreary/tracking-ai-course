@@ -9,9 +9,10 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - Chapters:
-    - chapters/index.md
-    - chapters/current-state.md
-    - chapters/skepticism-of-the-llm-only-path.md
+    - Introduction: chapters/index.md
+    - Current State: chapters/current-state.md
+    - Benchmarking AI: chapters/benchmarking-ai.md
+    - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
   - Stories:
     - Intro: stories/index.md
     - AI Winters: stories/ai-winters/index.md
@@ -20,6 +21,7 @@ nav:
     - Intro: sims/index.md
     - Four AI Futures: sims/four-futures/index.md
     - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
+    - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
     - Learning Graph: sims/learning-graph/index.md
     - sims/templates/index.md
     - AI Timeline: sims/timeline/index.md
