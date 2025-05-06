@@ -55,7 +55,7 @@ let data = [
     textAlign(CENTER, CENTER);
     textSize(24);
     fill(0);
-    text('MMLU Benchmark', width / 2, 30);
+    text('Massive Multitask Language Understanding (MMLU) Benchmark', width / 2, 30);
   }
   
   function drawAxes() {
