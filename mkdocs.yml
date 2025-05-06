@@ -18,10 +18,11 @@ nav:
     - Yann LeCun: stories/yann-lecun/index.md
   - MicroSims:
     - Intro: sims/index.md
-    - sims/four-futures/index.md
-    - sims/learning-graph/index.md
+    - Four AI Futures: sims/four-futures/index.md
+    - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
+    - Learning Graph: sims/learning-graph/index.md
     - sims/templates/index.md
-    - sims/timeline/index.md
+    - AI Timeline: sims/timeline/index.md
 
   - Checklist: checklist.md
   - Glossary: glossary.md
