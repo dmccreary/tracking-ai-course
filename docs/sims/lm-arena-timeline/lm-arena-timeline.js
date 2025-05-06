@@ -133,7 +133,7 @@ function processData() {
 }
 
 function draw() {
-    background(245);
+    background('aliceblue');
 
     if (processedModels.length === 0) {
         fill(50);
