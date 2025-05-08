@@ -16,6 +16,7 @@ nav:
     - Benchmarking AI: chapters/benchmarking-ai.md
     - MMLU: chapters/mmlu/index.md
     - LM Arena: chapters/lm-arena/index.md
+    - Objective LLMs for The Classroom: chapters/objective-llm-quality.md
     - AGI Predicted Dates: chapters/agi-predicted-dates.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
   - Stories:
@@ -32,6 +33,7 @@ nav:
     - Learning Graph: sims/learning-graph/index.md
     - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
+    - MicroSim Templates: sims/templates/index.md
   - Prompts:
     - Intro: prompts/index.md
   - Checklist: checklist.md

@@ -1,6 +1,6 @@
 function drawGraph() {
     // Fetch the graph data from the JSON file
-    fetch('deep-learning-concepts.json')
+    fetch('tracking-ai.json')
       .then(response => response.json())
       .then(data => {
         // Extract nodes from the JSON data
