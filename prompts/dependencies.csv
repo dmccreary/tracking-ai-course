@@ -1,0 +1,251 @@
+ConceptID,ConceptLabel,Dependencies
+1,Artificial Intelligence,
+2,Exponential Growth,
+3,Knowledge Organizations,
+4,Large Language Models,1
+5,Generative AI,1|4
+6,Strategic Implications,2|3
+7,AI Benchmarks,1|4
+8,Knowledge Management,3
+9,Content Generation,4|5
+10,AI Timelines,1|2
+11,Dartmouth Conference,1
+12,AI History,1|11
+13,Machine Learning,1
+14,Deep Learning,1|13
+15,Neural Networks,13|14
+16,Natural Language Processing,1|4|13
+17,Expert Systems,1|12
+18,AI Revolution,1|2|10|12
+19,Prompt Engineering,4|5
+20,AI Capability Trajectories,1|2|7|10
+21,ELIZA,12|16
+22,Transformer Architecture,14|15|16
+23,GPT Models,4|14|22
+24,BERT,4|14|22
+25,Llama Models,4|14|22
+26,Claude Models,4|14|22
+27,DeepSeek Models,4|14|22
+28,AlphaGo,12|14
+29,Deep Blue,12
+30,Watson,12|16
+31,GANs,14|15
+32,Diffusion Models,14|15|31
+33,Text Generation,4|5|16
+34,Image Generation,5|31|32
+35,Text-to-Image Models,5|33|34
+36,DALL-E,34|35
+37,Midjourney,34|35
+38,Stable Diffusion,32|34|35
+39,Democratization of AI,1|2
+40,AI Accessibility,1|39
+41,Open Source AI,4|25|39
+42,Proprietary AI,4|23|24|26
+43,AI Cost Trends,2|39|40
+44,Local AI Models,4|41
+45,Cloud-Based AI,4|42
+46,AI Adoption Curve,2|39|40
+47,Disruption Theory,2|6
+48,Public Knowledge,3|8
+49,Private Knowledge,3|8
+50,Knowledge Integration,8|48|49
+51,Knowledge Scope,8|50
+52,Personal Knowledge,49|51
+53,Organizational Knowledge,3|8|49|51
+54,Departmental Knowledge,49|51|53
+55,Project Knowledge,49|51|53
+56,Knowledge Protection,49|51
+57,Privacy Regulations,56
+58,FERPA,56|57
+59,Hyperpersonalized Learning,4|5|40
+60,Curriculum Development,59
+61,AI-Assisted Teaching,4|5|59|60
+62,Assessment Challenges,59|60|61
+63,Academic Integrity,62
+64,Research Integrity,63
+65,Content Authenticity,9|33
+66,Future Skills Development,18|60
+67,AI Literacy,1|40|66
+68,Knowledge Worker Productivity,5|9|50
+69,Business Process Analysis,6|68
+70,Customer Engagement Transformation,5|9|69
+71,Product Development Acceleration,5|9|69
+72,Competitive Advantage,6|47|69|70|71
+73,Strategic Response Planning,6|72
+74,Impact Assessment,6|18|73
+75,LLM Limitations,4|7|93
+76,World Models,1|4|75
+77,Hallucination (AI),4|75
+78,Factual Reliability,4|77
+79,Ethical Considerations,1|77|78
+80,Responsible AI,1|79
+81,AI Governance,79|80
+82,AI Center of Excellence,81
+83,Organizational Structure,3|82
+84,Centralized Control Models,81|83
+85,Decentralized Control Models,81|83
+86,Implementation Roadmapping,73|82
+87,Change Management,73|86
+88,Reasoning Capabilities,4|75|76
+89,One-Shot Learning,4|88
+90,Few-Shot Learning,4|88|89
+91,Zero-Shot Learning,4|88|89
+92,Chain-of-Thought Reasoning,4|88
+93,Context Window,4
+94,Tokens,4|93
+95,Token Limits,93|94
+96,AI Agents,1|4|5
+97,Multi-Agent Systems,96
+98,Autonomous Systems,96|97
+99,AI Benchmarking,7
+100,ImageNet,7|34|99
+101,MMLU Benchmark,7|16|99
+102,HumanEval Benchmark,7|99
+103,Question Answering,4|16
+104,Response Accuracy,7|103
+105,Response Speed,4|93|94
+106,Model Size,4|15
+107,Parameter Count,4|15|106
+108,Training Data Volume,4|13|15
+109,Fine-Tuning,4|13|14
+110,Prompt Templates,19
+111,System Prompts,19|110
+112,AI Safety,1|79|80
+113,Bias Detection,79|112
+114,Model Alignment,79|112|113
+115,AI Ethics Framework,79|80|112
+116,Fairness Metrics,113|115
+117,AI Transparency,112|115
+118,Explainable AI,117
+119,Educational Technology,3|59
+120,AI Personalization,5|59|119
+121,Adaptive Learning,59|119|120
+122,Content Recommendation,9|120
+123,Knowledge Graphs,8|50
+124,Educational AI Applications,5|59|119
+125,AI-Generated Lesson Plans,9|60|61|119
+126,AI-Generated Assessments,9|62|119
+127,MicroSims,119|124
+128,Artificial General Intelligence,1|18|20
+129,AGI Timeline Predictions,10|128
+130,AGI Capabilities,128
+131,Human-Level AI,128|130
+132,Superhuman AI,128|130|131
+133,Narrow AI,1|128
+134,Task-Specific AI,133
+135,Domain-Specific Knowledge,4|49|51
+136,Code Generation,5|9
+137,Automated Programming,136
+138,Coding Assistants,5|136|137
+139,Vibe Coding,5|136|138
+140,Code Explanation,136|138
+141,Prototype Development,137|138
+142,Business Intelligence,3|68|69
+143,Data Analysis Automation,5|142
+144,Report Generation,5|9|142|143
+145,Content Summarization,5|9|33
+146,Information Extraction,5|145
+147,Digital Transformation,6|18|39|69
+148,Academic Publishing,64
+149,Plagiarism Detection,63|65|145
+150,Citation Analysis,148|149
+151,Content Moderation,65|112
+152,AI-Enhanced Research,5|64|146
+153,Scientific Discovery,152
+154,Copyright Implications,65|151
+155,Intellectual Property,65|154
+156,Content Ownership,65|155
+157,AI-Generated Content Rights,5|9|155|156
+158,Educational Rights,57|58
+159,Student Data Protection,57|58|158
+160,Teacher Augmentation,59|61|119
+161,Administrative Automation,5|69
+162,Resource Allocation,161
+163,Decision Support Systems,5|142|161
+164,AI Forecasting,10|20
+165,Market Analysis,142|143|164
+166,Competitive Intelligence,142|165
+167,Strategic Planning,6|47|73|164|166
+168,Organizational Learning,3|8|50
+169,Knowledge Transfer,8|50|168
+170,Knowledge Retention,8|168|169
+171,Knowledge Creation,5|8|9|169
+172,Knowledge Application,8|168|171
+173,Institutional Memory,8|53|169|170
+174,Language Understanding,4|16
+175,Visual Recognition,5|34
+176,Multimodal AI,4|5|174|175
+177,Speech Recognition,16|174
+178,Text-to-Speech,16|33|174
+179,Speech-to-Text,16|177
+180,Signal Processing,177|179
+181,Semantic Understanding,16|174
+182,Contextual Relevance,93|174|181
+183,Content Customization,9|59|120
+184,User Experience Design,119|120|183
+185,AI Interface Design,184
+186,Human-AI Collaboration,1|4|5|96
+187,Augmented Intelligence,1|186
+188,AI Assistants,5|96|186
+189,Digital Workforce,96|186|188
+190,Job Transformation,18|186|189
+191,Skill Obsolescence,18|66|190
+192,Reskilling Strategies,66|190|191
+193,Workforce Development,66|190|192
+194,AI Literacy Programs,67|193
+195,Technology Adoption,39|40|46
+196,Resistance to Change,46|87|195
+197,Cultural Transformation,87|196
+198,Innovation Management,72|167|197
+199,Risk Assessment,6|74|79
+200,Opportunity Identification,6|72|74
+201,Scenario Planning,164|167|199|200
+202,Future of Work,18|190|193
+203,Knowledge Economy,3|18|202
+204,Information Asymmetry,8|48|49
+205,Cognitive Enhancement,59|187
+206,Learning Acceleration,59|119|121|205
+207,Educational Outcomes,59|62|119|206
+208,Performance Metrics,7|62|207
+209,Success Indicators,74|208
+210,Return on Investment,6|74|209
+211,Total Cost of Ownership,43|74|210
+212,Implementation Strategy,73|86|87
+213,Technology Integration,87|195|212
+214,Pilot Programs,212|213
+215,Scaled Deployment,212|213|214
+216,Continuous Improvement,87|215
+217,Feedback Loops,87|216
+218,Iterative Development,87|216|217
+219,Agile Methodology,87|218
+220,Project Management,87|219
+221,Resource Planning,162|220
+222,Stakeholder Engagement,87|220
+223,Executive Sponsorship,74|220|222
+224,Cross-Functional Teams,87|220|222
+225,Technical Infrastructure,213
+226,Data Architecture,225
+227,System Integration,213|225
+228,API Management,225|227
+229,User Training,67|87|213
+230,Support Systems,213|229
+231,Documentation Standards,213|230
+232,Version Control,213|231
+233,Testing Protocols,213|232
+234,Quality Assurance,233
+235,Regulatory Compliance,57|81|112
+236,Industry Standards,81|235
+237,Best Practices,87|236
+238,Case Studies,6|74|207
+239,Benchmarking Studies,7|99|238
+240,Trend Analysis,20|164
+241,Predictive Modeling,164|240
+242,Scenario Analysis,199|201|241
+243,Cost-Benefit Analysis,74|199|200|210|211
+244,Value Proposition,6|72|200|210
+245,Competitive Positioning,72|166|244
+246,Market Differentiation,72|245
+247,Sustainable Advantage,72|244|245|246
+248,Innovation Strategy,72|167|198|247
+249,Technology Roadmap,164|201|212|248
+250,Future Readiness,20|73|164|201|248|249
