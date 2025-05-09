@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+// Destructure needed components from Recharts
+const {
+    LineChart, Line, XAxis, YAxis, CartesianGrid, 
+    Tooltip, Legend, ResponsiveContainer
+} = Recharts;
 
+// Main chart component
 const MmluChart = () => {
   const data = [
     { date: '2020-06', GPT3: 43.9 },
@@ -59,7 +63,7 @@ const MmluChart = () => {
     "Other": ['Mistral', 'Grok3']
   };
 
-  const [visibleModels, setVisibleModels] = useState(
+  const [visibleModels, setVisibleModels] = React.useState(
     allModels.reduce((acc, model) => {
       acc[model] = true;
       return acc;
@@ -163,5 +167,3 @@ const MmluChart = () => {
     </div>
   );
 };
-
-export default MmluChart;
