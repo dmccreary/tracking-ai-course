@@ -37,6 +37,10 @@ nav:
     - MicroSim Templates: sims/templates/index.md
   - Prompts:
     - Intro: prompts/index.md
+    - Concept Enumeration: prompts/03-concept-enumeration.md
+    - Concept Dependency: prompts/04-concept-dependencies.md
+    - Concept Taxonomy: prompts/05-taxonomy-concept.md
+    - Glossary: prompts/06-glossary.md
   - Checklist: checklist.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
