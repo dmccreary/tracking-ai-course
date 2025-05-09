@@ -17,6 +17,17 @@ hide:
 
 [Edit the MMLU MicroSim](https://editor.p5js.org/dmccreary/sketches/209soY_z8)
 
+[MMUL Timeline with Chart.js Version 3](./mmlu-timeline-chartjs-v3.html)
+
+[MMUL Timeline with Chart.js Version 2](./mmlu-timeline-chartjs-v2.html)
+
+
+[MMUL Timeline with Chart.js](./mmlu-timeline-chartjs.html)
+
+[React Timeline Chart](./react-mmlu-timeline.html)
+
+[React Chart](./main-react.html)
+
 ## Notes
 
 I'll search for the most recent MMLU benchmark data to update your dataset. Let me gather that information for you.
