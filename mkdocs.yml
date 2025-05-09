@@ -33,6 +33,7 @@ nav:
     - Learning Graph: sims/learning-graph/index.md
     - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
+    - Tokenizer: sims/tokenizer/index.md
     - MicroSim Templates: sims/templates/index.md
   - Prompts:
     - Intro: prompts/index.md

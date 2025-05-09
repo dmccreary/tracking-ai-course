@@ -10,11 +10,11 @@ function drawGraph() {
         nodes.forEach(function (node) {
             if (node.group === "found") {
                 // placement can't be done in a group
-                node.x = -1200;
+                node.x = -1700;
                 node.fixed = { x: true, y: false }; // Fix x, but let y be adjusted by physics
                 
             } else if (node.group === "goal") {
-                node.x = 1200;
+                node.x = 1500;
                 node.fixed = { x: true, y: false }; // Fix x, but let y be adjusted by physics
             }
           });
@@ -69,34 +69,43 @@ function drawGraph() {
            color:{background:'red'},
            font: {color: "white"},
         },
-        "term": {
+        "hist": {
            color:{background:'orange'},
         },
-        "stand": {
-           color:{background:'gold'},
+        "arch": {
+           color:{background:'yellow'},
         },
-        "ui": {
-           color:{background:'purple'},
-        },
-        "algorithms": {
+        "capabilities": {
            color:{background:'green'},
         },
-        "similarity": {
-           color:{background:'brown'},
+        "content": {
+           color:{background:'blue'},
         },
-        "learning-theory": {
-           color:{background:'green'},
-        },
-        "ai": {
-           color:{background:'pink'},
-        },
-        "feed": {
-           color:{background:'gray'},
-        },
-        "agents": {
+        "image": {
            color:{background:'navy'},
         },
-        goal: {
+        "knowledge": {
+           color:{background:'indigo'},
+        },
+        "edu": {
+           color:{background:'violet'},
+        },
+        "org": {
+           color:{background:'indigo'},
+        },
+        "bench": {
+           color:{background:'gray'},
+        },
+        "reg": {
+           color:{background:'black'},
+        },
+        "best-practices": {
+           color:{background:'olive'},
+        },
+        "future": {
+           color:{background:'teal'},
+        },
+        "goal": {
            shape: "star", 
            color:{background:'gold'}, 
            font: { size: 16 }
