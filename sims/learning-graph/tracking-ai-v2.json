@@ -43,7 +43,7 @@
         {
             "id": 9,
             "label": "Content Generation",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 10,
@@ -53,12 +53,12 @@
         {
             "id": 11,
             "label": "Dartmouth Conference",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 12,
             "label": "AI History",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 13,
@@ -68,12 +68,12 @@
         {
             "id": 14,
             "label": "Deep Learning",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 15,
             "label": "Neural Networks",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 16,
@@ -83,12 +83,12 @@
         {
             "id": 17,
             "label": "Expert Systems",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 18,
             "label": "AI Revolution",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 19,
@@ -98,137 +98,137 @@
         {
             "id": 20,
             "label": "AI Capability Trajectories",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 21,
             "label": "ELIZA",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 22,
             "label": "Transformer Architecture",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 23,
             "label": "GPT Models",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 24,
             "label": "BERT",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 25,
             "label": "Llama Models",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 26,
             "label": "Claude Models",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 27,
             "label": "DeepSeek Models",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 28,
             "label": "AlphaGo",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 29,
             "label": "Deep Blue",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 30,
             "label": "Watson",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 31,
             "label": "GANs",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 32,
             "label": "Diffusion Models",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 33,
             "label": "Text Generation",
-            "group": "language"
+            "group": 4
         },
         {
             "id": 34,
             "label": "Image Generation",
-            "group": "image"
+            "group": 5
         },
         {
             "id": 35,
             "label": "Text-to-Image Models",
-            "group": "image"
+            "group": 5
         },
         {
             "id": 36,
             "label": "DALL-E",
-            "group": "image"
+            "group": 5
         },
         {
             "id": 37,
             "label": "Midjourney",
-            "group": "image"
+            "group": 5
         },
         {
             "id": 38,
             "label": "Stable Diffusion",
-            "group": "image"
+            "group": 5
         },
         {
             "id": 39,
             "label": "Democratization of AI",
-            "group": "hist"
+            "group": 1
         },
         {
             "id": 40,
             "label": "AI Accessibility",
-            "group": "hist"
+            "group": 1
         },
         {
             "id": 41,
             "label": "Open Source AI",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 42,
             "label": "Proprietary AI",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 43,
             "label": "AI Cost Trends",
-            "group": "future"
+            "group": 12
         },
         {
             "id": 44,
             "label": "Local AI Models",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 45,
             "label": "Cloud-Based AI",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 46,
             "label": "AI Adoption Curve",
-            "group": "future"
+            "group": 11
         },
         {
             "id": 47,
@@ -243,52 +243,52 @@
         {
             "id": 49,
             "label": "Private Knowledge",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 50,
             "label": "Knowledge Integration",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 51,
             "label": "Knowledge Scope",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 52,
             "label": "Personal Knowledge",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 53,
             "label": "Organizational Knowledge",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 54,
             "label": "Departmental Knowledge",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 55,
             "label": "Project Knowledge",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 56,
             "label": "Knowledge Protection",
-            "group": "knowledge"
+            "group": 6
         },
         {
             "id": 57,
             "label": "Privacy Regulations",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 58,
             "label": "FERPA",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 59,
@@ -298,302 +298,302 @@
         {
             "id": 60,
             "label": "Curriculum Development",
-            "group": "edu"
+            "group": 7
         },
         {
             "id": 61,
             "label": "AI-Assisted Teaching",
-            "group": "edu"
+            "group": 7
         },
         {
             "id": 62,
             "label": "Assessment Challenges",
-            "group": "edu"
+            "group": 7
         },
         {
             "id": 63,
             "label": "Academic Integrity",
-            "group": "edu"
+            "group": 7
         },
         {
             "id": 64,
             "label": "Research Integrity",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 65,
             "label": "Content Authenticity",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 66,
             "label": "Future Skills Development",
-            "group": "future"
+            "group": 7
         },
         {
             "id": 67,
             "label": "AI Literacy",
-            "group": "hist"
+            "group": 1
         },
         {
             "id": 68,
             "label": "Knowledge Worker Productivity",
-            "group": "knowledge"
+            "group": 8
         },
         {
             "id": 69,
             "label": "Business Process Analysis",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 70,
             "label": "Customer Engagement Transformation",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 71,
             "label": "Product Development Acceleration",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 72,
             "label": "Competitive Advantage",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 73,
             "label": "Strategic Response Planning",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 74,
             "label": "Impact Assessment",
-            "group": "bench"
+            "group": 8
         },
         {
             "id": 75,
             "label": "LLM Limitations",
-            "group": "future"
+            "group": 11
         },
         {
             "id": 76,
             "label": "World Models",
-            "group": "hist"
+            "group": 1
         },
         {
             "id": 77,
             "label": "Hallucination (AI)",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 78,
             "label": "Factual Reliability",
-            "group": "bench"
+            "group": 10
         },
         {
             "id": 79,
             "label": "Ethical Considerations",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 80,
             "label": "Responsible AI",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 81,
             "label": "AI Governance",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 82,
             "label": "AI Center of Excellence",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 83,
             "label": "Organizational Structure",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 84,
             "label": "Centralized Control Models",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 85,
             "label": "Decentralized Control Models",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 86,
             "label": "Implementation Roadmapping",
-            "group": "org"
+            "group": 8
         },
         {
             "id": 87,
             "label": "Change Management",
-            "group": "org"
+            "group": 12
         },
         {
             "id": 88,
             "label": "Reasoning Capabilities",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 89,
             "label": "One-Shot Learning",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 90,
             "label": "Few-Shot Learning",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 91,
             "label": "Zero-Shot Learning",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 92,
             "label": "Chain-of-Thought Reasoning",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 93,
             "label": "Context Window",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 94,
             "label": "Tokens",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 95,
             "label": "Token Limits",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 96,
             "label": "AI Agents",
-            "group": "arch"
+            "group": 1
         },
         {
             "id": 97,
             "label": "Multi-Agent Systems",
-            "group": "arch"
+            "group": 4
         },
         {
             "id": 98,
             "label": "Autonomous Systems",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 99,
             "label": "AI Benchmarking",
-            "group": "bench"
+            "group": 9
         },
         {
             "id": 100,
             "label": "ImageNet",
-            "group": "image"
+            "group": 9
         },
         {
             "id": 101,
             "label": "MMLU Benchmark",
-            "group": "bench"
+            "group": 9
         },
         {
             "id": 102,
             "label": "HumanEval Benchmark",
-            "group": "bench"
+            "group": 9
         },
         {
             "id": 103,
             "label": "Question Answering",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 104,
             "label": "Response Accuracy",
-            "group": "bench"
+            "group": 9
         },
         {
             "id": 105,
             "label": "Response Speed",
-            "group": "bench"
+            "group": 9
         },
         {
             "id": 106,
             "label": "Model Size",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 107,
             "label": "Parameter Count",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 108,
             "label": "Training Data Volume",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 109,
             "label": "Fine-Tuning",
-            "group": "arch"
+            "group": 3
         },
         {
             "id": 110,
             "label": "Prompt Templates",
-            "group": "arch"
+            "group": 12
         },
         {
             "id": 111,
             "label": "System Prompts",
-            "group": "arch"
+            "group": 12
         },
         {
             "id": 112,
             "label": "AI Safety",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 113,
             "label": "Bias Detection",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 114,
             "label": "Model Alignment",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 115,
             "label": "AI Ethics Framework",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 116,
             "label": "Fairness Metrics",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 117,
             "label": "AI Transparency",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 118,
             "label": "Explainable AI",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 119,
             "label": "Educational Technology",
-            "group": "edu"
+            "group": 7
         },
         {
             "id": 120,
@@ -608,7 +608,7 @@
         {
             "id": 122,
             "label": "Content Recommendation",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 123,
@@ -623,17 +623,17 @@
         {
             "id": 125,
             "label": "AI-Generated Lesson Plans",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 126,
             "label": "AI-Generated Assessments",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 127,
             "label": "MicroSims",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 128,
@@ -648,17 +648,17 @@
         {
             "id": 130,
             "label": "AGI Capabilities",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 131,
             "label": "Human-Level AI",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 132,
             "label": "Superhuman AI",
-            "group": "hist"
+            "group": 2
         },
         {
             "id": 133,
@@ -673,62 +673,62 @@
         {
             "id": 135,
             "label": "Domain-Specific Knowledge",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 136,
             "label": "Code Generation",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 137,
             "label": "Automated Programming",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 138,
             "label": "Coding Assistants",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 139,
             "label": "Vibe Coding",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 140,
             "label": "Code Explanation",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 141,
             "label": "Prototype Development",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 142,
             "label": "Business Intelligence",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 143,
             "label": "Data Analysis Automation",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 144,
             "label": "Report Generation",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 145,
             "label": "Content Summarization",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 146,
             "label": "Information Extraction",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 147,
@@ -743,7 +743,7 @@
         {
             "id": 149,
             "label": "Plagiarism Detection",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 150,
@@ -753,37 +753,37 @@
         {
             "id": 151,
             "label": "Content Moderation",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 152,
             "label": "AI-Enhanced Research",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 153,
             "label": "Scientific Discovery",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 154,
             "label": "Copyright Implications",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 155,
             "label": "Intellectual Property",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 156,
             "label": "Content Ownership",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 157,
             "label": "AI-Generated Content Rights",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 158,
@@ -868,52 +868,52 @@
         {
             "id": 174,
             "label": "Language Understanding",
-            "group": 1
+            "group": 2
         },
         {
             "id": 175,
             "label": "Visual Recognition",
-            "group": 1
+            "group": 2
         },
         {
             "id": 176,
             "label": "Multimodal AI",
-            "group": 1
+            "group": 2
         },
         {
             "id": 177,
             "label": "Speech Recognition",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 178,
             "label": "Text-to-Speech",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 179,
             "label": "Speech-to-Text",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 180,
             "label": "Signal Processing",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 181,
             "label": "Semantic Understanding",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 182,
             "label": "Contextual Relevance",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 183,
             "label": "Content Customization",
-            "group": "knowledge"
+            "group": 5
         },
         {
             "id": 184,
@@ -928,17 +928,17 @@
         {
             "id": 186,
             "label": "Human-AI Collaboration",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 187,
             "label": "Augmented Intelligence",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 188,
             "label": "AI Assistants",
-            "group": "cap"
+            "group": 4
         },
         {
             "id": 189,
@@ -973,22 +973,22 @@
         {
             "id": 195,
             "label": "Technology Adoption",
-            "group": 12
+            "group": "goal"
         },
         {
             "id": 196,
             "label": "Resistance to Change",
-            "group": 12
+            "group":  "goal"
         },
         {
             "id": 197,
             "label": "Cultural Transformation",
-            "group": 12
+            "group":  "goal"
         },
         {
             "id": 198,
             "label": "Innovation Management",
-            "group": 12
+            "group":  "goal"
         },
         {
             "id": 199,
@@ -1058,32 +1058,32 @@
         {
             "id": 212,
             "label": "Implementation Strategy",
-            "group": 12
+            "group":  "goal"
         },
         {
             "id": 213,
             "label": "Technology Integration",
-            "group": 12
+            "group":  "goal"
         },
         {
             "id": 214,
             "label": "Pilot Programs",
-            "group": "goal"
+            "group":  "goal"
         },
         {
             "id": 215,
             "label": "Scaled Deployment",
-            "group": "goal"
+            "group":  "goal"
         },
         {
             "id": 216,
             "label": "Continuous Improvement",
-            "group": "goal"
+            "group":  "goal"
         },
         {
             "id": 217,
             "label": "Feedback Loops",
-            "group": 12
+            "group":  11
         },
         {
             "id": 218,
@@ -1113,7 +1113,7 @@
         {
             "id": 223,
             "label": "Executive Sponsorship",
-            "group": "goal"
+            "group": 12
         },
         {
             "id": 224,
@@ -1158,32 +1158,32 @@
         {
             "id": 232,
             "label": "Version Control",
-            "group": "best-practices"
+            "group": 12
         },
         {
             "id": 233,
             "label": "Testing Protocols",
-            "group": "best-practices"
+            "group": 12
         },
         {
             "id": 234,
             "label": "Quality Assurance",
-            "group": "best-practices"
+            "group": 12
         },
         {
             "id": 235,
             "label": "Regulatory Compliance",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 236,
             "label": "Industry Standards",
-            "group": "reg"
+            "group": 10
         },
         {
             "id": 237,
             "label": "Best Practices",
-            "group": "best-practices"
+            "group": 12
         },
         {
             "id": 238,
@@ -1193,7 +1193,7 @@
         {
             "id": 239,
             "label": "Benchmarking Studies",
-            "group": "bench"
+            "group": 9
         },
         {
             "id": 240,
@@ -1213,7 +1213,7 @@
         {
             "id": 243,
             "label": "Cost-Benefit Analysis",
-            "group": "best-practices"
+            "group": 9
         },
         {
             "id": 244,
@@ -1238,7 +1238,7 @@
         {
             "id": 248,
             "label": "Innovation Strategy",
-            "group": "goal"
+            "group": 8
         },
         {
             "id": 249,
@@ -1248,12 +1248,7 @@
         {
             "id": 250,
             "label": "Future Readiness",
-            "group": "goal"
-        },
-        {
-            "id": 251,
-            "label": "Moore's Law",
-            "group": "hist"
+            "group": 8
         }
     ],
     "edges": [
@@ -3724,10 +3719,6 @@
         {
             "from": 250,
             "to": 249
-        },
-        {
-            "from": 251,
-            "to": 2
         }
     ]
 }
