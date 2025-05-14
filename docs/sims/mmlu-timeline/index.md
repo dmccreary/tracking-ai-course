@@ -8,7 +8,7 @@ hide:
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/deep-learning-course/sims/NAM/main.html"  height="550px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="550px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
