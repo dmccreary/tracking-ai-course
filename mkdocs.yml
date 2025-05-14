@@ -34,6 +34,8 @@ nav:
     - MMLU Timeline: sims/mmlu-timeline/index.md
     - LM Arena Timeline: sims/lm-arena-timeline/index.md
     - Learning Graph: sims/learning-graph/index.md
+    - Porter's Five Forces Model: sims/porters-five-forces/index.md
+
     - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
     - Tokenizer: sims/tokenizer/index.md

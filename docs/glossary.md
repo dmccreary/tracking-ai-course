@@ -572,6 +572,9 @@ The phenomenon where artificial intelligence systems generate content that appea
 
 **Example:** The AI literacy curriculum teaches students to recognize potential hallucination in LLM outputs by looking for vague attributions, overconfident statements about obscure topics, and contradictions.
 
+#### Healthbench
+
+
 #### Human-AI Collaboration
 The cooperative relationship between people and artificial intelligence systems where each contributes complementary strengths to achieve outcomes better than either could accomplish alone.
 
