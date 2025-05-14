@@ -10,7 +10,7 @@ The pace of change was accelerating so rapidly that many leaders felt overwhelme
 
 ## Why Understanding Growth Patterns Matters
 
-The visualization of Moore's Law that I developed (as seen in the course materials) serves as a powerful reminder that exponential growth is fundamentally different from the linear growth patterns humans naturally understand. While we intuitively grasp linear growth—adding the same amount each time period—exponential growth creates dramatic, often surprising changes as each period multiplies the previous value.
+The visualization of [Moore's Law](./glossary.md#moores-law) that I developed (as seen in the course materials) serves as a powerful reminder that exponential growth is fundamentally different from the linear growth patterns humans naturally understand. While we intuitively grasp linear growth—adding the same amount each time period—exponential growth creates dramatic, often surprising changes as each period multiplies the previous value.
 
 I've observed that this cognitive bias toward linear thinking creates significant strategic blind spots:
 

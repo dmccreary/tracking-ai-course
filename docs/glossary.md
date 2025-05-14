@@ -792,6 +792,8 @@ An observation that the number of transistors in integrated circuits doubles app
 
 **Example:** The course examines how Moore's Law has influenced AI development, enabling increasingly complex neural networks as computational power has grown exponentially.
 
+[See Moore's Law MicroSim](./sims/moores-law/index.md)
+
 #### Multi-Agent Systems
 Computational frameworks where multiple artificial intelligence entities interact, cooperate, or compete to solve problems or perform tasks that may be beyond the capabilities of individual agents.
 
@@ -806,6 +808,17 @@ Artificial intelligence systems capable of processing, understanding, and genera
 The ability of artificial intelligence systems to comprehend, interpret, and reason about information presented in different formats or sensory channels simultaneously.
 
 **Example:** Advanced multimodal understanding allows the educational platform to analyze student sketches alongside written explanations to identify conceptual misunderstandings in physics problems.
+
+#### MMLU Benchmark
+
+The **MMLU (Massive Multitask Language Understanding)** benchmark is a database of around 16,000 multiple choice questions used
+to benchmark the quality of a large-language model (LLM).  
+
+MMLU currently the **most referenced** and **most reputable** benchmark for evaluating the general intelligence of large language models (LLMs), regardless of size.
+
+See also:
+* [MMLU Chapter](./chapters/mmlu/index.md)
+* [MMLU MicroSim](./sims/mmlu-timeline/index.md)
 
 #### Narrow AI
 Artificial intelligence systems designed to perform specific tasks or solve particular problems within well-defined constraints, as opposed to general intelligence capable of handling diverse challenges.
