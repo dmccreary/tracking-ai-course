@@ -4,6 +4,9 @@ Although models like the MMLU are useful, they can be biased toward models
 that specifically train on their sample questions.  Ideally we would have
 an objective testing that would not be easy for a model to trick.
 
+<iframe src="../../sims/lm-arena-timeline/main.html" height="450px" scrolling="no"
+  style="overflow: hidden;"></iframe>
+
 ## The Bradley-Terry Model and Its Use in LMArena
 
 The Bradley-Terry model is a statistical method used for ranking items based on pairwise comparisons. When applied to LMArena (also known as Chatbot Arena), it serves as the foundation for evaluating and ranking large language models (LLMs) through human preferences.

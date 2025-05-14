@@ -2,6 +2,9 @@
 
 The **MMLU (Massive Multitask Language Understanding)** benchmark is currently the **most referenced** and **most reputable** benchmark for evaluating the general intelligence of large language models (LLMs), regardless of size.
 
+<iframe src="../../sims/mmlu-timeline/main.html" height="550px" scrolling="no"
+  style="overflow: hidden;"></iframe>
+
 ## About the MMLU
 
 The MMLU rating consists of 16,000 multiple-choice questions across 57 academic subjects.  Questions are given to a LLM in the form of text.  The LLM must return the correct answer to get a point.
