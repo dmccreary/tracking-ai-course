@@ -87,7 +87,7 @@ function updateCanvasSize() {
 
 // Main draw function
 function draw() {
-  background(255);
+  background('aliceblue');
   
   // Draw title and description
   fill(0);

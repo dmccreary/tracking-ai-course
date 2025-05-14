@@ -12,9 +12,6 @@ hide:
   style="overflow: hidden;"></iframe>
 ```
 
-[Run the MicroSim](./main.html){ .md-button .md-button--primary }
+[Run the Moore's Law MicroSim](./main.html){ .md-button .md-button--primary }
 
-[Edit the MicroSim]()
-
-
-[Run Moore's Law](main.html)
+[Edit the Moore's Law MicroSim](https://editor.p5js.org/dmccreary/sketches/gYNlH9dHu)
