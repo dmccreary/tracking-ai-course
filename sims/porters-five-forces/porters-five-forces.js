@@ -67,7 +67,7 @@ function updateLayout() {
         "https://en.wikipedia.org/wiki/Porter%27s_five_forces#Threat_of_substitute_products_or_services"
     },
     {
-      label: "Rivalry Among\nCompetitors",
+      label: "Competitive\nRivalry",
       description:
         "The degree of competition among existing firms, influencing pricing, advertising, and product development.",
       url:
