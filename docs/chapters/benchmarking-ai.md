@@ -143,6 +143,7 @@ Not all capabilities can be measured through automated metrics. For tasks like s
 ### General Knowledge and Reasoning
 
 1. **MMLU (Massive Multitask Language Understanding)**
+
    - Tests knowledge across 57 subjects including STEM, humanities, social sciences
    - Measures both breadth and depth of knowledge
    - Human expert performance: ~90%
