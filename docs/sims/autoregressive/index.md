@@ -1,4 +1,23 @@
-# Autoregressive Animation
+---
+hide:
+  - toc
+---
+# Autoregressive MicroSim
+
+<iframe src="./main.html" height="450px" scrolling="no"
+  style="overflow: hidden;"></iframe>
+
+```html
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/autoregressive/main.html"  height="450px" scrolling="no"
+  style="overflow: hidden;"></iframe>
+```
+
+[Run the MicroSim](./main.html){ .md-button .md-button--primary }
+
+[Edit the MicroSim]()
+
+
+
 
 !!! prompt
     Please create a new MicroSim that simulates the prediction of the next token from a sequence of words using a neural network.  The simulation works in phases, with five steps per phase.
