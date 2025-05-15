@@ -1,4 +1,4 @@
-// Autoregressive Animation MicroSim
+// Autoregressive Animation MicroSim with Sliding Window
 // Canvas dimensions
 let canvasWidth = 500;
 let drawHeight = 550;
@@ -30,9 +30,14 @@ let leftMargin = 100;
 let activeArrows = [];
 let animatingNode = null;
 let animationProgress = 0;
-// horizontal space between circles - chance upon resize
-// should be (canvasWidth - laeftMargin - margin) / 20
+// horizontal space between circles - changes upon resize
 let xSpace = 22;
+// Context window size
+let contextWindowSize = 16;
+// Maximum number of nodes per layer
+let maxNodes = 25;
+// Define layers at the global scope
+let layers = [];
 
 function setup() {
   // Create a canvas to match the parent container's size
@@ -56,7 +61,7 @@ function setup() {
   
   initializeLayers();
   
-  describe('Autoregressive neural network animation showing token prediction process with hidden layers', LABEL);
+  describe('Autoregressive neural network animation showing token prediction process with hidden layers and a sliding context window', LABEL);
 }
 
 function draw() {
@@ -82,6 +87,9 @@ function draw() {
   
   // Draw neural network
   drawNeuralNetwork();
+  
+  // Draw sliding window around context
+  drawContextWindow();
   
   // Draw active arrows
   drawArrows();
@@ -111,7 +119,7 @@ function draw() {
   textSize(defaultTextSize);
   textAlign(CENTER, CENTER);
   text(`Token: ${phase + 1}/${maxPhases} | Layer: ${step + 1}/${maxSteps}`, canvasWidth/2, drawHeight - 55);
-  text(`Input tokens: ${phase + 1}-${phase + 16} | Output Token: ${phase + 17}`, canvasWidth/2, drawHeight - 25);
+  text(`Input tokens: ${phase + 1}-${phase + contextWindowSize} | Predicting Token: ${phase + contextWindowSize + 1}`, canvasWidth/2, drawHeight - 25);
 }
 
 // place circles on canvas
@@ -121,15 +129,16 @@ function initializeLayers() {
   let nodeColors = ['#FFA07A', 'silver', 'silver', 'silver', '#ADD8E6'];
   let layerNames = ['Output:', 'Hidden 3:', 'Hidden 2:', 'Hidden 1:', 'Input:'];
 
-  // xSpace is space between circles
+  // Create nodes for each layer
   for (let i = 0; i < 5; i++) {
     let row = [];
-    for (let j = 0; j < xSpace; j++) {
+    // Create more nodes than we need to allow sliding
+    for (let j = 0; j < maxNodes; j++) {
       row.push({
         x: leftMargin + 20 + j * xSpace,
         y: yPositions[i],
         color: nodeColors[i],
-        active: (i === 4 && j >= phase && j < 16 + phase) // Input layer active for context window
+        active: (i === 4 && j >= phase && j < contextWindowSize + phase) // Input layer active for context window
       });
     }
     layers.push({
@@ -141,19 +150,59 @@ function initializeLayers() {
 
 // Draw the layer labels in the left side margin
 function drawLabels() {
+  if (!layers || layers.length === 0) return;
+  
   fill('black');
   textSize(16);
   textAlign(RIGHT, CENTER);
   noStroke();
   for (let i = 0; i < layers.length; i++) {
-    text(layers[i].name, leftMargin - 10, layers[i].nodes[0].y);
+    if (layers[i] && layers[i].nodes && layers[i].nodes.length > 0) {
+      text(layers[i].name, leftMargin - 10, layers[i].nodes[0].y);
+    }
+  }
+}
+
+function drawContextWindow() {
+  if (!layers || layers.length < 5 || !layers[4].nodes) return;
+  
+  // Make sure we don't exceed array bounds
+  let startIdx = Math.min(phase, maxNodes - contextWindowSize);
+  let endIdx = Math.min(startIdx + contextWindowSize - 1, maxNodes - 1);
+  
+  if (startIdx >= 0 && startIdx < layers[4].nodes.length && 
+      endIdx >= 0 && endIdx < layers[4].nodes.length) {
+    
+    // Draw a rectangle around the active context window in the input layer
+    noFill();
+    stroke('blue');
+    strokeWeight(2);
+    
+    let startX = layers[4].nodes[startIdx].x - nodeRadius - 5;
+    let endX = layers[4].nodes[endIdx].x + nodeRadius + 5;
+    let windowWidth = endX - startX;
+    
+    rect(startX, layers[4].nodes[0].y - nodeRadius - 5, 
+         windowWidth, nodeRadius * 2 + 10, 5);
+         
+    // Label the context window
+    fill('blue');
+    textSize(12);
+    noStroke();
+    textAlign(CENTER, BOTTOM);
+    text("Context Window", startX + windowWidth/2, layers[4].nodes[0].y - nodeRadius - 8);
   }
 }
 
 function drawNeuralNetwork() {
+  if (!layers) return;
+  
   for (let i = 0; i < layers.length; i++) {
+    if (!layers[i] || !layers[i].nodes) continue;
+    
     for (let j = 0; j < layers[i].nodes.length; j++) {
       let node = layers[i].nodes[j];
+      if (!node) continue;
       
       // Draw node
       stroke('black');
@@ -171,13 +220,14 @@ function drawNeuralNetwork() {
   }
 }
 
-// TODO: make these more random
 function drawArrows() {
   stroke('green');
   strokeWeight(2);
   noFill();
   
   for (let arrow of activeArrows) {
+    if (!arrow || !arrow.fromX || !arrow.toX) continue;
+    
     beginShape();
     vertex(arrow.fromX, arrow.fromY);
     
@@ -214,85 +264,117 @@ function executeStep() {
     activeArrows = [];
   }
   
-  switch(step) {
-    case 1:
-      // Step 1: Draw 16 arrows from input to first hidden layer
-      for (let i = 0; i < 16; i++) {
-        let fromIdx = phase + i; // Correctly shift input by phase
-        let fromNode = layers[4].nodes[fromIdx];
-        // change 4 to a random number
-        let toIdx = Math.floor(i / 2) + 4 + int(random(3));
-        let toNode = layers[3].nodes[toIdx];
-        activeArrows.push({
-          fromX: fromNode.x,
-          fromY: fromNode.y,
-          toX: toNode.x,
-          toY: toNode.y
-        });
-      }
-      break;
-      
-    case 2:
-      // Step 2: Draw 8 arrows from first hidden to second hidden layer
-      for (let i = 0; i < 8; i++) {
-        let fromNode = layers[3].nodes[i];
-        // let toIdx = i + 5; // Shift right
-        let toIdx = Math.floor(i / 2) + 4 + int(random(3));
-        let toNode = layers[2].nodes[toIdx];
-        activeArrows.push({
-          fromX: fromNode.x,
-          fromY: fromNode.y,
-          toX: toNode.x,
-          toY: toNode.y
-        });
-      }
-      break;
-      
-    case 3:
-      // Step 3: Draw 4 arrows from second hidden to third hidden layer
-      for (let i = 0; i < 4; i++) {
-        let fromNode = layers[2].nodes[i + 1];
-        let toIdx = i + 8;
-        let toNode = layers[1].nodes[toIdx];
-        activeArrows.push({
-          fromX: fromNode.x,
-          fromY: fromNode.y,
-          toX: toNode.x,
-          toY: toNode.y
-        });
-      }
-      break;
-      
-    case 4:
-      // Step 4: Draw 2 arrows from third hidden to output layer
-      for (let i = 0; i < 2; i++) {
-        let fromNode = layers[1].nodes[i + 1];
-        let outputIdx = 16 + phase;
-        let toNode = layers[0].nodes[outputIdx];
-        activeArrows.push({
-          fromX: fromNode.x,
-          fromY: fromNode.y,
-          toX: toNode.x,
-          toY: toNode.y
-        });
-      }
-      break;
-      
-    case 5:
-      // Step 5: Activate output node and prepare for animation
-      let outputIdx = 16 + phase;
-      if (outputIdx < 20) {
-        layers[0].nodes[outputIdx].active = true;
-        animatingNode = {
-          fromX: layers[0].nodes[outputIdx].x,
-          fromY: layers[0].nodes[outputIdx].y,
-          toX: layers[4].nodes[outputIdx].x,
-          toY: layers[4].nodes[outputIdx].y,
-          toIdx: outputIdx
-        };
-        animationProgress = 0;
-      }
-      break;
+  try {
+    switch(step) {
+      case 1:
+        // Step 1: Draw arrows from input to first hidden layer with randomization
+        for (let i = 0; i < contextWindowSize; i++) {
+          let fromIdx = Math.min(phase + i, maxNodes - 1); // Context window start + offset
+          if (fromIdx >= layers[4].nodes.length) continue;
+          
+          let fromNode = layers[4].nodes[fromIdx];
+          
+          // Randomize destination with +/- 3 variation
+          let baseToIdx = Math.floor(i / 2) + 2;
+          let toIdx = baseToIdx + Math.floor(random(-3, 4)); // floor to get integer
+          toIdx = constrain(toIdx, 0, maxNodes - 1); // Keep within reasonable bounds
+          
+          if (toIdx >= layers[3].nodes.length) continue;
+          let toNode = layers[3].nodes[toIdx];
+          
+          activeArrows.push({
+            fromX: fromNode.x,
+            fromY: fromNode.y,
+            toX: toNode.x,
+            toY: toNode.y
+          });
+        }
+        break;
+        
+      case 2:
+        // Step 2: Draw arrows from first hidden to second hidden layer with randomization
+        for (let i = 0; i < 10; i++) {
+          if (i >= layers[3].nodes.length) continue;
+          let fromNode = layers[3].nodes[i];
+          
+          // Randomize destination with +/- 3 variation
+          let baseToIdx = Math.floor(i / 2) + 2;
+          let toIdx = baseToIdx + Math.floor(random(-3, 4));
+          toIdx = constrain(toIdx, 0, maxNodes - 1);
+          
+          if (toIdx >= layers[2].nodes.length) continue;
+          let toNode = layers[2].nodes[toIdx];
+          
+          activeArrows.push({
+            fromX: fromNode.x,
+            fromY: fromNode.y,
+            toX: toNode.x,
+            toY: toNode.y
+          });
+        }
+        break;
+        
+      case 3:
+        // Step 3: Draw arrows from second hidden to third hidden layer with randomization
+        for (let i = 0; i < 8; i++) {
+          if (i >= layers[2].nodes.length) continue;
+          let fromNode = layers[2].nodes[i];
+          
+          // Randomize destination with +/- 3 variation
+          let baseToIdx = Math.floor(i / 2) + 2;
+          let toIdx = baseToIdx + Math.floor(random(-3, 4));
+          toIdx = constrain(toIdx, 0, maxNodes - 1);
+          
+          if (toIdx >= layers[1].nodes.length) continue;
+          let toNode = layers[1].nodes[toIdx];
+          
+          activeArrows.push({
+            fromX: fromNode.x,
+            fromY: fromNode.y,
+            toX: toNode.x,
+            toY: toNode.y
+          });
+        }
+        break;
+        
+      case 4:
+        // Step 4: Draw arrows from third hidden to output layer with randomization to the next token
+        for (let i = 0; i < 4; i++) {
+          if (i >= layers[1].nodes.length) continue;
+          let fromNode = layers[1].nodes[i];
+          
+          let outputIdx = Math.min(contextWindowSize + phase, maxNodes - 1); // Next token to predict
+          if (outputIdx >= layers[0].nodes.length) continue;
+          
+          let toNode = layers[0].nodes[outputIdx];
+          activeArrows.push({
+            fromX: fromNode.x,
+            fromY: fromNode.y,
+            toX: toNode.x,
+            toY: toNode.y
+          });
+        }
+        break;
+        
+      case 5:
+        // Step 5: Activate output node and prepare for animation
+        let outputIdx = Math.min(contextWindowSize + phase, maxNodes - 1);
+        if (outputIdx < maxNodes && outputIdx < layers[0].nodes.length && outputIdx < layers[4].nodes.length) {
+          layers[0].nodes[outputIdx].active = true;
+          animatingNode = {
+            fromX: layers[0].nodes[outputIdx].x,
+            fromY: layers[0].nodes[outputIdx].y,
+            toX: layers[4].nodes[outputIdx].x,
+            toY: layers[4].nodes[outputIdx].y,
+            toIdx: outputIdx
+          };
+          animationProgress = 0;
+        }
+        break;
+    }
+  } catch (error) {
+    console.error("Error in executeStep:", error);
+    step = maxSteps; // Skip to end of sequence if error occurs
   }
   
   if (step >= maxSteps) {
@@ -307,13 +389,16 @@ function executeStep() {
   }
 }
 
-// bugs here
 function animateMovingNode() {
-  animationProgress += 0.02; // Slowed down 2.5x
+  if (!animatingNode) return;
+  
+  animationProgress += 0.02; // Slowed down for better visibility
   
   if (animationProgress >= 1) {
     // Animation complete
-    layers[4].nodes[animatingNode.toIdx].active = true;
+    if (animatingNode.toIdx < layers[4].nodes.length) {
+      layers[4].nodes[animatingNode.toIdx].active = true;
+    }
     animatingNode = null;
     
     // Clear arrows for next phase and update network
@@ -332,16 +417,21 @@ function animateMovingNode() {
 }
 
 function updateNetworkForNextPhase() {
-  // Shift context window
-  for (let i = 0; i < 5; i++) {
-    for (let j = 0; j < 20; j++) {
+  // Reset all nodes
+  for (let i = 0; i < layers.length; i++) {
+    for (let j = 0; j < layers[i].nodes.length; j++) {
       layers[i].nodes[j].active = false;
     }
   }
   
-  // Activate new context window, ensuring we don't exceed array bounds
-  for (let j = phase; j < 16 + phase && j < 20; j++) {
-    layers[4].nodes[j].active = true;
+  // Activate new context window nodes in input layer
+  let startIdx = Math.min(phase, maxNodes - contextWindowSize);
+  let endIdx = Math.min(startIdx + contextWindowSize, maxNodes);
+  
+  for (let j = startIdx; j < endIdx; j++) {
+    if (j < layers[4].nodes.length) {
+      layers[4].nodes[j].active = true;
+    }
   }
 }
 
@@ -374,6 +464,13 @@ function resetAnimation() {
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
+  
+  // Move buttons to correct positions
+  nextButton.position(margin, drawHeight + 15);
+  stepButton.position(margin + 80, drawHeight + 15);
+  resetButton.position(margin + 160, drawHeight + 15);
+  
+  // Redraw the canvas
   redraw();
 }
 
@@ -381,9 +478,9 @@ function updateCanvasSize() {
   const container = document.querySelector('main').getBoundingClientRect();
   containerWidth = Math.floor(container.width);
   canvasWidth = containerWidth;
-  // change spacing on resize
-  xSpace = (canvasWidth - leftMargin) / 24;
+  // Update spacing based on new width
+  xSpace = Math.max(10, (canvasWidth - leftMargin - 60) / 24);
+  
+  // Reinitialize with new spacing
   initializeLayers();
-  // resetAnimation();
-  // console.log(xSpace);
 }
