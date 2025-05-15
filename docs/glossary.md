@@ -739,7 +739,7 @@ The efficiency, effectiveness, and output quality of employees whose primary rol
 
 An artificial intelligence system trained on vast text datasets using deep learning techniques to recognize, summarize, translate, predict, and generate human-like text based on contextual patterns.
 
-**Example:** The [MMUL timeline](./sims/mmlu-timeline/) shows how large language models evolved from specialized research tools to widely accessible applications between 2018 and 2023.
+**Example:** The [MMUL timeline](./sims/mmlu-timeline/index.md) shows how large language models evolved from specialized research tools to widely accessible applications between 2018 and 2023.
 
 #### Learning Acceleration
 The process of increasing the rate at which individuals acquire knowledge, develop skills, or achieve educational objectives through targeted interventions or technologies.
