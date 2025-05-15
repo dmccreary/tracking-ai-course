@@ -47,7 +47,6 @@ nav:
     - Concept Dependency: prompts/04-concept-dependencies.md
     - Concept Taxonomy: prompts/05-taxonomy-concept.md
     - Glossary: prompts/06-glossary.md
-  - Checklist: checklist.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md

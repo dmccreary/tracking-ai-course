@@ -1,17 +1,5 @@
 # Glossary of Terms
 
-#### ISO Definition
-
-A term definition is considered to be consistent with ISO metadata registry guideline 11179 if it meets the following criteria:
-
-1. Precise
-2. Concise
-3. Distinct
-4. Non-circular
-5. Unencumbered with business rules
-
-# Glossary of Terms
-
 #### Academic Integrity
 The adherence to ethical principles and standards in academic work, research, and scholarship, including the avoidance of plagiarism, fabrication, and falsification.
 
@@ -574,6 +562,9 @@ The phenomenon where artificial intelligence systems generate content that appea
 
 #### Healthbench
 
+A healthcare benchmark created by OpenAi in 2025 with the goal to measure the effectiveness of large-language models in answering complex healthcare questions.
+
+* See our content on [HealthBench](./chapters/healthbench/index.md)
 
 #### Human-AI Collaboration
 The cooperative relationship between people and artificial intelligence systems where each contributes complementary strengths to achieve outcomes better than either could accomplish alone.
@@ -649,6 +640,19 @@ The collective knowledge, experiences, procedures, and history preserved within 
 Legal rights that result from intellectual activity in industrial, scientific, literary, and artistic fields, including patents, trademarks, copyrights, and trade secrets.
 
 **Example:** The course examines evolving intellectual property frameworks for AI-generated content, comparing approaches across different legal jurisdictions.
+
+#### ISO Data Element Definition
+
+A term definition is considered to be consistent with ISO metadata registry guideline 11179 if it meets the following criteria:
+
+1. Precise
+2. Concise
+3. Distinct
+4. Non-circular
+5. Unencumbered with business rules
+
+Our generative AI systems are trained to create
+these types of definitions for our glossary of terms.
 
 #### Iterative Development
 A methodology that involves repeated cycles of planning, creating, testing, and evaluating, with each iteration building upon and refining the results of previous cycles.
