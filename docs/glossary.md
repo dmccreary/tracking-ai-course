@@ -210,6 +210,11 @@ Technologies that can operate and make decisions independently with minimal huma
 
 **Example:** The discussion of autonomous systems examines the continuum from simple rule-following automation to advanced systems capable of adapting to novel situations.
 
+#### Autoregressive
+A mathematical or computational model in which the current value or token in a sequence is predicted using a function of previous values or tokens in that same sequence.
+
+See also [Autoregressive MicroSim](./sims/autoregressive/index.md)
+
 #### BERT (Bidirectional Encoder Representations from Transformers)
 A natural language processing model developed by Google that introduced bidirectional training to better understand context in language by considering words both before and after a given word.
 

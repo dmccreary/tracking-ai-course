@@ -4,17 +4,18 @@ hide:
 ---
 # Autoregressive MicroSim
 
-<iframe src="./main.html" height="450px" scrolling="no"
-  style="overflow: hidden;"></iframe>
+![](auturegressive.gif)
+
+<iframe src="./main.html" height="600px" scrolling="no" style="overflow: hidden;"></iframe>
 
 ```html
 <iframe src="https://dmccreary.github.io/tracking-ai-course/sims/autoregressive/main.html"  height="450px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
-[Run the MicroSim](./main.html){ .md-button .md-button--primary }
+[Run the Autoregressive MicroSim](./main.html){ .md-button .md-button--primary }
 
-[Edit the MicroSim]()
+[Edit the Autoregressive MicroSim](https://editor.p5js.org/dmccreary/sketches/mO1bzngBS)
 
 
 
@@ -51,3 +52,10 @@ hide:
     Repeat this animation three times shifting to the right one column each time.
     
     Add buttons for Start/Stop and Reset in the control area at the bottom of the animation.
+
+  ## References
+
+  This MicroSim was inspired by the GIF above in the following
+  article:
+
+  [Autoregressive (AR) Language Modeling](https://tonyjesuthasan.medium.com/autoregressive-ar-language-modelling-c9fe5c20aa6e) on Medium.com by Tony Jesuthasan published on Jul 31, 2021
