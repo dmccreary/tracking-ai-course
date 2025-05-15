@@ -525,6 +525,12 @@ The process of further training a pre-trained AI model on a specific dataset to 
 
 **Example:** The university fine-tuned a general-purpose language model on their curriculum materials and institutional policies to create a more relevant student support assistant.
 
+#### Frozen in Time
+
+The cut-off date of a [Large Language Model's](#large-language-model) (LLM) training data, beyond which the model has no direct knowledge of events, developments, or information.
+
+This critical concept represents a fundamental limitation of LLMs, as they cannot naturally "know" anything that occurred after their knowledge cutoff date without being provided that information through additional context or tool use.  Because creating a LLM can cost hundreds of millions of dollars the frequency of updates is often measured in years.
+
 #### Future of Work
 The study and anticipation of how employment, job roles, workforce composition, and workplace environments may evolve due to technological, economic, and social changes.
 
@@ -729,10 +735,11 @@ The efficiency, effectiveness, and output quality of employees whose primary rol
 
 **Example:** The research study measured knowledge worker productivity improvements after AI implementation, finding the greatest gains in tasks involving information synthesis and routine content creation.
 
-#### Large Language Models
-Artificial intelligence systems trained on vast text datasets using deep learning techniques to recognize, summarize, translate, predict, and generate human-like text based on contextual patterns.
+#### Large Language Model
 
-**Example:** The timeline visualization shows how large language models evolved from specialized research tools to widely accessible applications between 2018 and 2023.
+An artificial intelligence system trained on vast text datasets using deep learning techniques to recognize, summarize, translate, predict, and generate human-like text based on contextual patterns.
+
+**Example:** The [MMUL timeline](./sims/mmlu-timeline/) shows how large language models evolved from specialized research tools to widely accessible applications between 2018 and 2023.
 
 #### Learning Acceleration
 The process of increasing the rate at which individuals acquire knowledge, develop skills, or achieve educational objectives through targeted interventions or technologies.
@@ -752,7 +759,7 @@ Artificial intelligence systems designed to run on user devices without requirin
 #### Logic and Reasoning Benchmarks
 Standardized tests designed to evaluate the ability of artificial intelligence systems to apply logical operations, deductive reasoning, and problem-solving approaches across various domains.
 
-**Example:** Performance on logic and reasoning benchmarks like GSM8K has improved dramatically since 2022, with top models now achieving over 90% accuracy on problems requiring multi-step mathematical reasoning.
+**Example:** Performance on elogic and reasoning benchmarks like GSM8K has improved dramatically since 2022, with top models now achieving over 90% accuracy on problems requiring multi-step mathematical reasoning.
 
 #### Machine Learning
 A subset of artificial intelligence that enables computer systems to automatically learn and improve from experience without being explicitly programmed, by identifying patterns in data.
