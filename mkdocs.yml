@@ -20,10 +20,14 @@ nav:
     - Objective LLMs for The Classroom: chapters/objective-llm-quality.md
     - AGI Predicted Dates: chapters/agi-predicted-dates.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
+    - Porter's Five Forces Model: chapters/porters-five-forces/index.md
+
   - Stories:
     - Intro: stories/index.md
     - AI Winters: stories/ai-winters/index.md
+    - Alexnet: stories/alexnet/index.md
     - Yann LeCun: stories/yann-lecun/index.md
+  
   - MicroSims:
     - Intro: sims/index.md
     - Four AI Futures: sims/four-futures/index.md
@@ -34,9 +38,9 @@ nav:
     - MMLU Timeline: sims/mmlu-timeline/index.md
     - LM Arena Timeline: sims/lm-arena-timeline/index.md
     - Learning Graph: sims/learning-graph/index.md
-    - Porter's Five Forces Model: chapters/porters-five-forces/index.md
     - Book Generation Workflow: sims/book-gen-workflow/index.md
     - Book Levels: sims/book-levels/index.md
+    - Porter's Five Forces: sims/porters-five-forces/index.md
     - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
     - Tokenizer: sims/tokenizer/index.md
