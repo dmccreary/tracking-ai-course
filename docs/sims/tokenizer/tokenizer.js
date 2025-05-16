@@ -1,4 +1,7 @@
-// p5.js sketch to demonstrate LLM tokenization with more realistic ID simulation
+// p5.js sketch to demonstrate LLM tokenization with more realistic token ID 
+// simulation
+// This MicroSim was inspired by the tokenizer demo from the OpenAI site
+// https://platform.openai.com/tokenizer
 
 // Global variables for UI elements
 let inputLabel, inputTextArea;

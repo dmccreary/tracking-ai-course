@@ -1,8 +1,9 @@
 ---
+og:image /tracking-ai-course/sims/moores-law/moores-law.png
 hide:
   - toc
 ---
-# Moore's Law
+# Moore's Law Infographic MicroSim
 
 <iframe src="./main.html" height="600px" scrolling="no"
   style="overflow: hidden;"></iframe>

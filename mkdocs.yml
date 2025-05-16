@@ -84,6 +84,7 @@ theme:
 plugins:
   - search
   - social
+  - social_override
 markdown_extensions:
   - admonition
   - pymdownx.details

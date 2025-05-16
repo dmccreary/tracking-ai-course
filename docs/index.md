@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Tracking Artificial Intelligence
 ![](./img/cover.png)
 <!--
