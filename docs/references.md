@@ -1,8 +1,10 @@
-# References
+# Tracking AI References
 
 [Powerful A.I. Is Coming. We’re Not Ready.](https://www.nytimes.com/2025/03/14/technology/why-im-feeling-the-agi.html) - New York Times - March 14, 2025 - By Kevin Roose - Three arguments for taking progress toward artificial general intelligence, or A.G.I., more seriously — whether you’re an optimist or a pessimist.
 
-Site References
+[Situational Awareness AI Website](https://situational-awareness.ai/from-gpt-4-to-agi/)
+
+## Site Building Toos References
 
 1. **mkdocs** - [https://www.mkdocs.org/](https://www.mkdocs.org/) - this is our tool for building the website.  It converts Markdown into HTML in the ```site``` directory.
 2. **mkdocs material theme** - [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/) - this is the theme for our site.  The theme adds the user interface elements that give our site the look and feel.  It also has the features such as social cards.
