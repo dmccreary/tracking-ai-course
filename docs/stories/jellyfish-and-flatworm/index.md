@@ -2,7 +2,9 @@
 # The Jellyfish and the Flatworm: A Story of Evolution
 
 
-## The Jellyfish
+Approximately 600 million years ago, two very different evolutionary paths emerged in the animal kingdom. These divergent paths offer profound insights not just about biological evolution, but about organizational intelligence and AI strategy in our modern world.
+This story is a model for how organizational intelligence is evolving.
+
 ![](01-jellyfish.png)
 <details>
     <summary>Image Prompt</summary>
@@ -10,7 +12,10 @@ Please generate colorful a wide-landscape drawing as though it might appear in a
 The image is an underwater drawing of purple and pink jellyfish floating in the open ocean.  The water is a deep blue color.  The jellyfish glow with brilliance.  There are various sizes of jellyfish floating at different depths.
 </details>
 
-Approximately 600 million years ago, two very different evolutionary paths emerged in the animal kingdom. These divergent paths offer profound insights not just about biological evolution, but about organizational intelligence and AI strategy in our modern world.
+The jellyfish represents one of Earth's earliest evolutionary strategies for survival. These elegant creatures drift through the open ocean, a relatively simple environment with few structural barriers. They possess a decentralized nervous system that requires minimal energy to operate - a perfect adaptation for their lifestyle.
+
+
+
 
 ![](02-tenticles.png)
 <details>
@@ -20,13 +25,11 @@ Please generate a colorful a wide-landscape drawing as though it might appear in
 The image must have a consistent style of an underwater drawing of purple and pink jellyfish floating in the open ocean.  The water is a deep blue color.  The jellyfish glow with brilliance.  There are various sizes of jellyfish floating at different depths, but you focus on one big jellyfish in the center of the image.  In this image, a bright yellow fish is caught in the tentacles of the cental jellyfish.
 </details>
 
-The jellyfish represents one of Earth's earliest evolutionary strategies for survival. These elegant creatures drift through the open ocean, a relatively simple environment with few structural barriers. They possess a decentralized nervous system that requires minimal energy to operate - a perfect adaptation for their lifestyle.
 Jellyfish don't actively hunt. Instead, they float passively through the waters, using simple rules to navigate toward food-rich areas and away from predators. Their tentacles wait for prey to drift into them - no complex decision-making required.
 
-Their survival strategy is beautifully efficient. By avoiding the energy cost of a centralized brain, jellyfish can thrive in nutrient-poor environments. When a small fish becomes entangled in their tentacles, they can feed without needing to plan, strategize, or remember complex patterns.
+The survival strategy of the Jellyfish is beautifully efficient. By avoiding the energy cost of a centralized brain, jellyfish can thrive in nutrient-poor environments. When a small fish becomes entangled in their tentacles, they can feed without needing to plan, strategize, or remember complex patterns.
 
-This decentralized, rule-based approach to intelligence was perfectly adequate for the jellyfish's environmental niche. But not all environments remained so simple.
-
+This simple, rule-based approach to intelligence was perfectly adequate for the jellyfish's environmental niche. But not all environments remained so simple.
 
 ## The Flatworm
 
@@ -40,7 +43,7 @@ Please generate a colorful a wide-landscape drawing as though it might appear in
 In this drawing, we see a colorful flatworm crawling along the bottom of the ocean.  The environment is complex with different slopes and rocks. It full of colorful life like coral, amoeba, and seaweed and with several paths around the terrain.
 </details>
 
-n the complex ocean floor, a different evolutionary strategy emerged. Flatworms were among the first animals to develop a centralized nervous system - a proto-brain that could process and integrate information from multiple sensory inputs.
+On the complex ocean floor, a different evolutionary strategy emerged. Flatworms were among the first animals to develop a centralized nervous system - a proto-brain that could process and integrate information from multiple sensory inputs.
 Unlike the drifting jellyfish, flatworms actively navigate through a structured environment filled with obstacles, hiding places, and varying terrain. This locomotion presented new challenges that required new solutions.
 
 ![](04-flatworm-reading-a-map.png)
@@ -48,8 +51,10 @@ Unlike the drifting jellyfish, flatworms actively navigate through a structured 
     <summary>Image Prompt</summary>
     Generate an image of the flatworm reading a map on the ocean floor.
 </details>
+
 Flatworms needed to understand the structure of their environment and remember it. They evolved what we might consider the earliest "world models" - internal representations of their surroundings that helped them locate prey, avoid predators, and navigate complex terrain.
-These internal maps provided a competitive advantage. A flatworm with a more accurate model of its environment would find more food, avoid more dangers, and ultimately produce more offspring than its less perceptive relatives.
+
+These internal representations of their world were like maps.  And these maps provided a competitive advantage. A flatworm with a more accurate model of its environment would find more food, avoid more dangers, and ultimately produce more offspring than its less perceptive relatives.
 
 ## The Jellyfish and the Flatworm
 
@@ -60,10 +65,13 @@ These internal maps provided a competitive advantage. A flatworm with a more acc
 <details>
 
 The fundamental difference between these two evolutionary approaches comes down to environmental complexity and movement.
-Jellyfish thrive in open waters where simple rules suffice. Their decentralized nervous system is energy-efficient but limited in capability. They react to their environment but don't need to model it.
 
-Flatworms, navigating the complex topography of the ocean floor, evolved centralized processing and environmental modeling. They needed to understand the structure around them and predict how their movements would interact with that structure.
+Jellyfish thrive in open waters where simple rules suffice. Their simple nervous system of about 8,000 neurons is energy-efficient but limited in capability. They react to their environment but don't need to model it.
+
+In contrast, Flatworms navigating the complex topography of the ocean floor, evolved centralized processing and environmental modeling. They needed to understand the structure around them and predict how their movements would interact with that structure.
 This divergence teaches us a profound lesson about the relationship between intelligence and environment: the complexity of an organism's cognitive systems must match the complexity of the environment it navigates.
+
+Now let's see how we can use these models to decide what types of intelligence your organization needs to survive.
 
 ## Mark's Barbershop
 
@@ -78,6 +86,7 @@ In this drawing we see an interior image of Mark the barber cutting hair in a sm
 </details>
 
 Consider Mark's Barbershop - a simple business in a small town. Like the jellyfish, Mark operates in a relatively simple environment. He provides one primary service (haircuts), serves a stable local clientele, and faces little competition.
+
 Mark doesn't need complex systems to track customer preferences, analyze market trends, or model competitive responses. His business can thrive with simple record-keeping and personal relationships. Mark's Barbershop is a "jellyfish business" - efficiently adapted to a stable, uncomplicated environment.
 
 ## The Old School
