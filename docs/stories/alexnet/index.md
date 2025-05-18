@@ -84,7 +84,7 @@ The story of AlexNet is a reminder that sometimes, the most revolutionary breakt
 ## References
 
 -   [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) - 2012, Advances in Neural Information Processing Systems (NIPS)
--   [The History of AlexNet](https://medium.com/@allenschool/the-history-of-alexnet-and-how-it-changed-deep-learning-f1ad0c841950) - 2020, Medium
+-   [The Story of AlexNet: A Historical Milestone in Deep Learning](https://medium.com/@fahey_james/the-story-of-alexnet-a-historical-milestone-in-deep-learning-79878a707dd5) - Dec 17, 2024, James Fahey, Medium.com
 -   [AlexNet: The Architecture That Challenged CNNs](https://towardsdatascience.com/alexnet-the-architecture-that-changed-cnns-e8c1653e28f6) - 2020, Towards Data Science
 -   [Machine Learning Yearning](https://www.deeplearning.ai/machine-learning-yearning/) - 2018, deeplearning.ai, by Andrew Ng
 -   [Deep Learning Revolution: How a Toronto team's 'AlexNet' changed AI forever](https://www.cbc.ca/news/science/deep-learning-ai-hinton-lecun-bengio-1.5094076) - 2019, CBC News
