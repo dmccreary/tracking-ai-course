@@ -31,9 +31,11 @@ Please generate a colorful a wide-landscape drawing as though it might appear in
 In this drawing, we see a colorful flatworm crawling along the bottom of the ocean.  The environment is complex with different slopes and rocks. It full of colorful life like coral, amoeba, and seaweed and with several paths around the terrain.
 </details>
 
+![](04-flatworm-reading-a-map.png)
+
 ## The Jellyfish and the Flatworm
 
-![](./04-comparison.png)
+![](./05-comparison.png)
 
 ## Mark's Barbershop
 
@@ -71,4 +73,8 @@ The drawing shows an colorful ultra-modern school room in a futuristic setting. 
 
 ## Simple Model
 
-![](.)
+![](09-old-lms.png)
+
+## Modern LMS
+
+![](./10-modern-graph-lms.png)
