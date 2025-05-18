@@ -247,8 +247,7 @@ Please generate colorful a wide-landscape drawing as though it might appear in a
 -   Right side: Anatomical illustration of a flatworm with its primitive brain ganglion and nerve cords highlighted, with arrows showing more complex information processing pathways
 -   Center: A comparison table listing capabilities (spatial mapping, memory formation, prediction) with checkmarks showing which organism possesses each ability
 
-Figure 2: The World Model Spectrum
-----------------------------------
+## Figure 2: The World Model Spectrum
 
 **Caption:** "The Evolution of World Models: From Simple Reaction to Complex Prediction"
 
@@ -262,8 +261,7 @@ Figure 2: The World Model Spectrum
 
 Each point on the spectrum includes examples from both biological systems and artificial intelligence implementations.
 
-Figure 3: LLMs vs. World Models
--------------------------------
+## Figure 3: LLMs vs. World Models
 
 **Caption:** "What LLMs Do vs. What World Models Do"
 
@@ -273,8 +271,7 @@ Figure 3: LLMs vs. World Models
 -   Right column ("World Models"): Shows causal graphs, entity-relationship diagrams, and simulation outputs that represent actual world states and predictions
 -   Central dividing line labeled "The Fundamental Distinction" with arrows pointing to key differences
 
-Figure 4: Knowledge Graph Structure
------------------------------------
+## Figure 4: Knowledge Graph Structure
 
 **Caption:** "Anatomy of a Knowledge Graph: Building Blocks of Explicit World Models"
 
@@ -285,8 +282,7 @@ Figure 4: Knowledge Graph Structure
 -   Callout boxes explaining key components: entities, relationships, properties, inference rules
 -   A small example focused on an educational context, showing connections between students, courses, skills, and outcomes
 
-Figure 5: Porter's Five Forces as a World Model
------------------------------------------------
+## Figure 5: Porter's Five Forces as a World Model
 
 **Caption:** "Porter's Five Forces: A Strategic World Model for Competitive Environments"
 
@@ -298,8 +294,7 @@ Figure 5: Porter's Five Forces as a World Model
 -   Small data visualizations within each node showing how organizations can quantify and monitor each force
 -   Caption explaining how this serves as a world model for strategic decision-making
 
-Figure 6: Technology Adoption Lifecycle
----------------------------------------
+## Figure 6: Technology Adoption Lifecycle
 
 **Caption:** "The Technology Adoption Lifecycle: Predicting AI Integration Patterns"
 
@@ -311,8 +306,7 @@ Figure 6: Technology Adoption Lifecycle
 -   Arrows connecting specific AI advancements to where they fall on the adoption curve
 -   Annotations highlighting "chasm" points where technologies either gain widespread adoption or fail
 
-Figure 7: World Model Evolution in AI Systems
----------------------------------------------
+## Figure 7: World Model Evolution in AI Systems
 
 **Caption:** "The Evolution of World Modeling Capabilities in AI Systems"
 
@@ -326,8 +320,7 @@ Figure 7: World Model Evolution in AI Systems
 
 Each level includes examples of current technologies and organizational applications.
 
-Figure 8: Educational Institution World Model
----------------------------------------------
+## Figure 8: Educational Institution World Model
 
 **Caption:** "Components of an Educational Institution's World Model"
 
@@ -341,8 +334,7 @@ Figure 8: Educational Institution World Model
 
 Lines connect these components showing how they interact in a comprehensive world model.
 
-Figure 9: Business World Modeling Framework
--------------------------------------------
+## Figure 9: Business World Modeling Framework
 
 **Caption:** "Essential World Models for Knowledge-Based Organizations"
 
@@ -355,8 +347,7 @@ Figure 9: Business World Modeling Framework
 
 Each quadrant includes data visualization examples and specific metrics organizations should track.
 
-Figure 10: AI Center of Excellence Structure
---------------------------------------------
+## Figure 10: AI Center of Excellence Structure
 
 **Caption:** "Building Organizational Capacity for World Modeling: AI Center of Excellence"
 
@@ -368,8 +359,7 @@ Figure 10: AI Center of Excellence Structure
 -   Information flows between components
 -   Key responsibilities related to world model development and maintenance
 
-Figure 11: The Jellyfish Organization vs. The Flatworm Organization
--------------------------------------------------------------------
+## Figure 11: The Jellyfish Organization vs. The Flatworm Organization
 
 **Caption:** "Organizational Evolution: From Reactive to Predictive Business Models"
 
@@ -380,8 +370,7 @@ Figure 11: The Jellyfish Organization vs. The Flatworm Organization
 -   Central metrics comparing business outcomes (adaptability, innovation rate, market responsiveness)
 -   Arrows showing transformation path from left to right state
 
-Figure 12: Workshop Activity Framework
---------------------------------------
+## Figure 12: Workshop Activity Framework
 
 **Caption:** "Mapping Your Organization's World Models: Assessment Framework"
 
@@ -394,8 +383,7 @@ Figure 12: Workshop Activity Framework
 
 Includes empty fields that workshop participants would complete during the activity.
 
-Figure 13: World Model Maturity Model
--------------------------------------
+## Figure 13: World Model Maturity Model
 
 **Caption:** "World Model Maturity: Assessing Organizational Capability"
 
@@ -409,8 +397,7 @@ Figure 13: World Model Maturity Model
 
 Each stage includes characteristics, example technologies, and organizational capabilities.
 
-Figure 14: Knowledge Integration Architecture
----------------------------------------------
+## Figure 14: Knowledge Integration Architecture
 
 **Caption:** "Knowledge Integration: Connecting Public and Private Knowledge"
 
@@ -422,8 +409,7 @@ Figure 14: Knowledge Integration Architecture
 -   Application layer showing use cases (decision support, predictive analytics)
 -   Security boundaries and governance controls
 
-Figure 15: Strategic Advantage Through World Modeling
------------------------------------------------------
+## Figure 15: Strategic Advantage Through World Modeling
 
 **Caption:** "Competitive Advantage Through Advanced World Modeling"
 
