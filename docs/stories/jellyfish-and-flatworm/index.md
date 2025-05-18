@@ -1,10 +1,10 @@
 
 # The Jellyfish and the Flatworm: A Story of Evolution
 
-
 Approximately 600 million years ago, two very different evolutionary paths emerged in the animal kingdom. These divergent paths offer profound insights not just about biological evolution, but about organizational intelligence and AI strategy in our modern world.
 This story is a model for how organizational intelligence is evolving.
 
+## Consider the Jellyfish
 ![](01-jellyfish.png)
 <details>
     <summary>Image Prompt</summary>
@@ -13,9 +13,6 @@ The image is an underwater drawing of purple and pink jellyfish floating in the 
 </details>
 
 The jellyfish represents one of Earth's earliest evolutionary strategies for survival. These elegant creatures drift through the open ocean, a relatively simple environment with few structural barriers. They possess a decentralized nervous system that requires minimal energy to operate - a perfect adaptation for their lifestyle.
-
-
-
 
 ![](02-tenticles.png)
 <details>
