@@ -21,6 +21,8 @@ nav:
     - AGI Predicted Dates: chapters/agi-predicted-dates.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
     - Porter's Five Forces Model: chapters/porters-five-forces/index.md
+    - Stationary vs. Non-Stationary Policies: chapters/stationary-vs-non-stationary-policies.md
+    - Curriculum Learning: chapters/curriculum-learning.md
 
   - Stories:
     - Intro: stories/index.md
