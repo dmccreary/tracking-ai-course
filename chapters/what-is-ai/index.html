@@ -1,0 +1,2199 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/tracking-ai-course/chapters/what-is-ai/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../current-state/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>What is AI? - Tracking AI Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-KTYGHZCPM3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-KTYGHZCPM3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-KTYGHZCPM3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="What is AI? - Tracking AI Course" >
+      
+        <meta  property="og:description"  content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/chapters/what-is-ai.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/tracking-ai-course/chapters/what-is-ai/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="What is AI? - Tracking AI Course" >
+      
+        <meta  name="twitter:description"  content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/chapters/what-is-ai.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-ai-understanding-world-models-and-their-strategic-implications" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Tracking AI Course" class="md-header__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tracking AI Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              What is AI?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tracking AI Course" class="md-nav__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Tracking AI Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About This Course
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    What is AI?
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    What is AI?
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-ai-as-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: AI as World Modeling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-evolutionary-roots-of-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Evolutionary Roots of World Modeling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Evolutionary Roots of World Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-jellyfish-and-the-flatworm" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Jellyfish and the Flatworm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distinguishing-world-models-from-language-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distinguishing World Models from Language Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distinguishing World Models from Language Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llms-what-they-are-and-what-they-arent" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLMs: What They Are and What They Aren't
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#knowledge-graphs-explicit-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Graphs: Explicit World Models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mworld-models-in-organizational-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      mWorld Models in Organizational Strategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="mWorld Models in Organizational Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#porters-five-forces-as-a-strategic-world-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porter's Five Forces as a Strategic World Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-technology-adoption-lifecycle-and-model-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Technology Adoption Lifecycle and Model Evolution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-evolution-of-world-models-in-ai-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Evolution of World Models in AI Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implications-for-knowledge-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implications for Knowledge Organizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implications for Knowledge Organizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#educational-institutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educational Institutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#businesses-and-knowledge-based-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Businesses and Knowledge-Based Organizations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-organizational-capacity-for-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Organizational Capacity for World Modeling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-from-language-to-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion: From Language to World Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop-activity-mapping-your-organizations-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop Activity: Mapping Your Organization's World Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-and-figure-descriptions-for-what-is-ai-chapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image and Figure Descriptions for "What is AI?" Chapter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-1-the-jellyfish-vs-flatworm-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 1: The Jellyfish vs. Flatworm Comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-2-the-world-model-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 2: The World Model Spectrum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-3-llms-vs-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 3: LLMs vs. World Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-4-knowledge-graph-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 4: Knowledge Graph Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-5-porters-five-forces-as-a-world-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 5: Porter's Five Forces as a World Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-6-technology-adoption-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 6: Technology Adoption Lifecycle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-7-world-model-evolution-in-ai-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 7: World Model Evolution in AI Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-8-educational-institution-world-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 8: Educational Institution World Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-9-business-world-modeling-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 9: Business World Modeling Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-10-ai-center-of-excellence-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 10: AI Center of Excellence Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-11-the-jellyfish-organization-vs-the-flatworm-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 11: The Jellyfish Organization vs. The Flatworm Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-12-workshop-activity-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 12: Workshop Activity Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-13-world-model-maturity-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 13: World Model Maturity Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-14-knowledge-integration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 14: Knowledge Integration Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-15-strategic-advantage-through-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 15: Strategic Advantage Through World Modeling
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Current State
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarking-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Benchmarking AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mmlu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MMLU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lm-arena/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LM Arena
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../healthbench/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HealthBench
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objective-llm-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Objective LLMs for The Classroom
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agi-predicted-dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AGI Predicted Dates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skepticism-of-the-llm-only-path/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The LLMs Only Path
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../porters-five-forces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Porter's Five Forces Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stationary-vs-non-stationary-policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stationary vs. Non-Stationary Policies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../curriculum-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Curriculum Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-ai-as-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: AI as World Modeling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-evolutionary-roots-of-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Evolutionary Roots of World Modeling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Evolutionary Roots of World Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-jellyfish-and-the-flatworm" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Jellyfish and the Flatworm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distinguishing-world-models-from-language-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distinguishing World Models from Language Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distinguishing World Models from Language Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llms-what-they-are-and-what-they-arent" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLMs: What They Are and What They Aren't
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#knowledge-graphs-explicit-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Graphs: Explicit World Models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mworld-models-in-organizational-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      mWorld Models in Organizational Strategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="mWorld Models in Organizational Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#porters-five-forces-as-a-strategic-world-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porter's Five Forces as a Strategic World Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-technology-adoption-lifecycle-and-model-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Technology Adoption Lifecycle and Model Evolution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-evolution-of-world-models-in-ai-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Evolution of World Models in AI Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implications-for-knowledge-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implications for Knowledge Organizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implications for Knowledge Organizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#educational-institutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educational Institutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#businesses-and-knowledge-based-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Businesses and Knowledge-Based Organizations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-organizational-capacity-for-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Organizational Capacity for World Modeling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-from-language-to-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion: From Language to World Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop-activity-mapping-your-organizations-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop Activity: Mapping Your Organization's World Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-and-figure-descriptions-for-what-is-ai-chapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image and Figure Descriptions for "What is AI?" Chapter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-1-the-jellyfish-vs-flatworm-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 1: The Jellyfish vs. Flatworm Comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-2-the-world-model-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 2: The World Model Spectrum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-3-llms-vs-world-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 3: LLMs vs. World Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-4-knowledge-graph-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 4: Knowledge Graph Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-5-porters-five-forces-as-a-world-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 5: Porter's Five Forces as a World Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-6-technology-adoption-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 6: Technology Adoption Lifecycle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-7-world-model-evolution-in-ai-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 7: World Model Evolution in AI Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-8-educational-institution-world-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 8: Educational Institution World Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-9-business-world-modeling-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 9: Business World Modeling Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-10-ai-center-of-excellence-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 10: AI Center of Excellence Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-11-the-jellyfish-organization-vs-the-flatworm-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 11: The Jellyfish Organization vs. The Flatworm Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-12-workshop-activity-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 12: Workshop Activity Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-13-world-model-maturity-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 13: World Model Maturity Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-14-knowledge-integration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 14: Knowledge Integration Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-15-strategic-advantage-through-world-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 15: Strategic Advantage Through World Modeling
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/tracking-ai-course/blob/master/docs/chapters/what-is-ai.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="what-is-ai-understanding-world-models-and-their-strategic-implications">What is AI? Understanding World Models and Their Strategic Implications</h1>
+<div class="admonition prompt">
+<p class="admonition-title">Prompt</p>
+<p>Create the text for a new chapter of this course called "What is AI?".  In this chapter, you will focus on the definition that AI is all about creating sophisticated models of the world and using these models to make predictions of the future state of relevant objects in the environment.  Please reference the story "The Jellyfish and the Flatworm" and compare the simple models of the world that a Jellyfish needs compared to complex models of the world that evolved in Flatworms.</p>
+<p>Make it very clear that LLMs are NOT models of the world.  They are models of language.  Talk about how knowledge graphs are models of the world, and that for knowledge management organizations to evolve, their models of their customers, their products, their competitors and their competitors products must also evolve.  In education, students and teachers are considered customers.</p>
+<p>Finally, integrate Porter's Five forces model and the Technology Adoption lifecycle to show how business strategies must evolve to include sophisticated models of the world in for organizations to be competitive.</p>
+</div>
+<h2 id="introduction-ai-as-world-modeling">Introduction: AI as World Modeling</h2>
+<p>Artificial Intelligence (AI) is often defined through its capabilities or outcomes---machines that can perform tasks requiring human intelligence. However, a more fundamental understanding of AI centers on its core function: <strong>creating sophisticated models of the world and using these models to predict future states of relevant objects in the environment</strong>.</p>
+<p>This chapter explores this definition of AI, examining how world modeling distinguishes advanced AI systems from simpler pattern-matching technologies. We'll trace this concept from biological evolution to modern business strategy, showing why sophisticated world models are becoming critical competitive advantages for knowledge organizations.</p>
+<h2 id="the-evolutionary-roots-of-world-modeling">The Evolutionary Roots of World Modeling</h2>
+<h3 id="the-jellyfish-and-the-flatworm">The Jellyfish and the Flatworm</h3>
+<p>The evolution of intelligence across the animal kingdom provides a powerful metaphor for understanding different levels of AI sophistication. Consider the contrast between two ancient creatures: the jellyfish and the flatworm.</p>
+<p>Jellyfish have existed for over 650 million years and represent one of the simplest nervous systems in the animal kingdom. A jellyfish has no central brain---only a rudimentary nerve net that allows it to detect and respond to basic environmental stimuli. Its "model" of the world is extremely limited, capable only of simple pattern recognition: "If tentacles sense contact, then contract to capture prey."</p>
+<p>In contrast, flatworms, which evolved later, developed the first primitive brain structures in the animal kingdom. This anatomical innovation allowed flatworms to construct more complex internal representations of their environment. Unlike jellyfish, flatworms can:</p>
+<ul>
+<li>Create spatial maps of their surroundings</li>
+<li>Form simple memories of past experiences</li>
+<li>Coordinate more complex behaviors</li>
+<li>Make basic predictions about environmental changes</li>
+</ul>
+<p>This key evolutionary advancement---the ability to construct internal models of external reality---marks a fundamental distinction we can apply to understanding AI systems. The flatworm's primitive brain allows it to maintain an internal representation that can be updated and used for prediction, a foundational element of intelligence that jellyfish lack.</p>
+<h2 id="distinguishing-world-models-from-language-models">Distinguishing World Models from Language Models</h2>
+<h3 id="llms-what-they-are-and-what-they-arent">LLMs: What They Are and What They Aren't</h3>
+<p>Large Language Models (LLMs) have achieved remarkable capabilities in generating human-like text, but they fundamentally lack true reasoning and planning abilities. Their outputs are based on pattern recognition rather than understanding, limiting their ability to perform complex cognitive tasks.</p>
+<p>This limitation stems from a crucial distinction:</p>
+<p>LLMs are NOT models of the world. They are models of language. Without the ability to model real-world scenarios, their applicability in dynamic and unpredictable environments is constrained.</p>
+<p>LLMs excel at:</p>
+<ul>
+<li>Capturing statistical patterns in human language</li>
+<li>Predicting likely sequences of words</li>
+<li>Mimicking human-written text</li>
+<li>Retrieving information embedded in their training data</li>
+</ul>
+<p>However, they lack:</p>
+<ul>
+<li>True understanding of concepts (they recognize statistical patterns but don't grasp meaning)</li>
+<li>Inherent logical reasoning capabilities</li>
+<li>Consistent and reliable decision-making abilities</li>
+<li>The ability to structure explicit logic and reasoning</li>
+</ul>
+<p>This distinction explains why LLMs sometimes generate confident-sounding but incorrect information (hallucinations) or struggle with tasks requiring causal reasoning. They lack a grounded model of how the world actually works.</p>
+<h3 id="knowledge-graphs-explicit-world-models">Knowledge Graphs: Explicit World Models</h3>
+<p>Unlike LLMs, knowledge graphs represent explicit models of the world, capturing entities and their relationships in structured formats that enable reasoning and inference.</p>
+<p>Knowledge graphs are structured representations of information that connect entities and concepts through defined relationships. They serve as foundational models of knowledge within specific domains or across general knowledge areas.</p>
+<p>Key characteristics of knowledge graphs include:</p>
+<ul>
+<li>Entities represented as nodes (people, organizations, products, concepts)</li>
+<li>Relationships represented as edges (employs, contains, influences, depends on)</li>
+<li>Properties and attributes associated with entities</li>
+<li>Explicit logic rules that allow for inference and reasoning</li>
+</ul>
+<p>Knowledge graphs enable organizations to:</p>
+<ul>
+<li>Represent domain knowledge explicitly</li>
+<li>Trace relationships between entities</li>
+<li>Make logical inferences based on existing relationships</li>
+<li>Update representations as new information becomes available</li>
+</ul>
+<p>For knowledge management organizations to evolve, their models must extend beyond basic information storage to include sophisticated representations of:</p>
+<p>Organizational Knowledge - The collective understanding, processes, and expertise that exist within an institution Private Knowledge - Information specific to an organization that isn't publicly available Public Knowledge - Information generally available to everyone</p>
+<p>In educational contexts, these models must specifically represent:</p>
+<ul>
+<li>Student learning journeys and knowledge states</li>
+<li>Curriculum structures and dependencies</li>
+<li>Teaching methods and their effectiveness</li>
+<li>Educational outcomes and assessment frameworks</li>
+</ul>
+<h2 id="mworld-models-in-organizational-strategy">mWorld Models in Organizational Strategy</h2>
+<h3 id="porters-five-forces-as-a-strategic-world-model">Porter's Five Forces as a Strategic World Model</h3>
+<p>Michael Porter's Five Forces framework provides a powerful example of how explicit world models contribute to strategic advantage. This framework helps organizations model their competitive environment by analyzing:</p>
+<ol>
+<li><strong>Threat of New Entrants</strong> - Barriers to entry in the market</li>
+<li><strong>Bargaining Power of Suppliers</strong> - How much influence suppliers have over prices</li>
+<li><strong>Bargaining Power of Buyers</strong> - How much pressure customers can exert</li>
+<li><strong>Threat of Substitute Products</strong> - Alternative solutions that could replace offerings</li>
+<li><strong>Competitive Rivalry</strong> - Intensity of competition among existing players</li>
+</ol>
+<p>Organizations that build sophisticated models of these forces gain strategic advantages by:</p>
+<ul>
+<li>Anticipating competitive moves</li>
+<li>Identifying market opportunities</li>
+<li>Recognizing emerging threats</li>
+<li>Optimizing resource allocation</li>
+</ul>
+<p>Business Intelligence - The processes and technologies that transform raw data into meaningful insights about an organization's operations, customers, and competitive environment functions as a systematic approach to building and maintaining these world models.</p>
+<h3 id="the-technology-adoption-lifecycle-and-model-evolution">The Technology Adoption Lifecycle and Model Evolution</h3>
+<p>The Technology Adoption Lifecycle (innovators, early adopters, early majority, late majority, laggards) represents another crucial world model for organizations navigating technological change.</p>
+<p>The AI Adoption Curve describes the pattern by which different segments of organizations integrate artificial intelligence capabilities, from pioneering innovators to reluctant laggards.</p>
+<p>For knowledge management organizations, strategic advantage comes from:</p>
+<ol>
+<li><strong>Mapping current position</strong> on the adoption curve</li>
+<li><strong>Modeling adoption patterns</strong> of competitors and customers</li>
+<li><strong>Predicting technology inflection points</strong> where competitive advantages shift</li>
+<li><strong>Planning strategic responses</strong> to different adoption scenarios</li>
+</ol>
+<p>Organizations that fail to create these models risk being blindsided by disruptive innovations or missing critical market shifts. As AI technologies mature, the sophistication of these predictive models becomes a primary differentiator between market leaders and followers.</p>
+<h2 id="the-evolution-of-world-models-in-ai-systems">The Evolution of World Models in AI Systems</h2>
+<p>AI systems exist on a spectrum of world modeling sophistication:</p>
+<ol>
+<li>
+<p><strong>Pattern Recognition Systems</strong> (like jellyfish)</p>
+<ul>
+<li>Respond to direct inputs based on trained patterns</li>
+<li>Limited to domains explicitly covered in training data</li>
+<li>No internal representation of causality or context</li>
+</ul>
+</li>
+<li>
+<p><strong>Statistical Inference Systems</strong> (current LLMs)</p>
+<ul>
+<li>Capture statistical relationships in data</li>
+<li>Make predictions based on observed patterns</li>
+<li>Limited understanding of underlying causal mechanisms</li>
+<li><strong>Causal Reasoning Systems</strong> (emerging AI)</li>
+<li>Represent cause-and-effect relationships</li>
+<li>Model interventions and counterfactuals</li>
+<li>Adapt to novel situations through causal inference</li>
+<li><strong>General World Modeling Systems</strong> (future AI)</li>
+<li>Maintain comprehensive models across domains</li>
+<li>Generate and test hypotheses about the world</li>
+<li>Incorporate new information into cohesive frameworks</li>
+</ul>
+</li>
+</ol>
+<p>The trajectory of AI development follows this progression toward increasingly sophisticated world models. Organizations that understand this evolution can better assess where specific AI technologies fit into their strategic plans.</p>
+<h2 id="implications-for-knowledge-organizations">Implications for Knowledge Organizations</h2>
+<h3 id="educational-institutions">Educational Institutions</h3>
+<p>For educational institutions, sophisticated world models are transforming:</p>
+<p><strong>Hyperpersonalized Learning</strong> - Vision of creating individualized learning experiences tailored to each student's specific needs, abilities, and preferences</p>
+<p><strong>Curriculum Development</strong> - The process of designing, evaluating, and updating educational programs and materials</p>
+<p><strong>Assessment Challenges</strong> - Complexities in evaluating student performance and learning outcomes in an AI-assisted educational environment</p>
+<p>Schools and universities must evolve their models to include:</p>
+<ul>
+<li>Detailed student knowledge and skill profiles</li>
+<li>Learning pathway optimization algorithms</li>
+<li>Predictive models of educational outcomes</li>
+<li>Frameworks for AI-human collaboration in teaching</li>
+</ul>
+<h3 id="businesses-and-knowledge-based-organizations">Businesses and Knowledge-Based Organizations</h3>
+<p>Business Process Analysis - Systematic examination and improvement of workflows and procedures in an organization</p>
+<p>Customer Service and Engagement Transformations - Fundamental changes in how organizations interact with and support customers using AI technologies</p>
+<p>Product Development Acceleration - Increased speed and efficiency in creating and improving offerings through AI-assisted design and testing</p>
+<p>Strategic Competitive Advantages - Unique organizational capabilities that provide superior performance relative to competitors</p>
+<p>Businesses must develop sophisticated models of:</p>
+<ul>
+<li>Customer needs and behaviors</li>
+<li>Product performance and evolution</li>
+<li>Competitive positioning and movement</li>
+<li>Market trends and emergence of new technologies</li>
+</ul>
+<h2 id="building-organizational-capacity-for-world-modeling">Building Organizational Capacity for World Modeling</h2>
+<p>Organizations seeking to develop sophisticated world modeling capabilities should focus on:</p>
+<ol>
+<li><strong>Knowledge Integration Infrastructure</strong> Knowledge Integration - The process of combining different types of information into a coherent framework, including both public and private knowledge sources</li>
+<li><strong>Cross-Functional Model Development</strong> Cross-Functional Teams - Groups comprising members from different departments or specialties working together toward common objectives</li>
+<li><strong>AI Centers of Excellence</strong> AI Center of Excellence - An organizational structure dedicated to developing, implementing, and governing artificial intelligence technologies and practices</li>
+<li><strong>Strategic Implementation Planning</strong> Implementation Roadmapping - The process of creating structured plans for technology integration with clear milestones and objectives Change Management - Systematic approaches to transitioning individuals, teams, and organizations to desired future states</li>
+</ol>
+<h2 id="conclusion-from-language-to-world-models">Conclusion: From Language to World Models</h2>
+<p>As organizations navigate the exponential growth of AI capabilities, those that build sophisticated world models will gain decisive advantages over competitors who remain focused on narrower applications like language processing or pattern recognition alone.</p>
+<p>The evolution from simple reactive systems (the jellyfish model) to proactive predictive systems (the flatworm model and beyond) provides a useful framework for understanding the trajectory of both AI technology and organizational strategy. Knowledge organizations---whether educational institutions or businesses---must evolve their internal models to capture increasingly complex representations of their environments, stakeholders, and competitive landscapes.</p>
+<p>The most successful organizations will be those that leverage AI not just as a set of capabilities, but as a framework for building, maintaining, and continuously improving robust models of the world that enable better predictions, decisions, and strategic positioning.</p>
+<h2 id="workshop-activity-mapping-your-organizations-world-models">Workshop Activity: Mapping Your Organization's World Models</h2>
+<ol>
+<li>
+<p><strong>Current State Assessment</strong>:</p>
+<ul>
+<li>What explicit models does your organization maintain?</li>
+<li>What implicit models guide decision-making?</li>
+<li>How are these models updated and validated?</li>
+</ul>
+</li>
+<li>
+<p><strong>Gap Analysis</strong>:</p>
+<ul>
+<li>Where do current models fail to capture important relationships?</li>
+<li>What domains lack adequate modeling?</li>
+<li>How do your models compare to industry best practices?</li>
+</ul>
+</li>
+<li>
+<p><strong>Development Roadmap</strong>:</p>
+<ul>
+<li>Which models should be developed or enhanced first?</li>
+<li>What data and expertise are needed?</li>
+<li>How will model efficacy be measured?</li>
+</ul>
+</li>
+<li>
+<p><strong>Integration Strategy</strong>:</p>
+<ul>
+<li>How will improved models be incorporated into decision processes?</li>
+<li>Who needs access to these models?</li>
+<li>What governance structures are needed?</li>
+</ul>
+</li>
+</ol>
+<p>By completing this exercise, participants will begin the process of elevating their organization's world modeling capabilities, laying the groundwork for more sophisticated AI applications and strategic advantages.</p>
+<h2 id="image-and-figure-descriptions-for-what-is-ai-chapter">Image and Figure Descriptions for "What is AI?" Chapter</h2>
+<p>Here are detailed descriptions for images and figures that would enhance the "What is AI?" chapter by visualizing key concepts about world models and their strategic implications.</p>
+<h2 id="figure-1-the-jellyfish-vs-flatworm-comparison">Figure 1: The Jellyfish vs. Flatworm Comparison</h2>
+<p>Please generate colorful a wide-landscape drawing as though it might appear in a graphic novel.</p>
+<p><strong>Caption:</strong> "Evolutionary Model Complexity: Jellyfish vs. Flatworm Nervous Systems"</p>
+<p><strong>Description:</strong> A side-by-side comparison showing:</p>
+<ul>
+<li>Left side: Anatomical illustration of a jellyfish with its simple nerve net highlighted in blue, with arrows showing simple stimulus-response pathways</li>
+<li>Right side: Anatomical illustration of a flatworm with its primitive brain ganglion and nerve cords highlighted, with arrows showing more complex information processing pathways</li>
+<li>Center: A comparison table listing capabilities (spatial mapping, memory formation, prediction) with checkmarks showing which organism possesses each ability</li>
+</ul>
+<h2 id="figure-2-the-world-model-spectrum">Figure 2: The World Model Spectrum</h2>
+<p><strong>Caption:</strong> "The Evolution of World Models: From Simple Reaction to Complex Prediction"</p>
+<p><strong>Description:</strong> A horizontal spectrum diagram showing increasing complexity of world modeling from left to right:</p>
+<ol>
+<li><strong>Simple Reaction</strong> (jellyfish icon) - "If-then" responses to direct stimuli</li>
+<li><strong>Pattern Recognition</strong> (simple neural network icon) - Statistical correlations</li>
+<li><strong>State Representation</strong> (flatworm icon) - Internal representation of current environment</li>
+<li><strong>Causal Modeling</strong> (human brain icon) - Understanding of cause-effect relationships</li>
+<li><strong>Predictive Simulation</strong> (computer with simulation visualization) - Ability to run scenarios and predict outcomes</li>
+</ol>
+<p>Each point on the spectrum includes examples from both biological systems and artificial intelligence implementations.</p>
+<h2 id="figure-3-llms-vs-world-models">Figure 3: LLMs vs. World Models</h2>
+<p><strong>Caption:</strong> "What LLMs Do vs. What World Models Do"</p>
+<p><strong>Description:</strong> A comparative visualization with two columns:</p>
+<ul>
+<li>Left column ("Language Models"): Shows text prediction with probability distributions over next words, pattern matching between text sequences, and text transformation examples</li>
+<li>Right column ("World Models"): Shows causal graphs, entity-relationship diagrams, and simulation outputs that represent actual world states and predictions</li>
+<li>Central dividing line labeled "The Fundamental Distinction" with arrows pointing to key differences</li>
+</ul>
+<h2 id="figure-4-knowledge-graph-structure">Figure 4: Knowledge Graph Structure</h2>
+<p><strong>Caption:</strong> "Anatomy of a Knowledge Graph: Building Blocks of Explicit World Models"</p>
+<p><strong>Description:</strong> An illustrated knowledge graph showing:</p>
+<ul>
+<li>Nodes of different colors representing different entity types (people, organizations, products, concepts)</li>
+<li>Labeled edges showing relationships between entities</li>
+<li>Callout boxes explaining key components: entities, relationships, properties, inference rules</li>
+<li>A small example focused on an educational context, showing connections between students, courses, skills, and outcomes</li>
+</ul>
+<h2 id="figure-5-porters-five-forces-as-a-world-model">Figure 5: Porter's Five Forces as a World Model</h2>
+<p><strong>Caption:</strong> "Porter's Five Forces: A Strategic World Model for Competitive Environments"</p>
+<p><strong>Description:</strong> A visual representation of Porter's Five Forces framework designed as an explicit world model:</p>
+<ul>
+<li>Central node representing the organization</li>
+<li>Five connected nodes representing each force (suppliers, buyers, new entrants, substitutes, rivals)</li>
+<li>Arrows indicating information flows and influence relationships</li>
+<li>Small data visualizations within each node showing how organizations can quantify and monitor each force</li>
+<li>Caption explaining how this serves as a world model for strategic decision-making</li>
+</ul>
+<h2 id="figure-6-technology-adoption-lifecycle">Figure 6: Technology Adoption Lifecycle</h2>
+<p><strong>Caption:</strong> "The Technology Adoption Lifecycle: Predicting AI Integration Patterns"</p>
+<p><strong>Description:</strong> A bell curve visualization showing:</p>
+<ul>
+<li>The classic adoption segments: innovators (2.5%), early adopters (13.5%), early majority (34%), late majority (34%), laggards (16%)</li>
+<li>Each segment illustrated with representative organization types</li>
+<li>A parallel timeline below showing the evolution of AI capabilities</li>
+<li>Arrows connecting specific AI advancements to where they fall on the adoption curve</li>
+<li>Annotations highlighting "chasm" points where technologies either gain widespread adoption or fail</li>
+</ul>
+<h2 id="figure-7-world-model-evolution-in-ai-systems">Figure 7: World Model Evolution in AI Systems</h2>
+<p><strong>Caption:</strong> "The Evolution of World Modeling Capabilities in AI Systems"</p>
+<p><strong>Description:</strong> A pyramid diagram showing five levels of increasingly sophisticated AI systems:</p>
+<ol>
+<li><strong>Base Level - Pattern Recognition</strong>: Simple neural networks, classification systems</li>
+<li><strong>Level 2 - Statistical Inference</strong>: Current LLMs, predictive analytics</li>
+<li><strong>Level 3 - Causal Reasoning</strong>: Emerging AI systems with explicit causal models</li>
+<li><strong>Level 4 - Domain-Specific World Models</strong>: AI systems with comprehensive models of specific domains</li>
+<li><strong>Peak - General World Modeling</strong>: Future AI with cross-domain understanding and reasoning</li>
+</ol>
+<p>Each level includes examples of current technologies and organizational applications.</p>
+<h2 id="figure-8-educational-institution-world-model">Figure 8: Educational Institution World Model</h2>
+<p><strong>Caption:</strong> "Components of an Educational Institution's World Model"</p>
+<p><strong>Description:</strong> A comprehensive visualization showing interconnected models needed by educational institutions:</p>
+<ul>
+<li>Student model (knowledge state, learning preferences, progress tracking)</li>
+<li>Curriculum model (concept dependencies, sequencing, difficulty scaling)</li>
+<li>Teaching model (pedagogical approaches, effectiveness metrics)</li>
+<li>Assessment model (evaluation frameworks, competency measures)</li>
+<li>Administrative model (resource allocation, scheduling optimization)</li>
+</ul>
+<p>Lines connect these components showing how they interact in a comprehensive world model.</p>
+<h2 id="figure-9-business-world-modeling-framework">Figure 9: Business World Modeling Framework</h2>
+<p><strong>Caption:</strong> "Essential World Models for Knowledge-Based Organizations"</p>
+<p><strong>Description:</strong> A diagram showing four core world models businesses need to maintain:</p>
+<ol>
+<li><strong>Customer Model</strong>: Showing demographic segments, needs analysis, behavior prediction</li>
+<li><strong>Product Model</strong>: Features, performance metrics, evolution roadmap</li>
+<li><strong>Competitive Model</strong>: Market positioning, competitor capabilities, strategic responses</li>
+<li><strong>Market Model</strong>: Trend analysis, emerging technologies, disruption scenarios</li>
+</ol>
+<p>Each quadrant includes data visualization examples and specific metrics organizations should track.</p>
+<h2 id="figure-10-ai-center-of-excellence-structure">Figure 10: AI Center of Excellence Structure</h2>
+<p><strong>Caption:</strong> "Building Organizational Capacity for World Modeling: AI Center of Excellence"</p>
+<p><strong>Description:</strong> An organizational chart showing:</p>
+<ul>
+<li>Central "AI Center of Excellence" hub</li>
+<li>Connected departments (Marketing, Product Development, Customer Service, Strategy)</li>
+<li>Roles within the center (Data Scientists, Domain Experts, Ethicists, Engineers)</li>
+<li>Information flows between components</li>
+<li>Key responsibilities related to world model development and maintenance</li>
+</ul>
+<h2 id="figure-11-the-jellyfish-organization-vs-the-flatworm-organization">Figure 11: The Jellyfish Organization vs. The Flatworm Organization</h2>
+<p><strong>Caption:</strong> "Organizational Evolution: From Reactive to Predictive Business Models"</p>
+<p><strong>Description:</strong> A comparative business case study visualization:</p>
+<ul>
+<li>Left side ("Jellyfish Organization"): Shows reactive business processes, simple metrics, short planning horizons</li>
+<li>Right side ("Flatworm Organization"): Shows predictive analytics, complex modeling, scenario planning</li>
+<li>Central metrics comparing business outcomes (adaptability, innovation rate, market responsiveness)</li>
+<li>Arrows showing transformation path from left to right state</li>
+</ul>
+<h2 id="figure-12-workshop-activity-framework">Figure 12: Workshop Activity Framework</h2>
+<p><strong>Caption:</strong> "Mapping Your Organization's World Models: Assessment Framework"</p>
+<p><strong>Description:</strong> A worksheet template visualization showing:</p>
+<ul>
+<li>Quadrant 1: Current State Assessment (inventory of existing models)</li>
+<li>Quadrant 2: Gap Analysis (comparison with best practices)</li>
+<li>Quadrant 3: Development Roadmap (prioritization matrix)</li>
+<li>Quadrant 4: Integration Strategy (stakeholder mapping)</li>
+</ul>
+<p>Includes empty fields that workshop participants would complete during the activity.</p>
+<h2 id="figure-13-world-model-maturity-model">Figure 13: World Model Maturity Model</h2>
+<p><strong>Caption:</strong> "World Model Maturity: Assessing Organizational Capability"</p>
+<p><strong>Description:</strong> A maturity model visualization with five stages:</p>
+<ol>
+<li><strong>Ad Hoc</strong>: Informal, undocumented mental models</li>
+<li><strong>Developing</strong>: Basic documented models with limited application</li>
+<li><strong>Defined</strong>: Standardized models with consistent application</li>
+<li><strong>Managed</strong>: Quantified models with performance metrics</li>
+<li><strong>Optimizing</strong>: Self-improving models that adapt to new information</li>
+</ol>
+<p>Each stage includes characteristics, example technologies, and organizational capabilities.</p>
+<h2 id="figure-14-knowledge-integration-architecture">Figure 14: Knowledge Integration Architecture</h2>
+<p><strong>Caption:</strong> "Knowledge Integration: Connecting Public and Private Knowledge"</p>
+<p><strong>Description:</strong> A technical architecture diagram showing:</p>
+<ul>
+<li>Public knowledge sources (LLMs, industry databases, academic research)</li>
+<li>Private knowledge repositories (internal documents, proprietary data, expertise)</li>
+<li>Integration layer technologies (knowledge graphs, semantic encoders)</li>
+<li>Application layer showing use cases (decision support, predictive analytics)</li>
+<li>Security boundaries and governance controls</li>
+</ul>
+<h2 id="figure-15-strategic-advantage-through-world-modeling">Figure 15: Strategic Advantage Through World Modeling</h2>
+<p><strong>Caption:</strong> "Competitive Advantage Through Advanced World Modeling"</p>
+<p><strong>Description:</strong> A conceptual visualization showing:</p>
+<ul>
+<li>X-axis representing "World Model Sophistication" from simple to complex</li>
+<li>Y-axis representing "Competitive Advantage" from low to high</li>
+<li>Plotted curve showing exponential relationship between model sophistication and advantage</li>
+<li>Markers showing positions of various industries on the curve</li>
+<li>Callout examples of organizations that gained advantage through superior modeling</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../current-state/" class="md-footer__link md-footer__link--next" aria-label="Next: Current State">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Current State
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
