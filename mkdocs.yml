@@ -12,6 +12,7 @@ nav:
   - Course Description: course-description.md
   - Chapters:
     - Introduction: chapters/index.md
+    - What is AI?: chapters/what-is-ai.md
     - Current State: chapters/current-state.md
     - Benchmarking AI: chapters/benchmarking-ai.md
     - MMLU: chapters/mmlu/index.md
@@ -29,7 +30,7 @@ nav:
     - AI Winters: stories/ai-winters/index.md
     - Alexnet: stories/alexnet/index.md
     - Yann LeCun: stories/yann-lecun/index.md
-  
+    - The Jellyfish and the Flatworm: stories/jellyfish-and-flatworm/index.md
   - MicroSims:
     - Intro: sims/index.md
     - Four AI Futures: sims/four-futures/index.md
