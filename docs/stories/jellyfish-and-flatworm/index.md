@@ -59,7 +59,7 @@ These internal representations of their world were like maps.  And these maps pr
 <details>
     <summary>Image Prompt</summary>
     Generate a side-by-side infographic style comparison of the jellyfish on the left and the flatwork on the right.
-<details>
+</details>
 
 The fundamental difference between these two evolutionary approaches comes down to environmental complexity and movement.
 
