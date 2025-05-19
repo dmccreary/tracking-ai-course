@@ -2,7 +2,7 @@
 # The Jellyfish and the Flatworm: A Story of Evolution
 
 Approximately 600 million years ago, two very different evolutionary paths emerged in the animal kingdom. These divergent paths offer profound insights not just about biological evolution, but about organizational intelligence and AI strategy in our modern world.
-This story is a model for how organizational intelligence is evolving.
+This story is a metaphor for how intelligence must evolve in some organizational in order to survive.
 
 ## Consider the Jellyfish
 ![](01-jellyfish.png)
