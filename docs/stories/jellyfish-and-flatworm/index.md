@@ -151,6 +151,8 @@ As artificial intelligence evolves, the most powerful systems will combine the p
 
 Organizations that recognize which type of intelligence their environment demands - jellyfish or flatworm - will make better strategic decisions about their AI investments and capabilities.
 
+## References
+
 <details>
 Please generate 10 real references about jellyfish nervous systems and to how flatworms evolved central nervous systems.   Create references that would be readable by a 12th grader. Return the references in the following formats:
 
