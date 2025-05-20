@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: up to 60 characters
+description: up to 110 characters for mobile
 image: /img/cover.png
 og:image: /img/cover.png
 twitter:image: /img/cover.png

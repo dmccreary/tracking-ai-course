@@ -1,4 +1,15 @@
-# MicroSim Folder index.md Template
+---
+title: Bloom's Taxonomy
+description: Infographic with infobox hovers showing layers of Bloom's Taxonomy.
+image: /sims/blooms-taxonomy/blooms-taxonomy.png
+og:image: /sims/blooms-taxonomy/blooms-taxonomy.png
+twitter:image: /sims/blooms-taxonomy/blooms-taxonomy.png
+social:
+   cards: false
+hide:
+  - toc
+---
+# Blooms Taxonomy
 
 <iframe src="./main.html" height="600px" width="600px" scrolling="no" style="overflow: hidden"></iframe>
 
@@ -6,18 +17,6 @@
 <iframe src="./main.html" height="600px" width="600px" scrolling="no" style="overflow: hidden"></iframe>
 ```
 
-[Run the MicroSim Template](./main.html){ .md-button .md-button--primary }
-[Edit this MicroSim](https://editor.p5js.org/dmccreary/sketches/QVQWMt5Vh)
+[Run the Bloom's Taxonomy MicroSim](./main.html){ .md-button .md-button--primary }
+[Edit the Bloom's Taxonomy MicroSim](https://editor.p5js.org/dmccreary/sketches/QVQWMt5Vh)
 
-## About this MicroSim
-
-This MicroSim teaches us how to
-specify the drawing of a static filled circle.
-
-![Image Name](./image.png){ width="400" }
-
-## Sample Prompt
-
-!!! prompt
-  Create a single file p5.js sketch.
-  Draw a green circle on a 600x400 canvas with a radius of 200.
