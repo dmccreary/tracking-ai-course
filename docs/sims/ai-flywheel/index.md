@@ -20,7 +20,7 @@ hide:
 You can include this MicroSim infographic in your web page by adding the following line to your web page:
 
 ```html
-<iframe src="./main.html" height="470px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/ai-flywheel/main.html" height="470px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
