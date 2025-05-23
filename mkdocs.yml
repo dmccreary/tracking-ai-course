@@ -31,6 +31,7 @@ nav:
     - Alexnet: stories/alexnet/index.md
     - Yann LeCun: stories/yann-lecun/index.md
     - The Jellyfish and the Flatworm: stories/jellyfish-and-flatworm/index.md
+  
   - MicroSims:
     - Intro: sims/index.md
     - Four AI Futures: sims/four-futures/index.md
@@ -46,6 +47,7 @@ nav:
     - Bloom's Taxonomy: sims/blooms-taxonomy/index.md
     - Technology Adoption Curve: sims/technology-adoption/index.md
     - Porter's Five Forces: sims/porters-five-forces/index.md
+    - The AI Flywheel: sims/ai-flywheel/index.md
     - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
     - Tokenizer: sims/tokenizer/index.md
