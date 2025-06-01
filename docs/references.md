@@ -4,7 +4,9 @@
 
 [Situational Awareness AI Website](https://situational-awareness.ai/from-gpt-4-to-agi/)
 
-## Site Building Toos References
+[Artificial Analysis](https://artificialanalysis.ai/) - Independent analysis of AI with many charts showing the current state-of-the-art models and their rankings sorted in many dimensions such as intelligence, speed, price and open weights.
+
+## Site Building Tools References
 
 1. **mkdocs** - [https://www.mkdocs.org/](https://www.mkdocs.org/) - this is our tool for building the website.  It converts Markdown into HTML in the ```site``` directory.
 2. **mkdocs material theme** - [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/) - this is the theme for our site.  The theme adds the user interface elements that give our site the look and feel.  It also has the features such as social cards.
