@@ -31,7 +31,6 @@ nav:
     - Alexnet: stories/alexnet/index.md
     - Yann LeCun: stories/yann-lecun/index.md
     - The Jellyfish and the Flatworm: stories/jellyfish-and-flatworm/index.md
-  
   - MicroSims:
     - Intro: sims/index.md
     - Four AI Futures: sims/four-futures/index.md
