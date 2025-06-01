@@ -15,6 +15,7 @@ nav:
     - What is AI?: chapters/what-is-ai.md
     - Current State: chapters/current-state.md
     - Benchmarking AI: chapters/benchmarking-ai.md
+    - Intelligence vs Price: chapters/intelligence-vs-price.md
     - MMLU: chapters/mmlu/index.md
     - LM Arena: chapters/lm-arena/index.md
     - HealthBench: chapters/healthbench/index.md
