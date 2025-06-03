@@ -12,7 +12,7 @@ let canvasWidth = 900;
 let drawHeight = 450;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
-let margin = 40;
+let margin = 20;
 
 // Global variables for responsive design
 let containerWidth;
@@ -52,7 +52,7 @@ function initializeNetwork() {
     // let spacing = (drawHeight - 2*margin - nodeHeight) / 3;
     //. we don't need responsive in the vertical direction, just the width
     let spacing = 100;
-
+  
     // Define nodes with fixed positions
     nodes = [
         {
@@ -189,6 +189,7 @@ function checkHover() {
 }
 
 function drawNodes() {
+  
     for (let node of nodes) {
         // Highlight if hovered
         if (currentHover === node.id) {
@@ -256,95 +257,64 @@ function drawForwardArrow(fromNode, toNode, label) {
     // Draw label
     fill('#333');
     noStroke();
-    textSize(16);
+    textSize(12);
     let midX = (fromX + toX) / 2;
     let midY = (fromY + toY) / 2 - 15;
     text(label, midX, midY);
 }
 
 function drawFeedbackArrow(fromNode, toNode, label) {
-    // Calculate curved path for feedback arrows
+    // Calculate curved path for feedback arrows - keep original line logic
     let fromX = fromNode.x - fromNode.width/2;
     let fromY = fromNode.y;
-    
-    // Set specific endpoints for each target rectangle
-    let toX = toNode.x + toNode.width/2; // Right edge
-    let toY;
-    
-    if (toNode.id === 'Training Data') {
-        // Upper right corner
-        toY = toNode.y - toNode.height/2;
-    } else if (toNode.id === 'New Algorithms') {
-        // Lower right corner
-        toY = toNode.y + toNode.height/2;
-    } else if (toNode.id === 'Better Hardware') {
-        // Lower right corner
-        toY = toNode.y + toNode.height/2;
-    } else {
-        // Fallback to center
-        toY = toNode.y;
-    }
+    let toX = toNode.x + toNode.width/2;
+    let toY = toNode.y;
     
     // Create curved path that goes around the outside
     let controlOffset = 80;
     let controlX1 = fromX + controlOffset;
     let controlY1 = fromY;
     let controlX2 = toX - controlOffset;
-    let controlY2 = toY; // Start with the target Y position
+    let controlY2 = toY;
     
-    // Adjust control points to approach corners from outside the rectangles
-    if (toNode.id === 'Training Data') {
-        // For upper right corner, approach from upper right (outside)
+    // Adjust control points to curve around
+    if (toNode.y < fromNode.y) {
         controlY1 -= controlOffset;
-        controlX2 = toX + controlOffset; // Move control point to the right of the corner
-        controlY2 = toY - controlOffset; // Approach from above and right
-    } else if (toNode.id === 'New Algorithms') {
-        // For lower right corner, approach from lower right (outside)  
+        controlY2 -= controlOffset;
+    } else if (toNode.y > fromNode.y) {
         controlY1 += controlOffset;
-        controlX2 = toX + controlOffset; // Move control point to the right of the corner
-        controlY2 = toY + controlOffset; // Approach from below and right
-    } else if (toNode.id === 'Better Hardware') {
-        // For lower right corner, approach from lower right (outside)
-        controlY1 += controlOffset;
-        controlX2 = toX + controlOffset; // Move control point to the right of the corner
-        controlY2 = toY + controlOffset; // Approach from below and right
+        controlY2 += controlOffset;
     } else {
-        // Fallback
         controlY1 += controlOffset;
         controlY2 += controlOffset;
     }
     
-    // Draw curved line with flipped direction (swap from and to points)
+    // Draw curved line (exactly as original)
     noFill();
     stroke('#666');
     strokeWeight(2);
     drawingContext.setLineDash([5, 5]);
-    bezier(toX, toY, controlX2, controlY2, controlX1, controlY1, fromX, fromY);
+    bezier(fromX, fromY, controlX1, controlY1, controlX2, controlY2, toX, toY);
     drawingContext.setLineDash([]);
     
-    // Draw arrowhead at the corner position
-    fill('#666');
-    stroke('#666');
-    strokeWeight(2);
+    // Calculate where the curve actually intersects the right edge of the target box
+    // Find the Y position where the curve crosses the right edge
+    let t = 0.9; // Parameter along the bezier curve near the end
+    let curveY = (1-t)*(1-t)*(1-t)*fromY + 3*(1-t)*(1-t)*t*controlY1 + 3*(1-t)*t*t*controlY2 + t*t*t*toY;
     
-    // Calculate arrow direction - restore to exactly what worked before
-    let arrowAngle;
-    if (toNode.id === 'Training Data') {
-        arrowAngle = atan2(toY - (toY + controlOffset), toX - (toX - controlOffset)) + PI;
-    } else if (toNode.id === 'New Algorithms') {
-        arrowAngle = atan2(toY - (toY - controlOffset), toX - (toX - controlOffset)) + PI;
-    } else if (toNode.id === 'Better Hardware') {
-        arrowAngle = atan2(toY - (toY - controlOffset), toX - (toX - controlOffset)) + PI;
-    } else {
-        arrowAngle = atan2(toY - controlY2, toX - controlX2) + PI;
-    }
-    let arrowSize = 12;
+    // Position arrowhead where curve actually hits the box edge
+    let arrowX = toX;
+    let arrowY = curveY;
     
-    // Draw arrowhead as triangle
+    // Calculate arrow direction at the intersection point
+    let arrowAngle = -atan2(controlY2 - arrowY, controlX2 - arrowX)*1.1;
+    let arrowSize = 14;
+    
+    // Draw arrowhead at the curve intersection point
     fill('#666');
     noStroke();
     push();
-    translate(toX, toY);
+    translate(arrowX, arrowY);
     rotate(arrowAngle);
     triangle(0, 0, -arrowSize * 1.5, -arrowSize * 0.6, -arrowSize * 1.5, arrowSize * 0.6);
     pop();
@@ -352,7 +322,7 @@ function drawFeedbackArrow(fromNode, toNode, label) {
     // Draw label
     fill('#666');
     noStroke();
-    textSize(16);
+    textSize(11);
     let labelX = (controlX1 + controlX2) / 2;
     let labelY = (controlY1 + controlY2) / 2;
     text(label, labelX, labelY);
@@ -366,7 +336,7 @@ function drawDescription() {
     if (currentHover) {
         fill('black');
         noStroke();
-        textSize(16);
+        textSize(18);
         textAlign(LEFT, TOP);
         
         // Draw description text
@@ -377,7 +347,7 @@ function drawDescription() {
         // Display instruction when no node is hovered
         fill('#666666');
         noStroke();
-        textSize(18);
+        textSize(20);
         textAlign(CENTER, CENTER);
         text("Hover over the concepts to learn about their role in AI acceleration", 
                 canvasWidth / 2, descriptionY + descriptionHeight / 2);
