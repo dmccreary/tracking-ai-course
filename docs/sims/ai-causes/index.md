@@ -10,16 +10,18 @@ social:
 
 # Causes of AI Acceleration
 
-<iframe src="./main.html" height="540px" scrolling="no"
+<iframe src="./main.html" height="570px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="450px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="570px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
-[Run the MicroSim](./main.html){ .md-button .md-button--primary }
+[Run the Causes of AI Acceleration MicroSim](./main.html){ .md-button .md-button--primary }
 
-[Edit the MicroSim](https://editor.p5js.org/dmccreary/sketches/8JrE0llQ1)
+[Edit Causes of AI Acceleration MicroSim](https://editor.p5js.org/dmccreary/sketches/8JrE0llQ1)
+
+[Run V2](./main-v2.html)
 
 
