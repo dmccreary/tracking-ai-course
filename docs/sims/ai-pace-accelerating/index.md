@@ -22,3 +22,7 @@ website:
 [Run the AI Pace Accelerating MicroSim](./main.html){ .md-button .md-button--primary }
 
 [Edit this MicroSim](https://editor.p5js.org/dmccreary/sketches/dJq4nTXE4)
+
+# References
+
+[Our World In Data Static Image](https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/6d2fd19e-63ac-4142-4bfd-95e6f9e88800/w=2079)

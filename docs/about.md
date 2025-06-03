@@ -1,5 +1,14 @@
 # About This Course
 
+I believe that forecasting the capabilities of AI is essential
+for strategic planning for any organization that manages knowledge.
+However, tracking AI progress is complex.  This course is your
+guide to creating objective data-driven estimates of AI capabilities 
+in the next five years.  We believe that evidence-based projects
+can help strategy teams move away from the fear, uncertainty and doubts around
+AI and help them put in practical solutions that leverage the power
+of AI system.
+
 ## My Journey with AI
 
 I began my career as a technologist with a passion for helping organizations understand and harness emerging technologies. With decades of experience spanning semiconductor physics, enterprise architecture, and data management, I found myself increasingly drawn to the transformative potential of artificial intelligence—particularly its exponential growth patterns and implications for knowledge-based organizations.

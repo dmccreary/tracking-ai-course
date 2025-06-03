@@ -1,10 +1,12 @@
 # Tracking AI References
 
-[Powerful A.I. Is Coming. We’re Not Ready.](https://www.nytimes.com/2025/03/14/technology/why-im-feeling-the-agi.html) - New York Times - March 14, 2025 - By Kevin Roose - Three arguments for taking progress toward artificial general intelligence, or A.G.I., more seriously — whether you’re an optimist or a pessimist.
+- [Our World In Data AI Charts](https://ourworldindata.org/artificial-intelligence)
 
-[Situational Awareness AI Website](https://situational-awareness.ai/from-gpt-4-to-agi/)
+- [Powerful A.I. Is Coming. We’re Not Ready.](https://www.nytimes.com/2025/03/14/technology/why-im-feeling-the-agi.html) - New York Times - March 14, 2025 - By Kevin Roose - Three arguments for taking progress toward artificial general intelligence, or A.G.I., more seriously — whether you’re an optimist or a pessimist.
 
-[Artificial Analysis](https://artificialanalysis.ai/) - Independent analysis of AI with many charts showing the current state-of-the-art models and their rankings sorted in many dimensions such as intelligence, speed, price and open weights.
+- [Situational Awareness AI Website](https://situational-awareness.ai/from-gpt-4-to-agi/)
+
+- [Artificial Analysis](https://artificialanalysis.ai/) - Independent analysis of AI with many charts showing the current state-of-the-art models and their rankings sorted in many dimensions such as intelligence, speed, price and open weights.
 
 ## Site Building Tools References
 
