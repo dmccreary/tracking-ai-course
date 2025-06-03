@@ -25,12 +25,12 @@ social:
 ## AI Acceleration Feedback Loop: Strategic Planning Lesson
 
 !!! prompt
-  There is a MicroSim in the file ai-causes.js that shows the feedback between Training Data, New Algorithms, and Better Hardware and Better AI.
+    There is a MicroSim in the file ai-causes.js that shows the feedback between Training Data, New Algorithms, and Better Hardware and Better AI.
 
-  This is a Causal Loop Diagram (CDL) from Systems Thinking that 
-  explains the positive reinforcement loops that contribute to Better AI.
+    This is a Causal Loop Diagram (CDL) from Systems Thinking that 
+    explains the positive reinforcement loops that contribute to Better AI.
 
-  Please generate a detailed lesson plan for members of an AI strategy planning team to help them study each of the parts of this diagram.  Do not put in estimated times.
+    Please generate a detailed lesson plan for members of an AI strategy planning team to help them study each of the parts of this diagram.  Do not put in estimated times.
 
 ## Learning Objectives
 
