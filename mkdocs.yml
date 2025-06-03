@@ -16,7 +16,7 @@ nav:
     - Current State: chapters/current-state.md
     - Benchmarking AI: chapters/benchmarking-ai.md
     - AI vs. Humans: chapters/ai-vs-humans.md
-    - Long Task Rate: chapters/long-task-rate.md
+    - Long Task Rate: chapters/long-tasks/index.md
     - Intelligence vs Price: chapters/intelligence-vs-price.md
     - MMLU: chapters/mmlu/index.md
     - LM Arena: chapters/lm-arena/index.md
