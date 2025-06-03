@@ -8,6 +8,8 @@
 
 - [Artificial Analysis](https://artificialanalysis.ai/) - Independent analysis of AI with many charts showing the current state-of-the-art models and their rankings sorted in many dimensions such as intelligence, speed, price and open weights.
 
+- [Math Word Problems](https://paperswithcode.com/sota/math-word-problem-solving-on-math)
+
 ## Site Building Tools References
 
 1. **mkdocs** - [https://www.mkdocs.org/](https://www.mkdocs.org/) - this is our tool for building the website.  It converts Markdown into HTML in the ```site``` directory.
