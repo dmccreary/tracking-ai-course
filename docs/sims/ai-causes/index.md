@@ -6,8 +6,6 @@ og:image: /sims/ai-causes/ai-causes.png
 twitter:image: /sims/ai-causes/ai-causes.png
 social:
    cards: false
-hide:
-  - toc
 ---
 
 # Causes of AI Acceleration
