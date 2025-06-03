@@ -1,18 +1,18 @@
 ---
-title: up to 60 characters
-description: up to 110 characters for mobile
-image: /img/cover.png
-og:image: /img/cover.png
-twitter:image: /img/cover.png
+title: Causes of AI Acceleration
+description: A causal loop diagram showing how AI feedback is accelerating AI progress.
+image: /sims/ai-causes/ai-causes.png
+og:image: /sims/ai-causes/ai-causes.png
+twitter:image: /sims/ai-causes/ai-causes.png
 social:
    cards: false
 hide:
   - toc
 ---
 
-# MicroSim Templates
+# Causes of AI Acceleration
 
-<iframe src="./main.html" height="450px" scrolling="no"
+<iframe src="./main.html" height="540px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ```html
