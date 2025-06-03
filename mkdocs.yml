@@ -23,7 +23,7 @@ nav:
     - HealthBench: chapters/healthbench/index.md
     - Objective LLMs for The Classroom: chapters/objective-llm-quality.md
     - AGI Predicted Dates: chapters/agi-predicted-dates.md
-    - AI Investments: chapters/ai-investments.md
+    - AI Investments: chapters/ai-investments/index.md
     - Number of Models: chapters/number-of-models.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
     - Porter's Five Forces Model: chapters/porters-five-forces/index.md
