@@ -1,10 +1,18 @@
 // AI Acceleration MicroSim using pure p5.js
+// This simulation visualizes the reinforcing cycle of AI acceleration
+// where Training Data, New Algorithms, and Better Hardware contribute to Better AI,
+// which in turn feeds back into generating more Training Data, discovering New Algorithms,
+// and designing Better Hardware.
+// This code is designed to be responsive and adapt to the container size.
+// It uses p5.js for drawing and interaction, with a focus on clarity and educational value.
+// Dan McCreary, June 2025
+
 // Canvas dimensions
 let canvasWidth = 900;
-let drawHeight = 500;
+let drawHeight = 450;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
-let margin = 40;
+let margin = 20;
 
 // Global variables for responsive design
 let containerWidth;
@@ -40,8 +48,11 @@ function initializeNetwork() {
     let leftX = margin + nodeWidth/2 + 20;
     let rightX = canvasWidth - margin - nodeWidth/2 - 20;
     let centerY = drawHeight / 2;
-    let spacing = (drawHeight - 2*margin - nodeHeight) / 3;
-
+    // vertical spacing between concept boxes
+    // let spacing = (drawHeight - 2*margin - nodeHeight) / 3;
+    //. we don't need responsive in the vertical direction, just the width
+    let spacing = 100;
+  
     // Define nodes with fixed positions
     nodes = [
         {
@@ -178,6 +189,7 @@ function checkHover() {
 }
 
 function drawNodes() {
+  
     for (let node of nodes) {
         // Highlight if hovered
         if (currentHover === node.id) {
@@ -295,7 +307,7 @@ function drawFeedbackArrow(fromNode, toNode, label) {
     let arrowY = curveY;
     
     // Calculate arrow direction at the intersection point
-    let arrowAngle = -atan2(controlY2 - arrowY, controlX2 - arrowX);
+    let arrowAngle = -atan2(controlY2 - arrowY, controlX2 - arrowX)*1.1;
     let arrowSize = 14;
     
     // Draw arrowhead at the curve intersection point
@@ -324,7 +336,7 @@ function drawDescription() {
     if (currentHover) {
         fill('black');
         noStroke();
-        textSize(constrain(containerWidth * 0.014, 11, 13));
+        textSize(18);
         textAlign(LEFT, TOP);
         
         // Draw description text
@@ -335,7 +347,7 @@ function drawDescription() {
         // Display instruction when no node is hovered
         fill('#666666');
         noStroke();
-        textSize(constrain(containerWidth * 0.016, 12, 14));
+        textSize(20);
         textAlign(CENTER, CENTER);
         text("Hover over the concepts to learn about their role in AI acceleration", 
                 canvasWidth / 2, descriptionY + descriptionHeight / 2);
