@@ -9,11 +9,11 @@ social:
 ---
 # Technology Adoption Curve Infographic
 
-<iframe src="./main.html" height="450px" scrolling="no"
+<iframe src="./main.html" height="420px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="450px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/technology-adoption/main.html"  height="420px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
