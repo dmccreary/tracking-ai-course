@@ -6,8 +6,6 @@ og:image: /sims/ai-cmm/ai-cmm.png
 twitter:image: /sims/ai-cmm/ai-cmm.png
 social:
    cards: false
-hide:
-  - toc
 ---
 # AI Capability Maturity Model Infographic
 
