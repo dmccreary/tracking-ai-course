@@ -1,338 +1,349 @@
-// Technology Adoption Curve MicroSim
-// Canvas dimensions
+// Technology Adoption Curve Infographic
+// This script creates an interactive infographic visualizing the Technology Adoption Lifecycle Curve
+// using p5.js. Hover over segments to see detailed descriptions of each section,
+// and click a segment to visit its Wikipedia page.
+// Dan McCreary - June 2025
+
+// Canvas dimensions (initial values; they’ll be overridden in setup())
 let canvasWidth = 500;
 let drawHeight = 400;
-let controlHeight = 50;
-let canvasHeight = drawHeight + controlHeight;
+let canvasHeight = drawHeight;
+
 let margin = 25;
 let defaultTextSize = 16;
 
 // Global variables for responsive design
-let containerWidth; // calculated by container upon resize
-let containerHeight = canvasHeight; // fixed height on page
+let containerWidth;                
+let containerHeight = canvasHeight; 
 
 // Variables for the visualization
 let currentHover = -1;
 let adoptionGroups = [];
 
-// Bell curve properties
+// Infobox properties
+let infoBoxHeight = 80;
+
+// You can now define bellBaseY with any formula you like.
+// For instance:  drawHeight - infoBoxHeight - margin*2
+// In setup() we’ll recompute it whenever the window is resized.
+let bellBaseY;
+
+// Bell curve data
 let bellCurve = [];
 let numPoints = 200;
 
-// Slider for skewness
+// Slider for skewness (kept as before)
 let skewnessSlider;
 let skewness = 0; // Default is symmetric bell curve
 
 function setup() {
-  // Create a canvas to match the parent container's size
+  // Compute initial canvas size & bellBaseY
   updateCanvasSize();
+  computeBellBaseY();
+
+  // Create the canvas and attach it
   const canvas = createCanvas(containerWidth, containerHeight);
   canvas.parent(document.querySelector('main'));
+
   textSize(defaultTextSize);
-  
-  // Create skewness slider
-  skewnessSlider = createSlider(-2, 2, 0, 0.1);
-  skewnessSlider.position(120, drawHeight + 15);
-  skewnessSlider.size(containerWidth - 150);
-  
-  // Define the adoption groups and their properties
+  textAlign(CENTER, CENTER);
+
+  // Define the five adoption segments
   adoptionGroups = [
     {
       name: "Innovators",
       percentage: 2.5,
       color: "red",
       tcolor: "white",
-      description: "Innovators (2.5%): These are technology enthusiasts who are willing to take risks with new technologies. They pursue new products aggressively and are intrigued by any new product release. They want to be the first to try new things, even if there might be bugs or issues.",
-      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Innovators"
+      description:
+        "Innovators (2.5%): Technology enthusiasts who are willing to take risks with new tech. They pursue new products aggressively and want to be first—even if there might be bugs.",
+      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Innovators",
     },
     {
       name: "Early Adopters",
       percentage: 13.5,
       color: "orange",
       tcolor: "black",
-      description: "Early Adopters (13.5%): These are visionaries who understand and appreciate the benefits of new technology and relate potential benefits to their own needs. They're quick to adopt new technologies that they believe will provide them with a competitive advantage.",
-      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Early_adopters"
+      description:
+        "Early Adopters (13.5%): Visionaries who see potential benefits of new tech and adopt quickly to gain competitive advantage.",
+      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Early_adopters",
     },
     {
       name: "Early Majority",
       percentage: 34,
       color: "green",
       tcolor: "white",
-      description: "Early Majority (34%): These are pragmatists who adopt new technology when they see proven benefits but avoid risks. They tend to be practical and want to see how the technology works for others before investing. They're an important group as they represent a large segment of the market.",
-      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Early_majority"
+      description:
+        "Early Majority (34%): Pragmatists who wait for proven benefits before investing. They’re a large, important market segment.",
+      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Early_majority",
     },
     {
       name: "Late Majority",
       percentage: 34,
       color: "blue",
       tcolor: "white",
-      description: "Late Majority (34%): These are conservatives who are skeptical of new technology and will only adopt it after it has become an established standard. They're often driven by economic necessity or peer pressure rather than a desire for improvement or competitive advantage.",
-      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Late_majority"
+      description:
+        "Late Majority (34%): Skeptics who adopt only when technology is established—often due to peer pressure or necessity.",
+      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Late_majority",
     },
     {
       name: "Laggards",
       percentage: 16,
       color: "purple",
       tcolor: "white",
-      description: "Laggards (16%): These are traditionalists who are very suspicious of new technology and will only adopt it when they have no other choice. They tend to be very price-sensitive and may have strong ideological resistance to innovation.",
-      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Laggards"
-    }
+      description:
+        "Laggards (16%): Traditionalists who resist new tech until they have no other choice. Very price‐sensitive and ideologically opposed.",
+      url: "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle#Laggards",
+    },
   ];
-  
-  // Generate initial bell curve points
+
+  // Generate initial bell curve points.now and on window resize
   generateBellCurve();
-  
-  describe('An interactive Technology Adoption Curve showing the normal distribution of technology adoption across population segments. Hover over segments to see descriptions, click to visit Wikipedia.', LABEL);
+
+  describe(
+    "An interactive Technology Adoption Curve infographic showing the normal distribution of technology adoption. Hover over segments for descriptions, click to visit Wikipedia.",
+    LABEL
+  );
 }
 
 function draw() {
-  // Draw area
-  fill('aliceblue');
-  stroke('silver');
+  
+  // Step 1: Draw background for the bell‐curve area in light blue with a light gray border
+  fill("aliceblue");
+  stroke("silver");
   strokeWeight(1);
   rect(0, 0, canvasWidth, drawHeight);
-  
-  // Controls area
-  fill('white');
-  stroke('silver');
-  strokeWeight(1);
-  rect(0, drawHeight, canvasWidth, controlHeight);
-  
-  // Update skewness value from slider
-  skewness = skewnessSlider.value();
-  
-  // Generate bell curve with current skewness
-  generateBellCurve();
-  
-  // Draw the title
-  fill('black');
+
+
+  // Step 2: Draw the title
+  fill("black");
   noStroke();
   textSize(24);
   textAlign(CENTER, TOP);
-  text("Technology Adoption Curve", canvasWidth/2, margin/2);
-  
-  // Draw bell curve and fill segments
+  text("Technology Adoption Lifecycle Curve", canvasWidth / 2, margin / 2);
+
+  // 4) Draw the colored segments under the curve
   drawAdoptionCurve();
-  
-  // Draw segment labels
-  drawSegmentLabels();
-  
-  // Draw control labels
-  fill('black');
-  noStroke();
-  textSize(defaultTextSize);
-  textAlign(LEFT, CENTER);
-  text("Skewness:", 20, drawHeight + 25);
-  
-  // Draw description
-  drawDescription();
+
+  // 5) Draw the infobox + hover‐description
+  drawInfoBox();
+}
+
+function computeBellBaseY() {
+  // Whenever the window or infoBoxHeight/ margin changes, recalc:
+  // → Example: let bellBaseY = drawHeight - infoBoxHeight - margin*2
+  bellBaseY = drawHeight - infoBoxHeight - margin * 2;
+
+  // Then total canvas height must be at least drawHeight,
+  // so containerHeight = drawHeight (no change here).
+  containerHeight = drawHeight;
 }
 
 function generateBellCurve() {
-  // Generate bell curve points with adjustable skewness
   bellCurve = [];
-  
-  let maxHeight = drawHeight * 0.6;
+
+  // Vertical amplitude of the bell (60% of drawHeight is okay)
+  let maxHeight = drawHeight * 0.5;
   let xSpacing = (canvasWidth - 2 * margin) / numPoints;
-  
+
   for (let i = 0; i < numPoints; i++) {
     let x = margin + i * xSpacing;
-    
-    // Normalize i to be between -3 and 3 for the bell curve
+
+    // Normalize i to range [-3, +3]
     let normalizedI = (i / numPoints) * 6 - 3;
-    
-    // Apply skewness
-    let skewedI = normalizedI + skewness * normalizedI * normalizedI / 5;
-    
-    // Bell curve formula
-    let y = maxHeight * Math.exp(-skewedI * skewedI / 2);
-    
-    // Y position from top - invert because p5.js has 0,0 at top-left
-    let yPos = drawHeight - margin - y;
-    
+
+    // Apply skew if any
+    let skewedI = normalizedI + (skewness * normalizedI * normalizedI) / 5;
+
+    // Gaussian formula
+    let y = maxHeight * Math.exp((-skewedI * skewedI) / 2);
+
+    // Now the bottom of the bell is at bellBaseY, so top is bellBaseY - y
+    let yPos = bellBaseY - y;
+
     bellCurve.push({ x: x, y: yPos });
   }
 }
 
 function drawAdoptionCurve() {
-  // Calculate segment boundaries based on cumulative percentages
+  // The baseline for all segments = bellBaseY
+  // add the height of the narrow Innovators
+  let innovatorsHeight = 20;
+  let bellBottomHeight = bellBaseY + innovatorsHeight;
+
+  // Compute cumulative percentages (0, 2.5, 16, 50, 84, 100)
   let cumulativePercentages = [0];
   let sum = 0;
   for (let group of adoptionGroups) {
     sum += group.percentage;
     cumulativePercentages.push(sum);
   }
-  
-  // Draw and fill segments
+
+  // Draw and fill each of the 5 segments
   for (let i = 0; i < adoptionGroups.length; i++) {
-    let startPercent = cumulativePercentages[i];
-    let endPercent = cumulativePercentages[i + 1];
+    let startPct = cumulativePercentages[i];
+    let endPct = cumulativePercentages[i + 1];
+
+    // Which indices in bellCurve array correspond to these percentages?
+    let startIdx = Math.floor((startPct / 100) * numPoints);
+    let endIdx = Math.floor((endPct / 100) * numPoints);
+
+    // Clamp to [0, numPoints-1]
+    startIdx = constrain(startIdx, 0, numPoints - 1);
+    endIdx = constrain(endIdx, 0, numPoints - 1);
     
-    // Calculate start and end indices in the bellCurve array
-    let startIndex = Math.floor((startPercent / 100) * numPoints);
-    let endIndex = Math.floor((endPercent / 100) * numPoints);
-    
-    // Ensure indices are within bounds
-    startIndex = Math.max(0, Math.min(startIndex, numPoints - 1));
-    endIndex = Math.max(0, Math.min(endIndex, numPoints - 1));
-    
-    // Segment is hovered - highlight it
+    // hover logic
+    // If hovered, draw a thick black stroke around that segment
     if (i === currentHover) {
-      stroke('black');
-      strokeWeight(2);
+      stroke("black");
+      strokeWeight(6);
     } else {
       noStroke();
     }
-    
-    // Fill the segment with its color
+
+    // Fill with that group's color
     fill(adoptionGroups[i].color);
-    
-    // Draw the segment as a polygon
+
+    // Draw polygon: bottom-left → curve points → bottom-right
     beginShape();
-    // Bottom left corner
-    vertex(bellCurve[startIndex].x, drawHeight - margin);
-    
-    // Top curve points
-    for (let j = startIndex; j <= endIndex; j++) {
-      vertex(bellCurve[j].x, bellCurve[j].y);
-    }
-    
-    // Bottom right corner
-    vertex(bellCurve[endIndex].x, drawHeight - margin);
-    
+      // bottom-left
+      vertex(bellCurve[startIdx].x, bellBottomHeight);
+
+      // top: walk along the curve
+      for (let j = startIdx; j <= endIdx; j++) {
+        vertex(bellCurve[j].x, bellCurve[j].y);
+      }
+
+      // bottom-right
+      vertex(bellCurve[endIdx].x, bellBottomHeight);
     endShape(CLOSE);
-    
-    // Store segment coordinates for hover detection
+
+    // Save for hover detection
     adoptionGroups[i].coords = {
-      startX: bellCurve[startIndex].x,
-      endX: bellCurve[endIndex].x
+      startX: bellCurve[startIdx].x,
+      endX: bellCurve[endIdx].x,
     };
   }
-  
-  // Draw the curve outline
-  stroke('black');
+
+  // Finally, draw the black outline of the full bell curve
+  stroke("black");
   strokeWeight(2);
   noFill();
   beginShape();
-  for (let point of bellCurve) {
-    vertex(point.x, point.y);
-  }
+    for (let pt of bellCurve) {
+      vertex(pt.x, pt.y);
+    }
   endShape();
 }
 
-function drawSegmentLabels() {
-  // Calculate x-position for each segment's label
-  for (let i = 0; i < adoptionGroups.length; i++) {
-    let group = adoptionGroups[i];
-    let midX = (group.coords.startX + group.coords.endX) / 2;
-    
-    // Draw vertical lines between segments
-    if (i > 0) {
-      stroke('gray');
-      strokeWeight(1);
-      line(group.coords.startX, drawHeight - margin, group.coords.startX, bellCurve[i].y - 20);
-    }
-    
-    // Determine text size based on segment width
-    let segmentWidth = group.coords.endX - group.coords.startX;
-    let scaledTextSize = constrain(segmentWidth * 0.15, 8, defaultTextSize);
-    
-    // Draw label
-    fill(group.tcolor);
-    noStroke();
-    textSize(scaledTextSize);
-    textAlign(CENTER, BOTTOM);
-    
-    // Check if there's enough space to write the full name
-    let labelY = bellCurve[Math.floor((i + 0.5) * numPoints / adoptionGroups.length)].y + 20;
-    
-    // Use abbreviated names for small segments
-    let displayName = group.name;
-    if (segmentWidth < 60) {
-      displayName = group.name.substring(0, 3) + ".";
-    }
-    
-    text(displayName, midX, labelY);
-    
-    // Draw percentage under name
-    textSize(scaledTextSize * 0.8);
-    text(group.percentage + "%", midX, labelY + scaledTextSize + 5);
-  }
-}
+// draw the inforBox on hover
+function drawInfoBox() {
+  // Infobox sits exactly at bellBaseY, height = infoBoxHeight
+  let infoboxY = bellBaseY + margin + 10;
 
-function drawDescription() {
-  let descriptionY = drawHeight - margin * 2.5;
-  let descriptionHeight = margin * 2;
-  
-  // Display description for hovered segment
+  // Draw the white background rectangle for infobox
+  fill("white");
+  noStroke();
+  rect(margin, infoboxY, canvasWidth - 2 * margin, infoBoxHeight, 5);
+
+  // If hovering over a segment, show its description inside
   if (currentHover !== -1) {
-    fill('black');
+    fill("black");
     noStroke();
-    textSize(constrain(containerWidth * 0.025, 12, 15));
-    textAlign(LEFT, TOP);
-    
-    // Draw description box
-    fill(240);
-    rect(margin, descriptionY, canvasWidth - 2 * margin, descriptionHeight);
-    
-    fill(0);
-    text(adoptionGroups[currentHover].description, margin + 10, descriptionY + 10, 
-         canvasWidth - 2 * margin - 20, descriptionHeight - 20);
+    textSize(16);
+    textAlign(CENTER, CENTER);
+    text(
+      adoptionGroups[currentHover].description,
+      margin + 10,
+      infoboxY + 10,
+      canvasWidth - 2 * margin - 20,
+      infoBoxHeight - 20
+    );
   } else {
-    // Display instruction when no segment is hovered
-    fill('#666666');
+    // Default instruction text
+    fill("#666666");
     noStroke();
     textSize(constrain(containerWidth * 0.025, 12, 15));
     textAlign(CENTER, CENTER);
-    text("Hover over segments to see descriptions, click to visit Wikipedia", 
-         canvasWidth / 2, descriptionY + descriptionHeight / 2);
+    text(
+      "Hover over segments to see descriptions, click to visit Wikipedia",
+      canvasWidth / 2,
+      infoboxY + infoBoxHeight / 2
+    );
   }
+
+  // Static segment labels need to be placed ABOVE the curve but below the title.
+  // We choose Y = bellBaseY - some offset (so they "sit" on the curve).
+  // Feel free to tweak `labelYOffset` if labels overlap:
+  let labelYOffset = 20;
+
+  // Innovators (leftmost 2.5%)
+  textSize(14);
+  fill("black");
+  let invX = (adoptionGroups[0].coords.startX + adoptionGroups[0].coords.endX) / 2;
+  text("Innovators\n2.5%", invX, bellBaseY - 20);
+
+  // Early Adopters (next 13.5%)
+  textSize(13);
+  fill("black");
+  let eaX = (adoptionGroups[1].coords.startX + adoptionGroups[1].coords.endX) / 2;
+  text("Early\nAdopters\n13.5%", eaX, bellBaseY - 50);
+
+  // Early Majority (center-left)
+  textSize(20);
+  fill("white");
+  let emX = (adoptionGroups[2].coords.startX + adoptionGroups[2].coords.endX) / 2;
+  text("Early Majority\n34%", emX, bellBaseY - labelYOffset);
+
+  // Late Majority (center-right)
+  fill("white");
+  let lmX = (adoptionGroups[3].coords.startX + adoptionGroups[3].coords.endX) / 2;
+  text("Late Majority\n34%", lmX, bellBaseY - labelYOffset);
+
+  // Laggards (rightmost)
+  textSize(20);
+  fill("black");
+  let lagX = (adoptionGroups[4].coords.startX + adoptionGroups[4].coords.endX) / 2;
+  text("Laggards\n16%", lagX, bellBaseY - labelYOffset - 20);
 }
 
 function mouseMoved() {
-  // Check if mouse is within the drawing area (bell curve region)
-  if (mouseY > drawHeight - margin || mouseY < margin) {
+  // If mouse is above the title or below the curve, no hover
+  if (mouseY < margin || mouseY > bellBaseY + 20) {
     currentHover = -1;
     return;
   }
-  
-  // Find which segment the mouse is over
+
+  // Otherwise check which segment’s X‐range contains mouseX
   for (let i = 0; i < adoptionGroups.length; i++) {
-    if (mouseX >= adoptionGroups[i].coords.startX && 
-        mouseX <= adoptionGroups[i].coords.endX) {
+    let { startX, endX } = adoptionGroups[i].coords;
+    if (mouseX >= startX && mouseX <= endX) {
       currentHover = i;
       return;
     }
   }
-  
   currentHover = -1;
 }
 
 function mouseClicked() {
-  // Check if a segment is clicked and open its URL
+  // If click is inside drawHeight and over a valid segment → open URL
   if (currentHover !== -1 && mouseY < drawHeight) {
-    window.open(adoptionGroups[currentHover].url, '_blank');
+    window.open(adoptionGroups[currentHover].url, "_blank");
   }
 }
 
 function windowResized() {
-  // Update canvas size when the container resizes
+  // When container resizes, recalc widths & bellBaseY
   updateCanvasSize();
+  computeBellBaseY();
   resizeCanvas(containerWidth, containerHeight);
-  
-  // Reposition and resize slider
-  skewnessSlider.position(120, drawHeight + 15);
-  skewnessSlider.size(containerWidth - 150);
-  
-  // Regenerate bell curve with new dimensions
   generateBellCurve();
-  
   redraw();
 }
 
 function updateCanvasSize() {
-  // Get the exact dimensions of the container
-  const container = document.querySelector('main').getBoundingClientRect();
-  containerWidth = Math.floor(container.width);  // Avoid fractional pixels
+  // Match the <main> container’s width
+  const container = document.querySelector("main").getBoundingClientRect();
+  containerWidth = Math.floor(container.width);
   canvasWidth = containerWidth;
 }
