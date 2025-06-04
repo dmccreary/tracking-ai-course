@@ -1,8 +1,15 @@
 ---
+title: Technology Adoption Curve Infographic
+description: up to 110 characters for mobile
+image: /sims/cover.png
+og:image: /sims/cover.png
+twitter:image: /sims/cover.png
+social:
+   cards: false
 hide:
   - toc
 ---
-# Technology Adoption Curve MicroSim
+# Technology Adoption Curve Infographic
 
 <iframe src="./main.html" height="450px" scrolling="no"
   style="overflow: hidden;"></iframe>
@@ -12,9 +19,9 @@ hide:
   style="overflow: hidden;"></iframe>
 ```
 
-[Run the MicroSim](./main.html){ .md-button .md-button--primary }
+[Run the Technology Adoption Curve Infographic](./main.html){ .md-button .md-button--primary }
 
-[Edit the MicroSim]()
+[Edit the Technology Adoption Curve Infographic Infographic](https://editor.p5js.org/dmccreary/sketches/kDHbOv0Dv)
 
 
 
