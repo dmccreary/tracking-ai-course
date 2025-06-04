@@ -53,14 +53,17 @@ Begin with these questions to assess current understanding:
 Introduce the four quadrants using the interactive diagram:
 
 **Current State (Internal Factors)**
+
 - **Strengths**: Internal capabilities that provide competitive advantage
 - **Weaknesses**: Internal limitations that hinder progress
 
 **Future State (External Factors)**
+
 - **Opportunities**: External trends that can be leveraged
 - **Threats**: External risks that must be managed
 
 ### AI-Specific Considerations
+
 Explain why SWOT is particularly valuable for AI strategy:
 - AI landscape evolves rapidly, requiring systematic environmental scanning
 - Internal capabilities (data, talent, infrastructure) are critical success factors
@@ -73,9 +76,11 @@ Explain why SWOT is particularly valuable for AI strategy:
 Have participants use the SWOT diagram while discussing each quadrant:
 
 #### Strengths Quadrant
+
 **Discussion Prompt**: "What internal capabilities give us an advantage in AI?"
 
 **Common AI Strengths to Consider**:
+
 - Large, high-quality datasets
 - Experienced data science and AI teams
 - Strong computational infrastructure
@@ -88,9 +93,11 @@ Have participants use the SWOT diagram while discussing each quadrant:
 **Committee Exercise**: Have each member identify 2-3 potential strengths from their perspective/department.
 
 #### Weaknesses Quadrant
+
 **Discussion Prompt**: "What internal challenges limit our AI success?"
 
 **Common AI Weaknesses to Consider**:
+
 - Fragmented or poor-quality data
 - Lack of AI talent or expertise
 - Limited computational resources
@@ -106,6 +113,7 @@ Have participants use the SWOT diagram while discussing each quadrant:
 **Discussion Prompt**: "What external trends can we capitalize on?"
 
 **Common AI Opportunities to Consider**:
+
 - Advances in foundation models (LLMs, vision models)
 - Decreasing costs of compute and storage
 - Growing availability of AI tools and platforms
@@ -121,6 +129,7 @@ Have participants use the SWOT diagram while discussing each quadrant:
 **Discussion Prompt**: "What external risks could derail our AI initiatives?"
 
 **Common AI Threats to Consider**:
+
 - Fast-moving competitors with AI advantages
 - Regulatory restrictions or compliance requirements
 - Public mistrust or ethical concerns about AI
@@ -138,23 +147,28 @@ Have participants use the SWOT diagram while discussing each quadrant:
 Guide the committee through strategic thinking by connecting quadrants:
 
 **Strength-Opportunity (SO) Strategies**
+
 - "How can we use our strengths to capitalize on opportunities?"
 - Example: "Our large customer dataset + advances in personalization AI = competitive advantage in customer experience"
 
 **Weakness-Opportunity (WO) Strategies**
+
 - "How can we address weaknesses to better pursue opportunities?"
 - Example: "Partner with AI vendors to overcome our talent shortage while pursuing new market opportunities"
 
 **Strength-Threat (ST) Strategies**
+
 - "How can our strengths help us defend against threats?"
 - Example: "Our domain expertise helps us build more trustworthy AI systems than generic competitors"
 
 **Weakness-Threat (WT) Strategies**
+
 - "How do we minimize weaknesses and avoid threats?"
 - Example: "Improve data governance to address both internal challenges and regulatory compliance"
 
 ### Priority Setting Exercise (10 minutes)
 Have the committee vote on:
+
 1. Top 3 most critical strengths to leverage
 2. Top 3 most urgent weaknesses to address
 3. Top 3 highest-potential opportunities to pursue
@@ -163,7 +177,9 @@ Have the committee vote on:
 ## Part 4: Action Planning (10 minutes)
 
 ### Strategic Initiative Development
+
 For each high-priority item identified, discuss:
+
 - **Owner**: Who will lead this initiative?
 - **Timeline**: What's the realistic timeframe?
 - **Resources**: What investment is required?
@@ -221,6 +237,40 @@ Test understanding with these discussion questions:
 - **Competitive Intelligence**: Methods for monitoring AI threats and opportunities
 - **Capability Assessment**: Tools for ongoing evaluation of AI strengths and weaknesses
 - **Trend Monitoring**: Resources for staying current with AI developments
+
+## SWOT Limitations and Next Steps
+
+### Understanding SWOT's Limitations
+
+While SWOT provides a valuable starting framework, acknowledge its constraints:
+
+**Key Limitations**:
+
+-   **Static Snapshot**: SWOT captures a moment in time but doesn't model dynamic competitive interactions
+-   **Lacks Prioritization**: All factors appear equally weighted without analytical framework for importance
+-   **Missing Industry Structure**: Doesn't analyze the underlying forces that shape competitive intensity
+-   **Oversimplification**: Complex competitive dynamics reduced to four broad categories
+
+### Porter's Five Forces as a Complementary Tool
+
+After completing SWOT analysis, introduce Porter's Five Forces as the logical next step for deeper competitive analysis:
+
+**Five Forces Framework Analyzes**:
+
+1.  **Threat of New Entrants**: How easily can new AI competitors enter your market?
+2.  **Bargaining Power of Suppliers**: How much leverage do AI vendors, cloud providers, and talent have?
+3.  **Bargaining Power of Buyers**: How does AI change customer expectations and switching costs?
+4.  **Threat of Substitutes**: What alternative solutions could replace AI-powered offerings?
+5.  **Competitive Rivalry**: How does AI intensify or change competitive dynamics?
+
+**Why Five Forces Complements SWOT**:
+
+-   Provides analytical rigor to competitive assessment
+-   Helps prioritize which threats and opportunities matter most
+-   Reveals the underlying industry structure that drives profitability
+-   Guides specific strategic responses based on competitive forces
+
+**Recommended Sequence**: Use SWOT for initial strategic assessment, then apply Five Forces to understand the competitive dynamics that will determine success.
 
 ## Conclusion
 
