@@ -29,6 +29,7 @@ nav:
     - More Data: chapters/more-data.md
     - The LLMs Only Path: chapters/skepticism-of-the-llm-only-path.md
     - Porter's Five Forces Model: chapters/porters-five-forces/index.md
+    - AI Hype Cycle: chapters/ai-hype-cycles.md
     - Stationary vs. Non-Stationary Policies: chapters/stationary-vs-non-stationary-policies.md
     - Curriculum Learning: chapters/curriculum-learning.md
 
@@ -57,6 +58,7 @@ nav:
     - The AI Flywheel: sims/ai-flywheel/index.md
     - AI Causes: sims/ai-causes/index.md
     - AI SWOT Analysis: sims/swot/index.md
+    - Technology Hype Cycle: sims/hype-cycle/index.md
     - Autoregressive: sims/autoregressive/index.md
     - AI Timeline: sims/timeline/index.md
     - Tokenizer: sims/tokenizer/index.md
