@@ -9,7 +9,7 @@ social:
 ---
 # Technology Hype Cycle Infographic
 
-<iframe src="./main.html" height="450px" scrolling="no"
+<iframe src="./main.html" height="470px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ```html
