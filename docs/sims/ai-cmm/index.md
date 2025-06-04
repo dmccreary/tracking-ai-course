@@ -35,7 +35,266 @@ The Five Levels:
 - Level 4 - Strategic (Teal): AI integrated into core business strategy and operations
 - Level 5 - Transformative (Blue): AI fundamental to organizational identity and competitive advantage
 
+## AI Stage Terminology
+
+- Stage 1: Manual processes, no AI
+- Stage 2: Basic automation, simple ML
+- Stage 3: Advanced AI applications
+- Stage 4: AI-first organization
+- Stage 5: AI-native, fully integrated
+
 This model helps organizations assess their current AI maturity and understand what capabilities they need to develop to advance to the next level. It's particularly useful for strategic planning and identifying gaps in AI readiness.
+
+# AI Maturity Model: Five Stages of Organizational AI Evolution
+
+## Stage 1: Manual Processes, No AI
+**"The Traditional Organization"**
+
+### Characteristics:
+
+- All processes rely on human decision-making and manual execution
+- Data analysis done in spreadsheets or basic reporting tools
+- Knowledge workers spend significant time on repetitive tasks
+- Decision-making based on experience, intuition, and basic analytics
+- No dedicated AI/ML personnel or budget
+- Technology stack consists of traditional enterprise software (ERP, CRM, email)
+
+### Example Activities:
+
+- Customer service handled entirely by human agents
+- Financial forecasting done manually in Excel
+- Document processing requires human reading and data entry
+- Inventory management based on historical patterns and gut instinct
+- Hiring decisions made through traditional resume review and interviews
+
+### Pain Points:
+
+- High labor costs for routine tasks
+- Inconsistent decision quality across different employees
+- Slow response times to market changes
+- Limited ability to process large volumes of data
+- Difficulty scaling operations without proportional headcount increases
+
+---
+
+## Stage 2: Basic Automation, Simple ML
+**"The Experimenting Organization"**
+
+### Characteristics:
+
+- Introduction of robotic process automation (RPA) for routine tasks
+- Basic machine learning models for simple predictions
+- Some departments pilot AI tools independently
+- Traditional analytics supplemented with predictive models
+- IT begins exploring cloud-based AI services
+- Initial investment in data infrastructure
+
+### Example Activities:
+
+- Chatbots handle basic customer inquiries with human escalation
+- Simple recommendation engines for e-commerce
+- Automated invoice processing and data entry
+- Basic fraud detection using rule-based systems plus simple ML
+- Email marketing with basic personalization algorithms
+- Predictive maintenance alerts for equipment
+
+### Technologies Deployed:
+
+- Cloud ML services (AWS SageMaker, Google AI Platform)
+- Basic natural language processing tools
+- Simple computer vision for document scanning
+- Workflow automation tools
+- Business intelligence with predictive analytics
+
+### Challenges:
+
+- Siloed AI initiatives across departments
+- Limited data quality and integration
+- Lack of AI governance and standards
+- Skills gap in AI/ML expertise
+- Difficulty measuring ROI on AI investments
+
+---
+
+## Stage 3: Advanced AI Applications
+**"The Strategic Adopter"**
+
+### Characteristics:
+
+- Coordinated AI strategy across multiple business units
+- Advanced machine learning models in production
+- Dedicated AI team or center of excellence
+- Systematic approach to data management and governance
+- AI integrated into core business processes
+- Measurable business impact from AI initiatives
+
+### Example Activities:
+
+- Sophisticated demand forecasting using ensemble models
+- AI-powered personalization across all customer touchpoints
+- Computer vision for quality control in manufacturing
+- Natural language processing for contract analysis and compliance
+- Advanced analytics for supply chain optimization
+- AI-assisted decision support systems for executives
+
+### Technologies Deployed:
+
+- Custom machine learning pipelines
+- Real-time AI inference systems
+- Advanced analytics platforms
+- Computer vision and NLP solutions
+- AI-powered business intelligence
+- Automated feature engineering tools
+
+### Organizational Changes:
+
+- Chief Data Officer or Chief AI Officer roles established
+- Cross-functional AI project teams
+- Formal AI training programs for employees
+- Data science teams embedded in business units
+- AI ethics and governance committees
+
+### Capabilities:
+
+- Ability to build custom AI solutions
+- Integration of AI with existing enterprise systems
+- Real-time decision-making powered by AI
+- Continuous model monitoring and improvement
+- Systematic evaluation of AI project success
+
+---
+
+## Stage 4: AI-First Organization
+**"The AI-Driven Enterprise"**
+
+### Characteristics:
+
+- AI considerations drive major business and product decisions
+- Competitive advantage clearly attributed to AI capabilities
+- Organization-wide AI literacy and adoption
+- AI platforms enable rapid experimentation and deployment
+- Data and AI infrastructure treated as core business assets
+- AI ethics and responsible AI practices fully embedded
+
+### Example Activities:
+
+- Product development guided by AI-generated insights
+- Dynamic pricing algorithms that respond to market conditions in real-time
+- AI-powered workforce planning and talent acquisition
+- Autonomous customer service with minimal human intervention
+- AI-driven financial planning and risk management
+- Intelligent automation of most routine business processes
+
+### Technologies Deployed:
+
+- MLOps platforms for continuous model deployment
+- Federated learning systems
+- AutoML for citizen data scientists
+- Edge AI for real-time processing
+- Advanced conversational AI and virtual assistants
+- AI-powered cybersecurity and fraud prevention
+
+### Organizational Transformation:
+
+- AI literacy expected across all roles
+- Agile, cross-functional teams standard for AI projects
+- Continuous learning culture around AI advancement
+- Data-driven performance metrics throughout organization
+- AI impact measurement integrated into business KPIs
+
+### Strategic Advantages:
+
+- Faster time-to-market for new products and services
+- Superior customer experience through personalization
+- Operational efficiency gains of 20-40% in key processes
+- Predictive capabilities enable proactive business strategies
+- Ability to enter new markets enabled by AI capabilities
+
+---
+
+## Stage 5: AI-Native, Fully Integrated
+**"The Intelligent Enterprise"**
+
+### Characteristics:
+
+- AI is fundamental to the organization's business model and identity
+- Products and services are inherently AI-powered
+- Autonomous systems handle majority of operational decisions
+- Organization contributes to AI research and industry advancement
+- AI capabilities create entirely new revenue streams and markets
+- Continuous innovation cycle driven by AI insights
+
+### Example Activities:
+
+- Products that learn and improve automatically from usage
+- Fully autonomous supply chain management
+- AI-generated content and creative work at scale
+- Predictive business model pivots based on market intelligence
+- AI-powered research and development acceleration
+- Autonomous financial trading and investment decisions
+
+### Technologies Deployed:
+
+- Large-scale foundation models and AGI systems
+- Autonomous AI agents for complex business processes
+- AI-driven software development and testing
+- Quantum-enhanced machine learning
+- Fully integrated AI ecosystem across all business functions
+- Self-improving AI systems with minimal human oversight
+
+### Organizational Evolution:
+
+- Human roles focus on strategy, creativity, and AI oversight
+- Continuous adaptation enabled by AI-driven insights
+- AI democratization - all employees can leverage AI tools
+- Organization viewed as AI technology leader in industry
+- AI ethics and safety expertise is core competency
+
+### Market Position:
+
+- Industry leadership through AI innovation
+- Creation of new product categories enabled by AI
+- Platform business models that enable AI for others
+- Significant moats created through proprietary AI capabilities
+- Ability to rapidly enter and disrupt adjacent markets
+
+### Business Impact:
+
+- AI-driven revenue represents majority of total revenue
+- Competitive advantages that are difficult to replicate
+- Organizational learning and adaptation speed far exceeds competitors
+- Market valuation significantly enhanced by AI capabilities
+- Industry transformation leadership through AI innovation
+
+---
+
+## Transition Indicators
+
+### From Stage 1 to 2:
+
+- First AI pilot projects launched
+- Cloud infrastructure investments begin
+- Initial data consolidation efforts
+
+### From Stage 2 to 3:
+
+- Formation of dedicated AI team
+- Multiple AI projects in production
+- Measurable business impact from AI
+
+### From Stage 3 to 4:
+
+- AI strategy integrated with business strategy
+- AI capabilities become competitive differentiators
+- Organization-wide AI adoption
+
+### From Stage 4 to 5:
+
+- AI enables new business models
+- Industry leadership in AI innovation
+- Autonomous systems handle complex decisions
+
+This maturity model helps organizations assess their current state, understand the journey ahead, and make strategic investments aligned with their AI ambitions.
 
 ## Use by AI Strategy Task Force
 
