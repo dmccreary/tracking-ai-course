@@ -9,11 +9,11 @@ social:
 ---
 # Technology Adoption Curve Infographic
 
-<iframe src="./main.html" height="420px" scrolling="no"
+<iframe src="./main.html" height="410px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/technology-adoption/main.html"  height="420px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/technology-adoption/main.html"  height="410px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
@@ -36,9 +36,9 @@ social:
 
 ## Lesson Plan
 
-# Strategic Technology Adoption Positioning: A Decision Framework for AI Leadership
+### Strategic Technology Adoption Positioning: A Decision Framework for AI Leadership
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this lesson, participants will be able to:
 
