@@ -1,6 +1,7 @@
 # AI Hype Cycles: System Failures and the Question of Another AI Winter
 
-
+<iframe src="../sims/hype-cycle/main.html" height="470px" scrolling="no"
+  style="overflow: hidden;"></iframe>
 
 ## Notable AI System Failures
 

@@ -13,7 +13,7 @@ social:
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="450px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/hype-cycle/main.html"  height="470px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
