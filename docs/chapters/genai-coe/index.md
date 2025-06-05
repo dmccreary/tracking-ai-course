@@ -34,6 +34,18 @@
 The Generative AI Center of Excellence (GenAI CoE) operates on a systematic funnel approach to identify, evaluate, develop, and deploy generative AI solutions across the organization. This process ensures that AI initiatives are strategically aligned, technically feasible, and deliver measurable business value while fostering organization-wide innovation and collaboration.
 
 *[Suggested Figure: High-level GenAI CoE Idea Funnel Overview - showing the flow from idea submission through deployment]*
+<details>
+    <summary>Infographic Prompt</summary>
+Please create a new p5.js program that contains an infographic for the High-level GenAI CoE Idea Funnel Overview - showing the flow from idea submission through deployment.
+The infographic has colored regions with a short label.  When the user hovers over the region an infobox appears that has the details of what happens at each step.
+
+New ideas come from a "New GenAI Idea Form" on the left  side of this infographic.  
+"Summary Dashboard " reports with KPIs appears on the right side of the infographic.
+
+Generate the full HTML file, but do not indent the JavaScript code so the JavaScript code is easy to paste into the p5.js editor.
+
+Show a preview of the infographic on the right side of your canvas.
+</details>
 
 ## 1. Foundation: AI Literacy Training Program
 

@@ -66,6 +66,7 @@ nav:
     - AI Timeline: sims/timeline/index.md
     - Tokenizer: sims/tokenizer/index.md
     - MicroSim Templates: sims/templates/index.md
+    - GenAI Idea Funnel: sims/idea-funnel/index.md
   - Prompts:
     - Intro: prompts/index.md
     - Concept Enumeration: prompts/03-concept-enumeration.md
