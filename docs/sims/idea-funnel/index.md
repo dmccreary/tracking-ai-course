@@ -18,6 +18,6 @@ social:
   style="overflow: hidden;"></iframe>
 ```
 
-[Run the MicroSim](./main.html){ .md-button .md-button--primary }
+[Run the Generative AI Center of Excellence Idea Funnel Infographic](./main.html){ .md-button .md-button--primary }
 
-[Edit the MicroSim]()
+[Edit Generative AI Center of Excellence Idea Funnel Infographic](https://editor.p5js.org/dmccreary/sketches/C5Geo8YI6)
