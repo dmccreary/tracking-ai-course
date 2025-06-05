@@ -10,6 +10,7 @@ nav:
   - Home: index.md
   - About This Course: about.md
   - Course Description: course-description.md
+
   - Chapters:
     - Introduction: chapters/index.md
     - What is AI?: chapters/what-is-ai.md
@@ -32,6 +33,7 @@ nav:
     - AI Hype Cycle: chapters/ai-hype-cycles.md
     - Stationary vs. Non-Stationary Policies: chapters/stationary-vs-non-stationary-policies.md
     - Curriculum Learning: chapters/curriculum-learning.md
+    - Generative AI Center of Excellence: chapters/genai-coe/index.md
 
   - Stories:
     - Intro: stories/index.md
