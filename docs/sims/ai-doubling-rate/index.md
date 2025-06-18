@@ -20,12 +20,12 @@ Certainly! Here's a rewritten one-page summary tailored for a **non-technical au
 
 ---
 
-## 📄 AI’s Ability to Handle Long Tasks: What You Need to Know
+## AI’s Ability to Handle Long Tasks: What You Need to Know
 
 **Summary of the March 2025 METR Report**
 
 
-### 🚀 Why This Matters
+### Why This Matters
 
 As artificial intelligence (AI) becomes more advanced, it’s not just about answering trivia questions or writing short emails anymore. A key question now is:
 **Can AI complete long, complex tasks the way humans can—like writing software, planning events, or conducting research?**
@@ -35,14 +35,14 @@ The METR team has developed a new, easy-to-understand way to measure this:
 > **How long a task (in human time) can today’s AI complete successfully?**
 
 
-### 📊 What Did They Measure?
+### What Did They Measure?
 
 * METR looked at **170 real-world tasks** like fixing software bugs, writing reports, or planning multi-step actions.
 * Each task was rated by how long it typically takes a **skilled human** to do it—from just a few minutes to several hours.
 * Then they tested how well top AI systems performed those same tasks.
 
 
-### 🧠 What They Found
+### What They Found
 
 * Today’s best AI systems (like OpenAI’s and Anthropic’s) can **reliably complete tasks that take up to about an hour of human effort**.
 * For very short tasks (under 5 minutes), AI is nearly perfect.
@@ -50,7 +50,7 @@ The METR team has developed a new, easy-to-understand way to measure this:
 * Most importantly: **the ability of AI to complete longer tasks is doubling roughly every 7 months**.
 
 
-### 📈 Why This Trend Is Big News
+### Why This Trend Is Big News
 
 If the current pace continues:
 
@@ -71,7 +71,7 @@ This means AI could soon:
 * Longer-term planning and error handling are still hard for AI.
 
 
-### 🧭 What This Means for Our Strategy
+### What This Means for Our Strategy
 
 * **Plan Ahead**: AI systems may soon be capable of completing longer tasks with little oversight.
 * **Pilot Projects**: Start testing where AI might assist or automate longer workflows.
@@ -79,7 +79,7 @@ This means AI could soon:
 * **Risk Management**: Use these benchmarks to guide safe and responsible AI adoption.
 
 
-### 🔚 Bottom Line
+### Bottom Line
 
 AI is no longer just a tool for small jobs. It’s growing fast—and by understanding how long and complex a task it can handle today, we can better prepare for the jobs it will do tomorrow.
 
