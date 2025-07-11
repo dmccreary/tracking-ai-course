@@ -1,4 +1,4 @@
-# OpenAI Deep Research
+# Projecting AI Skills for 2030: OpenAI Deep Research
 
 !!! prompt
     Let's assume that AI capabilities will double every 7-months for the next five  years.  Here is a table of  AI Task Capability Growth (50% Success Rate Threshold)
@@ -29,6 +29,7 @@ Got it. I’ll gather peer-reviewed research and expert analysis on which skills
 
 I’ll let you know as soon as I have the findings ready.
 
+OpenAI Deep Research completed in 6m · 29 sources · 64 searches
 
 # Essential Skills for the 2030 Workforce in an AI-Driven World
 
@@ -79,3 +80,7 @@ If AI continues its exponential improvement, by 2030 it will handle an astonishi
 * **Ethical and Strategic Thinking:** Understanding the ethical implications of AI, plus strategic business acumen to integrate AI solutions effectively and responsibly within an industry.
 
 By cultivating this blend of skills, the U.S. workforce (and workers globally) can “future-proof” their careers. Even as AI automates more work, those who **befriend the machines** – leveraging AI for efficiency while applying human creativity, judgment, and social insight – will be in the best position to succeed in 2030’s economy.
+
+## References
+
+[Link to OpenAI Chat History](https://chatgpt.com/share/68715d5b-ed88-8001-b459-714ad01c0565)
