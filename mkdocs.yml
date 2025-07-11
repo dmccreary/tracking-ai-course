@@ -33,6 +33,7 @@ nav:
     - AI Hype Cycle: chapters/ai-hype-cycles.md
     - Stationary vs. Non-Stationary Policies: chapters/stationary-vs-non-stationary-policies.md
     - Curriculum Learning: chapters/curriculum-learning.md
+    - Projecting AI Skills: chapters/projecting-ai-skills/index.md
     - Generative AI Center of Excellence: chapters/genai-coe/index.md
 
   - Stories:
@@ -67,6 +68,7 @@ nav:
     - AI Timeline: sims/timeline/index.md
     - Tokenizer: sims/tokenizer/index.md
     - MicroSim Templates: sims/templates/index.md
+    - Social Override Template: sims/templates/index-social-override.md
     - GenAI Idea Funnel: sims/idea-funnel/index.md
   - Prompts:
     - Intro: prompts/index.md
@@ -81,7 +83,7 @@ nav:
   - License: license.md
   - Contact: contact.md
  
-# CoderDojo Microsite Standards from here down
+# Dan McCreary's Microsite Standards from here down
 
 theme:
   name: material
