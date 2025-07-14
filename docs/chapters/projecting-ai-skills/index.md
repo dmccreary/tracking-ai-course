@@ -1,7 +1,9 @@
 # Projecting AI Skills
 
+What skill will be needed in the year 2030?
+
 If we look at the [data](../../sims/ai-doubling-rate/index.md) we can make the assumption that
-AI capabilities are doubling every seven months.  This prompt will help use extrapolate the skills that will be relevent in 2030.
+AI capabilities are doubling every seven months.  This prompt will help us extrapolate these trends to find the skills that will be relevent in 2030.
 
 ## Doubling Assumpiton Prompt
 
@@ -14,7 +16,7 @@ AI capabilities are doubling every seven months.  This prompt will help use extr
 
 ## Response
 
-### Thought process
+### Thought Process
 
 Claude Sonnet 4 took 13s to do this analysis
 
@@ -100,7 +102,12 @@ This exponential progression illustrates the dramatic acceleration in AI capabil
 !!! Prompt
     Now assume it is 2030.  What types of new skills will be needed by humans to complement the power of these new AI models?
 
-Thought process5sThe user is asking me to project forward to 2030, where according to the exponential growth pattern we just calculated, AI systems would be capable of handling tasks that take 2-3 weeks (512+ hours) with 50% reliability. This represents a massive shift in AI capabilities.
+### Thought process
+
+Anthropic Claude Sonnet 4.0 thought about this for 6 seconds.
+
+The user is asking me to project forward to 2030, where according to the exponential growth pattern we just calculated, AI systems would be capable of handling tasks that take 2-3 weeks (512+ hours) with 50% reliability. This represents a massive shift in AI capabilities.
+
 I need to think about what this means practically:
 
 - AI can handle complex, multi-week projects
@@ -117,6 +124,8 @@ Given this context, what skills would humans need? I should think about:
 - Skills related to human relationships, creativity, ethics, judgment
 
 I should frame this in the context of the course materials provided, which focus on AI's impact on knowledge organizations, education, and business strategy.
+
+## Response
 
 **Human Skills for the AI-Powered 2030 Workplace**
 
@@ -166,6 +175,9 @@ By 2030, with AI systems capable of reliably completing multi-week projects, hum
 - **Privacy Engineering**: Balancing AI capability with data protection requirements
 - **Synthetic Data Creation**: Generating training data for specialized organizational needs
 
+!!! note
+    I believe that many AI systems today are heavily baised toward RDBMS knowlege managmemt.  I the future, knowlege graphs and labeled property graphs with strong role-based access control with be the dominat way to store complex knoweldge. -  Dan
+
 ### Adaptive Learning Skills
 
 **Continuous Learning**
@@ -202,6 +214,9 @@ By 2030, with AI systems capable of reliably completing multi-week projects, hum
 - **Fact Verification**: Developing intuition for when AI output needs additional validation
 - **Context Integration**: Adding organizational and situational knowledge that AI systems lack
 
+!!! note
+    I think that AI will generate massive data sets of misinformation.  AI model builders will need to continue to train on reputable data sources. - Dan
+
 **Philosophical Reasoning**
 
 - **Purpose Definition**: Determining what organizations and societies should optimize for when AI can optimize almost anything
@@ -217,3 +232,5 @@ The humans who thrive in 2030 won't be those who can do what AI does, but those 
 ## References
 
 [Link to Claude Chat Transcript](https://claude.ai/share/b5432d4e-c198-4d25-bcbc-ee498d1fb1d6)
+
+[OpenAI Deep Research Skill Analysis](deep-research-ai-skills.md)
