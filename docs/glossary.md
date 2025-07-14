@@ -10,7 +10,19 @@ The process of disseminating scholarly research and findings through peer-review
 
 **Example:** The course examines how generative AI is transforming academic publishing by automating literature reviews, enhancing peer review processes, and providing tools for faster manuscript preparation.
 
+### Abstract and Reasoning Corpus
+
+An AI benchmark that measures artificial intelligence's ability to perform abstract reasoning and solve novel problems.
+
+The Abstract and Reasoning Corpus is usually referred to as the "ARC Challenge".
+
+The ARC Challenge was created by AI researcher François Chollet in 2019. The challenge consists of simple visual puzzles using colored grids that most humans can solve intuitively but that consistently stump even the most advanced AI systems.  ARC 1 was superseeded by ARC 2 in 2024.
+
+* Also known as: [ARC Challenge](#abstract-and-reasoning-corpus)
+* See also [Test Time Learning](#test-time-learning)
+
 #### Adaptive Learning
+
 An educational approach that uses technology to dynamically adjust learning content, pace, and methods based on individual student performance, preferences, and needs.
 
 **Example:** The hyperpersonalized learning plan module demonstrates how adaptive learning technologies can assess a student's understanding of programming concepts and automatically provide simpler or more advanced examples as needed.
@@ -675,6 +687,11 @@ The process by which existing roles and positions evolve in their responsibiliti
 
 **Example:** The course examines job transformation in academic settings, showing how AI tools are shifting faculty work from content delivery toward mentorship and instructional design.
 
+
+#### The Kaleidoscope Hypothesis
+
+The complexity and variability of any domain is the result of repition, composition, transformation, instantiation of a small number of "kernels of structure".
+
 #### Knowledge Application
 The process of using acquired information, understanding, and expertise to solve problems, make decisions, or improve processes in specific contexts.
 
@@ -1158,6 +1175,21 @@ The incorporation of technical tools, platforms, or systems into existing proces
 A document or plan that outlines how technologies will be acquired, implemented, and utilized over time to achieve strategic objectives and support organizational goals.
 
 **Example:** The university's technology roadmap presents a three-year progression of AI capabilities from basic administrative automation to advanced personalized learning applications.
+
+### Test Time Learning
+
+A series of techniques that has shown some of the first meaningful progress on the [ARC Challenge](#arc-challenge) since its creation in 2019. The techniques include active inference, data expansion and task-specific adaption.
+
+Here's what makes it significant:
+
+- Test-time adaptation methods were pioneered by ARC Prize 2024 and OpenAI and represent one of the few approaches to show progress on the ARC-AGI benchmark after years of stagnation ARC Prize.
+The approach works like this:
+
+Active Inference: When an AI system is presented with test task demonstration examples, it fine-tunes itself on those specific examples
+
+Data Expansion: Since there are typically only a few demonstration examples, the system artificially expands them to create enough data points for effective learning
+
+Task-Specific Adaptation: The model adapts its parameters specifically for each new task it encounters
 
 #### Testing Protocols
 Standardized procedures and methodologies for evaluating the functionality, performance, security, and reliability of systems before implementation or release.
