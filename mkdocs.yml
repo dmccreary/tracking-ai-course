@@ -36,6 +36,7 @@ nav:
     - Projecting AI Skills: 
       - Overview: chapters/projecting-ai-skills/index.md
       - OpenAI Deep Research: chapters/projecting-ai-skills/deep-research-ai-skills.md
+    - The ARC Challenge: chapters/arc/index.md
     - Generative AI Center of Excellence: chapters/genai-coe/index.md
 
   - Stories:
