@@ -2,6 +2,8 @@
 
 ![](./kalaidescope.png)
 
+*We are surrounded by [isomorphism](../glossary.md#isomorpism).* - Douglas Hofstadter
+
 ## Core Concept
 
 The **Kaleidoscope Hypothesis** proposes that all the complexity and variability we observe in any domain—whether it's visual patterns, business processes, market dynamics, or even human reasoning—emerges from a surprisingly small set of fundamental building blocks called **"kernels of structure."**

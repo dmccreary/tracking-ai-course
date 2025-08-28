@@ -10,7 +10,7 @@ The process of disseminating scholarly research and findings through peer-review
 
 **Example:** The course examines how generative AI is transforming academic publishing by automating literature reviews, enhancing peer review processes, and providing tools for faster manuscript preparation.
 
-### Abstract and Reasoning Corpus
+#### Abstract and Reasoning Corpus
 
 An AI benchmark that measures artificial intelligence's ability to perform abstract reasoning and solve novel problems.
 
@@ -677,6 +677,16 @@ A term definition is considered to be consistent with ISO metadata registry guid
 Our generative AI systems are trained to create
 these types of definitions for our glossary of terms.
 
+#### Isomorphism
+
+A one-to-one correspondence between two different systems, structures, or processes that preserves their essential relationships and properties. 
+
+Two systems are isomorphic when they have identical underlying patterns or organizational structure, even though they may appear different on the surface.
+
+Isomporthism is a core concept in graph theory.
+
+* See also: [Similarity](#similarity)
+
 #### Iterative Development
 A methodology that involves repeated cycles of planning, creating, testing, and evaluating, with each iteration building upon and refining the results of previous cycles.
 
@@ -687,10 +697,11 @@ The process by which existing roles and positions evolve in their responsibiliti
 
 **Example:** The course examines job transformation in academic settings, showing how AI tools are shifting faculty work from content delivery toward mentorship and instructional design.
 
-
 #### The Kaleidoscope Hypothesis
 
 The complexity and variability of any domain is the result of repition, composition, transformation, instantiation of a small number of "kernels of structure".
+
+* See also: [Isomorphism](./isomorphism)
 
 #### Knowledge Application
 The process of using acquired information, understanding, and expertise to solve problems, make decisions, or improve processes in specific contexts.
@@ -1061,6 +1072,18 @@ The analysis, modification, and synthesis of signals (including audio, visual, o
 
 **Example:** Advanced signal processing techniques enable modern speech recognition systems to filter out background noise and accurately transcribe conversations in challenging environments.
 
+#### Similarity
+
+A quantitative measure of how alike or related two data objects are, typically expressed as a numerical score.
+
+In AI systems, similarity is calculated using mathematical functions that compare features, patterns, or relationships between items such as documents, images, users, or data points.
+
+**Technical Context:** Computed using methods like cosine similarity (comparing vector angles), Euclidean distance (geometric proximity), or Jaccard similarity (shared attributes). In embedding spaces, similar items cluster closer together, while in graph algorithms, similarity often determines edge weights or connection strength.
+
+**Business Applications:** Powers recommendation engines ("customers who bought this also bought"), search relevance ranking, fraud detection (finding similar transaction patterns), customer segmentation, and content matching systems.
+
+**Key Insight:** Similarity enables AI systems to make intelligent predictions and recommendations by identifying patterns and relationships that humans might miss in large datasets.
+
 #### Skill Obsolescence
 The process by which specific capabilities, knowledge, or expertise become less valuable or relevant due to technological change, market evolution, or other transformative factors.
 
@@ -1176,7 +1199,7 @@ A document or plan that outlines how technologies will be acquired, implemented,
 
 **Example:** The university's technology roadmap presents a three-year progression of AI capabilities from basic administrative automation to advanced personalized learning applications.
 
-### Test Time Learning
+#### Test Time Learning
 
 A series of techniques that has shown some of the first meaningful progress on the [ARC Challenge](#arc-challenge) since its creation in 2019. The techniques include active inference, data expansion and task-specific adaption.
 
