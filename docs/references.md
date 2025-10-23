@@ -2,6 +2,8 @@
 
 - [Our World In Data AI Charts](https://ourworldindata.org/artificial-intelligence)
 
+- [STATE OF AI REPORT](https://docs.google.com/presentation/d/1xiLl0VdrlNMAei8pmaX4ojIOfej6lhvZbOIK7Z6C-Go/edit?usp=sharing) October 9, 2025 - Nathan Benaich - AIR STREET CAPITAL - 300 page slideshow with high-quality references
+
 - [Powerful A.I. Is Coming. We’re Not Ready.](https://www.nytimes.com/2025/03/14/technology/why-im-feeling-the-agi.html) - New York Times - March 14, 2025 - By Kevin Roose - Three arguments for taking progress toward artificial general intelligence, or A.G.I., more seriously — whether you’re an optimist or a pessimist.
 
 - [Situational Awareness AI Website](https://situational-awareness.ai/from-gpt-4-to-agi/)
