@@ -230,3 +230,4 @@ Show a futuristic scene where two paths of AI development extend into the horizo
 2. [One Genius’ Lonely Crusade to Teach a Computer Common Sense](https://www.wired.com/2016/03/doug-lenat-artificial-intelligence-common-sense-engine/)
 3. [Artificial Intelligence by Douglas B. Lenat](https://www.jstor.org/stable/24981725) Scientific American
 Vol. 273, No. 3 (September 1995), pp. 80-82 (3 pages)
+4. [Douglas Lenat, Who Tried to Make A.I. More Human, Dies at 72](https://www.nytimes.com/2023/09/04/technology/douglas-lenat-dead.html) - Sept. 4, 2023 - New York Times - a very well done obituary for Doug by Cade Metz
