@@ -1915,6 +1915,9 @@
 <iframe src="./main.html" width="100%" height="598" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the MicroSim Fullscreen</a></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;tracking-ai-course/sims/ai-task-horizons/</span>
+</code></pre></div></td></tr></table></div>
+<p>This MicroSim is based on the wonderful chart at the <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">METR.org blob post</a></p>
 <h2 id="overview">Overview</h2>
 <p>This MicroSim visualizes the <strong>task-completion time horizons</strong> for various AI language models, showing the relationship between model capabilities and their ability to sustain work on extended tasks. The data represents predictions about how long AI agents can operate before encountering failures.</p>
 <p>The visualization demonstrates that:</p>
@@ -1951,19 +1954,22 @@
 <h2 id="model-data">Model Data</h2>
 <h3 id="frontier-models">Frontier Models</h3>
 <ul>
-<li><strong>GPT-5</strong>: 137.3 min (50%) / 26.4 min (80%)</li>
-<li><strong>Grok-4</strong>: 110.1 min (50%) / 14.9 min (80%)</li>
-<li><strong>O3</strong>: 92.2 min (50%) / 20.4 min (80%)</li>
-<li><strong>Claude 3.7 Sonnet</strong>: 54.2 min (50%) / 15.2 min (80%)</li>
-<li><strong>O1 Elicited</strong>: 39.2 min (50%) / 6.0 min (80%)</li>
-<li><strong>Gemini 2.5 Pro</strong>: 38.7 min (50%) / 9.2 min (80%)</li>
+<li><strong>GPT-5</strong>: 8,239 min / 137 hrs (50%) / 1,583 min / 26 hrs (80%)</li>
+<li><strong>Grok-4</strong>: 6,605 min / 110 hrs (50%) / 895 min / 15 hrs (80%)</li>
+<li><strong>o3</strong>: 5,531 min / 92 hrs (50%) / 1,223 min / 20 hrs (80%)</li>
+<li><strong>Claude 3.7 Sonnet</strong>: 3,254 min / 54 hrs (50%) / 909 min / 15 hrs (80%)</li>
+<li><strong>o1-elicited</strong>: 2,354 min / 39 hrs (50%) / 358 min / 6 hrs (80%)</li>
+<li><strong>Claude 3.5 Sonnet 20241022</strong>: 1,739 min / 29 hrs (50%) / 278 min / 5 hrs (80%)</li>
+<li><strong>o1-preview</strong>: 1,326 min / 22 hrs (50%) / 277 min / 5 hrs (80%)</li>
+<li><strong>Claude 3.5 Sonnet</strong>: 1,093 min / 18 hrs (50%) / 192 min / 3 hrs (80%)</li>
 </ul>
 <h3 id="non-frontier-models">Non-Frontier Models</h3>
 <ul>
-<li><strong>Claude 4.1 Opus</strong>: 105.5 min (50%) / 21.1 min (80%)</li>
-<li><strong>O4-Mini</strong>: 77.6 min (50%) / 15.0 min (80%)</li>
-<li><strong>DeepSeek R1 0528</strong>: 31.2 min (50%) / 3.8 min (80%)</li>
-<li><strong>Claude 3.5 Sonnet</strong>: 29.0 min (50%) / 4.6 min (80%)</li>
+<li><strong>Claude Sonnet 4.5</strong>: 6,798 min / 113 hrs (50%) / 1,209 min / 20 hrs (80%)</li>
+<li><strong>Claude 4.1 Opus</strong>: 6,330 min / 106 hrs (50%) / 1,265 min / 21 hrs (80%)</li>
+<li><strong>Claude 4 Opus</strong>: 4,792 min / 80 hrs (50%) / 1,218 min / 20 hrs (80%)</li>
+<li><strong>Claude 4 Sonnet</strong>: 4,063 min / 68 hrs (50%) / 1,000 min / 17 hrs (80%)</li>
+<li><strong>Claude 3 Opus</strong>: 385 min / 6 hrs (50%) / 68 min / 1 hr (80%)</li>
 </ul>
 <h2 id="customization-guide">Customization Guide</h2>
 <h3 id="modifying-the-data">Modifying the Data</h3>
@@ -2039,7 +2045,9 @@
 <ul>
 <li><strong>Library</strong>: Chart.js 4.4.0</li>
 <li><strong>Chart Type</strong>: Scatter plot</li>
-<li><strong>Data Points</strong>: 10 AI models (6 frontier, 4 non-frontier)</li>
+<li><strong>Data Points</strong>: 30 AI models (14 frontier, 16 non-frontier)</li>
+<li><strong>Time Range</strong>: From 0.3 minutes (GPT-2) to 8,239 minutes / 137 hours (GPT-5)</li>
+<li><strong>Data Source</strong>: <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">METR Research (March 2025)</a></li>
 <li><strong>Interactive Controls</strong>: Scale toggle (linear/log), Success probability toggle (50%/80%)</li>
 <li><strong>Browser Compatibility</strong>: All modern browsers (Chrome, Firefox, Safari, Edge)</li>
 <li><strong>Dependencies</strong>: Chart.js (loaded from CDN)</li>
