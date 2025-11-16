@@ -2,12 +2,13 @@
 
 An interactive visualization showing how long different AI models can work on tasks before failing, based on METR's research on measuring AI ability to complete long tasks.
 
-<iframe src="./main.html" width="100%" height="598" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+<iframe src="./main.html" width="100%" height="588"></iframe>
 
 [Run the MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
+To use this interactive chart on any website simply copy this line of HTML into your web page:
 ```html
-<iframe src="tracking-ai-course/sims/ai-task-horizons/
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/ai-task-horizons/main.html" width="100%" height="588"></iframe>
 ```
 
 This MicroSim is based on the wonderful chart at the [METR.org blob post](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)

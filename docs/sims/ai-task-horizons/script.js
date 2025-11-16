@@ -79,7 +79,7 @@ function prepareChartData() {
                 backgroundColor: 'rgba(39, 174, 96, 0.8)',
                 borderColor: 'rgba(39, 174, 96, 1)',
                 borderWidth: 2,
-                pointRadius: 8,
+                pointRadius: 6,
                 pointHoverRadius: 10
             },
             {
@@ -88,7 +88,7 @@ function prepareChartData() {
                 backgroundColor: 'rgba(149, 165, 166, 0.8)',
                 borderColor: 'rgba(149, 165, 166, 1)',
                 borderWidth: 2,
-                pointRadius: 8,
+                pointRadius: 6,
                 pointHoverRadius: 10
             }
         ]
