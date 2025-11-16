@@ -2,7 +2,7 @@
 
 An interactive visualization showing the exponential growth of AI task completion capabilities from 2019 to 2030, with time on the horizontal axis and task completion horizons projected into the future.
 
-<iframe src="./main.html" width="100%" height="588"></iframe>
+<iframe src="./main.html" width="100%" height="550"></iframe>
 
 [Run the MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
