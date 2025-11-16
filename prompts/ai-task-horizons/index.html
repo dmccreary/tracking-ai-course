@@ -1,0 +1,1986 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/tracking-ai-course/prompts/ai-task-horizons/">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>AI Task Horizons - Tracking AI Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-KTYGHZCPM3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-KTYGHZCPM3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-KTYGHZCPM3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="AI Task Horizons - Tracking AI Course" >
+      
+        <meta  property="og:description"  content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/prompts/ai-task-horizons.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/tracking-ai-course/prompts/ai-task-horizons/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="AI Task Horizons - Tracking AI Course" >
+      
+        <meta  name="twitter:description"  content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/prompts/ai-task-horizons.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-task-horizons" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Tracking AI Course" class="md-header__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tracking AI Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AI Task Horizons
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tracking AI Course" class="md-nav__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Tracking AI Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About This Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Stories
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-log-ai-task-horizons-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Log: AI Task Horizons MicroSim
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Files Created">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-docssimsai-task-horizonsmainhtml-19kb" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. /docs/sims/ai-task-horizons/main.html (1.9KB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-docssimsai-task-horizonsstylecss-21kb" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. /docs/sims/ai-task-horizons/style.css (2.1KB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-docssimsai-task-horizonsscriptjs-63kb" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. /docs/sims/ai-task-horizons/script.js (6.3KB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-docssimsai-task-horizonsindexmd-64kb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. /docs/sims/ai-task-horizons/index.md (6.4KB)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features Implemented
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Features Implemented">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interactive-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-model-list-30-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Model List (30 total)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complete Model List (30 total)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontier-models-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontier Models (14)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-frontier-models-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Frontier Models (16)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Range
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-initial-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Initial Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Bug Fixes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-layout-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Layout Adjustments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-code-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 4: Code Refactoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-data-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 5: Data Expansion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-6-documentation-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 6: Documentation Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-7-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 7: Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Specifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#libraries-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Libraries &amp; Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-insights-from-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Insights from Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-chartjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Chart.js?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-separate-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Separate Files?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-scatter-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Scatter Plot?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-scheme-rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Scheme Rationale
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-modified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Modified
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Files Modified">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-files-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Files Created
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#existing-files-modified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Existing Files Modified
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embedding-in-web-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding in Web Pages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-enhancements-not-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Enhancements (Not Implemented)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Future Enhancements (Not Implemented)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potential Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Improvements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/tracking-ai-course/blob/master/docs/prompts/ai-task-horizons.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="ai-task-horizons">AI Task Horizons</h1>
+<div class="admonition prompt">
+<p class="admonition-title">Prompt</p>
+<p>Please use the chartjs-generator skill to create a similar plot using a microSim.<br />
+Try to use the exact same datapoint as this chart.<br />
+Use very small margins so that the chart can easily be inserted into any mkdocs page using an iframe </p>
+</div>
+<h2 id="session-log-ai-task-horizons-microsim">Session Log: AI Task Horizons MicroSim</h2>
+<p><strong>Date</strong>: November 16, 2025
+<strong>Project</strong>: Tracking AI Course
+<strong>Task</strong>: Create interactive Chart.js visualization of AI task completion time horizons</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>Created a comprehensive MicroSim that replicates the interactive chart from METR's research on AI ability to complete long tasks. The visualization shows 30 AI models spanning from GPT-2 (2019) to GPT-5 (2025), demonstrating exponential growth in task-completion capabilities.</p>
+<p><strong>Data Source</strong>: <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">METR Research - Measuring AI Ability to Complete Long Tasks</a></p>
+<hr />
+<h2 id="files-created">Files Created</h2>
+<h3 id="1-docssimsai-task-horizonsmainhtml-19kb">1. <code>/docs/sims/ai-task-horizons/main.html</code> (1.9KB)</h3>
+<ul>
+<li>Clean HTML structure with minimal inline content</li>
+<li>Links to external CSS and JavaScript files</li>
+<li>Chart.js CDN import (v4.4.0)</li>
+<li>Canvas element for chart rendering</li>
+<li>Interactive control buttons (scale toggle, success probability toggle)</li>
+<li>Legend showing frontier vs non-frontier models</li>
+</ul>
+<h3 id="2-docssimsai-task-horizonsstylecss-21kb">2. <code>/docs/sims/ai-task-horizons/style.css</code> (2.1KB)</h3>
+<ul>
+<li>Modern, responsive design</li>
+<li>Aliceblue background with blue border</li>
+<li>Button styles with hover effects</li>
+<li>Chart container sizing (500px desktop, 390px mobile)</li>
+<li>Flexbox layouts for controls and legend</li>
+<li>Mobile-responsive media queries (@max-width: 768px)</li>
+</ul>
+<h3 id="3-docssimsai-task-horizonsscriptjs-63kb">3. <code>/docs/sims/ai-task-horizons/script.js</code> (6.3KB)</h3>
+<ul>
+<li>Complete dataset of 30 AI models (14 frontier, 16 non-frontier)</li>
+<li>Time horizons in minutes (50% and 80% success rates)</li>
+<li>Chart.js scatter plot configuration</li>
+<li>Interactive toggle functions:</li>
+<li><code>setScale(scale)</code> - Switch between linear and logarithmic y-axis</li>
+<li><code>setProbability(probability)</code> - Toggle between 50% and 80% success metrics</li>
+<li>Responsive chart with custom tooltips</li>
+<li>Chronological sorting by model release date</li>
+</ul>
+<h3 id="4-docssimsai-task-horizonsindexmd-64kb">4. <code>/docs/sims/ai-task-horizons/index.md</code> (6.4KB)</h3>
+<ul>
+<li>Comprehensive documentation</li>
+<li>Embedded iframe (588px height)</li>
+<li>Model data tables with time horizons</li>
+<li>Customization guide</li>
+<li>Technical details and interpretation guide</li>
+<li>Use cases and references</li>
+</ul>
+<hr />
+<h2 id="key-features-implemented">Key Features Implemented</h2>
+<h3 id="interactive-controls">Interactive Controls</h3>
+<ol>
+<li><strong>Scale Toggle</strong>: Linear vs Logarithmic y-axis</li>
+<li>Linear: Shows absolute differences</li>
+<li>
+<p>Log: Better visualizes exponential growth</p>
+</li>
+<li>
+<p><strong>Success Probability Toggle</strong>: 50% vs 80%</p>
+</li>
+<li>50%: Model has 50% chance of task completion</li>
+<li>
+<p>80%: More conservative 80% success threshold</p>
+</li>
+<li>
+<p><strong>Hover Tooltips</strong>: Display model details</p>
+</li>
+<li>Model name</li>
+<li>Time horizon in minutes and hours</li>
+<li>Release date</li>
+<li>Success probability level</li>
+</ol>
+<h3 id="visual-design">Visual Design</h3>
+<ul>
+<li><strong>Color Coding</strong>:</li>
+<li>Green (#27ae60): Frontier models (state-of-the-art)</li>
+<li>Gray (#95a5a6): Non-frontier models</li>
+<li><strong>Point Styling</strong>: 6px radius, 10px hover radius</li>
+<li><strong>Responsive Layout</strong>: Adapts to mobile and desktop screens</li>
+</ul>
+<hr />
+<h2 id="dataset-details">Dataset Details</h2>
+<h3 id="complete-model-list-30-total">Complete Model List (30 total)</h3>
+<h4 id="frontier-models-14">Frontier Models (14)</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>50% Horizon</th>
+<th>80% Horizon</th>
+<th>Release Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-5</td>
+<td>8,239 min (137 hrs)</td>
+<td>1,582 min (26 hrs)</td>
+<td>2025-08-07</td>
+</tr>
+<tr>
+<td>Grok-4</td>
+<td>6,605 min (110 hrs)</td>
+<td>895 min (15 hrs)</td>
+<td>2025-07-09</td>
+</tr>
+<tr>
+<td>o3</td>
+<td>5,531 min (92 hrs)</td>
+<td>1,223 min (20 hrs)</td>
+<td>2025-04-16</td>
+</tr>
+<tr>
+<td>Claude 3.7 Sonnet</td>
+<td>3,254 min (54 hrs)</td>
+<td>909 min (15 hrs)</td>
+<td>2025-02-24</td>
+</tr>
+<tr>
+<td>o1-elicited</td>
+<td>2,352 min (39 hrs)</td>
+<td>358 min (6 hrs)</td>
+<td>2024-12-05</td>
+</tr>
+<tr>
+<td>Claude 3.5 Sonnet 20241022</td>
+<td>1,739 min (29 hrs)</td>
+<td>279 min (5 hrs)</td>
+<td>2024-10-22</td>
+</tr>
+<tr>
+<td>o1-preview</td>
+<td>1,326 min (22 hrs)</td>
+<td>277 min (5 hrs)</td>
+<td>2024-09-12</td>
+</tr>
+<tr>
+<td>Claude 3.5 Sonnet</td>
+<td>1,093 min (18 hrs)</td>
+<td>192 min (3 hrs)</td>
+<td>2024-06-20</td>
+</tr>
+<tr>
+<td>GPT-4o</td>
+<td>550 min (9 hrs)</td>
+<td>101 min (2 hrs)</td>
+<td>2024-05-13</td>
+</tr>
+<tr>
+<td>GPT-4 1106</td>
+<td>513 min (9 hrs)</td>
+<td>87 min (1.5 hrs)</td>
+<td>2023-11-06</td>
+</tr>
+<tr>
+<td>GPT-4</td>
+<td>322 min (5 hrs)</td>
+<td>58 min (1 hr)</td>
+<td>2023-03-14</td>
+</tr>
+<tr>
+<td>GPT-3.5 Turbo Instruct</td>
+<td>36 min</td>
+<td>10 min</td>
+<td>2022-03-15</td>
+</tr>
+<tr>
+<td>davinci-002</td>
+<td>9 min</td>
+<td>2 min</td>
+<td>2020-05-28</td>
+</tr>
+<tr>
+<td>GPT-2</td>
+<td>2.4 min</td>
+<td>0.3 min</td>
+<td>2019-02-14</td>
+</tr>
+</tbody>
+</table>
+<h4 id="non-frontier-models-16">Non-Frontier Models (16)</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>50% Horizon</th>
+<th>80% Horizon</th>
+<th>Release Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Sonnet 4.5</td>
+<td>6,798 min</td>
+<td>1,209 min</td>
+<td>2025-09-29</td>
+</tr>
+<tr>
+<td>Claude 4.1 Opus</td>
+<td>6,330 min</td>
+<td>1,265 min</td>
+<td>2025-08-05</td>
+</tr>
+<tr>
+<td>Claude 4 Opus</td>
+<td>4,792 min</td>
+<td>1,218 min</td>
+<td>2025-05-22</td>
+</tr>
+<tr>
+<td>o4-mini</td>
+<td>4,654 min</td>
+<td>903 min</td>
+<td>2025-04-16</td>
+</tr>
+<tr>
+<td>Claude 4 Sonnet</td>
+<td>4,063 min</td>
+<td>1,000 min</td>
+<td>2025-05-22</td>
+</tr>
+<tr>
+<td>GPT-OSS-120B</td>
+<td>2,519 min</td>
+<td>398 min</td>
+<td>2025-08-05</td>
+</tr>
+<tr>
+<td>Gemini 2.5 Pro Preview</td>
+<td>2,324 min</td>
+<td>552 min</td>
+<td>2025-06-05</td>
+</tr>
+<tr>
+<td>DeepSeek R1 0528</td>
+<td>1,870 min</td>
+<td>225 min</td>
+<td>2025-05-28</td>
+</tr>
+<tr>
+<td>DeepSeek R1</td>
+<td>1,616 min</td>
+<td>260 min</td>
+<td>2025-01-20</td>
+</tr>
+<tr>
+<td>DeepSeek V3 0324</td>
+<td>1,387 min</td>
+<td>318 min</td>
+<td>2025-03-24</td>
+</tr>
+<tr>
+<td>DeepSeek V3</td>
+<td>1,108 min</td>
+<td>232 min</td>
+<td>2024-12-26</td>
+</tr>
+<tr>
+<td>GPT-4 Turbo</td>
+<td>394 min</td>
+<td>91 min</td>
+<td>2024-04-09</td>
+</tr>
+<tr>
+<td>Claude 3 Opus</td>
+<td>385 min</td>
+<td>68 min</td>
+<td>2024-03-04</td>
+</tr>
+<tr>
+<td>GPT-4 0125</td>
+<td>322 min</td>
+<td>72 min</td>
+<td>2024-01-25</td>
+</tr>
+<tr>
+<td>Qwen 2.5 72B</td>
+<td>310 min</td>
+<td>56 min</td>
+<td>2024-09-19</td>
+</tr>
+<tr>
+<td>Qwen 2 72B</td>
+<td>135 min</td>
+<td>26 min</td>
+<td>2024-06-07</td>
+</tr>
+</tbody>
+</table>
+<h3 id="time-range">Time Range</h3>
+<ul>
+<li><strong>Minimum</strong>: 0.3 minutes (GPT-2 at 80% success)</li>
+<li><strong>Maximum</strong>: 8,239 minutes / 137 hours (GPT-5 at 50% success)</li>
+</ul>
+<hr />
+<h2 id="development-process">Development Process</h2>
+<h3 id="phase-1-initial-setup">Phase 1: Initial Setup</h3>
+<ol>
+<li>Used <code>chartjs-generator</code> skill to create foundation</li>
+<li>Created directory structure: <code>/docs/sims/ai-task-horizons/</code></li>
+<li>Built initial HTML with embedded CSS/JavaScript</li>
+</ol>
+<h3 id="phase-2-bug-fixes">Phase 2: Bug Fixes</h3>
+<p><strong>Problem</strong>: Chart rendering as blank white area with controls visible
+- <strong>Cause</strong>: JavaScript error - <code>chart.data.labels</code> referenced before <code>chart</code> existed
+- <strong>Fix</strong>: Stored <code>chartData</code> in variable before chart creation
+- <strong>Additional Fix</strong>: Set proper <code>min</code> value for logarithmic scale (1 instead of 0)</p>
+<h3 id="phase-3-layout-adjustments">Phase 3: Layout Adjustments</h3>
+<p><strong>User Requests</strong>:
+1. Move legend above chart, controls below chart
+2. Make controls horizontal side-by-side
+3. Minimize vertical spacing</p>
+<p><strong>Changes Made</strong>:
+- Swapped legend and controls positions in HTML
+- Changed <code>flex-wrap: wrap</code> to <code>flex-wrap: nowrap</code> for controls
+- Adjusted margins: <code>margin-top: 15px</code>, <code>margin-bottom: 10px</code>
+- Added mobile breakpoint to allow wrapping on small screens</p>
+<h3 id="phase-4-code-refactoring">Phase 4: Code Refactoring</h3>
+<p><strong>Separated concerns into external files</strong>:
+- Extracted CSS to <code>style.css</code> (2.1KB)
+- Extracted JavaScript to <code>script.js</code> (6.3KB)
+- Reduced <code>main.html</code> from 13KB to 1.9KB</p>
+<p><strong>Benefits</strong>:
+- Better code organization
+- Easier maintenance
+- Reusability of components</p>
+<h3 id="phase-5-data-expansion">Phase 5: Data Expansion</h3>
+<p><strong>Initial Dataset</strong>: 10 models (incomplete, incorrect values)
+<strong>Final Dataset</strong>: 30 models (complete METR dataset)</p>
+<p><strong>Iterations</strong>:
+1. First fetch: 10 models with small values
+2. Second fetch: 13 models with corrected values
+3. Third fetch: Complete 30-model dataset</p>
+<p><strong>Data Corrections</strong>:
+- Original values were off by orders of magnitude
+- Updated all time horizons to match METR source
+- Added historical models (GPT-2, davinci-002, GPT-3.5)
+- Added recent models (DeepSeek, Gemini, Qwen variants)</p>
+<h3 id="phase-6-documentation-updates">Phase 6: Documentation Updates</h3>
+<ol>
+<li>Updated model count: 10 → 13 → 30</li>
+<li>Added data source attribution to METR</li>
+<li>Updated time range specifications</li>
+<li>Created comprehensive model tables in index.md</li>
+<li>Fixed reference from <code>main.html</code> to <code>script.js</code> in customization guide</li>
+</ol>
+<h3 id="phase-7-integration">Phase 7: Integration</h3>
+<p><strong>Updated <code>/docs/sims/index.md</code></strong>:
+- Added entry for AI Task Horizons MicroSim
+- Followed existing format (heading, 2-sentence description, link)
+- Positioned at top of list as newest MicroSim
+- Updated all other 23 MicroSims with descriptions</p>
+<hr />
+<h2 id="technical-specifications">Technical Specifications</h2>
+<h3 id="libraries-dependencies">Libraries &amp; Dependencies</h3>
+<ul>
+<li><strong>Chart.js</strong>: v4.4.0 (CDN)</li>
+<li><strong>Browser Support</strong>: All modern browsers (Chrome, Firefox, Safari, Edge)</li>
+<li><strong>Responsive</strong>: Yes, mobile-optimized</li>
+</ul>
+<h3 id="chart-configuration">Chart Configuration</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;scatter&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">labels</span><span class="o">:</span><span class="w"> </span><span class="p">[...</span><span class="nx">model</span><span class="w"> </span><span class="nx">names</span><span class="p">...],</span>
+<span class="w">        </span><span class="nx">datasets</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Frontier Models&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(39, 174, 96, 0.8)&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">borderColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(39, 174, 96, 1)&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">pointRadius</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">pointHoverRadius</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Non-Frontier Models&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(149, 165, 166, 0.8)&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">borderColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(149, 165, 166, 1)&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">pointRadius</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">pointHoverRadius</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="data-structure">Data Structure</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">modelData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">frontier</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Model Name&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">horizon50</span><span class="o">:</span><span class="w"> </span><span class="mf">1234.5</span><span class="p">,</span><span class="w">  </span><span class="c1">// 50% success time in minutes</span>
+<span class="w">            </span><span class="nx">horizon80</span><span class="o">:</span><span class="w"> </span><span class="mf">567.8</span><span class="p">,</span><span class="w">   </span><span class="c1">// 80% success time in minutes</span>
+<span class="w">            </span><span class="nx">date</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;YYYY-MM-DD&#39;</span><span class="w">  </span><span class="c1">// Release date</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nx">nonFrontier</span><span class="o">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="p">};</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="key-insights-from-data">Key Insights from Data</h2>
+<ol>
+<li><strong>Exponential Growth</strong>: Task-completion capability doubles approximately every 7 months</li>
+<li><strong>Recent Acceleration</strong>: 2024-2025 models show dramatic improvements</li>
+<li><strong>Model Diversity</strong>: Includes OpenAI, Anthropic, Google, DeepSeek, Alibaba models</li>
+<li><strong>Success Threshold Impact</strong>: 80% success requires ~5-6x shorter time horizons than 50%</li>
+<li><strong>Historical Context</strong>: GPT-2 (2019) could handle &lt;3 minutes; GPT-5 (2025) handles 137+ hours</li>
+</ol>
+<hr />
+<h2 id="design-decisions">Design Decisions</h2>
+<h3 id="why-chartjs">Why Chart.js?</h3>
+<ul>
+<li>Native support for scatter plots</li>
+<li>Built-in tooltip system</li>
+<li>Easy toggle controls implementation</li>
+<li>Similar visual quality to METR original</li>
+<li>Widely supported, actively maintained</li>
+</ul>
+<h3 id="why-separate-files">Why Separate Files?</h3>
+<ul>
+<li><strong>Maintainability</strong>: Easier to update CSS or JS independently</li>
+<li><strong>Best Practices</strong>: Separation of concerns (HTML/CSS/JS)</li>
+<li><strong>Reusability</strong>: CSS and JS can be shared/modified independently</li>
+<li><strong>Performance</strong>: Better caching with separate files</li>
+</ul>
+<h3 id="why-scatter-plot">Why Scatter Plot?</h3>
+<ul>
+<li>Best represents discrete data points (individual models)</li>
+<li>Supports chronological ordering on X-axis</li>
+<li>Allows clear color coding by category</li>
+<li>Supports both linear and logarithmic scales</li>
+</ul>
+<h3 id="color-scheme-rationale">Color Scheme Rationale</h3>
+<ul>
+<li><strong>Green for Frontier</strong>: Universally understood as "go", "success", "leading"</li>
+<li><strong>Gray for Non-Frontier</strong>: Neutral, non-distracting</li>
+<li><strong>High Contrast</strong>: Ensures accessibility and clarity</li>
+<li><strong>Consistent with Industry</strong>: Common pattern in AI benchmarking</li>
+</ul>
+<hr />
+<h2 id="files-modified">Files Modified</h2>
+<h3 id="new-files-created">New Files Created</h3>
+<ul>
+<li><code>/docs/sims/ai-task-horizons/main.html</code></li>
+<li><code>/docs/sims/ai-task-horizons/style.css</code></li>
+<li><code>/docs/sims/ai-task-horizons/script.js</code></li>
+<li><code>/docs/sims/ai-task-horizons/index.md</code></li>
+</ul>
+<h3 id="existing-files-modified">Existing Files Modified</h3>
+<ul>
+<li><code>/docs/sims/index.md</code> - Added comprehensive entries for all 24 MicroSims</li>
+</ul>
+<hr />
+<h2 id="usage-instructions">Usage Instructions</h2>
+<h3 id="embedding-in-web-pages">Embedding in Web Pages</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/tracking-ai-course/sims/ai-task-horizons/main.html&quot;</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">&quot;588&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="local-development">Local Development</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Navigate to MicroSim directory</span>
+<span class="nb">cd</span><span class="w"> </span>docs/sims/ai-task-horizons
+
+<span class="c1"># Open in browser</span>
+open<span class="w"> </span>main.html
+
+<span class="c1"># Or serve with MkDocs</span>
+mkdocs<span class="w"> </span>serve
+</code></pre></div></td></tr></table></div>
+<h3 id="customizing-data">Customizing Data</h3>
+<p>Edit <code>script.js</code> modelData object:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">modelData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">frontier</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;New Model&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">horizon50</span><span class="o">:</span><span class="w"> </span><span class="mf">1000</span><span class="p">,</span><span class="w"> </span><span class="nx">horizon80</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span><span class="w"> </span><span class="nx">date</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2025-01-01&#39;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nx">nonFrontier</span><span class="o">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="p">};</span>
+</code></pre></div></td></tr></table></div></p>
+<hr />
+<h2 id="lessons-learned">Lessons Learned</h2>
+<ol>
+<li><strong>Always verify data sources</strong>: Initial extraction had incorrect values</li>
+<li><strong>Test in browser immediately</strong>: Caught JavaScript error early</li>
+<li><strong>Separate concerns early</strong>: Refactoring from embedded to external files was smooth</li>
+<li><strong>Progressive enhancement</strong>: Started with basic functionality, added features iteratively</li>
+<li><strong>Document as you go</strong>: Comprehensive index.md helps future users</li>
+</ol>
+<hr />
+<h2 id="future-enhancements-not-implemented">Future Enhancements (Not Implemented)</h2>
+<h3 id="potential-features">Potential Features</h3>
+<ol>
+<li><strong>Downloadable CSV</strong>: Export data for offline analysis</li>
+<li><strong>Custom Filtering</strong>: Filter by model family (Claude, GPT, etc.)</li>
+<li><strong>Date Range Slider</strong>: Focus on specific time periods</li>
+<li><strong>Confidence Intervals</strong>: Show uncertainty in measurements</li>
+<li><strong>Trend Lines</strong>: Display exponential growth curve</li>
+<li><strong>Model Comparison</strong>: Select two models for direct comparison</li>
+<li><strong>Animation</strong>: Animated timeline showing growth over years</li>
+</ol>
+<h3 id="technical-improvements">Technical Improvements</h3>
+<ol>
+<li><strong>Data Loading</strong>: Fetch from JSON file instead of embedded</li>
+<li><strong>Chart Responsiveness</strong>: Better mobile optimization</li>
+<li><strong>Accessibility</strong>: ARIA labels, keyboard navigation</li>
+<li><strong>Performance</strong>: Canvas optimization for large datasets</li>
+<li><strong>Internationalization</strong>: Multi-language support</li>
+</ol>
+<hr />
+<h2 id="references">References</h2>
+<ul>
+<li><strong>Primary Data Source</strong>: <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">METR - Measuring AI Ability to Complete Long Tasks</a></li>
+<li><strong>Chart.js Documentation</strong>: <a href="https://www.chartjs.org/docs/latest/">https://www.chartjs.org/docs/latest/</a></li>
+<li><strong>MkDocs Material Theme</strong>: <a href="https://squidfunk.github.io/mkdocs-material/">https://squidfunk.github.io/mkdocs-material/</a></li>
+<li><strong>Project Repository</strong>: <a href="https://github.com/dmccreary/tracking-ai-course">https://github.com/dmccreary/tracking-ai-course</a></li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Successfully created a production-ready, interactive MicroSim that visualizes AI task-completion capabilities across 30 models spanning 6 years of AI development. The visualization demonstrates the exponential growth in AI capabilities with a doubling time of approximately 7 months, using clean, maintainable code following web development best practices.</p>
+<p><strong>Final Statistics</strong>:
+- <strong>30 models</strong> (14 frontier, 16 non-frontier)
+- <strong>4 files</strong> (HTML, CSS, JS, MD)
+- <strong>~16KB total</strong> (before compression)
+- <strong>2 interactive toggles</strong> (scale, success probability)
+- <strong>6+ years</strong> of AI history (2019-2025)
+- <strong>3400x improvement</strong>: From GPT-2's 2.4 minutes to GPT-5's 8,239 minutes at 50% success</p>
+<hr />
+<p><strong>Session Completed</strong>: November 16, 2025
+<strong>Claude Code Version</strong>: Sonnet 4.5</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
