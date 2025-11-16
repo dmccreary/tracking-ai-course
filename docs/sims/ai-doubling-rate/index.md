@@ -14,16 +14,12 @@ hide:
 
 ![](length-of-tasks-log.png)
 
-The length of tasks (measured by how long they take human professionals) that generalist frontier model agents can complete autonomously with 50% reliability has been doubling approximately every 7 months for the last 6 years. The shaded region represents 95% CI calculated by hierarchical bootstrap over task families, tasks, and task attempts.
+The length of tasks (measured by how long they take human professionals) that generalist frontier model agents can complete autonomously with 50% reliability has been doubling approximately every seven months for the last six years. The shaded region represents 95% Confidence Interval calculated by hierarchical bootstrap over task families, tasks, and task attempts.
 
-Certainly! Here's a rewritten one-page summary tailored for a **non-technical audience**—such as a **technology strategy planning committee**—with a focus on clarity, implications, and strategic relevance:
-
----
 
 ## AI’s Ability to Handle Long Tasks: What You Need to Know
 
 **Summary of the March 2025 METR Report**
-
 
 ### Why This Matters
 
@@ -83,6 +79,19 @@ This means AI could soon:
 
 AI is no longer just a tool for small jobs. It’s growing fast—and by understanding how long and complex a task it can handle today, we can better prepare for the jobs it will do tomorrow.
 
+## Five Year Projection
+
+- Starting: July 2025 = 1 hour
+
+- July 2025 + 7 months = February 2026 = 2 hours
+- February 2026 + 7 months = September 2026 = 4 hours
+- September 2026 + 7 months = April 2027 = 8 hours
+- April 2027 + 7 months = November 2027 = 16 hours
+- November 2027 + 7 months = June 2028 = 32 hours = 1.3 days
+- June 2028 + 7 months = January 2029 = 64 hours = 2.7 days
+- January 2029 + 7 months = August 2029 = 128 hours = 5.3 days
+- August 2029 + 7 months = March 2030 = 256 hours = 10.7 days
+- March 2030 + 7 months = October 2030 = 512 hours = 21.3 days
 
 ## References
 

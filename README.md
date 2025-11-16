@@ -1,10 +1,16 @@
 # Tracking AI Course
 
-![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
-![MkDocs](https://img.shields.io/badge/Built%20with-MkDocs-blue)
-![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-green)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Built with MkDocs](https://img.shields.io/badge/Built%20with-MkDocs-blue)](https://www.mkdocs.org/)
+[![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-green)](https://pages.github.com/)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
+[![GitHub stars](https://img.shields.io/github/stars/dmccreary/tracking-ai-course?style=social)](https://github.com/dmccreary/tracking-ai-course/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/dmccreary/tracking-ai-course?style=social)](https://github.com/dmccreary/tracking-ai-course/network/members)
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fdmccreary.github.io%2Ftracking-ai-course%2F)](https://dmccreary.github.io/tracking-ai-course/)
 
-A comprehensive three-day course designed to help you understand the exponential growth of AI systems capabilities and their strategic implications for organizations. This course analyzes the limitations of LLMs, explores the need for world models, and examines the concept of Artificial General Intelligence (AGI) and its consequences for education, work, and human society.
+> 🎯 **A comprehensive three-day course designed to help you understand the exponential growth of AI systems capabilities and their strategic implications for organizations.**
+
+This course analyzes the limitations of LLMs, explores the need for world models, and examines the concept of Artificial General Intelligence (AGI) and its consequences for education, work, and human society.
 
 ## 🚀 Course Overview
 
@@ -132,12 +138,35 @@ mkdocs serve
 
 ## 🤝 Contributing
 
-We welcome contributions to improve course content and materials. Please:
+We welcome contributions to improve course content and materials! Here's how you can help:
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+### Getting Started
+1. **Fork the repository** - Click the fork button in the top right
+2. **Clone your fork** - `git clone https://github.com/your-username/tracking-ai-course.git`
+3. **Create a feature branch** - `git checkout -b feature/your-feature-name`
+4. **Make your changes** - Edit content, fix bugs, or add new features
+5. **Test locally** - Run `mkdocs serve` to preview your changes
+6. **Commit your changes** - Use clear, descriptive commit messages
+7. **Push to your fork** - `git push origin feature/your-feature-name`
+8. **Submit a pull request** - Describe your changes and why they're beneficial
+
+### Ways to Contribute
+- 📝 **Content improvements** - Fix typos, improve explanations, add examples
+- 🎨 **New MicroSimulations** - Create interactive visualizations for AI concepts
+- 📊 **Data updates** - Update datasets with latest AI benchmark results
+- 🐛 **Bug fixes** - Fix issues with simulations or website functionality
+- 📖 **Documentation** - Improve setup instructions or add tutorials
+- 🎯 **Feature requests** - Suggest new educational tools or content areas
+
+### Content Guidelines
+- Maintain educational focus and accessibility for business/education leaders
+- Ensure interactive elements are mobile-friendly
+- Follow existing styling and formatting conventions
+- Include proper attribution for data sources and inspirations
+- Test all interactive simulations across different browsers
+
+### Questions?
+Open an issue for questions, suggestions, or to discuss major changes before implementing them.
 
 ## 📄 License
 
@@ -152,6 +181,52 @@ This work is licensed under the [Creative Commons Attribution-NonCommercial-Shar
 - ⚠️ **ShareAlike**: Must distribute contributions under the same license
 
 For full license details, see [docs/license.md](docs/license.md).
+
+## 🙏 Acknowledgements
+
+This project is built upon the incredible work of many open source projects and communities:
+
+### Core Technologies
+- **[MkDocs](https://www.mkdocs.org/)** - Fast, simple static site generator geared towards building project documentation
+- **[MkDocs Material](https://squidfunk.github.io/mkdocs-material/)** - Material Design theme for MkDocs providing beautiful, responsive documentation
+- **[Python](https://www.python.org/)** - Programming language used for custom plugins and data processing
+- **[GitHub Pages](https://pages.github.com/)** - Free hosting platform for the course website
+
+### JavaScript Libraries & Frameworks
+- **[p5.js](https://p5js.org/)** - Creative coding library used for interactive MicroSimulations and visualizations
+- **[MathJax](https://www.mathjax.org/)** - Beautiful math notation rendering in web browsers
+- **[Chart.js](https://www.chartjs.org/)** - Simple yet flexible JavaScript charting library (used in some timeline visualizations)
+
+### Content Delivery Networks
+- **[cdnjs](https://cdnjs.com/)** - Free and open source CDN service for web libraries
+- **[unpkg](https://unpkg.com/)** - Fast, global CDN for npm packages
+
+### Python Dependencies
+- **[setuptools](https://setuptools.pypa.io/)** - Build system and package management for Python
+- **[Markdown Extensions](https://python-markdown.github.io/extensions/)** - Extensions for Python-Markdown including admonitions, code highlighting, and LaTeX support
+
+### Design & Styling
+- **[Material Design](https://material.io/)** - Design system that guides the visual appearance and user experience
+- **[Font Awesome](https://fontawesome.com/)** - Icon library used in custom interface elements
+
+### Development Tools
+- **[Git](https://git-scm.com/)** - Version control system
+- **[GitHub](https://github.com/)** - Code hosting and collaboration platform
+- **[VS Code](https://code.visualstudio.com/)** - Code editor used for development
+
+### Educational Inspiration
+- **[Our World in Data](https://ourworldindata.org/)** - Research and data visualization that inspired some of our AI progress tracking approaches
+- **[OpenAI](https://openai.com/)** - Research organization whose tokenizer demo inspired our tokenizer simulation
+- **[Systems Thinking](https://en.wikipedia.org/wiki/Systems_thinking)** - Methodology behind our causal loop diagrams and flywheel models
+
+### Special Recognition
+We extend our gratitude to:
+- The **open source community** for creating and maintaining the tools that make this project possible
+- **Educational technology pioneers** who have shown how interactive content enhances learning
+- **AI researchers and practitioners** whose work we aim to make more accessible to organizational leaders
+- **GitHub** for providing free hosting and collaboration tools for educational projects
+
+---
 
 ## 📧 Contact
 
