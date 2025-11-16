@@ -38,7 +38,7 @@ const modelData = {
     ]
 };
 
-let currentScale = 'linear';
+let currentScale = 'logarithmic';
 let currentProbability = '50';
 let showTrendline = true;
 let chart;
@@ -66,7 +66,7 @@ function calculateTrendLine() {
     // Generate trend line from 2019 to 2030
     const trendPoints = [];
     const startDate = new Date('2019-01-01');
-    const endDate = new Date('2030-12-31');
+    const endDate = new Date('2030-01-01');
 
     // Generate points at 3-month intervals
     for (let date = new Date(startDate); date <= endDate; date.setMonth(date.getMonth() + 3)) {
