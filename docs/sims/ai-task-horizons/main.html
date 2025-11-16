@@ -269,10 +269,11 @@
 
         function createChart() {
             const ctx = document.getElementById('taskChart').getContext('2d');
+            const chartData = prepareChartData();
 
             chart = new Chart(ctx, {
                 type: 'scatter',
-                data: prepareChartData(),
+                data: chartData,
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
@@ -313,8 +314,7 @@
                             },
                             ticks: {
                                 callback: function(value, index) {
-                                    const labels = chart.data.labels;
-                                    return labels[Math.floor(value)] || '';
+                                    return chartData.labels[Math.floor(value)] || '';
                                 },
                                 autoSkip: true,
                                 maxRotation: 45,
@@ -331,7 +331,7 @@
                                 text: 'Time Horizon (minutes)',
                                 font: { size: 13, weight: 'bold' }
                             },
-                            beginAtZero: true,
+                            min: currentScale === 'logarithmic' ? 1 : 0,
                             ticks: {
                                 callback: function(value) {
                                     if (currentScale === 'logarithmic') {
@@ -358,6 +358,7 @@
 
             // Update chart
             chart.options.scales.y.type = scale;
+            chart.options.scales.y.min = scale === 'logarithmic' ? 1 : 0;
             chart.update();
         }
 
