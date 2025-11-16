@@ -6,6 +6,12 @@ An interactive visualization showing how long different AI models can work on ta
 
 [Run the MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
+```html
+<iframe src="tracking-ai-course/sims/ai-task-horizons/
+```
+
+This MicroSim is based on the wonderful chart at the [METR.org blob post](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
+
 ## Overview
 
 This MicroSim visualizes the **task-completion time horizons** for various AI language models, showing the relationship between model capabilities and their ability to sustain work on extended tasks. The data represents predictions about how long AI agents can operate before encountering failures.
@@ -45,18 +51,21 @@ Hover over any data point to see:
 ## Model Data
 
 ### Frontier Models
-- **GPT-5**: 137.3 min (50%) / 26.4 min (80%)
-- **Grok-4**: 110.1 min (50%) / 14.9 min (80%)
-- **O3**: 92.2 min (50%) / 20.4 min (80%)
-- **Claude 3.7 Sonnet**: 54.2 min (50%) / 15.2 min (80%)
-- **O1 Elicited**: 39.2 min (50%) / 6.0 min (80%)
-- **Gemini 2.5 Pro**: 38.7 min (50%) / 9.2 min (80%)
+- **GPT-5**: 8,239 min / 137 hrs (50%) / 1,583 min / 26 hrs (80%)
+- **Grok-4**: 6,605 min / 110 hrs (50%) / 895 min / 15 hrs (80%)
+- **o3**: 5,531 min / 92 hrs (50%) / 1,223 min / 20 hrs (80%)
+- **Claude 3.7 Sonnet**: 3,254 min / 54 hrs (50%) / 909 min / 15 hrs (80%)
+- **o1-elicited**: 2,354 min / 39 hrs (50%) / 358 min / 6 hrs (80%)
+- **Claude 3.5 Sonnet 20241022**: 1,739 min / 29 hrs (50%) / 278 min / 5 hrs (80%)
+- **o1-preview**: 1,326 min / 22 hrs (50%) / 277 min / 5 hrs (80%)
+- **Claude 3.5 Sonnet**: 1,093 min / 18 hrs (50%) / 192 min / 3 hrs (80%)
 
 ### Non-Frontier Models
-- **Claude 4.1 Opus**: 105.5 min (50%) / 21.1 min (80%)
-- **O4-Mini**: 77.6 min (50%) / 15.0 min (80%)
-- **DeepSeek R1 0528**: 31.2 min (50%) / 3.8 min (80%)
-- **Claude 3.5 Sonnet**: 29.0 min (50%) / 4.6 min (80%)
+- **Claude Sonnet 4.5**: 6,798 min / 113 hrs (50%) / 1,209 min / 20 hrs (80%)
+- **Claude 4.1 Opus**: 6,330 min / 106 hrs (50%) / 1,265 min / 21 hrs (80%)
+- **Claude 4 Opus**: 4,792 min / 80 hrs (50%) / 1,218 min / 20 hrs (80%)
+- **Claude 4 Sonnet**: 4,063 min / 68 hrs (50%) / 1,000 min / 17 hrs (80%)
+- **Claude 3 Opus**: 385 min / 6 hrs (50%) / 68 min / 1 hr (80%)
 
 ## Customization Guide
 
@@ -121,7 +130,9 @@ Or adjust the chart container height in the CSS within `main.html`:
 
 - **Library**: Chart.js 4.4.0
 - **Chart Type**: Scatter plot
-- **Data Points**: 10 AI models (6 frontier, 4 non-frontier)
+- **Data Points**: 30 AI models (14 frontier, 16 non-frontier)
+- **Time Range**: From 0.3 minutes (GPT-2) to 8,239 minutes / 137 hours (GPT-5)
+- **Data Source**: [METR Research (March 2025)](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
 - **Interactive Controls**: Scale toggle (linear/log), Success probability toggle (50%/80%)
 - **Browser Compatibility**: All modern browsers (Chrome, Firefox, Safari, Edge)
 - **Dependencies**: Chart.js (loaded from CDN)

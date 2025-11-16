@@ -1,18 +1,40 @@
 // Data structure with both 50% and 80% horizons
+// Time horizons are in minutes
+// Data from METR: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
 const modelData = {
     frontier: [
-        { name: 'GPT-5', horizon50: 137.3, horizon80: 26.4, date: '2025-08-07' },
-        { name: 'O3', horizon50: 92.2, horizon80: 20.4, date: '2025-04-16' },
-        { name: 'Grok-4', horizon50: 110.1, horizon80: 14.9, date: '2025-07-09' },
-        { name: 'Claude 3.7 Sonnet', horizon50: 54.2, horizon80: 15.2, date: '2025-02-24' },
-        { name: 'O1 Elicited', horizon50: 39.2, horizon80: 6.0, date: '2024-12-05' },
-        { name: 'Gemini 2.5 Pro', horizon50: 38.7, horizon80: 9.2, date: '2025-06-05' }
+        { name: 'GPT-5', horizon50: 8239.1, horizon80: 1582.3, date: '2025-08-07' },
+        { name: 'Grok-4', horizon50: 6604.5, horizon80: 894.7, date: '2025-07-09' },
+        { name: 'o3', horizon50: 5530.7, horizon80: 1223.4, date: '2025-04-16' },
+        { name: 'Claude 3.7 Sonnet', horizon50: 3253.6, horizon80: 909.4, date: '2025-02-24' },
+        { name: 'o1-elicited', horizon50: 2352.4, horizon80: 358.4, date: '2024-12-05' },
+        { name: 'Claude 3.5 Sonnet 20241022', horizon50: 1738.9, horizon80: 278.8, date: '2024-10-22' },
+        { name: 'o1-preview', horizon50: 1325.7, horizon80: 277.2, date: '2024-09-12' },
+        { name: 'Claude 3.5 Sonnet', horizon50: 1092.9, horizon80: 191.9, date: '2024-06-20' },
+        { name: 'GPT-4o', horizon50: 550.2, horizon80: 101.4, date: '2024-05-13' },
+        { name: 'GPT-4 1106', horizon50: 513.4, horizon80: 87.2, date: '2023-11-06' },
+        { name: 'GPT-4', horizon50: 321.8, horizon80: 57.9, date: '2023-03-14' },
+        { name: 'GPT-3.5 Turbo Instruct', horizon50: 36.3, horizon80: 10.4, date: '2022-03-15' },
+        { name: 'davinci-002', horizon50: 8.9, horizon80: 2.0, date: '2020-05-28' },
+        { name: 'GPT-2', horizon50: 2.4, horizon80: 0.3, date: '2019-02-14' }
     ],
     nonFrontier: [
-        { name: 'Claude 4.1 Opus', horizon50: 105.5, horizon80: 21.1, date: '2025-01-15' },
-        { name: 'O4-Mini', horizon50: 77.6, horizon80: 15.0, date: '2025-03-10' },
-        { name: 'DeepSeek R1 0528', horizon50: 31.2, horizon80: 3.8, date: '2024-05-28' },
-        { name: 'Claude 3.5 Sonnet', horizon50: 29.0, horizon80: 4.6, date: '2024-10-01' }
+        { name: 'Claude Sonnet 4.5', horizon50: 6798.2, horizon80: 1209.1, date: '2025-09-29' },
+        { name: 'Claude 4.1 Opus', horizon50: 6329.9, horizon80: 1265.3, date: '2025-08-05' },
+        { name: 'Claude 4 Opus', horizon50: 4791.8, horizon80: 1218.0, date: '2025-05-22' },
+        { name: 'o4-mini', horizon50: 4654.1, horizon80: 902.8, date: '2025-04-16' },
+        { name: 'Claude 4 Sonnet', horizon50: 4062.5, horizon80: 999.6, date: '2025-05-22' },
+        { name: 'GPT-OSS-120B', horizon50: 2519.0, horizon80: 397.9, date: '2025-08-05' },
+        { name: 'Gemini 2.5 Pro Preview', horizon50: 2324.1, horizon80: 551.8, date: '2025-06-05' },
+        { name: 'DeepSeek R1 0528', horizon50: 1870.1, horizon80: 225.0, date: '2025-05-28' },
+        { name: 'DeepSeek R1', horizon50: 1615.9, horizon80: 259.9, date: '2025-01-20' },
+        { name: 'DeepSeek V3 0324', horizon50: 1387.0, horizon80: 318.3, date: '2025-03-24' },
+        { name: 'DeepSeek V3', horizon50: 1108.3, horizon80: 231.6, date: '2024-12-26' },
+        { name: 'GPT-4 Turbo', horizon50: 394.0, horizon80: 91.4, date: '2024-04-09' },
+        { name: 'Claude 3 Opus', horizon50: 385.4, horizon80: 67.5, date: '2024-03-04' },
+        { name: 'GPT-4 0125', horizon50: 321.9, horizon80: 71.8, date: '2024-01-25' },
+        { name: 'Qwen 2.5 72B', horizon50: 309.9, horizon80: 56.0, date: '2024-09-19' },
+        { name: 'Qwen 2 72B', horizon50: 134.6, horizon80: 25.5, date: '2024-06-07' }
     ]
 };
 
