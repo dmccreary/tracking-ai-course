@@ -2,7 +2,7 @@
 
 An interactive visualization showing how long different AI models can work on tasks before failing, based on METR's research on measuring AI ability to complete long tasks.
 
-<iframe src="./main.html" width="100%" height="650" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+<iframe src="./main.html" width="100%" height="598" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
 
 [Run the MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
