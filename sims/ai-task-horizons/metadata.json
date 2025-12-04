@@ -1,0 +1,36 @@
+{
+  "title": "AI Task Completion Time Horizons",
+  "description": "Interactive visualization showing how long different AI models can work on tasks before failing, based on METR's research on measuring AI ability to complete long tasks.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "AI Capabilities",
+    "Task Completion",
+    "AI Benchmarks",
+    "METR Research",
+    "Model Comparison"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "AI Researchers, Developers, Strategists",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Task Horizons",
+    "Model Performance",
+    "Success Probability",
+    "Frontier Models"
+  ],
+  "prerequisites": [
+    "Basic understanding of AI models"
+  ],
+  "library": "Chart.js"
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Porter's Five Forces Model",
+  "description": "Interactive visualization of Porter's Five Forces framework for analyzing competitive dynamics in an industry, with AI-specific applications.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Porter's Five Forces",
+    "Competitive Analysis",
+    "Business Strategy",
+    "Industry Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "Business Leaders, Strategists, MBA Students",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Competitive Rivalry",
+    "Supplier Power",
+    "Buyer Power",
+    "Threat of Substitutes",
+    "Threat of New Entrants"
+  ],
+  "prerequisites": [
+    "Basic business strategy concepts"
+  ],
+  "library": "p5.js"
+}

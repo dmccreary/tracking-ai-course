@@ -1,0 +1,38 @@
+{
+  "title": "Generative AI Idea Funnel",
+  "description": "Interactive infographic showing the seven stages of a GenAI Center of Excellence idea funnel process from training to deployment.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "AI Governance",
+    "Innovation Management",
+    "Center of Excellence",
+    "Idea Management",
+    "AI Strategy"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "AI Leaders, Innovation Managers, Executives",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Idea Submission",
+    "Expert Review",
+    "Scoring",
+    "Development",
+    "Deployment"
+  ],
+  "prerequisites": [
+    "Understanding of organizational AI adoption"
+  ],
+  "library": "p5.js"
+}

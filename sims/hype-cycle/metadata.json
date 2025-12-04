@@ -1,0 +1,37 @@
+{
+  "title": "Technology Hype Cycle Infographic",
+  "description": "Interactive visualization of the Gartner Technology Hype Cycle showing the five phases from Technology Trigger to Plateau of Productivity.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Hype Cycle",
+    "Technology Trends",
+    "Innovation Management",
+    "Market Analysis",
+    "Gartner Framework"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "Technology Leaders, Investors, Strategists",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Technology Trigger",
+    "Peak of Inflated Expectations",
+    "Trough of Disillusionment",
+    "Slope of Enlightenment",
+    "Plateau of Productivity"
+  ],
+  "prerequisites": [
+    "Basic understanding of technology trends"
+  ],
+  "library": "p5.js"
+}

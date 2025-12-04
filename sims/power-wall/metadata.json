@@ -1,0 +1,36 @@
+{
+  "title": "Power Wall MicroSim",
+  "description": "Interactive visualization showing the evolution of CPU clock speeds from 1965 to 2025, highlighting the Power Wall phenomenon where thermal constraints limited frequency increases.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Power Wall",
+    "CPU Clock Speed",
+    "Computing History",
+    "Thermal Constraints",
+    "Multi-core Design"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators, Technology Enthusiasts",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Clock Speed",
+    "Power Wall",
+    "Thermal Constraints",
+    "Multi-core Transition"
+  ],
+  "prerequisites": [
+    "Basic understanding of computer hardware"
+  ],
+  "library": "p5.js"
+}
