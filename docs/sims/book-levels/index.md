@@ -1,4 +1,7 @@
 ---
+title: Book Levels MicroSim
+description: Interactive visualization of five levels of intelligent textbooks from static to AI-driven
+quality_score: 67
 hide:
   - toc
 ---

@@ -1,4 +1,7 @@
 ---
+title: Tokenizer MicroSim
+description: Interactive visualization demonstrating how text is tokenized for language model processing
+quality_score: 67
 hide:
   - toc
 ---
@@ -10,7 +13,7 @@ hide:
 To use this MicroSim in your course, just add the following HTML line to your website:
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="470px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/tokenizer/main.html"  height="470px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

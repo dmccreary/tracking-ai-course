@@ -1,3 +1,8 @@
+---
+title: Deep Learning Timeline MicroSim
+description: Interactive timeline showing over 100 key events in Deep Learning history from 1935 to present
+quality_score: 52
+---
 # Deep Learning Timeline MicroSim
 
 Here is a timeline that includes over 100 key events in the field of Deep Learning.

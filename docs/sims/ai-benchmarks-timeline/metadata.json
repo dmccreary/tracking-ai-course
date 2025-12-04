@@ -1,0 +1,33 @@
+{
+  "title": "AI Benchmarks Timeline",
+  "description": "Interactive timeline showing key AI benchmarks and when they were introduced, from early question answering to modern specialized benchmarks for coding, math, and professional exams.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "AI Benchmarks",
+    "AI History",
+    "Performance Metrics",
+    "Machine Learning Evaluation",
+    "AI Progress"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators, AI Enthusiasts",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Remember",
+    "Understand"
+  ],
+  "concepts": [
+    "AI Benchmarks",
+    "Performance Metrics",
+    "Historical Progress"
+  ],
+  "prerequisites": [],
+  "library": "p5.js"
+}

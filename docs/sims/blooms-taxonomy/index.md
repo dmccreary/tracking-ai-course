@@ -1,6 +1,7 @@
 ---
 title: Bloom's Taxonomy
 description: Infographic with infobox hovers showing layers of Bloom's Taxonomy.
+quality_score: 70
 image: /sims/blooms-taxonomy/blooms-taxonomy.png
 og:image: /sims/blooms-taxonomy/blooms-taxonomy.png
 twitter:image: /sims/blooms-taxonomy/blooms-taxonomy.png

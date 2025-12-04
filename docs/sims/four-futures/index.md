@@ -1,12 +1,17 @@
-
-
+---
+title: Four AI Futures MicroSim
+description: Interactive chart showing four possible scenarios for AI development growth patterns
+quality_score: 67
+image: /sims/four-futures/four-futures.png
+og:image: /sims/four-futures/four-futures.png
+---
 # Four AI Futures MicroSim
 
 <iframe src="./main.html" height="400px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="./https://dmccreary.github.io/tracking-ai-course/sims/four-futures/main.html" height="400px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/four-futures/main.html" height="400px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

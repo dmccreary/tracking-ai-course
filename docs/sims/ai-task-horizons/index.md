@@ -1,3 +1,8 @@
+---
+title: AI Task Completion Time Horizons
+description: Interactive visualization showing how long AI models can work on tasks based on METR research
+quality_score: 72
+---
 # AI Task Completion Time Horizons
 
 An interactive visualization showing how long different AI models can work on tasks before failing, based on METR's research on measuring AI ability to complete long tasks.

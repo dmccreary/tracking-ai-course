@@ -1,14 +1,17 @@
 ---
+title: Language Model Arena Timeline
+description: Interactive visualization of LMArena benchmark rankings for AI models
+quality_score: 67
 hide:
   - toc
 ---
-# Language Mode Arena (LMArena)
+# Language Model Arena (LMArena)
 
 <iframe src="./main.html" height="450px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="450px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/lm-arena-timeline/main.html"  height="450px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

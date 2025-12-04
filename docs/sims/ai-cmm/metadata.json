@@ -1,0 +1,39 @@
+{
+  "title": "AI Capability Maturity Model Infographic",
+  "description": "Interactive infographic showing the five levels of AI organizational maturity from Ad Hoc to Transformative, with detailed descriptions of each stage.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "AI Maturity Model",
+    "Organizational Readiness",
+    "AI Strategy",
+    "Capability Assessment",
+    "Digital Transformation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "AI Strategy Committees, Business Leaders",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Maturity Models",
+    "AI Readiness",
+    "Organizational Assessment",
+    "Strategic Planning",
+    "AI Adoption"
+  ],
+  "prerequisites": [
+    "Understanding of organizational processes",
+    "Basic AI concepts"
+  ],
+  "library": "p5.js"
+}

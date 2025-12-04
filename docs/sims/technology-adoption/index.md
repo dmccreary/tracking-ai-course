@@ -1,6 +1,7 @@
 ---
 title: Technology Adoption Curve Infographic
 description: An interactive infographic visualizing the Technology Adoption Lifecycle Curve
+quality_score: 80
 image: /sims/technology-adoption/technology-adoption.png
 og:image: /sims/technology-adoption/technology-adoption.png
 twitter:image: /sims/technology-adoption/technology-adoption.png

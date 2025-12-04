@@ -1,9 +1,10 @@
 ---
 title: Moore's Law Timeline
-description: A infographic with hovers showing the progess of Moore's law in both linear and log scales.
-image: /tracking-ai-course/sims/moores-law/moores-law.png
-og:image: /tracking-ai-course/sims/moores-law/moores-law.png
-twitter:image: /tracking-ai-course/sims/moores-law/moores-law.png
+description: Interactive infographic showing transistor growth with linear and log scale views
+quality_score: 70
+image: /sims/moores-law/moores-law.png
+og:image: /sims/moores-law/moores-law.png
+twitter:image: /sims/moores-law/moores-law.png
 social:
    cards: false
 hide:
@@ -15,7 +16,7 @@ hide:
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="450px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/moores-law/main.html"  height="600px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

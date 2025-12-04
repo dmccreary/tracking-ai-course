@@ -1,0 +1,34 @@
+{
+  "title": "Tokenizer MicroSim",
+  "description": "Interactive visualization demonstrating how text is tokenized into smaller units for processing by language models.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Tokenization",
+    "Natural Language Processing",
+    "Language Models",
+    "Text Processing"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators, NLP Enthusiasts",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Tokenization",
+    "Subword Units",
+    "Text Encoding"
+  ],
+  "prerequisites": [
+    "Basic understanding of text processing"
+  ],
+  "library": "p5.js"
+}

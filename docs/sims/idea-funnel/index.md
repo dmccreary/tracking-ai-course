@@ -1,9 +1,7 @@
 ---
 title: Generative AI Idea Funnel
 description: An interactive infographic showing the steps in managing a GenAI Center of Excellence
-image: /img/cover.png
-og:image: /img/cover.png
-twitter:image: /img/cover.png
+quality_score: 80
 social:
    cards: false
 ---
@@ -14,7 +12,7 @@ social:
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="450px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/idea-funnel/main.html"  height="660px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

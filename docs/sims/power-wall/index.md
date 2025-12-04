@@ -1,4 +1,7 @@
 ---
+title: Power Wall MicroSim
+description: Interactive visualization showing CPU clock speed evolution and the Power Wall phenomenon
+quality_score: 67
 hide:
   - toc
 ---
@@ -8,7 +11,7 @@ hide:
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="450px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/power-wall/main.html"  height="605px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

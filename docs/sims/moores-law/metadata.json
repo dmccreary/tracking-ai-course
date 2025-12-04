@@ -1,0 +1,36 @@
+{
+  "title": "Moore's Law Timeline",
+  "description": "Interactive infographic showing the progress of Moore's Law with transistor count growth over time, displayed in both linear and logarithmic scales.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Moore's Law",
+    "Exponential Growth",
+    "Semiconductor Industry",
+    "Computing History",
+    "Technology Trends"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators, Technology Enthusiasts",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Exponential Growth",
+    "Transistor Density",
+    "Computing Power",
+    "Technological Progress"
+  ],
+  "prerequisites": [
+    "Basic understanding of computer hardware"
+  ],
+  "library": "p5.js"
+}

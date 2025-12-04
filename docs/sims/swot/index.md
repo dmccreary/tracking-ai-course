@@ -1,9 +1,7 @@
 ---
 title: AI SWOT Analysis
-description: up to 110 characters for mobile
-image: /img/cover.png
-og:image: /img/cover.png
-twitter:image: /img/cover.png
+description: Interactive SWOT analysis diagram for AI strategy development with hover descriptions
+quality_score: 80
 social:
    cards: false
 hide:
@@ -16,7 +14,7 @@ hide:
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="500px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/swot/main.html"  height="500px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

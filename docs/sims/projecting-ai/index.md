@@ -1,8 +1,12 @@
 ---
 title: Projecting AI Task Completion to 2030
-description: Interactive visualization showing exponential growth of AI task completion capabilities from 2019 to 2030, with time on the horizontal axis and projected horizons based on 7-month doubling time
+description: Interactive visualization showing exponential growth of AI task completion capabilities from 2019 to 2030
+quality_score: 75
 image: /sims/projecting-ai/projecting-ai.png
 og:image: /sims/projecting-ai/projecting-ai.png
+twitter:image: /sims/projecting-ai/projecting-ai.png
+social:
+   cards: false
 ---
 
 # Projecting AI Task Completion to 2030

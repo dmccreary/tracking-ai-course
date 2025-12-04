@@ -1,4 +1,7 @@
 ---
+title: MMLU Timeline MicroSim
+description: Interactive visualization showing AI model progress on the MMLU benchmark
+quality_score: 72
 hide:
   - toc
 ---
@@ -8,7 +11,7 @@ hide:
   style="overflow: hidden;"></iframe>
 
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/NAM/main.html"  height="550px" scrolling="no"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/mmlu-timeline/main.html"  height="550px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 

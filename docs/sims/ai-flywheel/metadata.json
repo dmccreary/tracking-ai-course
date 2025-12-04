@@ -1,0 +1,37 @@
+{
+  "title": "The AI Flywheel",
+  "description": "An interactive causal loop diagram visualizing the AI flywheel archetype showing how Data, Model, Prediction, and Feedback create a reinforcing cycle.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "AI Flywheel",
+    "Causal Loop Diagram",
+    "Machine Learning Cycle",
+    "Feedback Systems",
+    "Data-Driven AI"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators, AI Enthusiasts",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Data Collection",
+    "Model Training",
+    "Predictions",
+    "Feedback Loops",
+    "Continuous Improvement"
+  ],
+  "prerequisites": [
+    "Basic understanding of machine learning"
+  ],
+  "library": "vis.js"
+}

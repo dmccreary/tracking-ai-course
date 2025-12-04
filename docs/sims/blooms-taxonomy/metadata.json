@@ -1,0 +1,36 @@
+{
+  "title": "Bloom's Taxonomy",
+  "description": "Interactive infographic showing the six levels of Bloom's Taxonomy with hover infoboxes explaining each cognitive level from Remember to Create.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Bloom's Taxonomy",
+    "Educational Psychology",
+    "Learning Objectives",
+    "Cognitive Levels",
+    "Instructional Design"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Educators, Instructional Designers, Students",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Remember",
+    "Understand"
+  ],
+  "concepts": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "prerequisites": [],
+  "library": "p5.js"
+}

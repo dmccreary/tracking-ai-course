@@ -1,0 +1,34 @@
+{
+  "title": "Book Levels MicroSim",
+  "description": "Interactive visualization of the five levels of intelligent textbooks from static content to autonomous AI-driven learning experiences.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Intelligent Textbooks",
+    "Educational Technology",
+    "Adaptive Learning",
+    "AI in Education"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "Educators, EdTech Professionals",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Static Textbooks",
+    "Interactive Content",
+    "Adaptive Learning",
+    "AI Chatbots",
+    "Autonomous AI"
+  ],
+  "prerequisites": [],
+  "library": "p5.js"
+}

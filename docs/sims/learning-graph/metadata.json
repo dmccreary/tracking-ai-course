@@ -1,0 +1,32 @@
+{
+  "title": "Learning Graph for Deep Learning Course",
+  "description": "Interactive visualization of the learning graph showing concept dependencies for a Deep Learning course.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Learning Graphs",
+    "Concept Dependencies",
+    "Educational Design",
+    "Deep Learning"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "Educators, Instructional Designers",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Learning Graphs",
+    "Concept Dependencies",
+    "Curriculum Design"
+  ],
+  "prerequisites": [],
+  "library": "vis-network"
+}

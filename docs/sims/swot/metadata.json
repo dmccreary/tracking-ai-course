@@ -1,0 +1,38 @@
+{
+  "title": "AI SWOT Analysis",
+  "description": "Interactive SWOT analysis diagram for AI strategy development, showing Strengths, Weaknesses, Opportunities, and Threats with hover descriptions.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "SWOT Analysis",
+    "Strategic Planning",
+    "AI Strategy",
+    "Business Analysis",
+    "Competitive Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "AI Strategy Committees, Business Leaders",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Strengths",
+    "Weaknesses",
+    "Opportunities",
+    "Threats",
+    "Strategic Planning"
+  ],
+  "prerequisites": [
+    "Basic business strategy concepts"
+  ],
+  "library": "p5.js"
+}

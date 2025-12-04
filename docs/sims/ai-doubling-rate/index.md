@@ -1,9 +1,10 @@
 ---
 title: AI Doubling Rate
-description: Analysis of the time of doubling for AI
-image: /img/cover.png
-og:image: /img/cover.png
-twitter:image: /img/cover.png
+description: Analysis of AI task completion doubling rate based on METR research
+quality_score: 60
+image: /sims/ai-doubling-rate/length-of-tasks-log.png
+og:image: /sims/ai-doubling-rate/length-of-tasks-log.png
+twitter:image: /sims/ai-doubling-rate/length-of-tasks-log.png
 social:
    cards: false
 hide:

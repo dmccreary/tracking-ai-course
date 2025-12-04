@@ -1,0 +1,34 @@
+{
+  "title": "AI Doubling Rate",
+  "description": "Analysis and visualization of the time of doubling for AI task completion capabilities, based on METR research showing a 7-month doubling rate.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "AI Growth Rate",
+    "Exponential Growth",
+    "METR Research",
+    "AI Capabilities"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "AI Strategists, Researchers, Executives",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Doubling Rate",
+    "Exponential Growth",
+    "Task Completion"
+  ],
+  "prerequisites": [
+    "Basic understanding of AI capabilities"
+  ],
+  "library": "p5.js"
+}

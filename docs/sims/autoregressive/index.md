@@ -1,4 +1,7 @@
 ---
+title: Autoregressive MicroSim
+description: Interactive simulation showing how language models predict the next token using neural networks
+quality_score: 67
 hide:
   - toc
 ---

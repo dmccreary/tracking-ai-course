@@ -1,4 +1,7 @@
 ---
+title: The Accelerating Pace of AI
+description: Interactive visualization demonstrating how AI capabilities are accelerating
+quality_score: 67
 hide:
   - toc
 ---

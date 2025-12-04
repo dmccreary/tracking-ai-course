@@ -1,6 +1,7 @@
 ---
 title: The AI Flywheel
 description: An infographic MicroSim of the AI Flywheel causal loop.
+quality_score: 75
 image: /sims/ai-flywheel/ai-flywheel.png
 og:image: /sims/ai-flywheel/ai-flywheel.png
 twitter:image: /sims/ai-flywheel/ai-flywheel.png
