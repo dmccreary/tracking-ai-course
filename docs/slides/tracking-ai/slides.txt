@@ -1,0 +1,29 @@
+---
+title: Tracking AI presentation
+description: 30-minute overview of tracking AI capabilities
+---
+# Tracking AI
+
+This is a 30-minute presentation used to help organization understand
+how tracking AI is part of their AI strategy and their overall organizational
+strategy.
+
+## Slide 1: Introduction
+
+### Does your organization have a formal AI strategy?
+### How do you predict the growth rate of AI?
+
+## Slide 2: Growth Rates
+
+### There are four possible growth rates of AI:
+
+1. Growth and Decline - AI is just a passing fad
+2. Steady State - no change from current capabilities
+3. Linear Growth - slow rise
+4. Exponential Growth - like Moore's Law - doubling every X months
+
+What does the evidence show about how AI is growing in capabilities?
+
+## Slide 3: Visualizing Four Future Growth Rates
+
+<iframe src="../../sims/four-futures/" width="100%"></iframe>

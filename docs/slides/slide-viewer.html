@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e8e8e8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .slide-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .slide-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #64b5f6;
+            border-bottom: 2px solid #64b5f6;
+            padding-bottom: 15px;
+        }
+
+        .slide-content h2 {
+            font-size: 2em;
+            margin-bottom: 25px;
+            color: #81c784;
+        }
+
+        .slide-content h3 {
+            font-size: 1.5em;
+            margin: 20px 0 15px 0;
+            color: #fff;
+        }
+
+        .slide-content p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .slide-content ul, .slide-content ol {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 15px 0 15px 30px;
+        }
+
+        .slide-content li {
+            margin-bottom: 10px;
+        }
+
+        .slide-content iframe {
+            width: 100%;
+            min-height: 400px;
+            border: none;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .slide-content code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Fira Code', 'Consolas', monospace;
+        }
+
+        .slide-content pre {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .slide-content pre code {
+            padding: 0;
+            background: none;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+
+        .nav-btn {
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .nav-btn.prev {
+            background: #5c6bc0;
+            color: white;
+        }
+
+        .nav-btn.prev:hover:not(:disabled) {
+            background: #7986cb;
+            transform: translateX(-3px);
+        }
+
+        .nav-btn.next {
+            background: #26a69a;
+            color: white;
+        }
+
+        .nav-btn.next:hover:not(:disabled) {
+            background: #4db6ac;
+            transform: translateX(3px);
+        }
+
+        .nav-btn.contents {
+            background: #ff7043;
+            color: white;
+        }
+
+        .nav-btn.contents:hover {
+            background: #ff8a65;
+            transform: translateY(-2px);
+        }
+
+        .slide-indicator {
+            font-size: 0.9em;
+            color: #90a4ae;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .contents-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .contents-modal.active {
+            display: flex;
+        }
+
+        .contents-list {
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .contents-list h2 {
+            color: #64b5f6;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contents-item {
+            padding: 12px 15px;
+            cursor: pointer;
+            border-radius: 6px;
+            margin-bottom: 5px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contents-item:hover {
+            background: rgba(100, 181, 246, 0.2);
+        }
+
+        .contents-item.active {
+            background: rgba(100, 181, 246, 0.3);
+            border-left: 3px solid #64b5f6;
+        }
+
+        .contents-item .slide-num {
+            color: #64b5f6;
+            font-weight: 600;
+            min-width: 30px;
+        }
+
+        .close-contents {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2em;
+            color: #90a4ae;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-contents:hover {
+            color: #fff;
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 60px;
+            color: #ef5350;
+        }
+
+        .error-message h2 {
+            margin-bottom: 20px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #90a4ae;
+        }
+
+        @media (max-width: 768px) {
+            .slide-container {
+                padding: 20px;
+            }
+
+            .slide-content h1 {
+                font-size: 1.8em;
+            }
+
+            .slide-content h2 {
+                font-size: 1.5em;
+            }
+
+            .nav-btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            .navigation {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide-container">
+            <div id="slide-content" class="slide-content">
+                <div class="loading">Loading slides...</div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="nav-btn prev" id="prev-btn" onclick="prevSlide()">PREV</button>
+            <span class="slide-indicator" id="slide-indicator">0 / 0</span>
+            <button class="nav-btn contents" onclick="showContents()">CONTENTS</button>
+            <span class="slide-indicator" id="slide-indicator-right"></span>
+            <button class="nav-btn next" id="next-btn" onclick="nextSlide()">NEXT</button>
+        </div>
+    </div>
+
+    <div class="contents-modal" id="contents-modal">
+        <span class="close-contents" onclick="hideContents()">&times;</span>
+        <div class="contents-list">
+            <h2>Table of Contents</h2>
+            <div id="contents-items"></div>
+        </div>
+    </div>
+
+    <script>
+        let slides = [];
+        let currentSlide = 0;
+        let presentationTitle = '';
+
+        // Get input file from URL parameter
+        function getInputFile() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('input');
+        }
+
+        // Parse frontmatter from markdown
+        function parseFrontmatter(content) {
+            const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
+            if (frontmatterMatch) {
+                const frontmatter = frontmatterMatch[1];
+                const body = content.slice(frontmatterMatch[0].length);
+
+                // Parse title from frontmatter
+                const titleMatch = frontmatter.match(/title:\s*(.+)/);
+                if (titleMatch) {
+                    presentationTitle = titleMatch[1].trim();
+                    document.title = presentationTitle + ' - Slide Viewer';
+                }
+
+                return body;
+            }
+            return content;
+        }
+
+        // Parse markdown into slides based on ## headers
+        function parseSlides(markdown) {
+            const content = parseFrontmatter(markdown);
+
+            // Split by ## headers
+            const parts = content.split(/^## /m);
+
+            const parsedSlides = [];
+
+            // First part might contain intro content with # header
+            if (parts[0].trim()) {
+                const introContent = parts[0].trim();
+                // Check if there's a # header (title slide)
+                const titleMatch = introContent.match(/^# (.+)\n/);
+                if (titleMatch) {
+                    parsedSlides.push({
+                        title: titleMatch[1],
+                        content: introContent
+                    });
+                }
+            }
+
+            // Process ## sections
+            for (let i = 1; i < parts.length; i++) {
+                const part = parts[i];
+                const lines = part.split('\n');
+                const title = lines[0].trim();
+                const slideContent = '## ' + part;
+
+                parsedSlides.push({
+                    title: title,
+                    content: slideContent
+                });
+            }
+
+            return parsedSlides;
+        }
+
+        // Render current slide
+        function renderSlide() {
+            const slideContent = document.getElementById('slide-content');
+            const slideIndicator = document.getElementById('slide-indicator');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            if (slides.length === 0) {
+                slideContent.innerHTML = '<div class="error-message"><h2>No slides found</h2><p>The input file could not be parsed.</p></div>';
+                return;
+            }
+
+            // Render markdown to HTML
+            slideContent.innerHTML = marked.parse(slides[currentSlide].content);
+
+            // Update indicator
+            slideIndicator.textContent = `${currentSlide + 1} / ${slides.length}`;
+
+            // Update button states
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+
+            // Update URL hash for bookmarking
+            window.location.hash = `slide-${currentSlide + 1}`;
+        }
+
+        // Navigation functions
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                renderSlide();
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                renderSlide();
+            }
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            renderSlide();
+            hideContents();
+        }
+
+        // Contents modal functions
+        function showContents() {
+            const modal = document.getElementById('contents-modal');
+            const itemsContainer = document.getElementById('contents-items');
+
+            itemsContainer.innerHTML = slides.map((slide, index) => `
+                <div class="contents-item ${index === currentSlide ? 'active' : ''}" onclick="goToSlide(${index})">
+                    <span class="slide-num">${index + 1}</span>
+                    <span>${slide.title}</span>
+                </div>
+            `).join('');
+
+            modal.classList.add('active');
+        }
+
+        function hideContents() {
+            document.getElementById('contents-modal').classList.remove('active');
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                prevSlide();
+            } else if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'Escape') {
+                hideContents();
+            } else if (e.key === 'c' || e.key === 'C') {
+                const modal = document.getElementById('contents-modal');
+                if (modal.classList.contains('active')) {
+                    hideContents();
+                } else {
+                    showContents();
+                }
+            }
+        });
+
+        // Close modal on outside click
+        document.getElementById('contents-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'contents-modal') {
+                hideContents();
+            }
+        });
+
+        // Load and initialize
+        async function init() {
+            const inputFile = getInputFile();
+
+            if (!inputFile) {
+                document.getElementById('slide-content').innerHTML = `
+                    <div class="error-message">
+                        <h2>No input file specified</h2>
+                        <p>Please provide an input file using the URL parameter:</p>
+                        <p><code>slide-viewer.html?input=path/to/slides.md</code></p>
+                    </div>
+                `;
+                return;
+            }
+
+            try {
+                const response = await fetch(inputFile);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const markdown = await response.text();
+
+                slides = parseSlides(markdown);
+
+                // Check for hash to restore position
+                const hash = window.location.hash;
+                if (hash) {
+                    const match = hash.match(/slide-(\d+)/);
+                    if (match) {
+                        const slideNum = parseInt(match[1], 10) - 1;
+                        if (slideNum >= 0 && slideNum < slides.length) {
+                            currentSlide = slideNum;
+                        }
+                    }
+                }
+
+                renderSlide();
+            } catch (error) {
+                document.getElementById('slide-content').innerHTML = `
+                    <div class="error-message">
+                        <h2>Error loading slides</h2>
+                        <p>Could not load: <code>${inputFile}</code></p>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize on page load
+        init();
+    </script>
+</body>
+</html>
