@@ -16,14 +16,20 @@ strategy.
 ### Does your organization have a formal AI strategy?
 ### How do you predict the growth rate of AI?
 
+In this presentation we will review the shared beliefs we
+have about the rates that AI is growing and how this will impact
+our organizations AI strategy.  We will review how
+we measure AI capabilities using the time humans take
+to complete tasks.
+
 ## Slide 2: Growth Rates
 
 ### There are four possible growth rates of AI:
 
 1. Growth and Decline - AI is just a passing fad
 2. Steady State - no change from current capabilities
-3. Linear Growth - slow rise
-4. Exponential Growth - like Moore's Law - doubling every X months
+3. Linear Growth - slow rise over time - arithmatic growth rates
+4. Exponential Growth - geometric growth - like Moore's Law - doubling every X months
 
 What does the evidence show about how AI is growing in capabilities?
 
