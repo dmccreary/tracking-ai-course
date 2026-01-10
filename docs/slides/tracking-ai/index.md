@@ -37,17 +37,21 @@ What does the evidence show about how AI is growing in capabilities?
 
 How do we measure the overall capability of an AI system?
 
-One way is to estimate how long a human takes to complete a task.
+One way is to estimate how long a **human** takes to complete a task.
 We can assume that longer tasks are more complex and require more intelligence.
 We can then measure what the probability of an AI completing a task correctly.
-**Example:** Given a task to count the words in a paragraph.  How long would this task take an average human?
+  **Example:** Given a task to count the words in a paragraph.  How long would this task take an average human?
+We can then create a database of tasks and measure how long humans to take to complete a task.
+This task/time database can form the basis of objective measures of AI capabilities.
 
 ## Slide 4: METR
 
-The METR.org studies show that AI has been doubling
+The METR.org studies show that AI task completion has been doubling every 7 months since 2019.
 
 <iframe src="../../sims/ai-doubling-rate/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 ## Slide 5: Projecting AI
+
+We can now project this trend line out until 2030.  The results are sometimes difficult to believe.
 
 <iframe src="../../sims/projecting-ai/main.html" width="100%" height="500px" scrolling="no"></iframe>
