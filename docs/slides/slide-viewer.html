@@ -262,6 +262,93 @@
             color: #90a4ae;
         }
 
+        /* Editor panel styles */
+        .editor-panel {
+            display: none;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .editor-panel.active {
+            display: flex;
+        }
+
+        .editor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .editor-header h3 {
+            color: #64b5f6;
+            margin: 0;
+        }
+
+        .editor-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .editor-btn {
+            padding: 8px 16px;
+            font-size: 0.9em;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: #455a64;
+            color: white;
+            transition: all 0.2s;
+        }
+
+        .editor-btn:hover {
+            background: #546e7a;
+        }
+
+        .editor-btn.primary {
+            background: #26a69a;
+        }
+
+        .editor-btn.primary:hover {
+            background: #4db6ac;
+        }
+
+        #markdown-editor {
+            width: 100%;
+            min-height: 300px;
+            max-height: 50vh;
+            padding: 15px;
+            font-family: 'Fira Code', 'Consolas', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            background: rgba(0, 0, 0, 0.3);
+            color: #e8e8e8;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            resize: vertical;
+        }
+
+        #markdown-editor:focus {
+            outline: none;
+            border-color: #64b5f6;
+        }
+
+        .edit-toggle {
+            background: #7e57c2 !important;
+        }
+
+        .edit-toggle:hover {
+            background: #9575cd !important;
+        }
+
         @media (max-width: 768px) {
             .slide-container {
                 padding: 20px;
@@ -283,11 +370,32 @@
             .navigation {
                 gap: 10px;
             }
+
+            .editor-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Editor panel for local mode -->
+        <div class="editor-panel" id="editor-panel">
+            <div class="editor-header">
+                <h3>Local Edit Mode</h3>
+                <div class="editor-actions">
+                    <button class="editor-btn" onclick="loadFromGitHub()">Load from GitHub</button>
+                    <button class="editor-btn" onclick="loadFromFile()">Load from File</button>
+                    <button class="editor-btn primary" onclick="previewSlides()">Preview Slides</button>
+                    <button class="editor-btn" onclick="clearLocalCache()">Clear Cache</button>
+                    <button class="editor-btn" onclick="closeEditor()">Close</button>
+                </div>
+            </div>
+            <textarea id="markdown-editor" placeholder="Paste your markdown content here..."></textarea>
+            <input type="file" id="file-input" accept=".md,.txt" style="display: none;" onchange="handleFileSelect(event)">
+        </div>
+
         <div class="slide-container">
             <div id="slide-content" class="slide-content">
                 <div class="loading">Loading slides...</div>
@@ -297,7 +405,7 @@
             <button class="nav-btn prev" id="prev-btn" onclick="prevSlide()">PREV</button>
             <span class="slide-indicator" id="slide-indicator">0 / 0</span>
             <button class="nav-btn contents" onclick="showContents()">CONTENTS</button>
-            <span class="slide-indicator" id="slide-indicator-right"></span>
+            <button class="nav-btn edit-toggle" onclick="toggleEditor()">EDIT</button>
             <button class="nav-btn next" id="next-btn" onclick="nextSlide()">NEXT</button>
         </div>
     </div>
@@ -311,14 +419,223 @@
     </div>
 
     <script>
+        // GitHub repository configuration
+        const GITHUB_CONFIG = {
+            owner: 'dmccreary',
+            repo: 'tracking-ai-course',
+            branch: 'main',
+            docsPath: 'docs/slides'
+        };
+
         let slides = [];
         let currentSlide = 0;
         let presentationTitle = '';
+        let isLocalMode = false;
+        let localMarkdown = '';
+
+        // Local storage key for persisting editor content
+        function getStorageKey() {
+            const inputFile = getInputFile();
+            return `slide-viewer-local-${inputFile || 'default'}`;
+        }
+
+        // Toggle editor panel visibility
+        function toggleEditor() {
+            const panel = document.getElementById('editor-panel');
+            const editor = document.getElementById('markdown-editor');
+
+            if (panel.classList.contains('active')) {
+                panel.classList.remove('active');
+            } else {
+                panel.classList.add('active');
+                // Load saved content from localStorage
+                const saved = localStorage.getItem(getStorageKey());
+                if (saved) {
+                    editor.value = saved;
+                } else if (localMarkdown) {
+                    editor.value = localMarkdown;
+                }
+            }
+        }
+
+        // Close editor panel
+        function closeEditor() {
+            document.getElementById('editor-panel').classList.remove('active');
+        }
+
+        // Load content from GitHub into editor
+        async function loadFromGitHub() {
+            const inputFile = getInputFile();
+            if (!inputFile) {
+                alert('No input file specified in URL');
+                return;
+            }
+
+            const editor = document.getElementById('markdown-editor');
+            editor.value = 'Loading from GitHub...';
+
+            try {
+                const fetchUrl = getRawGitHubUrl(inputFile);
+                const response = await fetch(fetchUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                const markdown = await response.text();
+                editor.value = markdown;
+                localStorage.setItem(getStorageKey(), markdown);
+            } catch (error) {
+                editor.value = `Error loading from GitHub: ${error.message}`;
+            }
+        }
+
+        // Trigger file input for loading local file
+        function loadFromFile() {
+            document.getElementById('file-input').click();
+        }
+
+        // Handle file selection
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const content = e.target.result;
+                const editor = document.getElementById('markdown-editor');
+                editor.value = content;
+                localStorage.setItem(getStorageKey(), content);
+            };
+            reader.readAsText(file);
+        }
+
+        // Preview slides from editor content
+        function previewSlides() {
+            const editor = document.getElementById('markdown-editor');
+            const markdown = editor.value;
+
+            if (!markdown.trim()) {
+                alert('Editor is empty. Paste or load markdown content first.');
+                return;
+            }
+
+            // Save to localStorage
+            localStorage.setItem(getStorageKey(), markdown);
+
+            // Parse and display slides
+            localMarkdown = markdown;
+            isLocalMode = true;
+            slides = parseSlides(markdown);
+            currentSlide = 0;
+            renderSlide();
+
+            // Close editor
+            closeEditor();
+        }
+
+        // Clear local cache and reload from GitHub
+        function clearLocalCache() {
+            if (confirm('Clear local cache and reload from GitHub?')) {
+                localStorage.removeItem(getStorageKey());
+                document.getElementById('markdown-editor').value = '';
+                isLocalMode = false;
+                localMarkdown = '';
+                closeEditor();
+                init(); // Reload from GitHub
+            }
+        }
+
+        // Auto-save editor content
+        document.addEventListener('DOMContentLoaded', function() {
+            const editor = document.getElementById('markdown-editor');
+            if (editor) {
+                editor.addEventListener('input', function() {
+                    localStorage.setItem(getStorageKey(), editor.value);
+                });
+            }
+        });
 
         // Get input file from URL parameter
         function getInputFile() {
             const params = new URLSearchParams(window.location.search);
             return params.get('input');
+        }
+
+        // Convert relative path to raw GitHub URL
+        function getRawGitHubUrl(relativePath) {
+            const { owner, repo, branch, docsPath } = GITHUB_CONFIG;
+            return `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${docsPath}/${relativePath}`;
+        }
+
+        // Fix relative URLs in rendered HTML based on source file location
+        function fixRelativeUrls(html, inputFile) {
+            // Get the directory of the source file relative to slides/
+            // e.g., "tracking-ai/index.md" -> "tracking-ai/"
+            const sourceDir = inputFile.substring(0, inputFile.lastIndexOf('/') + 1);
+
+            // Create a temporary element to parse HTML
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+
+            // Fix iframe src attributes
+            temp.querySelectorAll('iframe[src]').forEach(iframe => {
+                const src = iframe.getAttribute('src');
+                if (src && !src.startsWith('http') && !src.startsWith('/')) {
+                    // Resolve the relative path from the source file's location
+                    // Source is in slides/[sourceDir], viewer is in slides/
+                    // So we need to resolve from slides/[sourceDir] perspective
+                    const resolvedPath = resolveRelativePath(sourceDir, src);
+                    iframe.setAttribute('src', resolvedPath);
+                }
+            });
+
+            // Fix img src attributes
+            temp.querySelectorAll('img[src]').forEach(img => {
+                const src = img.getAttribute('src');
+                if (src && !src.startsWith('http') && !src.startsWith('/')) {
+                    const resolvedPath = resolveRelativePath(sourceDir, src);
+                    img.setAttribute('src', resolvedPath);
+                }
+            });
+
+            // Fix anchor href attributes
+            temp.querySelectorAll('a[href]').forEach(a => {
+                const href = a.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.startsWith('/') && !href.startsWith('#')) {
+                    const resolvedPath = resolveRelativePath(sourceDir, href);
+                    a.setAttribute('href', resolvedPath);
+                }
+            });
+
+            return temp.innerHTML;
+        }
+
+        // Resolve a relative path from a source directory
+        function resolveRelativePath(sourceDir, relativePath) {
+            // Combine sourceDir with relativePath and normalize
+            // sourceDir: "tracking-ai/"
+            // relativePath: "../../sims/four-futures/main.html"
+            // Result should be: "../sims/four-futures/main.html" (relative to slides/)
+
+            const parts = (sourceDir + relativePath).split('/');
+            const resolved = [];
+            let parentDirs = 0; // Track how many ".." we need to keep
+
+            for (const part of parts) {
+                if (part === '..') {
+                    if (resolved.length > 0 && resolved[resolved.length - 1] !== '..') {
+                        resolved.pop();
+                    } else {
+                        // Can't go up further, need to preserve this ".."
+                        parentDirs++;
+                    }
+                } else if (part && part !== '.') {
+                    resolved.push(part);
+                }
+            }
+
+            // Prepend the necessary ".." segments
+            const prefix = '../'.repeat(parentDirs);
+            return prefix + resolved.join('/') || '.';
         }
 
         // Parse frontmatter from markdown
@@ -390,8 +707,10 @@
                 return;
             }
 
-            // Render markdown to HTML
-            slideContent.innerHTML = marked.parse(slides[currentSlide].content);
+            // Render markdown to HTML and fix relative URLs
+            const rawHtml = marked.parse(slides[currentSlide].content);
+            const inputFile = getInputFile();
+            slideContent.innerHTML = fixRelativeUrls(rawHtml, inputFile);
 
             // Update indicator
             slideIndicator.textContent = `${currentSlide + 1} / ${slides.length}`;
@@ -478,18 +797,45 @@
                     <div class="error-message">
                         <h2>No input file specified</h2>
                         <p>Please provide an input file using the URL parameter:</p>
-                        <p><code>slide-viewer.html?input=path/to/slides.md</code></p>
+                        <p><code>slide-viewer.html?input=tracking-ai/index.md</code></p>
+                        <p style="margin-top: 20px; color: #90a4ae;">Files are fetched from raw.githubusercontent.com</p>
+                        <p style="color: #90a4ae;">Click EDIT to load local files or paste content directly.</p>
                     </div>
                 `;
                 return;
             }
 
+            // Check for saved local content first
+            const savedContent = localStorage.getItem(getStorageKey());
+            if (savedContent) {
+                localMarkdown = savedContent;
+                isLocalMode = true;
+                slides = parseSlides(savedContent);
+
+                // Show indicator that we're using local content
+                document.getElementById('slide-content').innerHTML = `
+                    <div class="loading" style="color: #81c784;">
+                        Loading from local cache...<br>
+                        <small style="color: #90a4ae;">Click EDIT to modify or load fresh from GitHub</small>
+                    </div>
+                `;
+            }
+
             try {
-                const response = await fetch(inputFile);
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                let markdown;
+
+                if (savedContent) {
+                    // Use saved local content
+                    markdown = savedContent;
+                } else {
+                    // Fetch from raw GitHub to get the .md file directly
+                    const fetchUrl = getRawGitHubUrl(inputFile);
+                    const response = await fetch(fetchUrl);
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    markdown = await response.text();
                 }
-                const markdown = await response.text();
 
                 slides = parseSlides(markdown);
 
@@ -507,11 +853,18 @@
 
                 renderSlide();
             } catch (error) {
+                const fetchUrl = getRawGitHubUrl(inputFile);
                 document.getElementById('slide-content').innerHTML = `
                     <div class="error-message">
                         <h2>Error loading slides</h2>
-                        <p>Could not load: <code>${inputFile}</code></p>
+                        <p>Input path: <code>${inputFile}</code></p>
+                        <p>Fetching from: <code>${fetchUrl}</code></p>
                         <p>${error.message}</p>
+                        <p style="margin-top: 20px;">
+                            <button class="nav-btn edit-toggle" onclick="toggleEditor()" style="font-size: 1em;">
+                                Open Editor to Load Local File
+                            </button>
+                        </p>
                     </div>
                 `;
             }

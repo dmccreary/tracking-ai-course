@@ -29,4 +29,25 @@ What does the evidence show about how AI is growing in capabilities?
 
 ## Slide 3: Visualizing Four Future Growth Rates
 
-<iframe src="../../sims/four-futures/" width="100%"></iframe>
+<iframe src="../../sims/four-futures/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+## Slide 4: METR: Measuring Task Complexity
+
+### Measuring AI Capabilities With Task Complexity
+
+How do we measure the overall capability of an AI system?
+
+One way is to estimate how long a human takes to complete a task.
+We can assume that longer tasks are more complex and require more intelligence.
+We can then measure what the probability of an AI completing a task correctly.
+**Example:** Given a task to count the words in a paragraph.  How long would this task take an average human?
+
+## Slide 4: METR
+
+The METR.org studies show that AI has been doubling
+
+<iframe src="../../sims/ai-doubling-rate/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+## Slide 5: Projecting AI
+
+<iframe src="../../sims/projecting-ai/main.html" width="100%" height="500px" scrolling="no"></iframe>
