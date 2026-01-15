@@ -1,4 +1,8 @@
 ---
+title: MicroSimulations for Tracking AI Course
+description: MicroSimulations for tracking the growth in capabilities of AI
+image: /sims/thumbnail.png
+og:image: /sims/thumbnail.png
 hide:
     toc
 ---
