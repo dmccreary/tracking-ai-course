@@ -56,7 +56,8 @@ function updateStatistics() {
 function toggleGroup(groupName) {
   const visible = document.getElementById(`group${groupName}`).checked;
   nodes.forEach(node => {
-    if (node.group === groupName) {
+    // Convert both to strings for comparison (handles numeric group IDs)
+    if (String(node.group) === String(groupName)) {
       nodes.update({id: node.id, hidden: !visible});
     }
   });
@@ -67,22 +68,40 @@ function toggleGroup(groupName) {
 function checkAllGroups() {
   const checkboxes = document.querySelectorAll('input[id^="group"]');
   checkboxes.forEach(checkbox => {
-    if (!checkbox.checked) {
-      checkbox.checked = true;
-      toggleGroup(checkbox.id.replace('group', ''));
-    }
+    checkbox.checked = true;
   });
+  updateNodeVisibility();
 }
 
 // Function to uncheck all groups
 function uncheckAllGroups() {
   const checkboxes = document.querySelectorAll('input[id^="group"]');
   checkboxes.forEach(checkbox => {
-    if (checkbox.checked) {
-      checkbox.checked = false;
-      toggleGroup(checkbox.id.replace('group', ''));
-    }
+    checkbox.checked = false;
   });
+  updateNodeVisibility();
+}
+
+// Master function to update all node visibility based on checked groups
+function updateNodeVisibility() {
+  // Build set of all visible group keys
+  const visibleGroups = new Set();
+  for (const [displayName, data] of Object.entries(window.groupedByName || {})) {
+    const checkbox = document.getElementById(`group${data.groupKeys[0]}`);
+    if (checkbox && checkbox.checked) {
+      data.groupKeys.forEach(key => visibleGroups.add(String(key)));
+    }
+  }
+
+  // Batch update all nodes
+  const updates = [];
+  nodes.get().forEach(node => {
+    const shouldBeVisible = visibleGroups.has(String(node.group));
+    updates.push({id: node.id, hidden: !shouldBeVisible});
+  });
+  nodes.update(updates);
+
+  updateStatistics();
 }
 
 // Helper function to get readable color name
@@ -127,27 +146,44 @@ function generateLegend(groups) {
   const legendContainer = document.getElementById('legend');
   legendContainer.innerHTML = ''; // Clear existing content
 
-  // Iterate through groups and create legend items
+  // Group all group keys by classifierName to handle duplicates
+  // Store globally for updateNodeVisibility to access
+  window.groupedByName = {};
   for (const [groupName, groupStyle] of Object.entries(groups)) {
+    const displayName = groupStyle.classifierName || groupName;
+    if (!window.groupedByName[displayName]) {
+      window.groupedByName[displayName] = {
+        groupKeys: [],
+        color: groupStyle.color || 'lightgray'
+      };
+    }
+    window.groupedByName[displayName].groupKeys.push(groupName);
+  }
+
+  // Create legend items (one per unique classifierName)
+  for (const [displayName, data] of Object.entries(window.groupedByName)) {
     const item = document.createElement('div');
     item.className = 'legend-item';
 
-    // Create checkbox
+    // Create checkbox - use first group key for ID
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.id = `group${groupName}`;
+    checkbox.id = `group${data.groupKeys[0]}`;
     checkbox.checked = true;
-    checkbox.addEventListener('change', function() { toggleGroup(groupName); });
+    // Update all node visibility when checkbox changes
+    checkbox.addEventListener('change', function() {
+      updateNodeVisibility();
+    });
 
     // Create color swatch box
     const colorBox = document.createElement('span');
     colorBox.className = 'color-box';
-    colorBox.style.backgroundColor = groupStyle.color || 'lightgray';
+    colorBox.style.backgroundColor = data.color;
 
     // Create label
     const label = document.createElement('label');
-    label.htmlFor = `group${groupName}`;
-    label.textContent = groupStyle.classifierName || groupName;
+    label.htmlFor = `group${data.groupKeys[0]}`;
+    label.textContent = displayName;
 
     item.appendChild(checkbox);
     item.appendChild(colorBox);

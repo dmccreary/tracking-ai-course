@@ -8,11 +8,6 @@
             "font": { "color": "white" },
             "classifierName": "Foundational Concepts"
         },
-        "1": {
-            "color": "red",
-            "font": { "color": "white" },
-            "classifierName": "Foundational Concepts"
-        },
         "hist": {
             "color": "orange",
             "font": { "color": "black" },
@@ -43,7 +38,7 @@
             "font": { "color": "white" },
             "classifierName": "Language Generation"
         },
-        "6": {
+        "know-mgmt": {
             "color": "indigo",
             "font": { "color": "white" },
             "classifierName": "Knowledge Management and Organization"
@@ -53,27 +48,12 @@
             "font": { "color": "black" },
             "classifierName": "Educational Transformation"
         },
-        "7": {
-            "color": "violet",
-            "font": { "color": "black" },
-            "classifierName": "Educational Transformation"
-        },
         "org": {
             "color": "brown",
             "font": { "color": "white" },
             "classifierName": "Organizational Strategy"
         },
-        "8": {
-            "color": "brown",
-            "font": { "color": "white" },
-            "classifierName": "Organizational Strategy"
-        },
         "bench": {
-            "color": "gray",
-            "font": { "color": "white" },
-            "classifierName": "Performance Evaluation and Benchmarking"
-        },
-        "9": {
             "color": "gray",
             "font": { "color": "white" },
             "classifierName": "Performance Evaluation and Benchmarking"
@@ -93,12 +73,7 @@
             "font": { "color": "white" },
             "classifierName": "Future Trends and Projections"
         },
-        "11": {
-            "color": "teal",
-            "font": { "color": "white" },
-            "classifierName": "Future Trends and Projections"
-        },
-        "12": {
+        "impl": {
             "color": "slategray",
             "font": { "color": "white" },
             "classifierName": "Implementation"
@@ -123,7 +98,7 @@
         {
             "id": 3,
             "label": "Knowledge Organizations",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 4,
@@ -138,17 +113,17 @@
         {
             "id": 6,
             "label": "Strategic Implications",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 7,
             "label": "AI Benchmarks",
-            "group": 9
+            "group": "bench"
         },
         {
             "id": 8,
             "label": "Knowledge Management",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 9,
@@ -158,7 +133,7 @@
         {
             "id": 10,
             "label": "AI Timelines",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 11,
@@ -183,7 +158,7 @@
         {
             "id": 15,
             "label": "Neural Networks",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 16,
@@ -203,7 +178,7 @@
         {
             "id": 19,
             "label": "Prompt Engineering",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 20,
@@ -343,12 +318,12 @@
         {
             "id": 47,
             "label": "Disruption Theory",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 48,
             "label": "Public Knowledge",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 49,
@@ -403,7 +378,7 @@
         {
             "id": 59,
             "label": "Hyperpersonalized Learning",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 60,
@@ -708,12 +683,12 @@
         {
             "id": 120,
             "label": "AI Personalization",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 121,
             "label": "Adaptive Learning",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 122,
@@ -723,12 +698,12 @@
         {
             "id": 123,
             "label": "Knowledge Graphs",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 124,
             "label": "Educational AI Applications",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 125,
@@ -748,12 +723,12 @@
         {
             "id": 128,
             "label": "Artificial General Intelligence",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 129,
             "label": "AGI Timeline Predictions",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 130,
@@ -773,12 +748,12 @@
         {
             "id": 133,
             "label": "Narrow AI",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 134,
             "label": "Task-Specific AI",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 135,
@@ -843,12 +818,12 @@
         {
             "id": 147,
             "label": "Digital Transformation",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 148,
             "label": "Academic Publishing",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 149,
@@ -858,7 +833,7 @@
         {
             "id": 150,
             "label": "Citation Analysis",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 151,
@@ -898,97 +873,97 @@
         {
             "id": 158,
             "label": "Educational Rights",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 159,
             "label": "Student Data Protection",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 160,
             "label": "Teacher Augmentation",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 161,
             "label": "Administrative Automation",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 162,
             "label": "Resource Allocation",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 163,
             "label": "Decision Support Systems",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 164,
             "label": "AI Forecasting",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 165,
             "label": "Market Analysis",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 166,
             "label": "Competitive Intelligence",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 167,
             "label": "Strategic Planning",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 168,
             "label": "Organizational Learning",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 169,
             "label": "Knowledge Transfer",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 170,
             "label": "Knowledge Retention",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 171,
             "label": "Knowledge Creation",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 172,
             "label": "Knowledge Application",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 173,
             "label": "Institutional Memory",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 174,
             "label": "Language Understanding",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 175,
             "label": "Visual Recognition",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 176,
             "label": "Multimodal AI",
-            "group": 1
+            "group": "found"
         },
         {
             "id": 177,
@@ -1028,12 +1003,12 @@
         {
             "id": 184,
             "label": "User Experience Design",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 185,
             "label": "AI Interface Design",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 186,
@@ -1053,127 +1028,127 @@
         {
             "id": 189,
             "label": "Digital Workforce",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 190,
             "label": "Job Transformation",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 191,
             "label": "Skill Obsolescence",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 192,
             "label": "Reskilling Strategies",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 193,
             "label": "Workforce Development",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 194,
             "label": "AI Literacy Programs",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 195,
             "label": "Technology Adoption",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 196,
             "label": "Resistance to Change",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 197,
             "label": "Cultural Transformation",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 198,
             "label": "Innovation Management",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 199,
             "label": "Risk Assessment",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 200,
             "label": "Opportunity Identification",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 201,
             "label": "Scenario Planning",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 202,
             "label": "Future of Work",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 203,
             "label": "Knowledge Economy",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 204,
             "label": "Information Asymmetry",
-            "group": 6
+            "group": "know-mgmt"
         },
         {
             "id": 205,
             "label": "Cognitive Enhancement",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 206,
             "label": "Learning Acceleration",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 207,
             "label": "Educational Outcomes",
-            "group": 7
+            "group": "edu"
         },
         {
             "id": 208,
             "label": "Performance Metrics",
-            "group": 9
+            "group": "bench"
         },
         {
             "id": 209,
             "label": "Success Indicators",
-            "group": 9
+            "group": "bench"
         },
         {
             "id": 210,
             "label": "Return on Investment",
-            "group": 9
+            "group": "bench"
         },
         {
             "id": 211,
             "label": "Total Cost of Ownership",
-            "group": 9
+            "group": "bench"
         },
         {
             "id": 212,
             "label": "Implementation Strategy",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 213,
             "label": "Technology Integration",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 214,
@@ -1193,32 +1168,32 @@
         {
             "id": 217,
             "label": "Feedback Loops",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 218,
             "label": "Iterative Development",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 219,
             "label": "Agile Methodology",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 220,
             "label": "Project Management",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 221,
             "label": "Resource Planning",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 222,
             "label": "Stakeholder Engagement",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 223,
@@ -1228,42 +1203,42 @@
         {
             "id": 224,
             "label": "Cross-Functional Teams",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 225,
             "label": "Technical Infrastructure",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 226,
             "label": "Data Architecture",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 227,
             "label": "System Integration",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 228,
             "label": "API Management",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 229,
             "label": "User Training",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 230,
             "label": "Support Systems",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 231,
             "label": "Documentation Standards",
-            "group": 12
+            "group": "impl"
         },
         {
             "id": 232,
@@ -1298,7 +1273,7 @@
         {
             "id": 238,
             "label": "Case Studies",
-            "group": 9
+            "group": "bench"
         },
         {
             "id": 239,
@@ -1308,17 +1283,17 @@
         {
             "id": 240,
             "label": "Trend Analysis",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 241,
             "label": "Predictive Modeling",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 242,
             "label": "Scenario Analysis",
-            "group": 11
+            "group": "future"
         },
         {
             "id": 243,
@@ -1328,22 +1303,22 @@
         {
             "id": 244,
             "label": "Value Proposition",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 245,
             "label": "Competitive Positioning",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 246,
             "label": "Market Differentiation",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 247,
             "label": "Sustainable Advantage",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 248,
@@ -1353,7 +1328,7 @@
         {
             "id": 249,
             "label": "Technology Roadmap",
-            "group": 8
+            "group": "org"
         },
         {
             "id": 250,
