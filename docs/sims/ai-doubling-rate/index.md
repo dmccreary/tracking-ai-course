@@ -2,9 +2,9 @@
 title: AI Doubling Rate
 description: Analysis of AI task completion doubling rate based on METR research
 quality_score: 60
-image: /sims/ai-doubling-rate/length-of-tasks-log.png
-og:image: /sims/ai-doubling-rate/length-of-tasks-log.png
-twitter:image: /sims/ai-doubling-rate/length-of-tasks-log.png
+image: /sims/ai-doubling-rate/thumbnail.png
+og:image: /sims/ai-doubling-rate/thumbnail.png
+twitter:image: /sims/ai-doubling-rate/thumbnail.png
 social:
    cards: false
 hide:
@@ -13,7 +13,9 @@ hide:
 
 # AI Doubling Rate
 
-![](length-of-tasks-log.png)
+<iframe src="./main.html" width="100%" height="520" scrolling="no" style="border: none;"></iframe>
+
+[View Full Screen](./main.html){ .md-button .md-button--primary }
 
 The length of tasks (measured by how long they take human professionals) that generalist frontier model agents can complete autonomously with 50% reliability has been doubling approximately every seven months for the last six years. The shaded region represents 95% Confidence Interval calculated by hierarchical bootstrap over task families, tasks, and task attempts.
 

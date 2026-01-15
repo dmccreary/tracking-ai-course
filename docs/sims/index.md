@@ -1,169 +1,131 @@
+---
+hide:
+    toc
+---
 # MicroSimulations for Tracking AI Course
 
-## AI Task Completion Time Horizons
+Interactive visualizations demonstrating AI capabilities, growth patterns, and strategic frameworks.
 
-Interactive visualization showing how long different AI models can work on tasks before failing.
-Toggle between linear and logarithmic scales, and compare 50% vs 80% success probabilities.
+<div class="grid cards grid-3-col" markdown>
 
-[Run the AI Task Horizons MicroSim](./ai-task-horizons/index.md)
+- **[AI Task Horizons](./ai-task-horizons/index.md)**
 
-## AI Benchmarks Timeline
+    ![AI Task Horizons](./ai-task-horizons/thumbnail.png)
+    Interactive visualization showing how long different AI models can work on tasks before failing.
 
-Timeline visualization of major AI benchmark milestones.
-Track the progression of AI capabilities across different evaluation frameworks.
+- **[AI Benchmarks Timeline](./ai-benchmarks-timeline/index.md)**
 
-[Run the AI Benchmarks Timeline](./ai-benchmarks-timeline/index.md)
+    ![AI Benchmarks Timeline](./ai-benchmarks-timeline/thumbnail.png)
+    Timeline visualization of major AI benchmark milestones and capability progression.
 
-## MMLU Timeline
+- **[MMLU Timeline](./mmlu-timeline/index.md)**
 
-Interactive timeline showing AI model performance on the MMLU benchmark over time.
-Visualize how models have improved on multitask language understanding.
+    ![MMLU Timeline](./mmlu-timeline/thumbnail.png)
+    Interactive timeline showing AI model performance on the MMLU benchmark over time.
 
-[Run the MMLU Timeline MicroSim](./mmlu-timeline/index.md)
+- **[LM Arena Timeline](./lm-arena-timeline/index.md)**
 
-## LM Arena Timeline
+    ![LM Arena Timeline](./lm-arena-timeline/thumbnail.png)
+    Language Model Arena performance tracking based on human preferences.
 
-Language Model Arena performance tracking over time.
-Compare how different models rank based on human preferences.
+- **[AI Doubling Rate](./ai-doubling-rate/index.md)**
 
-[Run the LM Arena MicroSim](./lm-arena-timeline/index.md)
+    ![AI Doubling Rate](./ai-doubling-rate/thumbnail.png)
+    Analysis showing AI task completion length doubling approximately every seven months.
 
-## AI Doubling Rate
+- **[Four Futures](./four-futures/index.md)**
 
-Analysis showing that AI task completion length has been doubling approximately every seven months.
-Includes 95% confidence intervals calculated by hierarchical bootstrap.
+    ![Four Futures](./four-futures/thumbnail.png)
+    Explore four different scenarios for the rate of change of AI capabilities.
 
-[Run the AI Doubling Rate MicroSim](./ai-doubling-rate/index.md)
+- **[AI Pace Accelerating](./ai-pace-accelerating/index.md)**
 
-## Four Futures
+    ![AI Pace Accelerating](./ai-pace-accelerating/thumbnail.png)
+    Interactive visualization demonstrating the accelerating pace of AI development.
 
-Explore four different scenarios for the rate of change of AI capabilities.
-Compare pessimistic, conservative, moderate, and optimistic AI progress trajectories.
+- **[Moore's Law](./moores-law/index.md)**
 
-[Run the Four Futures MicroSim](./four-futures/index.md)
+    ![Moore's Law](./moores-law/thumbnail.png)
+    Infographic showing Moore's Law progression in both linear and log scales.
 
-## AI Pace Accelerating
+- **[Power Wall](./power-wall/index.md)**
 
-Interactive visualization demonstrating the accelerating pace of AI development.
-Shows how AI progress is speeding up over time.
+    ![Power Wall](./power-wall/thumbnail.png)
+    Visualization of the CPU clock speed "power wall" phenomenon.
 
-[Run the AI Pace Accelerating MicroSim](./ai-pace-accelerating/index.md)
+- **[AI Flywheel](./ai-flywheel/index.md)**
 
-## Moore's Law
+    ![AI Flywheel](./ai-flywheel/thumbnail.png)
+    Causal loop diagram illustrating how AI improvements create a self-reinforcing cycle.
 
-Infographic showing Moore's Law progression in both linear and log scales.
-Interactive hover elements explain transistor count growth over decades.
+- **[AI Causes of Acceleration](./ai-causes/index.md)**
 
-[Run the Moore's Law MicroSim](./moores-law/index.md)
+    ![AI Causes](./ai-causes/thumbnail.png)
+    Causal loop diagram showing multiple factors driving AI acceleration.
 
-## Power Wall
+- **[Autoregressive](./autoregressive/index.md)**
 
-Visualization of the CPU clock speed "power wall" phenomenon.
-Shows why processor speeds plateaued due to power consumption constraints.
+    ![Autoregressive](./autoregressive/thumbnail.png)
+    Interactive demonstration of autoregressive text generation.
 
-[Run the Power Wall MicroSim](./power-wall/index.md)
+- **[Tokenizer](./tokenizer/index.md)**
 
-## AI Flywheel
+    ![Tokenizer](./tokenizer/thumbnail.png)
+    Interactive tool demonstrating how text is broken into tokens.
 
-Causal loop diagram illustrating how AI improvements create a self-reinforcing cycle.
-Interactive infographic showing feedback loops in AI development.
+- **[Bloom's Taxonomy](./blooms-taxonomy/index.md)**
 
-[Run the AI Flywheel MicroSim](./ai-flywheel/index.md)
+    ![Bloom's Taxonomy](./blooms-taxonomy/thumbnail.png)
+    Interactive infographic showing the six levels of Bloom's Taxonomy.
 
-## AI Causes of Acceleration
+- **[Book Generation Workflow](./book-gen-workflow/index.md)**
 
-Causal loop diagram showing multiple factors driving AI acceleration.
-Explore how AI feedback loops are accelerating AI progress.
+    ![Book Generation Workflow](./book-gen-workflow/thumbnail.png)
+    Workflow diagram showing the steps for generating intelligent textbooks.
 
-[Run the AI Causes MicroSim](./ai-causes/index.md)
+- **[Book Levels](./book-levels/index.md)**
 
-## Autoregressive
+    ![Book Levels](./book-levels/thumbnail.png)
+    Interactive visualization of the five levels of intelligent textbooks.
 
-Interactive demonstration of autoregressive text generation.
-Visualize how language models predict one token at a time.
+- **[Learning Graph](./learning-graph/index.md)**
 
-[Run the Autoregressive MicroSim](./autoregressive/index.md)
+    ![Learning Graph](./learning-graph/thumbnail.png)
+    Interactive graph visualization for exploring course concept dependencies.
 
-## Tokenizer
+- **[Porter's Five Forces](./porters-five-forces/index.md)**
 
-Interactive tool demonstrating how text is broken into tokens.
-See how language models process and understand text input.
+    ![Porter's Five Forces](./porters-five-forces/thumbnail.png)
+    Interactive diagram of Porter's Five Forces strategic analysis framework.
 
-[Run the Tokenizer MicroSim](./tokenizer/index.md)
+- **[AI SWOT Analysis](./swot/index.md)**
 
-## Bloom's Taxonomy
+    ![AI SWOT Analysis](./swot/thumbnail.png)
+    Interactive SWOT analysis tool for evaluating AI adoption.
 
-Interactive infographic with hover boxes showing the six levels of Bloom's Taxonomy.
-Explore cognitive learning objectives from Remember to Create.
+- **[Technology Adoption Curve](./technology-adoption/index.md)**
 
-[Run the Bloom's Taxonomy MicroSim](./blooms-taxonomy/index.md)
+    ![Technology Adoption Curve](./technology-adoption/thumbnail.png)
+    Interactive infographic visualizing the Technology Adoption Lifecycle.
 
-## Book Generation Workflow
+- **[Technology Hype Cycle](./hype-cycle/index.md)**
 
-Workflow diagram showing the steps for generating intelligent textbooks.
-Interactive infographic of the AI-assisted book creation process.
+    ![Technology Hype Cycle](./hype-cycle/thumbnail.png)
+    Gartner's Technology Hype Cycle applied to AI development.
 
-[Run the Book Generation Workflow MicroSim](./book-gen-workflow/index.md)
+- **[AI Capability Maturity Model](./ai-cmm/index.md)**
 
-## Book Levels
+    ![AI Capability Maturity Model](./ai-cmm/thumbnail.png)
+    Five-level maturity model for organizational AI capabilities.
 
-Interactive visualization of the five levels of intelligent textbooks.
-Compare static PDFs to fully adaptive AI-powered learning systems.
+- **[GenAI Idea Funnel](./idea-funnel/index.md)**
 
-[Run the Book Levels MicroSim](./book-levels/index.md)
+    ![GenAI Idea Funnel](./idea-funnel/thumbnail.png)
+    Interactive funnel showing the process of managing a GenAI Center of Excellence.
 
-## Learning Graph
+- **[AI Timeline](./timeline/index.md)**
 
-Interactive graph visualization for exploring course concept dependencies.
-Navigate relationships between learning objectives and prerequisites.
+    ![AI Timeline](./timeline/thumbnail.png)
+    View key events in the history of AI and see how they are spaced.
 
-[Run the Learning Graph MicroSim](./learning-graph/index.md)
-
-## Porter's Five Forces
-
-Interactive diagram of Porter's Five Forces strategic analysis framework.
-Analyze competitive forces shaping industry structure and profitability.
-
-[Run the Porter's Five Forces MicroSim](./porters-five-forces/index.md)
-
-## AI SWOT Analysis
-
-Interactive SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis tool for AI.
-Strategic planning framework for evaluating AI adoption.
-
-[Run the AI SWOT Analysis MicroSim](./swot/index.md)
-
-## Technology Adoption Curve
-
-Interactive infographic visualizing the Technology Adoption Lifecycle.
-Explore innovators, early adopters, early majority, late majority, and laggards.
-
-[Run the Technology Adoption Curve MicroSim](./technology-adoption/index.md)
-
-## Technology Hype Cycle
-
-Gartner's Technology Hype Cycle applied to AI development.
-Track technologies from innovation trigger through plateau of productivity.
-
-[Run the Technology Hype Cycle MicroSim](./hype-cycle/index.md)
-
-## AI Capability Maturity Model
-
-Five-level maturity model for organizational AI capabilities.
-Assess and plan AI integration from initial awareness to optimization.
-
-[Run the AI Capability Maturity Model MicroSim](./ai-cmm/index.md)
-
-## GenAI Idea Funnel
-
-Interactive funnel showing the process of managing a GenAI Center of Excellence.
-Visualize how AI ideas progress from conception to implementation.
-
-[Run the GenAI Idea Funnel MicroSim](./idea-funnel/index.md)
-
-## AI Timeline
-
-View key events in the history of AI and see how they are spaced.
-Interactive timeline of major AI breakthroughs and milestones.
-
-[Run the AI Timeline MicroSim](./timeline/index.md)
+</div>
