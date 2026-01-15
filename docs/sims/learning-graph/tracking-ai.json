@@ -1,4 +1,114 @@
 {
+    "metadata": {
+        "title": "Learning Graph for Tracking AI Course"
+    },
+    "groups": {
+        "found": {
+            "color": "red",
+            "font": { "color": "white" },
+            "classifierName": "Foundational Concepts"
+        },
+        "1": {
+            "color": "red",
+            "font": { "color": "white" },
+            "classifierName": "Foundational Concepts"
+        },
+        "hist": {
+            "color": "orange",
+            "font": { "color": "black" },
+            "classifierName": "AI Evolution and History"
+        },
+        "arch": {
+            "color": "gold",
+            "font": { "color": "black" },
+            "classifierName": "AI Architectures and Technologies"
+        },
+        "cap": {
+            "color": "green",
+            "font": { "color": "white" },
+            "classifierName": "AI Capabilities and Applications"
+        },
+        "knowledge": {
+            "color": "blue",
+            "font": { "color": "white" },
+            "classifierName": "Content Generation and Creativity"
+        },
+        "image": {
+            "color": "deepskyblue",
+            "font": { "color": "black" },
+            "classifierName": "Image Generation"
+        },
+        "language": {
+            "color": "royalblue",
+            "font": { "color": "white" },
+            "classifierName": "Language Generation"
+        },
+        "6": {
+            "color": "indigo",
+            "font": { "color": "white" },
+            "classifierName": "Knowledge Management and Organization"
+        },
+        "edu": {
+            "color": "violet",
+            "font": { "color": "black" },
+            "classifierName": "Educational Transformation"
+        },
+        "7": {
+            "color": "violet",
+            "font": { "color": "black" },
+            "classifierName": "Educational Transformation"
+        },
+        "org": {
+            "color": "brown",
+            "font": { "color": "white" },
+            "classifierName": "Organizational Strategy"
+        },
+        "8": {
+            "color": "brown",
+            "font": { "color": "white" },
+            "classifierName": "Organizational Strategy"
+        },
+        "bench": {
+            "color": "gray",
+            "font": { "color": "white" },
+            "classifierName": "Performance Evaluation and Benchmarking"
+        },
+        "9": {
+            "color": "gray",
+            "font": { "color": "white" },
+            "classifierName": "Performance Evaluation and Benchmarking"
+        },
+        "reg": {
+            "color": "black",
+            "font": { "color": "white" },
+            "classifierName": "Ethical and Regulatory Considerations"
+        },
+        "best-practices": {
+            "color": "olive",
+            "font": { "color": "white" },
+            "classifierName": "Best Practices"
+        },
+        "future": {
+            "color": "teal",
+            "font": { "color": "white" },
+            "classifierName": "Future Trends and Projections"
+        },
+        "11": {
+            "color": "teal",
+            "font": { "color": "white" },
+            "classifierName": "Future Trends and Projections"
+        },
+        "12": {
+            "color": "slategray",
+            "font": { "color": "white" },
+            "classifierName": "Implementation"
+        },
+        "goal": {
+            "color": "gold",
+            "font": { "color": "black" },
+            "classifierName": "Final Goals"
+        }
+    },
     "nodes": [
         {
             "id": 1,

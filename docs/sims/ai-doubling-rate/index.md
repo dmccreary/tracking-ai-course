@@ -7,7 +7,6 @@ twitter:image: /sims/ai-doubling-rate/ai-doubling-rate.png
 social:
    cards: false
 ---
-
 # AI Doubling Rate
 
 <iframe src="./main.html" width="100%" height="520" scrolling="no" style="border: none;"></iframe>
@@ -129,6 +128,8 @@ Starting from late 2025 (~5 hours), if the 7-month doubling rate continues:
 | July 2030 | 1280 hours (8 months) |
 
 ## References
+
+Here are the original source references from the Metr site:
 
 - [METR: Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
 - [METR Benchmark Results (YAML)](https://metr.org/assets/benchmark_results.yaml)
