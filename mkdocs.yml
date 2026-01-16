@@ -78,12 +78,20 @@ nav:
     - MicroSim Templates: sims/templates/index.md
     - Social Override Template: sims/templates/index-social-override.md
     - GenAI Idea Funnel: sims/idea-funnel/index.md
+  
+  - Slides:
+    - List of Slides: slides/index.md
+    - Tracking AI: slides/tracking-ai/index.md
+  
   - Prompts:
     - Intro: prompts/index.md
     - Concept Enumeration: prompts/03-concept-enumeration.md
     - Concept Dependency: prompts/04-concept-dependencies.md
     - Concept Taxonomy: prompts/05-taxonomy-concept.md
     - Glossary: prompts/06-glossary.md
+    - Add Social Media Metadata: prompts/10-add-social-media-metadata.md
+    - AI Task Horizon: prompts/ai-task-horizons.md
+  
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
