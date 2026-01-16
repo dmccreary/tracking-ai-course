@@ -7,7 +7,6 @@
     width: 60px;
 }
 
-
 /* Container to control the iframe size and scaling */
 .iframe-container {
     width: 100%;
@@ -65,28 +64,13 @@
       font-weight: 900;
   }
 
-/* 3-column grid for MicroSims gallery */
-.grid.cards.grid-3-col > ul {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 0.5em !important;
+/* Two-column grid for stories page */
+.grid.cards {
+    grid-template-columns: repeat(2, 1fr) !important;
 }
 
-.grid.cards.grid-3-col > ul > li {
-  margin: 0 !important;
-}
-
-.grid.cards.grid-3-col > ul > li img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Make text smaller in 3-col grid for compact view */
-.grid.cards.grid-3-col > ul > li p {
-  font-size: 0.85em;
-  margin: 0.25em 0;
-}
-
-.grid.cards.grid-3-col > ul > li strong a {
-  font-size: 0.95em;
+@media (max-width: 768px) {
+    .grid.cards {
+        grid-template-columns: 1fr !important;
+    }
 }
