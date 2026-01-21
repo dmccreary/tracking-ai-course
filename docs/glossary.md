@@ -10,6 +10,7 @@ The process of disseminating scholarly research and findings through peer-review
 
 **Example:** The course examines how generative AI is transforming academic publishing by automating literature reviews, enhancing peer review processes, and providing tools for faster manuscript preparation.
 
+
 #### Abstract and Reasoning Corpus
 
 An AI benchmark that measures artificial intelligence's ability to perform abstract reasoning and solve novel problems.
@@ -20,6 +21,17 @@ The ARC Challenge was created by AI researcher François Chollet in 2019. The ch
 
 * Also known as: [ARC Challenge](#abstract-and-reasoning-corpus)
 * See also [Test Time Learning](#test-time-learning)
+
+#### ARC Challenge
+
+A widely used benchmark in artificial intelligence research that evaluates a system’s ability to perform abstract reasoning and generalize from minimal examples, based on solving novel visual pattern-recognition problems.
+
+The ARC Challenge consists of small grid-based puzzles involving colored cells, where the task is to infer the underlying transformation rule from a few examples and apply it to a new input. These problems are intentionally designed to be easy for humans yet difficult for current AI systems, highlighting gaps in abstraction, reasoning, and generalization.
+
+**Example:** An ARC Challenge task may show two example grids where a pattern is rotated or recolored according to an implicit rule; the AI must infer that rule and correctly transform a new grid without additional guidance.
+
+* See also [Abstract and Reasoning Corpus](#abstract-and-reasoning-corpus)
+* See also [Reasoning Capabilities](#reasoning-capabilities)
 
 #### Adaptive Learning
 

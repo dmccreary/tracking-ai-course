@@ -57,11 +57,9 @@ nav:
     - AI Doubling Rate: sims/ai-doubling-rate/index.md
     - AI Task Horizons: sims/ai-task-horizons/index.md
     - Projecting AI: sims/projecting-ai/index.md
-
     - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
     - MMLU Timeline: sims/mmlu-timeline/index.md
     - LM Arena Timeline: sims/lm-arena-timeline/index.md
-    - Learning Graph: sims/learning-graph/index.md
     - Book Generation Workflow: sims/book-gen-workflow/index.md
     - Book Levels: sims/book-levels/index.md
     - Bloom's Taxonomy: sims/blooms-taxonomy/index.md
@@ -79,6 +77,13 @@ nav:
     - Social Override Template: sims/templates/index-social-override.md
     - GenAI Idea Funnel: sims/idea-funnel/index.md
   
+    - Learning Graph: 
+      - Introduction: sims/learning-graph/index.md
+      - Concept List: sims/learning-graph/concept-list.md
+      - Quality Metrics: sims/learning-graph/quality-metrics.md
+      - Taxonomy Distribution: sims/learning-graph/taxonomy-distribution.md
+      - MicroSim Quality Report: sims/learning-graph/microsim-quality-report.md
+
   - Slides:
     - List of Slides: slides/index.md
     - Tracking AI: slides/tracking-ai/index.md
