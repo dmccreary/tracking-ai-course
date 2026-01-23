@@ -32,5 +32,27 @@
   "prerequisites": [
     "Basic understanding of AI models"
   ],
-  "library": "Chart.js"
+  "library": "Chart.js",
+  "visualizationType": [
+    "chart",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of ai task completion time horizons",
+    "Explore ai task completion time horizons through interactive visualization",
+    "Apply knowledge of ai task completion time horizons to solve problems",
+    "Experiment with parameters to observe their effects on ai task completion time horizons"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }

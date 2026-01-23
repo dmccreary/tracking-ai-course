@@ -28,5 +28,26 @@
     "Curriculum Design"
   ],
   "prerequisites": [],
-  "library": "vis-network"
+  "library": "vis-network",
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of learning graph for deep learning course",
+    "Explore learning graph for deep learning course through interactive visualization",
+    "Apply knowledge of learning graph for deep learning course to solve problems",
+    "Experiment with parameters to observe their effects on learning graph for deep learning course"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

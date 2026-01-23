@@ -33,5 +33,20 @@
   "prerequisites": [
     "Basic business strategy concepts"
   ],
-  "library": "p5.js"
+  "library": "p5.js",
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of porter's five forces model",
+    "Explore porter's five forces model through interactive visualization",
+    "Apply knowledge of porter's five forces model to solve problems"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

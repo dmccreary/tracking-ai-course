@@ -33,5 +33,25 @@
   "prerequisites": [
     "Basic understanding of machine learning"
   ],
-  "library": "vis.js"
+  "library": "vis.js",
+  "visualizationType": [
+    "data-visualization",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of the ai flywheel",
+    "Explore the ai flywheel through interactive visualization",
+    "Apply knowledge of the ai flywheel to solve problems",
+    "Experiment with parameters to observe their effects on the ai flywheel"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }
