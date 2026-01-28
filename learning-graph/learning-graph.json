@@ -1,0 +1,3818 @@
+{
+    "metadata": {
+        "title": "Learning Graph for Tracking AI Course"
+    },
+    "groups": {
+        "found": {
+            "color": "red",
+            "font": { "color": "white" },
+            "classifierName": "Foundational Concepts"
+        },
+        "hist": {
+            "color": "orange",
+            "font": { "color": "black" },
+            "classifierName": "AI Evolution and History"
+        },
+        "arch": {
+            "color": "gold",
+            "font": { "color": "black" },
+            "classifierName": "AI Architectures and Technologies"
+        },
+        "cap": {
+            "color": "green",
+            "font": { "color": "white" },
+            "classifierName": "AI Capabilities and Applications"
+        },
+        "knowledge": {
+            "color": "blue",
+            "font": { "color": "white" },
+            "classifierName": "Content Generation and Creativity"
+        },
+        "image": {
+            "color": "deepskyblue",
+            "font": { "color": "black" },
+            "classifierName": "Image Generation"
+        },
+        "language": {
+            "color": "royalblue",
+            "font": { "color": "white" },
+            "classifierName": "Language Generation"
+        },
+        "know-mgmt": {
+            "color": "indigo",
+            "font": { "color": "white" },
+            "classifierName": "Knowledge Management and Organization"
+        },
+        "edu": {
+            "color": "violet",
+            "font": { "color": "black" },
+            "classifierName": "Educational Transformation"
+        },
+        "org": {
+            "color": "brown",
+            "font": { "color": "white" },
+            "classifierName": "Organizational Strategy"
+        },
+        "bench": {
+            "color": "gray",
+            "font": { "color": "white" },
+            "classifierName": "Performance Evaluation and Benchmarking"
+        },
+        "reg": {
+            "color": "black",
+            "font": { "color": "white" },
+            "classifierName": "Ethical and Regulatory Considerations"
+        },
+        "best-practices": {
+            "color": "olive",
+            "font": { "color": "white" },
+            "classifierName": "Best Practices"
+        },
+        "future": {
+            "color": "teal",
+            "font": { "color": "white" },
+            "classifierName": "Future Trends and Projections"
+        },
+        "impl": {
+            "color": "slategray",
+            "font": { "color": "white" },
+            "classifierName": "Implementation"
+        },
+        "goal": {
+            "color": "gold",
+            "font": { "color": "black" },
+            "classifierName": "Final Goals"
+        }
+    },
+    "nodes": [
+        {
+            "id": 1,
+            "label": "Artificial Intelligence",
+            "group": "found"
+        },
+        {
+            "id": 2,
+            "label": "Exponential Growth",
+            "group": "found"
+        },
+        {
+            "id": 3,
+            "label": "Knowledge Organizations",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 4,
+            "label": "Large Language Models",
+            "group": "found"
+        },
+        {
+            "id": 5,
+            "label": "Generative AI",
+            "group": "found"
+        },
+        {
+            "id": 6,
+            "label": "Strategic Implications",
+            "group": "org"
+        },
+        {
+            "id": 7,
+            "label": "AI Benchmarks",
+            "group": "bench"
+        },
+        {
+            "id": 8,
+            "label": "Knowledge Management",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 9,
+            "label": "Content Generation",
+            "group": "knowledge"
+        },
+        {
+            "id": 10,
+            "label": "AI Timelines",
+            "group": "future"
+        },
+        {
+            "id": 11,
+            "label": "Dartmouth Conference",
+            "group": "hist"
+        },
+        {
+            "id": 12,
+            "label": "AI History",
+            "group": "hist"
+        },
+        {
+            "id": 13,
+            "label": "Machine Learning",
+            "group": "found"
+        },
+        {
+            "id": 14,
+            "label": "Deep Learning",
+            "group": "arch"
+        },
+        {
+            "id": 15,
+            "label": "Neural Networks",
+            "group": "found"
+        },
+        {
+            "id": 16,
+            "label": "Natural Language Processing",
+            "group": "found"
+        },
+        {
+            "id": 17,
+            "label": "Expert Systems",
+            "group": "hist"
+        },
+        {
+            "id": 18,
+            "label": "AI Revolution",
+            "group": "hist"
+        },
+        {
+            "id": 19,
+            "label": "Prompt Engineering",
+            "group": "impl"
+        },
+        {
+            "id": 20,
+            "label": "AI Capability Trajectories",
+            "group": "hist"
+        },
+        {
+            "id": 21,
+            "label": "ELIZA",
+            "group": "hist"
+        },
+        {
+            "id": 22,
+            "label": "Transformer Architecture",
+            "group": "arch"
+        },
+        {
+            "id": 23,
+            "label": "GPT Models",
+            "group": "arch"
+        },
+        {
+            "id": 24,
+            "label": "BERT",
+            "group": "arch"
+        },
+        {
+            "id": 25,
+            "label": "Llama Models",
+            "group": "arch"
+        },
+        {
+            "id": 26,
+            "label": "Claude Models",
+            "group": "arch"
+        },
+        {
+            "id": 27,
+            "label": "DeepSeek Models",
+            "group": "arch"
+        },
+        {
+            "id": 28,
+            "label": "AlphaGo",
+            "group": "hist"
+        },
+        {
+            "id": 29,
+            "label": "Deep Blue",
+            "group": "hist"
+        },
+        {
+            "id": 30,
+            "label": "Watson",
+            "group": "hist"
+        },
+        {
+            "id": 31,
+            "label": "GANs",
+            "group": "arch"
+        },
+        {
+            "id": 32,
+            "label": "Diffusion Models",
+            "group": "arch"
+        },
+        {
+            "id": 33,
+            "label": "Text Generation",
+            "group": "language"
+        },
+        {
+            "id": 34,
+            "label": "Image Generation",
+            "group": "image"
+        },
+        {
+            "id": 35,
+            "label": "Text-to-Image Models",
+            "group": "image"
+        },
+        {
+            "id": 36,
+            "label": "DALL-E",
+            "group": "image"
+        },
+        {
+            "id": 37,
+            "label": "Midjourney",
+            "group": "image"
+        },
+        {
+            "id": 38,
+            "label": "Stable Diffusion",
+            "group": "image"
+        },
+        {
+            "id": 39,
+            "label": "Democratization of AI",
+            "group": "hist"
+        },
+        {
+            "id": 40,
+            "label": "AI Accessibility",
+            "group": "hist"
+        },
+        {
+            "id": 41,
+            "label": "Open Source AI",
+            "group": "arch"
+        },
+        {
+            "id": 42,
+            "label": "Proprietary AI",
+            "group": "arch"
+        },
+        {
+            "id": 43,
+            "label": "AI Cost Trends",
+            "group": "future"
+        },
+        {
+            "id": 44,
+            "label": "Local AI Models",
+            "group": "arch"
+        },
+        {
+            "id": 45,
+            "label": "Cloud-Based AI",
+            "group": "arch"
+        },
+        {
+            "id": 46,
+            "label": "AI Adoption Curve",
+            "group": "future"
+        },
+        {
+            "id": 47,
+            "label": "Disruption Theory",
+            "group": "org"
+        },
+        {
+            "id": 48,
+            "label": "Public Knowledge",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 49,
+            "label": "Private Knowledge",
+            "group": "knowledge"
+        },
+        {
+            "id": 50,
+            "label": "Knowledge Integration",
+            "group": "knowledge"
+        },
+        {
+            "id": 51,
+            "label": "Knowledge Scope",
+            "group": "knowledge"
+        },
+        {
+            "id": 52,
+            "label": "Personal Knowledge",
+            "group": "knowledge"
+        },
+        {
+            "id": 53,
+            "label": "Organizational Knowledge",
+            "group": "knowledge"
+        },
+        {
+            "id": 54,
+            "label": "Departmental Knowledge",
+            "group": "knowledge"
+        },
+        {
+            "id": 55,
+            "label": "Project Knowledge",
+            "group": "knowledge"
+        },
+        {
+            "id": 56,
+            "label": "Knowledge Protection",
+            "group": "knowledge"
+        },
+        {
+            "id": 57,
+            "label": "Privacy Regulations",
+            "group": "reg"
+        },
+        {
+            "id": 58,
+            "label": "FERPA",
+            "group": "reg"
+        },
+        {
+            "id": 59,
+            "label": "Hyperpersonalized Learning",
+            "group": "edu"
+        },
+        {
+            "id": 60,
+            "label": "Curriculum Development",
+            "group": "edu"
+        },
+        {
+            "id": 61,
+            "label": "AI-Assisted Teaching",
+            "group": "edu"
+        },
+        {
+            "id": 62,
+            "label": "Assessment Challenges",
+            "group": "edu"
+        },
+        {
+            "id": 63,
+            "label": "Academic Integrity",
+            "group": "edu"
+        },
+        {
+            "id": 64,
+            "label": "Research Integrity",
+            "group": "reg"
+        },
+        {
+            "id": 65,
+            "label": "Content Authenticity",
+            "group": "knowledge"
+        },
+        {
+            "id": 66,
+            "label": "Future Skills Development",
+            "group": "future"
+        },
+        {
+            "id": 67,
+            "label": "AI Literacy",
+            "group": "hist"
+        },
+        {
+            "id": 68,
+            "label": "Knowledge Worker Productivity",
+            "group": "knowledge"
+        },
+        {
+            "id": 69,
+            "label": "Business Process Analysis",
+            "group": "org"
+        },
+        {
+            "id": 70,
+            "label": "Customer Engagement Transformation",
+            "group": "org"
+        },
+        {
+            "id": 71,
+            "label": "Product Development Acceleration",
+            "group": "org"
+        },
+        {
+            "id": 72,
+            "label": "Competitive Advantage",
+            "group": "org"
+        },
+        {
+            "id": 73,
+            "label": "Strategic Response Planning",
+            "group": "org"
+        },
+        {
+            "id": 74,
+            "label": "Impact Assessment",
+            "group": "bench"
+        },
+        {
+            "id": 75,
+            "label": "LLM Limitations",
+            "group": "future"
+        },
+        {
+            "id": 76,
+            "label": "World Models",
+            "group": "hist"
+        },
+        {
+            "id": 77,
+            "label": "Hallucination (AI)",
+            "group": "reg"
+        },
+        {
+            "id": 78,
+            "label": "Factual Reliability",
+            "group": "bench"
+        },
+        {
+            "id": 79,
+            "label": "Ethical Considerations",
+            "group": "reg"
+        },
+        {
+            "id": 80,
+            "label": "Responsible AI",
+            "group": "reg"
+        },
+        {
+            "id": 81,
+            "label": "AI Governance",
+            "group": "reg"
+        },
+        {
+            "id": 82,
+            "label": "AI Center of Excellence",
+            "group": "org"
+        },
+        {
+            "id": 83,
+            "label": "Organizational Structure",
+            "group": "org"
+        },
+        {
+            "id": 84,
+            "label": "Centralized Control Models",
+            "group": "org"
+        },
+        {
+            "id": 85,
+            "label": "Decentralized Control Models",
+            "group": "org"
+        },
+        {
+            "id": 86,
+            "label": "Implementation Roadmapping",
+            "group": "org"
+        },
+        {
+            "id": 87,
+            "label": "Change Management",
+            "group": "org"
+        },
+        {
+            "id": 88,
+            "label": "Reasoning Capabilities",
+            "group": "arch"
+        },
+        {
+            "id": 89,
+            "label": "One-Shot Learning",
+            "group": "arch"
+        },
+        {
+            "id": 90,
+            "label": "Few-Shot Learning",
+            "group": "arch"
+        },
+        {
+            "id": 91,
+            "label": "Zero-Shot Learning",
+            "group": "arch"
+        },
+        {
+            "id": 92,
+            "label": "Chain-of-Thought Reasoning",
+            "group": "arch"
+        },
+        {
+            "id": 93,
+            "label": "Context Window",
+            "group": "arch"
+        },
+        {
+            "id": 94,
+            "label": "Tokens",
+            "group": "arch"
+        },
+        {
+            "id": 95,
+            "label": "Token Limits",
+            "group": "arch"
+        },
+        {
+            "id": 96,
+            "label": "AI Agents",
+            "group": "arch"
+        },
+        {
+            "id": 97,
+            "label": "Multi-Agent Systems",
+            "group": "arch"
+        },
+        {
+            "id": 98,
+            "label": "Autonomous Systems",
+            "group": "cap"
+        },
+        {
+            "id": 99,
+            "label": "AI Benchmarking",
+            "group": "bench"
+        },
+        {
+            "id": 100,
+            "label": "ImageNet",
+            "group": "image"
+        },
+        {
+            "id": 101,
+            "label": "MMLU Benchmark",
+            "group": "bench"
+        },
+        {
+            "id": 102,
+            "label": "HumanEval Benchmark",
+            "group": "bench"
+        },
+        {
+            "id": 103,
+            "label": "Question Answering",
+            "group": "cap"
+        },
+        {
+            "id": 104,
+            "label": "Response Accuracy",
+            "group": "bench"
+        },
+        {
+            "id": 105,
+            "label": "Response Speed",
+            "group": "bench"
+        },
+        {
+            "id": 106,
+            "label": "Model Size",
+            "group": "arch"
+        },
+        {
+            "id": 107,
+            "label": "Parameter Count",
+            "group": "arch"
+        },
+        {
+            "id": 108,
+            "label": "Training Data Volume",
+            "group": "arch"
+        },
+        {
+            "id": 109,
+            "label": "Fine-Tuning",
+            "group": "arch"
+        },
+        {
+            "id": 110,
+            "label": "Prompt Templates",
+            "group": "arch"
+        },
+        {
+            "id": 111,
+            "label": "System Prompts",
+            "group": "arch"
+        },
+        {
+            "id": 112,
+            "label": "AI Safety",
+            "group": "reg"
+        },
+        {
+            "id": 113,
+            "label": "Bias Detection",
+            "group": "reg"
+        },
+        {
+            "id": 114,
+            "label": "Model Alignment",
+            "group": "reg"
+        },
+        {
+            "id": 115,
+            "label": "AI Ethics Framework",
+            "group": "reg"
+        },
+        {
+            "id": 116,
+            "label": "Fairness Metrics",
+            "group": "reg"
+        },
+        {
+            "id": 117,
+            "label": "AI Transparency",
+            "group": "reg"
+        },
+        {
+            "id": 118,
+            "label": "Explainable AI",
+            "group": "reg"
+        },
+        {
+            "id": 119,
+            "label": "Educational Technology",
+            "group": "edu"
+        },
+        {
+            "id": 120,
+            "label": "AI Personalization",
+            "group": "edu"
+        },
+        {
+            "id": 121,
+            "label": "Adaptive Learning",
+            "group": "edu"
+        },
+        {
+            "id": 122,
+            "label": "Content Recommendation",
+            "group": "knowledge"
+        },
+        {
+            "id": 123,
+            "label": "Knowledge Graphs",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 124,
+            "label": "Educational AI Applications",
+            "group": "edu"
+        },
+        {
+            "id": 125,
+            "label": "AI-Generated Lesson Plans",
+            "group": "knowledge"
+        },
+        {
+            "id": 126,
+            "label": "AI-Generated Assessments",
+            "group": "knowledge"
+        },
+        {
+            "id": 127,
+            "label": "MicroSims",
+            "group": "knowledge"
+        },
+        {
+            "id": 128,
+            "label": "Artificial General Intelligence",
+            "group": "found"
+        },
+        {
+            "id": 129,
+            "label": "AGI Timeline Predictions",
+            "group": "future"
+        },
+        {
+            "id": 130,
+            "label": "AGI Capabilities",
+            "group": "hist"
+        },
+        {
+            "id": 131,
+            "label": "Human-Level AI",
+            "group": "hist"
+        },
+        {
+            "id": 132,
+            "label": "Superhuman AI",
+            "group": "hist"
+        },
+        {
+            "id": 133,
+            "label": "Narrow AI",
+            "group": "found"
+        },
+        {
+            "id": 134,
+            "label": "Task-Specific AI",
+            "group": "found"
+        },
+        {
+            "id": 135,
+            "label": "Domain-Specific Knowledge",
+            "group": "cap"
+        },
+        {
+            "id": 136,
+            "label": "Code Generation",
+            "group": "cap"
+        },
+        {
+            "id": 137,
+            "label": "Automated Programming",
+            "group": "cap"
+        },
+        {
+            "id": 138,
+            "label": "Coding Assistants",
+            "group": "cap"
+        },
+        {
+            "id": 139,
+            "label": "Vibe Coding",
+            "group": "cap"
+        },
+        {
+            "id": 140,
+            "label": "Code Explanation",
+            "group": "cap"
+        },
+        {
+            "id": 141,
+            "label": "Prototype Development",
+            "group": "knowledge"
+        },
+        {
+            "id": 142,
+            "label": "Business Intelligence",
+            "group": "cap"
+        },
+        {
+            "id": 143,
+            "label": "Data Analysis Automation",
+            "group": "cap"
+        },
+        {
+            "id": 144,
+            "label": "Report Generation",
+            "group": "cap"
+        },
+        {
+            "id": 145,
+            "label": "Content Summarization",
+            "group": "cap"
+        },
+        {
+            "id": 146,
+            "label": "Information Extraction",
+            "group": "cap"
+        },
+        {
+            "id": 147,
+            "label": "Digital Transformation",
+            "group": "org"
+        },
+        {
+            "id": 148,
+            "label": "Academic Publishing",
+            "group": "edu"
+        },
+        {
+            "id": 149,
+            "label": "Plagiarism Detection",
+            "group": "reg"
+        },
+        {
+            "id": 150,
+            "label": "Citation Analysis",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 151,
+            "label": "Content Moderation",
+            "group": "reg"
+        },
+        {
+            "id": 152,
+            "label": "AI-Enhanced Research",
+            "group": "cap"
+        },
+        {
+            "id": 153,
+            "label": "Scientific Discovery",
+            "group": "cap"
+        },
+        {
+            "id": 154,
+            "label": "Copyright Implications",
+            "group": "reg"
+        },
+        {
+            "id": 155,
+            "label": "Intellectual Property",
+            "group": "reg"
+        },
+        {
+            "id": 156,
+            "label": "Content Ownership",
+            "group": "reg"
+        },
+        {
+            "id": 157,
+            "label": "AI-Generated Content Rights",
+            "group": "knowledge"
+        },
+        {
+            "id": 158,
+            "label": "Educational Rights",
+            "group": "edu"
+        },
+        {
+            "id": 159,
+            "label": "Student Data Protection",
+            "group": "edu"
+        },
+        {
+            "id": 160,
+            "label": "Teacher Augmentation",
+            "group": "edu"
+        },
+        {
+            "id": 161,
+            "label": "Administrative Automation",
+            "group": "org"
+        },
+        {
+            "id": 162,
+            "label": "Resource Allocation",
+            "group": "org"
+        },
+        {
+            "id": 163,
+            "label": "Decision Support Systems",
+            "group": "org"
+        },
+        {
+            "id": 164,
+            "label": "AI Forecasting",
+            "group": "future"
+        },
+        {
+            "id": 165,
+            "label": "Market Analysis",
+            "group": "org"
+        },
+        {
+            "id": 166,
+            "label": "Competitive Intelligence",
+            "group": "org"
+        },
+        {
+            "id": 167,
+            "label": "Strategic Planning",
+            "group": "org"
+        },
+        {
+            "id": 168,
+            "label": "Organizational Learning",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 169,
+            "label": "Knowledge Transfer",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 170,
+            "label": "Knowledge Retention",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 171,
+            "label": "Knowledge Creation",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 172,
+            "label": "Knowledge Application",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 173,
+            "label": "Institutional Memory",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 174,
+            "label": "Language Understanding",
+            "group": "found"
+        },
+        {
+            "id": 175,
+            "label": "Visual Recognition",
+            "group": "found"
+        },
+        {
+            "id": 176,
+            "label": "Multimodal AI",
+            "group": "found"
+        },
+        {
+            "id": 177,
+            "label": "Speech Recognition",
+            "group": "cap"
+        },
+        {
+            "id": 178,
+            "label": "Text-to-Speech",
+            "group": "cap"
+        },
+        {
+            "id": 179,
+            "label": "Speech-to-Text",
+            "group": "cap"
+        },
+        {
+            "id": 180,
+            "label": "Signal Processing",
+            "group": "cap"
+        },
+        {
+            "id": 181,
+            "label": "Semantic Understanding",
+            "group": "cap"
+        },
+        {
+            "id": 182,
+            "label": "Contextual Relevance",
+            "group": "cap"
+        },
+        {
+            "id": 183,
+            "label": "Content Customization",
+            "group": "knowledge"
+        },
+        {
+            "id": 184,
+            "label": "User Experience Design",
+            "group": "impl"
+        },
+        {
+            "id": 185,
+            "label": "AI Interface Design",
+            "group": "impl"
+        },
+        {
+            "id": 186,
+            "label": "Human-AI Collaboration",
+            "group": "cap"
+        },
+        {
+            "id": 187,
+            "label": "Augmented Intelligence",
+            "group": "cap"
+        },
+        {
+            "id": 188,
+            "label": "AI Assistants",
+            "group": "cap"
+        },
+        {
+            "id": 189,
+            "label": "Digital Workforce",
+            "group": "future"
+        },
+        {
+            "id": 190,
+            "label": "Job Transformation",
+            "group": "future"
+        },
+        {
+            "id": 191,
+            "label": "Skill Obsolescence",
+            "group": "future"
+        },
+        {
+            "id": 192,
+            "label": "Reskilling Strategies",
+            "group": "future"
+        },
+        {
+            "id": 193,
+            "label": "Workforce Development",
+            "group": "future"
+        },
+        {
+            "id": 194,
+            "label": "AI Literacy Programs",
+            "group": "future"
+        },
+        {
+            "id": 195,
+            "label": "Technology Adoption",
+            "group": "impl"
+        },
+        {
+            "id": 196,
+            "label": "Resistance to Change",
+            "group": "impl"
+        },
+        {
+            "id": 197,
+            "label": "Cultural Transformation",
+            "group": "impl"
+        },
+        {
+            "id": 198,
+            "label": "Innovation Management",
+            "group": "impl"
+        },
+        {
+            "id": 199,
+            "label": "Risk Assessment",
+            "group": "org"
+        },
+        {
+            "id": 200,
+            "label": "Opportunity Identification",
+            "group": "org"
+        },
+        {
+            "id": 201,
+            "label": "Scenario Planning",
+            "group": "org"
+        },
+        {
+            "id": 202,
+            "label": "Future of Work",
+            "group": "future"
+        },
+        {
+            "id": 203,
+            "label": "Knowledge Economy",
+            "group": "future"
+        },
+        {
+            "id": 204,
+            "label": "Information Asymmetry",
+            "group": "know-mgmt"
+        },
+        {
+            "id": 205,
+            "label": "Cognitive Enhancement",
+            "group": "edu"
+        },
+        {
+            "id": 206,
+            "label": "Learning Acceleration",
+            "group": "edu"
+        },
+        {
+            "id": 207,
+            "label": "Educational Outcomes",
+            "group": "edu"
+        },
+        {
+            "id": 208,
+            "label": "Performance Metrics",
+            "group": "bench"
+        },
+        {
+            "id": 209,
+            "label": "Success Indicators",
+            "group": "bench"
+        },
+        {
+            "id": 210,
+            "label": "Return on Investment",
+            "group": "bench"
+        },
+        {
+            "id": 211,
+            "label": "Total Cost of Ownership",
+            "group": "bench"
+        },
+        {
+            "id": 212,
+            "label": "Implementation Strategy",
+            "group": "impl"
+        },
+        {
+            "id": 213,
+            "label": "Technology Integration",
+            "group": "impl"
+        },
+        {
+            "id": 214,
+            "label": "Pilot Programs",
+            "group": "goal"
+        },
+        {
+            "id": 215,
+            "label": "Scaled Deployment",
+            "group": "goal"
+        },
+        {
+            "id": 216,
+            "label": "Continuous Improvement",
+            "group": "goal"
+        },
+        {
+            "id": 217,
+            "label": "Feedback Loops",
+            "group": "impl"
+        },
+        {
+            "id": 218,
+            "label": "Iterative Development",
+            "group": "impl"
+        },
+        {
+            "id": 219,
+            "label": "Agile Methodology",
+            "group": "impl"
+        },
+        {
+            "id": 220,
+            "label": "Project Management",
+            "group": "impl"
+        },
+        {
+            "id": 221,
+            "label": "Resource Planning",
+            "group": "impl"
+        },
+        {
+            "id": 222,
+            "label": "Stakeholder Engagement",
+            "group": "impl"
+        },
+        {
+            "id": 223,
+            "label": "Executive Sponsorship",
+            "group": "goal"
+        },
+        {
+            "id": 224,
+            "label": "Cross-Functional Teams",
+            "group": "impl"
+        },
+        {
+            "id": 225,
+            "label": "Technical Infrastructure",
+            "group": "impl"
+        },
+        {
+            "id": 226,
+            "label": "Data Architecture",
+            "group": "impl"
+        },
+        {
+            "id": 227,
+            "label": "System Integration",
+            "group": "impl"
+        },
+        {
+            "id": 228,
+            "label": "API Management",
+            "group": "impl"
+        },
+        {
+            "id": 229,
+            "label": "User Training",
+            "group": "impl"
+        },
+        {
+            "id": 230,
+            "label": "Support Systems",
+            "group": "impl"
+        },
+        {
+            "id": 231,
+            "label": "Documentation Standards",
+            "group": "impl"
+        },
+        {
+            "id": 232,
+            "label": "Version Control",
+            "group": "best-practices"
+        },
+        {
+            "id": 233,
+            "label": "Testing Protocols",
+            "group": "best-practices"
+        },
+        {
+            "id": 234,
+            "label": "Quality Assurance",
+            "group": "best-practices"
+        },
+        {
+            "id": 235,
+            "label": "Regulatory Compliance",
+            "group": "reg"
+        },
+        {
+            "id": 236,
+            "label": "Industry Standards",
+            "group": "reg"
+        },
+        {
+            "id": 237,
+            "label": "Best Practices",
+            "group": "best-practices"
+        },
+        {
+            "id": 238,
+            "label": "Case Studies",
+            "group": "bench"
+        },
+        {
+            "id": 239,
+            "label": "Benchmarking Studies",
+            "group": "bench"
+        },
+        {
+            "id": 240,
+            "label": "Trend Analysis",
+            "group": "future"
+        },
+        {
+            "id": 241,
+            "label": "Predictive Modeling",
+            "group": "future"
+        },
+        {
+            "id": 242,
+            "label": "Scenario Analysis",
+            "group": "future"
+        },
+        {
+            "id": 243,
+            "label": "Cost-Benefit Analysis",
+            "group": "best-practices"
+        },
+        {
+            "id": 244,
+            "label": "Value Proposition",
+            "group": "org"
+        },
+        {
+            "id": 245,
+            "label": "Competitive Positioning",
+            "group": "org"
+        },
+        {
+            "id": 246,
+            "label": "Market Differentiation",
+            "group": "org"
+        },
+        {
+            "id": 247,
+            "label": "Sustainable Advantage",
+            "group": "org"
+        },
+        {
+            "id": 248,
+            "label": "Innovation Strategy",
+            "group": "goal"
+        },
+        {
+            "id": 249,
+            "label": "Technology Roadmap",
+            "group": "org"
+        },
+        {
+            "id": 250,
+            "label": "Future Readiness",
+            "group": "goal"
+        },
+        {
+            "id": 251,
+            "label": "Moore's Law",
+            "group": "hist"
+        }
+    ],
+    "edges": [
+        {
+            "from": 4,
+            "to": 1
+        },
+        {
+            "from": 5,
+            "to": 1
+        },
+        {
+            "from": 5,
+            "to": 4
+        },
+        {
+            "from": 6,
+            "to": 2
+        },
+        {
+            "from": 6,
+            "to": 3
+        },
+        {
+            "from": 7,
+            "to": 1
+        },
+        {
+            "from": 7,
+            "to": 4
+        },
+        {
+            "from": 8,
+            "to": 3
+        },
+        {
+            "from": 9,
+            "to": 4
+        },
+        {
+            "from": 9,
+            "to": 5
+        },
+        {
+            "from": 10,
+            "to": 1
+        },
+        {
+            "from": 10,
+            "to": 2
+        },
+        {
+            "from": 11,
+            "to": 1
+        },
+        {
+            "from": 12,
+            "to": 1
+        },
+        {
+            "from": 12,
+            "to": 11
+        },
+        {
+            "from": 13,
+            "to": 1
+        },
+        {
+            "from": 14,
+            "to": 1
+        },
+        {
+            "from": 14,
+            "to": 13
+        },
+        {
+            "from": 15,
+            "to": 13
+        },
+        {
+            "from": 15,
+            "to": 14
+        },
+        {
+            "from": 16,
+            "to": 1
+        },
+        {
+            "from": 16,
+            "to": 4
+        },
+        {
+            "from": 16,
+            "to": 13
+        },
+        {
+            "from": 17,
+            "to": 1
+        },
+        {
+            "from": 17,
+            "to": 12
+        },
+        {
+            "from": 18,
+            "to": 1
+        },
+        {
+            "from": 18,
+            "to": 2
+        },
+        {
+            "from": 18,
+            "to": 10
+        },
+        {
+            "from": 18,
+            "to": 12
+        },
+        {
+            "from": 19,
+            "to": 4
+        },
+        {
+            "from": 19,
+            "to": 5
+        },
+        {
+            "from": 20,
+            "to": 1
+        },
+        {
+            "from": 20,
+            "to": 2
+        },
+        {
+            "from": 20,
+            "to": 7
+        },
+        {
+            "from": 20,
+            "to": 10
+        },
+        {
+            "from": 21,
+            "to": 12
+        },
+        {
+            "from": 21,
+            "to": 16
+        },
+        {
+            "from": 22,
+            "to": 14
+        },
+        {
+            "from": 22,
+            "to": 15
+        },
+        {
+            "from": 22,
+            "to": 16
+        },
+        {
+            "from": 23,
+            "to": 4
+        },
+        {
+            "from": 23,
+            "to": 14
+        },
+        {
+            "from": 23,
+            "to": 22
+        },
+        {
+            "from": 24,
+            "to": 4
+        },
+        {
+            "from": 24,
+            "to": 14
+        },
+        {
+            "from": 24,
+            "to": 22
+        },
+        {
+            "from": 25,
+            "to": 4
+        },
+        {
+            "from": 25,
+            "to": 14
+        },
+        {
+            "from": 25,
+            "to": 22
+        },
+        {
+            "from": 26,
+            "to": 4
+        },
+        {
+            "from": 26,
+            "to": 14
+        },
+        {
+            "from": 26,
+            "to": 22
+        },
+        {
+            "from": 27,
+            "to": 4
+        },
+        {
+            "from": 27,
+            "to": 14
+        },
+        {
+            "from": 27,
+            "to": 22
+        },
+        {
+            "from": 28,
+            "to": 12
+        },
+        {
+            "from": 28,
+            "to": 14
+        },
+        {
+            "from": 29,
+            "to": 12
+        },
+        {
+            "from": 30,
+            "to": 12
+        },
+        {
+            "from": 30,
+            "to": 16
+        },
+        {
+            "from": 31,
+            "to": 14
+        },
+        {
+            "from": 31,
+            "to": 15
+        },
+        {
+            "from": 32,
+            "to": 14
+        },
+        {
+            "from": 32,
+            "to": 15
+        },
+        {
+            "from": 32,
+            "to": 31
+        },
+        {
+            "from": 33,
+            "to": 4
+        },
+        {
+            "from": 33,
+            "to": 5
+        },
+        {
+            "from": 33,
+            "to": 16
+        },
+        {
+            "from": 34,
+            "to": 5
+        },
+        {
+            "from": 34,
+            "to": 31
+        },
+        {
+            "from": 34,
+            "to": 32
+        },
+        {
+            "from": 35,
+            "to": 5
+        },
+        {
+            "from": 35,
+            "to": 33
+        },
+        {
+            "from": 35,
+            "to": 34
+        },
+        {
+            "from": 36,
+            "to": 34
+        },
+        {
+            "from": 36,
+            "to": 35
+        },
+        {
+            "from": 37,
+            "to": 34
+        },
+        {
+            "from": 37,
+            "to": 35
+        },
+        {
+            "from": 38,
+            "to": 32
+        },
+        {
+            "from": 38,
+            "to": 34
+        },
+        {
+            "from": 38,
+            "to": 35
+        },
+        {
+            "from": 39,
+            "to": 1
+        },
+        {
+            "from": 39,
+            "to": 2
+        },
+        {
+            "from": 40,
+            "to": 1
+        },
+        {
+            "from": 40,
+            "to": 39
+        },
+        {
+            "from": 41,
+            "to": 4
+        },
+        {
+            "from": 41,
+            "to": 25
+        },
+        {
+            "from": 41,
+            "to": 39
+        },
+        {
+            "from": 42,
+            "to": 4
+        },
+        {
+            "from": 42,
+            "to": 23
+        },
+        {
+            "from": 42,
+            "to": 24
+        },
+        {
+            "from": 42,
+            "to": 26
+        },
+        {
+            "from": 43,
+            "to": 2
+        },
+        {
+            "from": 43,
+            "to": 39
+        },
+        {
+            "from": 43,
+            "to": 40
+        },
+        {
+            "from": 44,
+            "to": 4
+        },
+        {
+            "from": 44,
+            "to": 41
+        },
+        {
+            "from": 45,
+            "to": 4
+        },
+        {
+            "from": 45,
+            "to": 42
+        },
+        {
+            "from": 46,
+            "to": 2
+        },
+        {
+            "from": 46,
+            "to": 39
+        },
+        {
+            "from": 46,
+            "to": 40
+        },
+        {
+            "from": 47,
+            "to": 2
+        },
+        {
+            "from": 47,
+            "to": 6
+        },
+        {
+            "from": 48,
+            "to": 3
+        },
+        {
+            "from": 48,
+            "to": 8
+        },
+        {
+            "from": 49,
+            "to": 3
+        },
+        {
+            "from": 49,
+            "to": 8
+        },
+        {
+            "from": 50,
+            "to": 8
+        },
+        {
+            "from": 50,
+            "to": 48
+        },
+        {
+            "from": 50,
+            "to": 49
+        },
+        {
+            "from": 51,
+            "to": 8
+        },
+        {
+            "from": 51,
+            "to": 50
+        },
+        {
+            "from": 52,
+            "to": 49
+        },
+        {
+            "from": 52,
+            "to": 51
+        },
+        {
+            "from": 53,
+            "to": 3
+        },
+        {
+            "from": 53,
+            "to": 8
+        },
+        {
+            "from": 53,
+            "to": 49
+        },
+        {
+            "from": 53,
+            "to": 51
+        },
+        {
+            "from": 54,
+            "to": 49
+        },
+        {
+            "from": 54,
+            "to": 51
+        },
+        {
+            "from": 54,
+            "to": 53
+        },
+        {
+            "from": 55,
+            "to": 49
+        },
+        {
+            "from": 55,
+            "to": 51
+        },
+        {
+            "from": 55,
+            "to": 53
+        },
+        {
+            "from": 56,
+            "to": 49
+        },
+        {
+            "from": 56,
+            "to": 51
+        },
+        {
+            "from": 57,
+            "to": 56
+        },
+        {
+            "from": 58,
+            "to": 56
+        },
+        {
+            "from": 58,
+            "to": 57
+        },
+        {
+            "from": 59,
+            "to": 4
+        },
+        {
+            "from": 59,
+            "to": 5
+        },
+        {
+            "from": 59,
+            "to": 40
+        },
+        {
+            "from": 60,
+            "to": 59
+        },
+        {
+            "from": 61,
+            "to": 4
+        },
+        {
+            "from": 61,
+            "to": 5
+        },
+        {
+            "from": 61,
+            "to": 59
+        },
+        {
+            "from": 61,
+            "to": 60
+        },
+        {
+            "from": 62,
+            "to": 59
+        },
+        {
+            "from": 62,
+            "to": 60
+        },
+        {
+            "from": 62,
+            "to": 61
+        },
+        {
+            "from": 63,
+            "to": 62
+        },
+        {
+            "from": 64,
+            "to": 63
+        },
+        {
+            "from": 65,
+            "to": 9
+        },
+        {
+            "from": 65,
+            "to": 33
+        },
+        {
+            "from": 66,
+            "to": 18
+        },
+        {
+            "from": 66,
+            "to": 60
+        },
+        {
+            "from": 67,
+            "to": 1
+        },
+        {
+            "from": 67,
+            "to": 40
+        },
+        {
+            "from": 67,
+            "to": 66
+        },
+        {
+            "from": 68,
+            "to": 5
+        },
+        {
+            "from": 68,
+            "to": 9
+        },
+        {
+            "from": 68,
+            "to": 50
+        },
+        {
+            "from": 69,
+            "to": 6
+        },
+        {
+            "from": 69,
+            "to": 68
+        },
+        {
+            "from": 70,
+            "to": 5
+        },
+        {
+            "from": 70,
+            "to": 9
+        },
+        {
+            "from": 70,
+            "to": 69
+        },
+        {
+            "from": 71,
+            "to": 5
+        },
+        {
+            "from": 71,
+            "to": 9
+        },
+        {
+            "from": 71,
+            "to": 69
+        },
+        {
+            "from": 72,
+            "to": 6
+        },
+        {
+            "from": 72,
+            "to": 47
+        },
+        {
+            "from": 72,
+            "to": 69
+        },
+        {
+            "from": 72,
+            "to": 70
+        },
+        {
+            "from": 72,
+            "to": 71
+        },
+        {
+            "from": 73,
+            "to": 6
+        },
+        {
+            "from": 73,
+            "to": 72
+        },
+        {
+            "from": 74,
+            "to": 6
+        },
+        {
+            "from": 74,
+            "to": 18
+        },
+        {
+            "from": 74,
+            "to": 73
+        },
+        {
+            "from": 75,
+            "to": 4
+        },
+        {
+            "from": 75,
+            "to": 7
+        },
+        {
+            "from": 75,
+            "to": 93
+        },
+        {
+            "from": 76,
+            "to": 1
+        },
+        {
+            "from": 76,
+            "to": 4
+        },
+        {
+            "from": 76,
+            "to": 75
+        },
+        {
+            "from": 77,
+            "to": 4
+        },
+        {
+            "from": 77,
+            "to": 75
+        },
+        {
+            "from": 78,
+            "to": 4
+        },
+        {
+            "from": 78,
+            "to": 77
+        },
+        {
+            "from": 79,
+            "to": 1
+        },
+        {
+            "from": 79,
+            "to": 77
+        },
+        {
+            "from": 79,
+            "to": 78
+        },
+        {
+            "from": 80,
+            "to": 1
+        },
+        {
+            "from": 80,
+            "to": 79
+        },
+        {
+            "from": 81,
+            "to": 79
+        },
+        {
+            "from": 81,
+            "to": 80
+        },
+        {
+            "from": 82,
+            "to": 81
+        },
+        {
+            "from": 83,
+            "to": 3
+        },
+        {
+            "from": 83,
+            "to": 82
+        },
+        {
+            "from": 84,
+            "to": 81
+        },
+        {
+            "from": 84,
+            "to": 83
+        },
+        {
+            "from": 85,
+            "to": 81
+        },
+        {
+            "from": 85,
+            "to": 83
+        },
+        {
+            "from": 86,
+            "to": 73
+        },
+        {
+            "from": 86,
+            "to": 82
+        },
+        {
+            "from": 87,
+            "to": 73
+        },
+        {
+            "from": 87,
+            "to": 86
+        },
+        {
+            "from": 88,
+            "to": 4
+        },
+        {
+            "from": 88,
+            "to": 75
+        },
+        {
+            "from": 88,
+            "to": 76
+        },
+        {
+            "from": 89,
+            "to": 4
+        },
+        {
+            "from": 89,
+            "to": 88
+        },
+        {
+            "from": 90,
+            "to": 4
+        },
+        {
+            "from": 90,
+            "to": 88
+        },
+        {
+            "from": 90,
+            "to": 89
+        },
+        {
+            "from": 91,
+            "to": 4
+        },
+        {
+            "from": 91,
+            "to": 88
+        },
+        {
+            "from": 91,
+            "to": 89
+        },
+        {
+            "from": 92,
+            "to": 4
+        },
+        {
+            "from": 92,
+            "to": 88
+        },
+        {
+            "from": 93,
+            "to": 4
+        },
+        {
+            "from": 94,
+            "to": 4
+        },
+        {
+            "from": 94,
+            "to": 93
+        },
+        {
+            "from": 95,
+            "to": 93
+        },
+        {
+            "from": 95,
+            "to": 94
+        },
+        {
+            "from": 96,
+            "to": 1
+        },
+        {
+            "from": 96,
+            "to": 4
+        },
+        {
+            "from": 96,
+            "to": 5
+        },
+        {
+            "from": 97,
+            "to": 96
+        },
+        {
+            "from": 98,
+            "to": 96
+        },
+        {
+            "from": 98,
+            "to": 97
+        },
+        {
+            "from": 99,
+            "to": 7
+        },
+        {
+            "from": 100,
+            "to": 7
+        },
+        {
+            "from": 100,
+            "to": 34
+        },
+        {
+            "from": 100,
+            "to": 99
+        },
+        {
+            "from": 101,
+            "to": 7
+        },
+        {
+            "from": 101,
+            "to": 16
+        },
+        {
+            "from": 101,
+            "to": 99
+        },
+        {
+            "from": 102,
+            "to": 7
+        },
+        {
+            "from": 102,
+            "to": 99
+        },
+        {
+            "from": 103,
+            "to": 4
+        },
+        {
+            "from": 103,
+            "to": 16
+        },
+        {
+            "from": 104,
+            "to": 7
+        },
+        {
+            "from": 104,
+            "to": 103
+        },
+        {
+            "from": 105,
+            "to": 4
+        },
+        {
+            "from": 105,
+            "to": 93
+        },
+        {
+            "from": 105,
+            "to": 94
+        },
+        {
+            "from": 106,
+            "to": 4
+        },
+        {
+            "from": 106,
+            "to": 15
+        },
+        {
+            "from": 107,
+            "to": 4
+        },
+        {
+            "from": 107,
+            "to": 15
+        },
+        {
+            "from": 107,
+            "to": 106
+        },
+        {
+            "from": 108,
+            "to": 4
+        },
+        {
+            "from": 108,
+            "to": 13
+        },
+        {
+            "from": 108,
+            "to": 15
+        },
+        {
+            "from": 109,
+            "to": 4
+        },
+        {
+            "from": 109,
+            "to": 13
+        },
+        {
+            "from": 109,
+            "to": 14
+        },
+        {
+            "from": 110,
+            "to": 19
+        },
+        {
+            "from": 111,
+            "to": 19
+        },
+        {
+            "from": 111,
+            "to": 110
+        },
+        {
+            "from": 112,
+            "to": 1
+        },
+        {
+            "from": 112,
+            "to": 79
+        },
+        {
+            "from": 112,
+            "to": 80
+        },
+        {
+            "from": 113,
+            "to": 79
+        },
+        {
+            "from": 113,
+            "to": 112
+        },
+        {
+            "from": 114,
+            "to": 79
+        },
+        {
+            "from": 114,
+            "to": 112
+        },
+        {
+            "from": 114,
+            "to": 113
+        },
+        {
+            "from": 115,
+            "to": 79
+        },
+        {
+            "from": 115,
+            "to": 80
+        },
+        {
+            "from": 115,
+            "to": 112
+        },
+        {
+            "from": 116,
+            "to": 113
+        },
+        {
+            "from": 116,
+            "to": 115
+        },
+        {
+            "from": 117,
+            "to": 112
+        },
+        {
+            "from": 117,
+            "to": 115
+        },
+        {
+            "from": 118,
+            "to": 117
+        },
+        {
+            "from": 119,
+            "to": 3
+        },
+        {
+            "from": 119,
+            "to": 59
+        },
+        {
+            "from": 120,
+            "to": 5
+        },
+        {
+            "from": 120,
+            "to": 59
+        },
+        {
+            "from": 120,
+            "to": 119
+        },
+        {
+            "from": 121,
+            "to": 59
+        },
+        {
+            "from": 121,
+            "to": 119
+        },
+        {
+            "from": 121,
+            "to": 120
+        },
+        {
+            "from": 122,
+            "to": 9
+        },
+        {
+            "from": 122,
+            "to": 120
+        },
+        {
+            "from": 123,
+            "to": 8
+        },
+        {
+            "from": 123,
+            "to": 50
+        },
+        {
+            "from": 124,
+            "to": 5
+        },
+        {
+            "from": 124,
+            "to": 59
+        },
+        {
+            "from": 124,
+            "to": 119
+        },
+        {
+            "from": 125,
+            "to": 9
+        },
+        {
+            "from": 125,
+            "to": 60
+        },
+        {
+            "from": 125,
+            "to": 61
+        },
+        {
+            "from": 125,
+            "to": 119
+        },
+        {
+            "from": 126,
+            "to": 9
+        },
+        {
+            "from": 126,
+            "to": 62
+        },
+        {
+            "from": 126,
+            "to": 119
+        },
+        {
+            "from": 127,
+            "to": 119
+        },
+        {
+            "from": 127,
+            "to": 124
+        },
+        {
+            "from": 128,
+            "to": 1
+        },
+        {
+            "from": 128,
+            "to": 18
+        },
+        {
+            "from": 128,
+            "to": 20
+        },
+        {
+            "from": 129,
+            "to": 10
+        },
+        {
+            "from": 129,
+            "to": 128
+        },
+        {
+            "from": 130,
+            "to": 128
+        },
+        {
+            "from": 131,
+            "to": 128
+        },
+        {
+            "from": 131,
+            "to": 130
+        },
+        {
+            "from": 132,
+            "to": 128
+        },
+        {
+            "from": 132,
+            "to": 130
+        },
+        {
+            "from": 132,
+            "to": 131
+        },
+        {
+            "from": 133,
+            "to": 1
+        },
+        {
+            "from": 133,
+            "to": 128
+        },
+        {
+            "from": 134,
+            "to": 133
+        },
+        {
+            "from": 135,
+            "to": 4
+        },
+        {
+            "from": 135,
+            "to": 49
+        },
+        {
+            "from": 135,
+            "to": 51
+        },
+        {
+            "from": 136,
+            "to": 5
+        },
+        {
+            "from": 136,
+            "to": 9
+        },
+        {
+            "from": 137,
+            "to": 136
+        },
+        {
+            "from": 138,
+            "to": 5
+        },
+        {
+            "from": 138,
+            "to": 136
+        },
+        {
+            "from": 138,
+            "to": 137
+        },
+        {
+            "from": 139,
+            "to": 5
+        },
+        {
+            "from": 139,
+            "to": 136
+        },
+        {
+            "from": 139,
+            "to": 138
+        },
+        {
+            "from": 140,
+            "to": 136
+        },
+        {
+            "from": 140,
+            "to": 138
+        },
+        {
+            "from": 141,
+            "to": 137
+        },
+        {
+            "from": 141,
+            "to": 138
+        },
+        {
+            "from": 142,
+            "to": 3
+        },
+        {
+            "from": 142,
+            "to": 68
+        },
+        {
+            "from": 142,
+            "to": 69
+        },
+        {
+            "from": 143,
+            "to": 5
+        },
+        {
+            "from": 143,
+            "to": 142
+        },
+        {
+            "from": 144,
+            "to": 5
+        },
+        {
+            "from": 144,
+            "to": 9
+        },
+        {
+            "from": 144,
+            "to": 142
+        },
+        {
+            "from": 144,
+            "to": 143
+        },
+        {
+            "from": 145,
+            "to": 5
+        },
+        {
+            "from": 145,
+            "to": 9
+        },
+        {
+            "from": 145,
+            "to": 33
+        },
+        {
+            "from": 146,
+            "to": 5
+        },
+        {
+            "from": 146,
+            "to": 145
+        },
+        {
+            "from": 147,
+            "to": 6
+        },
+        {
+            "from": 147,
+            "to": 18
+        },
+        {
+            "from": 147,
+            "to": 39
+        },
+        {
+            "from": 147,
+            "to": 69
+        },
+        {
+            "from": 148,
+            "to": 64
+        },
+        {
+            "from": 149,
+            "to": 63
+        },
+        {
+            "from": 149,
+            "to": 65
+        },
+        {
+            "from": 149,
+            "to": 145
+        },
+        {
+            "from": 150,
+            "to": 148
+        },
+        {
+            "from": 150,
+            "to": 149
+        },
+        {
+            "from": 151,
+            "to": 65
+        },
+        {
+            "from": 151,
+            "to": 112
+        },
+        {
+            "from": 152,
+            "to": 5
+        },
+        {
+            "from": 152,
+            "to": 64
+        },
+        {
+            "from": 152,
+            "to": 146
+        },
+        {
+            "from": 153,
+            "to": 152
+        },
+        {
+            "from": 154,
+            "to": 65
+        },
+        {
+            "from": 154,
+            "to": 151
+        },
+        {
+            "from": 155,
+            "to": 65
+        },
+        {
+            "from": 155,
+            "to": 154
+        },
+        {
+            "from": 156,
+            "to": 65
+        },
+        {
+            "from": 156,
+            "to": 155
+        },
+        {
+            "from": 157,
+            "to": 5
+        },
+        {
+            "from": 157,
+            "to": 9
+        },
+        {
+            "from": 157,
+            "to": 155
+        },
+        {
+            "from": 157,
+            "to": 156
+        },
+        {
+            "from": 158,
+            "to": 57
+        },
+        {
+            "from": 158,
+            "to": 58
+        },
+        {
+            "from": 159,
+            "to": 57
+        },
+        {
+            "from": 159,
+            "to": 58
+        },
+        {
+            "from": 159,
+            "to": 158
+        },
+        {
+            "from": 160,
+            "to": 59
+        },
+        {
+            "from": 160,
+            "to": 61
+        },
+        {
+            "from": 160,
+            "to": 119
+        },
+        {
+            "from": 161,
+            "to": 5
+        },
+        {
+            "from": 161,
+            "to": 69
+        },
+        {
+            "from": 162,
+            "to": 161
+        },
+        {
+            "from": 163,
+            "to": 5
+        },
+        {
+            "from": 163,
+            "to": 142
+        },
+        {
+            "from": 163,
+            "to": 161
+        },
+        {
+            "from": 164,
+            "to": 10
+        },
+        {
+            "from": 164,
+            "to": 20
+        },
+        {
+            "from": 165,
+            "to": 142
+        },
+        {
+            "from": 165,
+            "to": 143
+        },
+        {
+            "from": 165,
+            "to": 164
+        },
+        {
+            "from": 166,
+            "to": 142
+        },
+        {
+            "from": 166,
+            "to": 165
+        },
+        {
+            "from": 167,
+            "to": 6
+        },
+        {
+            "from": 167,
+            "to": 47
+        },
+        {
+            "from": 167,
+            "to": 73
+        },
+        {
+            "from": 167,
+            "to": 164
+        },
+        {
+            "from": 167,
+            "to": 166
+        },
+        {
+            "from": 168,
+            "to": 3
+        },
+        {
+            "from": 168,
+            "to": 8
+        },
+        {
+            "from": 168,
+            "to": 50
+        },
+        {
+            "from": 169,
+            "to": 8
+        },
+        {
+            "from": 169,
+            "to": 50
+        },
+        {
+            "from": 169,
+            "to": 168
+        },
+        {
+            "from": 170,
+            "to": 8
+        },
+        {
+            "from": 170,
+            "to": 168
+        },
+        {
+            "from": 170,
+            "to": 169
+        },
+        {
+            "from": 171,
+            "to": 5
+        },
+        {
+            "from": 171,
+            "to": 8
+        },
+        {
+            "from": 171,
+            "to": 9
+        },
+        {
+            "from": 171,
+            "to": 169
+        },
+        {
+            "from": 172,
+            "to": 8
+        },
+        {
+            "from": 172,
+            "to": 168
+        },
+        {
+            "from": 172,
+            "to": 171
+        },
+        {
+            "from": 173,
+            "to": 8
+        },
+        {
+            "from": 173,
+            "to": 53
+        },
+        {
+            "from": 173,
+            "to": 169
+        },
+        {
+            "from": 173,
+            "to": 170
+        },
+        {
+            "from": 174,
+            "to": 4
+        },
+        {
+            "from": 174,
+            "to": 16
+        },
+        {
+            "from": 175,
+            "to": 5
+        },
+        {
+            "from": 175,
+            "to": 34
+        },
+        {
+            "from": 176,
+            "to": 4
+        },
+        {
+            "from": 176,
+            "to": 5
+        },
+        {
+            "from": 176,
+            "to": 174
+        },
+        {
+            "from": 176,
+            "to": 175
+        },
+        {
+            "from": 177,
+            "to": 16
+        },
+        {
+            "from": 177,
+            "to": 174
+        },
+        {
+            "from": 178,
+            "to": 16
+        },
+        {
+            "from": 178,
+            "to": 33
+        },
+        {
+            "from": 178,
+            "to": 174
+        },
+        {
+            "from": 179,
+            "to": 16
+        },
+        {
+            "from": 179,
+            "to": 177
+        },
+        {
+            "from": 180,
+            "to": 177
+        },
+        {
+            "from": 180,
+            "to": 179
+        },
+        {
+            "from": 181,
+            "to": 16
+        },
+        {
+            "from": 181,
+            "to": 174
+        },
+        {
+            "from": 182,
+            "to": 93
+        },
+        {
+            "from": 182,
+            "to": 174
+        },
+        {
+            "from": 182,
+            "to": 181
+        },
+        {
+            "from": 183,
+            "to": 9
+        },
+        {
+            "from": 183,
+            "to": 59
+        },
+        {
+            "from": 183,
+            "to": 120
+        },
+        {
+            "from": 184,
+            "to": 119
+        },
+        {
+            "from": 184,
+            "to": 120
+        },
+        {
+            "from": 184,
+            "to": 183
+        },
+        {
+            "from": 185,
+            "to": 184
+        },
+        {
+            "from": 186,
+            "to": 1
+        },
+        {
+            "from": 186,
+            "to": 4
+        },
+        {
+            "from": 186,
+            "to": 5
+        },
+        {
+            "from": 186,
+            "to": 96
+        },
+        {
+            "from": 187,
+            "to": 1
+        },
+        {
+            "from": 187,
+            "to": 186
+        },
+        {
+            "from": 188,
+            "to": 5
+        },
+        {
+            "from": 188,
+            "to": 96
+        },
+        {
+            "from": 188,
+            "to": 186
+        },
+        {
+            "from": 189,
+            "to": 96
+        },
+        {
+            "from": 189,
+            "to": 186
+        },
+        {
+            "from": 189,
+            "to": 188
+        },
+        {
+            "from": 190,
+            "to": 18
+        },
+        {
+            "from": 190,
+            "to": 186
+        },
+        {
+            "from": 190,
+            "to": 189
+        },
+        {
+            "from": 191,
+            "to": 18
+        },
+        {
+            "from": 191,
+            "to": 66
+        },
+        {
+            "from": 191,
+            "to": 190
+        },
+        {
+            "from": 192,
+            "to": 66
+        },
+        {
+            "from": 192,
+            "to": 190
+        },
+        {
+            "from": 192,
+            "to": 191
+        },
+        {
+            "from": 193,
+            "to": 66
+        },
+        {
+            "from": 193,
+            "to": 190
+        },
+        {
+            "from": 193,
+            "to": 192
+        },
+        {
+            "from": 194,
+            "to": 67
+        },
+        {
+            "from": 194,
+            "to": 193
+        },
+        {
+            "from": 195,
+            "to": 39
+        },
+        {
+            "from": 195,
+            "to": 40
+        },
+        {
+            "from": 195,
+            "to": 46
+        },
+        {
+            "from": 196,
+            "to": 46
+        },
+        {
+            "from": 196,
+            "to": 87
+        },
+        {
+            "from": 196,
+            "to": 195
+        },
+        {
+            "from": 197,
+            "to": 87
+        },
+        {
+            "from": 197,
+            "to": 196
+        },
+        {
+            "from": 198,
+            "to": 72
+        },
+        {
+            "from": 198,
+            "to": 167
+        },
+        {
+            "from": 198,
+            "to": 197
+        },
+        {
+            "from": 199,
+            "to": 6
+        },
+        {
+            "from": 199,
+            "to": 74
+        },
+        {
+            "from": 199,
+            "to": 79
+        },
+        {
+            "from": 200,
+            "to": 6
+        },
+        {
+            "from": 200,
+            "to": 72
+        },
+        {
+            "from": 200,
+            "to": 74
+        },
+        {
+            "from": 201,
+            "to": 164
+        },
+        {
+            "from": 201,
+            "to": 167
+        },
+        {
+            "from": 201,
+            "to": 199
+        },
+        {
+            "from": 201,
+            "to": 200
+        },
+        {
+            "from": 202,
+            "to": 18
+        },
+        {
+            "from": 202,
+            "to": 190
+        },
+        {
+            "from": 202,
+            "to": 193
+        },
+        {
+            "from": 203,
+            "to": 3
+        },
+        {
+            "from": 203,
+            "to": 18
+        },
+        {
+            "from": 203,
+            "to": 202
+        },
+        {
+            "from": 204,
+            "to": 8
+        },
+        {
+            "from": 204,
+            "to": 48
+        },
+        {
+            "from": 204,
+            "to": 49
+        },
+        {
+            "from": 205,
+            "to": 59
+        },
+        {
+            "from": 205,
+            "to": 187
+        },
+        {
+            "from": 206,
+            "to": 59
+        },
+        {
+            "from": 206,
+            "to": 119
+        },
+        {
+            "from": 206,
+            "to": 121
+        },
+        {
+            "from": 206,
+            "to": 205
+        },
+        {
+            "from": 207,
+            "to": 59
+        },
+        {
+            "from": 207,
+            "to": 62
+        },
+        {
+            "from": 207,
+            "to": 119
+        },
+        {
+            "from": 207,
+            "to": 206
+        },
+        {
+            "from": 208,
+            "to": 7
+        },
+        {
+            "from": 208,
+            "to": 62
+        },
+        {
+            "from": 208,
+            "to": 207
+        },
+        {
+            "from": 209,
+            "to": 74
+        },
+        {
+            "from": 209,
+            "to": 208
+        },
+        {
+            "from": 210,
+            "to": 6
+        },
+        {
+            "from": 210,
+            "to": 74
+        },
+        {
+            "from": 210,
+            "to": 209
+        },
+        {
+            "from": 211,
+            "to": 43
+        },
+        {
+            "from": 211,
+            "to": 74
+        },
+        {
+            "from": 211,
+            "to": 210
+        },
+        {
+            "from": 212,
+            "to": 73
+        },
+        {
+            "from": 212,
+            "to": 86
+        },
+        {
+            "from": 212,
+            "to": 87
+        },
+        {
+            "from": 213,
+            "to": 87
+        },
+        {
+            "from": 213,
+            "to": 195
+        },
+        {
+            "from": 213,
+            "to": 212
+        },
+        {
+            "from": 214,
+            "to": 212
+        },
+        {
+            "from": 214,
+            "to": 213
+        },
+        {
+            "from": 215,
+            "to": 212
+        },
+        {
+            "from": 215,
+            "to": 213
+        },
+        {
+            "from": 215,
+            "to": 214
+        },
+        {
+            "from": 216,
+            "to": 87
+        },
+        {
+            "from": 216,
+            "to": 215
+        },
+        {
+            "from": 217,
+            "to": 87
+        },
+        {
+            "from": 217,
+            "to": 216
+        },
+        {
+            "from": 218,
+            "to": 87
+        },
+        {
+            "from": 218,
+            "to": 216
+        },
+        {
+            "from": 218,
+            "to": 217
+        },
+        {
+            "from": 219,
+            "to": 87
+        },
+        {
+            "from": 219,
+            "to": 218
+        },
+        {
+            "from": 220,
+            "to": 87
+        },
+        {
+            "from": 220,
+            "to": 219
+        },
+        {
+            "from": 221,
+            "to": 162
+        },
+        {
+            "from": 221,
+            "to": 220
+        },
+        {
+            "from": 222,
+            "to": 87
+        },
+        {
+            "from": 222,
+            "to": 220
+        },
+        {
+            "from": 223,
+            "to": 74
+        },
+        {
+            "from": 223,
+            "to": 220
+        },
+        {
+            "from": 223,
+            "to": 222
+        },
+        {
+            "from": 224,
+            "to": 87
+        },
+        {
+            "from": 224,
+            "to": 220
+        },
+        {
+            "from": 224,
+            "to": 222
+        },
+        {
+            "from": 225,
+            "to": 213
+        },
+        {
+            "from": 226,
+            "to": 225
+        },
+        {
+            "from": 227,
+            "to": 213
+        },
+        {
+            "from": 227,
+            "to": 225
+        },
+        {
+            "from": 228,
+            "to": 225
+        },
+        {
+            "from": 228,
+            "to": 227
+        },
+        {
+            "from": 229,
+            "to": 67
+        },
+        {
+            "from": 229,
+            "to": 87
+        },
+        {
+            "from": 229,
+            "to": 213
+        },
+        {
+            "from": 230,
+            "to": 213
+        },
+        {
+            "from": 230,
+            "to": 229
+        },
+        {
+            "from": 231,
+            "to": 213
+        },
+        {
+            "from": 231,
+            "to": 230
+        },
+        {
+            "from": 232,
+            "to": 213
+        },
+        {
+            "from": 232,
+            "to": 231
+        },
+        {
+            "from": 233,
+            "to": 213
+        },
+        {
+            "from": 233,
+            "to": 232
+        },
+        {
+            "from": 234,
+            "to": 233
+        },
+        {
+            "from": 235,
+            "to": 57
+        },
+        {
+            "from": 235,
+            "to": 81
+        },
+        {
+            "from": 235,
+            "to": 112
+        },
+        {
+            "from": 236,
+            "to": 81
+        },
+        {
+            "from": 236,
+            "to": 235
+        },
+        {
+            "from": 237,
+            "to": 87
+        },
+        {
+            "from": 237,
+            "to": 236
+        },
+        {
+            "from": 238,
+            "to": 6
+        },
+        {
+            "from": 238,
+            "to": 74
+        },
+        {
+            "from": 238,
+            "to": 207
+        },
+        {
+            "from": 239,
+            "to": 7
+        },
+        {
+            "from": 239,
+            "to": 99
+        },
+        {
+            "from": 239,
+            "to": 238
+        },
+        {
+            "from": 240,
+            "to": 20
+        },
+        {
+            "from": 240,
+            "to": 164
+        },
+        {
+            "from": 241,
+            "to": 164
+        },
+        {
+            "from": 241,
+            "to": 240
+        },
+        {
+            "from": 242,
+            "to": 199
+        },
+        {
+            "from": 242,
+            "to": 201
+        },
+        {
+            "from": 242,
+            "to": 241
+        },
+        {
+            "from": 243,
+            "to": 74
+        },
+        {
+            "from": 243,
+            "to": 199
+        },
+        {
+            "from": 243,
+            "to": 200
+        },
+        {
+            "from": 243,
+            "to": 210
+        },
+        {
+            "from": 243,
+            "to": 211
+        },
+        {
+            "from": 244,
+            "to": 6
+        },
+        {
+            "from": 244,
+            "to": 72
+        },
+        {
+            "from": 244,
+            "to": 200
+        },
+        {
+            "from": 244,
+            "to": 210
+        },
+        {
+            "from": 245,
+            "to": 72
+        },
+        {
+            "from": 245,
+            "to": 166
+        },
+        {
+            "from": 245,
+            "to": 244
+        },
+        {
+            "from": 246,
+            "to": 72
+        },
+        {
+            "from": 246,
+            "to": 245
+        },
+        {
+            "from": 247,
+            "to": 72
+        },
+        {
+            "from": 247,
+            "to": 244
+        },
+        {
+            "from": 247,
+            "to": 245
+        },
+        {
+            "from": 247,
+            "to": 246
+        },
+        {
+            "from": 248,
+            "to": 72
+        },
+        {
+            "from": 248,
+            "to": 167
+        },
+        {
+            "from": 248,
+            "to": 198
+        },
+        {
+            "from": 248,
+            "to": 247
+        },
+        {
+            "from": 249,
+            "to": 164
+        },
+        {
+            "from": 249,
+            "to": 201
+        },
+        {
+            "from": 249,
+            "to": 212
+        },
+        {
+            "from": 249,
+            "to": 248
+        },
+        {
+            "from": 250,
+            "to": 20
+        },
+        {
+            "from": 250,
+            "to": 73
+        },
+        {
+            "from": 250,
+            "to": 164
+        },
+        {
+            "from": 250,
+            "to": 201
+        },
+        {
+            "from": 250,
+            "to": 248
+        },
+        {
+            "from": 250,
+            "to": 249
+        },
+        {
+            "from": 251,
+            "to": 2
+        }
+    ]
+}
