@@ -10,126 +10,156 @@ hide:
 
 Interactive visualizations demonstrating AI capabilities, growth patterns, and strategic frameworks.
 
-<div class="grid cards grid-3-col" markdown>
+<div class="grid cards" markdown>
 
-- **[AI Task Horizons](./ai-task-horizons/index.md)**
+-   **[AI Benchmarks Timeline](./ai-benchmarks-timeline/index.md)**
 
-    ![AI Task Horizons](./ai-task-horizons/thumbnail.png)
-    Interactive visualization showing how long different AI models can work on tasks before failing.
+    ![AI Benchmarks Timeline](./ai-benchmarks-timeline/ai-benchmarks-timeline.png)
 
-- **[AI Benchmarks Timeline](./ai-benchmarks-timeline/index.md)**
+    Interactive timeline showing key AI benchmarks and when they were introduced.
 
-    ![AI Benchmarks Timeline](./ai-benchmarks-timeline/thumbnail.png)
-    Timeline visualization of major AI benchmark milestones and capability progression.
+-   **[AI Capability Maturity Model](./ai-cmm/index.md)**
 
-- **[MMLU Timeline](./mmlu-timeline/index.md)**
+    ![AI Capability Maturity Model](./ai-cmm/ai-cmm.png)
 
-    ![MMLU Timeline](./mmlu-timeline/thumbnail.png)
-    Interactive timeline showing AI model performance on the MMLU benchmark over time.
+    Interactive visualization of five AI maturity levels from Ad Hoc to Transformative.
 
-- **[LM Arena Timeline](./lm-arena-timeline/index.md)**
+-   **[AI Causes of Acceleration](./ai-causes/index.md)**
 
-    ![LM Arena Timeline](./lm-arena-timeline/thumbnail.png)
-    Language Model Arena performance tracking based on human preferences.
+    ![AI Causes of Acceleration](./ai-causes/ai-causes.png)
 
-- **[AI Doubling Rate](./ai-doubling-rate/index.md)**
+    A causal loop diagram showing how AI feedback is accelerating AI progress.
 
-    ![AI Doubling Rate](./ai-doubling-rate/thumbnail.png)
-    Analysis showing AI task completion length doubling approximately every seven months.
+-   **[AI Doubling Rate](./ai-doubling-rate/index.md)**
 
-- **[Four Futures](./four-futures/index.md)**
+    ![AI Doubling Rate](./ai-doubling-rate/ai-doubling-rate.png)
 
-    ![Four Futures](./four-futures/thumbnail.png)
-    Explore four different scenarios for the rate of change of AI capabilities.
+    Analysis of AI task completion doubling rate based on METR research.
 
-- **[AI Pace Accelerating](./ai-pace-accelerating/index.md)**
+-   **[AI Flywheel](./ai-flywheel/index.md)**
 
-    ![AI Pace Accelerating](./ai-pace-accelerating/thumbnail.png)
-    Interactive visualization demonstrating the accelerating pace of AI development.
+    ![AI Flywheel](./ai-flywheel/ai-flywheel.png)
 
-- **[Moore's Law](./moores-law/index.md)**
+    An infographic MicroSim of the AI Flywheel causal loop.
 
-    ![Moore's Law](./moores-law/thumbnail.png)
-    Infographic showing Moore's Law progression in both linear and log scales.
+-   **[AI Pace Accelerating](./ai-pace-accelerating/index.md)**
 
-- **[Power Wall](./power-wall/index.md)**
+    ![AI Pace Accelerating](./ai-pace-accelerating/ai-pace-accelerating.png)
 
-    ![Power Wall](./power-wall/thumbnail.png)
-    Visualization of the CPU clock speed "power wall" phenomenon.
+    Interactive visualization demonstrating how AI capabilities are accelerating.
 
-- **[AI Flywheel](./ai-flywheel/index.md)**
+-   **[AI SWOT Analysis](./swot/index.md)**
 
-    ![AI Flywheel](./ai-flywheel/thumbnail.png)
-    Causal loop diagram illustrating how AI improvements create a self-reinforcing cycle.
+    ![AI SWOT Analysis](./swot/swot.png)
 
-- **[AI Causes of Acceleration](./ai-causes/index.md)**
+    Interactive SWOT analysis diagram for AI strategy development with hover descriptions.
 
-    ![AI Causes](./ai-causes/thumbnail.png)
-    Causal loop diagram showing multiple factors driving AI acceleration.
+-   **[AI Task Horizons](./ai-task-horizons/index.md)**
 
-- **[Autoregressive](./autoregressive/index.md)**
+    ![AI Task Horizons](./ai-task-horizons/ai-task-horizons.png)
 
-    ![Autoregressive](./autoregressive/thumbnail.png)
-    Interactive demonstration of autoregressive text generation.
+    Interactive visualization showing how long AI models can work on tasks based on METR research.
 
-- **[Tokenizer](./tokenizer/index.md)**
+-   **[AI Timeline](./timeline/index.md)**
 
-    ![Tokenizer](./tokenizer/thumbnail.png)
-    Interactive tool demonstrating how text is broken into tokens.
+    ![AI Timeline](./timeline/timeline.png)
 
-- **[Bloom's Taxonomy](./blooms-taxonomy/index.md)**
+    Interactive timeline showing over 100 key events in Deep Learning history from 1935 to present.
 
-    ![Bloom's Taxonomy](./blooms-taxonomy/thumbnail.png)
-    Interactive infographic showing the six levels of Bloom's Taxonomy.
+-   **[Autoregressive](./autoregressive/index.md)**
 
-- **[Book Generation Workflow](./book-gen-workflow/index.md)**
+    ![Autoregressive](./autoregressive/autoregressive.png)
 
-    ![Book Generation Workflow](./book-gen-workflow/thumbnail.png)
-    Workflow diagram showing the steps for generating intelligent textbooks.
+    Interactive simulation showing how language models predict the next token using neural networks.
 
-- **[Book Levels](./book-levels/index.md)**
+-   **[Bloom's Taxonomy](./blooms-taxonomy/index.md)**
 
-    ![Book Levels](./book-levels/thumbnail.png)
-    Interactive visualization of the five levels of intelligent textbooks.
+    ![Bloom's Taxonomy](./blooms-taxonomy/blooms-taxonomy.png)
 
-- **[Learning Graph](./learning-graph/index.md)**
+    Infographic with infobox hovers showing layers of Bloom's Taxonomy.
 
-    ![Learning Graph](./learning-graph/thumbnail.png)
-    Interactive graph visualization for exploring course concept dependencies.
+-   **[Book Generation Workflow](./book-gen-workflow/index.md)**
 
-- **[Porter's Five Forces](./porters-five-forces/index.md)**
+    ![Book Generation Workflow](./book-gen-workflow/book-gen-workflow.png)
 
-    ![Porter's Five Forces](./porters-five-forces/thumbnail.png)
-    Interactive diagram of Porter's Five Forces strategic analysis framework.
+    Interactive infographic showing the workflow for generating intelligent textbooks.
 
-- **[AI SWOT Analysis](./swot/index.md)**
+-   **[Book Levels](./book-levels/index.md)**
 
-    ![AI SWOT Analysis](./swot/thumbnail.png)
-    Interactive SWOT analysis tool for evaluating AI adoption.
+    ![Book Levels](./book-levels/book-levels.png)
 
-- **[Technology Adoption Curve](./technology-adoption/index.md)**
+    Interactive visualization of five levels of intelligent textbooks from static to AI-driven.
 
-    ![Technology Adoption Curve](./technology-adoption/thumbnail.png)
-    Interactive infographic visualizing the Technology Adoption Lifecycle.
+-   **[Four AI Futures](./four-futures/index.md)**
 
-- **[Technology Hype Cycle](./hype-cycle/index.md)**
+    ![Four AI Futures](./four-futures/four-futures.png)
 
-    ![Technology Hype Cycle](./hype-cycle/thumbnail.png)
-    Gartner's Technology Hype Cycle applied to AI development.
+    Interactive chart showing four possible scenarios for AI development growth patterns.
 
-- **[AI Capability Maturity Model](./ai-cmm/index.md)**
+-   **[GenAI Idea Funnel](./idea-funnel/index.md)**
 
-    ![AI Capability Maturity Model](./ai-cmm/thumbnail.png)
-    Five-level maturity model for organizational AI capabilities.
+    ![GenAI Idea Funnel](./idea-funnel/idea-funnel.png)
 
-- **[GenAI Idea Funnel](./idea-funnel/index.md)**
+    An interactive infographic showing the steps in managing a GenAI Center of Excellence.
 
-    ![GenAI Idea Funnel](./idea-funnel/thumbnail.png)
-    Interactive funnel showing the process of managing a GenAI Center of Excellence.
+-   **[Language Model Arena Timeline](./lm-arena-timeline/index.md)**
 
-- **[AI Timeline](./timeline/index.md)**
+    ![Language Model Arena Timeline](./lm-arena-timeline/lm-arena-timeline.png)
 
-    ![AI Timeline](./timeline/thumbnail.png)
-    View key events in the history of AI and see how they are spaced.
+    Interactive visualization of LMArena benchmark rankings for AI models.
+
+-   **[Learning Graph](./learning-graph/index.md)**
+
+    ![Learning Graph](./learning-graph/learning-graph.png)
+
+    Interactive visualization of concept dependencies in the Tracking AI curriculum.
+
+-   **[MMLU Timeline](./mmlu-timeline/index.md)**
+
+    ![MMLU Timeline](./mmlu-timeline/mmlu-timeline.png)
+
+    Interactive visualization showing AI model progress on the MMLU benchmark.
+
+-   **[Moore's Law](./moores-law/index.md)**
+
+    ![Moore's Law](./moores-law/moores-law.png)
+
+    Interactive infographic showing transistor growth with linear and log scale views.
+
+-   **[Porter's Five Forces](./porters-five-forces/index.md)**
+
+    ![Porter's Five Forces](./porters-five-forces/porters-five-forces.png)
+
+    Interactive visualization of Porter's Five Forces competitive analysis framework.
+
+-   **[Power Wall](./power-wall/index.md)**
+
+    ![Power Wall](./power-wall/power-wall.png)
+
+    Interactive visualization showing CPU clock speed evolution and the Power Wall phenomenon.
+
+-   **[Projecting AI](./projecting-ai/index.md)**
+
+    ![Projecting AI](./projecting-ai/projecting-ai.png)
+
+    Interactive visualization showing exponential growth of AI task completion capabilities from 2019 to 2030.
+
+-   **[Technology Adoption Curve](./technology-adoption/index.md)**
+
+    ![Technology Adoption Curve](./technology-adoption/technology-adoption.png)
+
+    An interactive infographic visualizing the Technology Adoption Lifecycle Curve.
+
+-   **[Technology Hype Cycle](./hype-cycle/index.md)**
+
+    ![Technology Hype Cycle](./hype-cycle/hype-cycle.png)
+
+    Interactive visualization of the Gartner Technology Hype Cycle phases.
+
+-   **[Tokenizer](./tokenizer/index.md)**
+
+    ![Tokenizer](./tokenizer/tokenizer.png)
+
+    Interactive visualization demonstrating how text is tokenized for language model processing.
 
 </div>
