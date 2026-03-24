@@ -36,7 +36,8 @@
             min-width: 0;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 12px;
-            padding: 40px;
+            /* the top-bottom and left-right padding around the slides */
+            padding: 25px 20px;
             margin-bottom: 20px;
             overflow-y: auto;
             overflow-x: hidden;
@@ -46,15 +47,16 @@
 
         .slide-content h1 {
             font-size: 2.5em;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             color: #64b5f6;
             border-bottom: 2px solid #64b5f6;
-            padding-bottom: 15px;
+            padding-bottom: 0px;
         }
 
         .slide-content h2 {
             font-size: 2em;
-            margin-bottom: 25px;
+            margin-top: 0;
+            margin-bottom: 10px;
             color: #81c784;
         }
 
@@ -470,7 +472,7 @@
 
         <div class="slide-area">
             <button class="side-nav side-nav-prev" id="side-prev-btn" onclick="prevSlide()" title="Previous slide (Left Arrow)">
-                &#9664;<span class="key-hint">&larr;</span>
+                &#9664;
             </button>
             <div class="slide-container">
                 <div id="slide-content" class="slide-content">
@@ -478,7 +480,7 @@
                 </div>
             </div>
             <button class="side-nav side-nav-next" id="side-next-btn" onclick="nextSlide()" title="Next slide (Right Arrow)">
-                &#9654;<span class="key-hint">&rarr;</span>
+                &#9654;
             </button>
         </div>
         <div class="navigation">

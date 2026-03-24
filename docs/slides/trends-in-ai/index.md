@@ -21,7 +21,7 @@ skills will be important in an AI dominated future.
 
 ## Four Futures
 
-<iframe src="../../sims/four-futures/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/four-futures/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 ## Moore's Law
 
@@ -37,7 +37,7 @@ skills will be important in an AI dominated future.
 > Marvin Minsky (1967)
 
 
-[Overly Optimistic AI Claims](../../appendicies/overly-optimistic-ai-claims.md)
+[Overly Optimistic AI Claims](../../appendices/overly-optimistic-ai-claims.md)
 
 ## AI Systems Thinking
 
@@ -63,11 +63,47 @@ We can now project this trend line out until 2030.  The results are sometimes di
 
 Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing planning and 5 are writing code.
 
+## Agent Skill Standards
+
+- Agentic **Skills** are directory packing standards for agent rules
+- Introduced by Anthropic in October 2025
+- Now adopted by most LLM harnesses (OpenAI Codex, Cursor, Windsurf, Perplexity etc.)
+- Allows consistent generation of code, content and images
+- Gave me a 100x increase in the quality of MicroSimulations in interactive intelligent textbooks
+
+[Claude Skills for Intelligent Textbooks](https://dmccreary.github.io/claude-skills/)
+
+## Small Language Models (SLMs)
+
+- SLMs achieve performance that rivals much larger models from just 1–2 years ago
+- Extensive pruning and use of smaller weights (16, 8 and 4 bits) allow models to fit in smaller RAM
+- Tools such as Ollama continue to allow users to run AI models (both text-to-text and text-to-image) on local commodity GPU hardware (12GB to 24GB GPUs)
+- Laptops and edge devices enable preserve privacy, allow for offline use, and promote low-latency AI applications
+
+## RPA and OpenClaw
+
+- **Natural language → desktop actions** – LLMs can translate user intent (“download this report and email it”) into step-by-step UI actions, enabling flexible RPA without rigid scripts using tools like OpenClaw.
+- **Resilient to UI changes** – Vision + reasoning allows agents to adapt when buttons move or layouts change, reducing the brittleness of traditional RPA workflows.
+- **End-to-end task automation** – LLM agents can orchestrate multi-app workflows (browser, spreadsheets, email clients) to complete complex business processes autonomously.
+- **Rapid automation development** – Platforms like OpenClaw let developers prototype desktop control agents quickly, replacing weeks of rule-based scripting with prompt-driven automation.
+
+## Graph-Based AI
+
+- Structured Context & Grounding
+- Explainability & Traceability
+- Decision Intelligence
+- GraphRAG
+- Real-Time Connected Reasoning
+- AI Agent Memory Layer
+
+[View Graph](../../sims/learning-graph/view-graph.html)
+
 ## Case Study: Interactive Intelligent Textbooks
 
+![](../../img/case-studies-large.png)
 70 intelligent interactive textbook case studies
 
-[Intelligent Textbook Cas Studies](https://dmccreary.github.io/intelligent-textbooks/case-studies/)
+[Intelligent Textbook Case Studies](https://dmccreary.github.io/intelligent-textbooks/case-studies/)
 
 ## What Does This Mean for My Career?
 
