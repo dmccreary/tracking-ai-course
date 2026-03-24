@@ -101,7 +101,7 @@ function generateDataPoints() {
     if (i <= 10) {
       blueLine[i] = 4 * (1 - exp(-0.3 * i));
     } else {
-      blueLine[i] = blueLine[10] + 0.1 * (i - 10);
+      blueLine[i] = blueLine[10] + 0.7 * (i - 10);
     }
     
     // Purple line: continued exponential growth
