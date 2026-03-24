@@ -51,13 +51,13 @@ skills will be important in an AI dominated future.
 <iframe src="../../sims/mmlu-timeline/main.html" height="550px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
-Many AI benchmarks show LLM capabilities approaching human-level skills like the [MMLU benchmark](../../sims/mmlu-timeline/index.md).
+Many AI benchmarks show LLM capabilities approaching human-level skills like the [MMLU benchmark](../../sims/mmlu-timeline/index).
 
 ## Some AI Benchmark Compare LLMs with Each Other in an Arena
 
 <iframe src="https://dmccreary.github.io/tracking-ai-course/sims/lm-arena-timeline/main.html"  height="450px" scrolling="no"></iframe>
 
-[LM Arena Benchmark](../../sims/lm-arena-timeline/index.md)
+[LM Arena Benchmark](../../sims/lm-arena-timeline/index)
 
 ## METR Task Horizons
 
@@ -102,7 +102,7 @@ Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing 
 - **End-to-end task automation** – LLM agents can orchestrate multi-app workflows (browser, spreadsheets, email clients) to complete complex business processes autonomously.
 - **Rapid automation development** – Platforms like OpenClaw let developers prototype desktop control agents quickly, replacing weeks of rule-based scripting with prompt-driven automation.
 
-![Ollama](../../img/openclaw-logo-on-white.webp)
+![Ollama](../../img/openclaw-logo-on-white.png)
 
 ## Graph-Based AI
 
