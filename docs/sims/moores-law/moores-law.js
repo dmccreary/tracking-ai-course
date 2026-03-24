@@ -110,9 +110,16 @@ function draw() {
     drawHoverInfo();
   }
   
+  // Draw doubling rate annotation
+  fill(0, 102, 204);
+  noStroke();
+  textSize(14);
+  textAlign(LEFT, CENTER);
+  text("Doubling rate: ~20.5 months", margin + 15, canvasHeight / 2);
+
   // Draw legend
   drawLegend();
-  
+
   // Draw info text at the bottom
   drawInfoText();
 }

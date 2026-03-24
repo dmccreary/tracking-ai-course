@@ -36,7 +36,6 @@ skills will be important in an AI dominated future.
 > *Within a generation the problem of creating 'artificial intelligence' will substantially be solved.*<br/>
 > Marvin Minsky (1967)
 
-
 [Overly Optimistic AI Claims](../../appendices/overly-optimistic-ai-claims.md)
 
 ## AI Systems Thinking
@@ -70,6 +69,7 @@ Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing 
 - Now adopted by most LLM harnesses (OpenAI Codex, Cursor, Windsurf, Perplexity etc.)
 - Allows consistent generation of code, content and images
 - Gave me a 100x increase in the quality of MicroSimulations in interactive intelligent textbooks
+- Clearly shows that AI progress is a non-linear function
 
 [Claude Skills for Intelligent Textbooks](https://dmccreary.github.io/claude-skills/)
 
@@ -77,8 +77,10 @@ Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing 
 
 - SLMs achieve performance that rivals much larger models from just 1–2 years ago
 - Extensive pruning and use of smaller weights (16, 8 and 4 bits) allow models to fit in smaller RAM
-- Tools such as Ollama continue to allow users to run AI models (both text-to-text and text-to-image) on local commodity GPU hardware (12GB to 24GB GPUs)
+- Tools such as [Ollama](https://ollama.com/) continue to allow users to run AI models (both text-to-text and text-to-image) on local commodity GPU hardware (12GB to 24GB GPUs)
 - Laptops and edge devices enable preserve privacy, allow for offline use, and promote low-latency AI applications
+
+![Ollama](../../img/ollama.png)
 
 ## RPA and OpenClaw
 
@@ -86,6 +88,8 @@ Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing 
 - **Resilient to UI changes** – Vision + reasoning allows agents to adapt when buttons move or layouts change, reducing the brittleness of traditional RPA workflows.
 - **End-to-end task automation** – LLM agents can orchestrate multi-app workflows (browser, spreadsheets, email clients) to complete complex business processes autonomously.
 - **Rapid automation development** – Platforms like OpenClaw let developers prototype desktop control agents quickly, replacing weeks of rule-based scripting with prompt-driven automation.
+
+![Ollama](../../img/openclaw-logo-on-white.webp)
 
 ## Graph-Based AI
 
