@@ -1,0 +1,1924 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/tracking-ai-course/appendices/overly-optimistic-ai-claims/">
+      
+      
+        <link rel="prev" href="../../slides/tracking-ai/">
+      
+      
+        <link rel="next" href="../../prompts/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Overly Optimistic AI Claims - Tracking AI Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-KTYGHZCPM3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-KTYGHZCPM3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-KTYGHZCPM3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Overly Optimistic AI Claims - Tracking AI Course" >
+      
+        <meta  property="og:description"  content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/appendices/overly-optimistic-ai-claims.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/tracking-ai-course/appendices/overly-optimistic-ai-claims/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Overly Optimistic AI Claims - Tracking AI Course" >
+      
+        <meta  name="twitter:description"  content="A course to help you understand how to track the exponential growth of AI systems capabilities and their impact on society.  An analysis of the limitations of LLMs and the need for world models" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/appendices/overly-optimistic-ai-claims.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overly-optimistic-ai-predictions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Tracking AI Course" class="md-header__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tracking AI Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overly Optimistic AI Claims
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tracking AI Course" class="md-nav__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Tracking AI Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About This Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../slides/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Slides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Stories
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../slides/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Slides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Appendices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List of Appendices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Overly Optimistic AI Claims
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Overly Optimistic AI Claims
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1950s1960s-the-dawn-of-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      1950s–1960s: The Dawn of AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1950s–1960s: The Dawn of AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#herbert-simon-1957" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herbert Simon (1957)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herbert-simon-1965" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herbert Simon (1965)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marvin-minsky-1967" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marvin Minsky (1967)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herbert-simon-and-allen-newell-1958" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herbert Simon and Allen Newell (1958)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1960s1970s-machine-translation-and-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      1960s–1970s: Machine Translation and Vision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1960s–1970s: Machine Translation and Vision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#early-machine-translation-optimists-1954" class="md-nav__link">
+    <span class="md-ellipsis">
+      Early Machine Translation Optimists (1954)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marvin-minsky-1966" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marvin Minsky (1966)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hubert-dreyfus-warning-1965" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hubert Dreyfus Warning (1965)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1970s1980s-expert-systems-era" class="md-nav__link">
+    <span class="md-ellipsis">
+      1970s–1980s: Expert Systems Era
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1970s–1980s: Expert Systems Era">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edward-feigenbaum-1981" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edward Feigenbaum (1981)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#japans-fifth-generation-computer-project-1982" class="md-nav__link">
+    <span class="md-ellipsis">
+      Japan's Fifth Generation Computer Project (1982)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1980s1990s-neural-networks-and-robotics" class="md-nav__link">
+    <span class="md-ellipsis">
+      1980s–1990s: Neural Networks and Robotics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1980s–1990s: Neural Networks and Robotics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hans-moravec-1988" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hans Moravec (1988)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ray-kurzweil-1990" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray Kurzweil (1990)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2000s-the-new-millennium" class="md-nav__link">
+    <span class="md-ellipsis">
+      2000s: The New Millennium
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2000s: The New Millennium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ray-kurzweil-2005" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray Kurzweil (2005)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rodney-brooks-2008" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rodney Brooks (2008)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2010s-deep-learning-hype" class="md-nav__link">
+    <span class="md-ellipsis">
+      2010s: Deep Learning Hype
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2010s: Deep Learning Hype">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#self-driving-cars-20122016" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Driving Cars (2012–2016)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demis-hassabis-2017" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demis Hassabis (2017)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andrew-ng-2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      Andrew Ng (2016)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2020s-large-language-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      2020s: Large Language Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2020s: Large Language Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agi-timeline-predictions-20202025" class="md-nav__link">
+    <span class="md-ellipsis">
+      AGI Timeline Predictions (2020–2025)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatbot-companions-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chatbot Companions (2023)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-in-overly-optimistic-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns in Overly Optimistic Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-for-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons for Today
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1950s1960s-the-dawn-of-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      1950s–1960s: The Dawn of AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1950s–1960s: The Dawn of AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#herbert-simon-1957" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herbert Simon (1957)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herbert-simon-1965" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herbert Simon (1965)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marvin-minsky-1967" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marvin Minsky (1967)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herbert-simon-and-allen-newell-1958" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herbert Simon and Allen Newell (1958)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1960s1970s-machine-translation-and-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      1960s–1970s: Machine Translation and Vision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1960s–1970s: Machine Translation and Vision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#early-machine-translation-optimists-1954" class="md-nav__link">
+    <span class="md-ellipsis">
+      Early Machine Translation Optimists (1954)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marvin-minsky-1966" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marvin Minsky (1966)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hubert-dreyfus-warning-1965" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hubert Dreyfus Warning (1965)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1970s1980s-expert-systems-era" class="md-nav__link">
+    <span class="md-ellipsis">
+      1970s–1980s: Expert Systems Era
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1970s–1980s: Expert Systems Era">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edward-feigenbaum-1981" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edward Feigenbaum (1981)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#japans-fifth-generation-computer-project-1982" class="md-nav__link">
+    <span class="md-ellipsis">
+      Japan's Fifth Generation Computer Project (1982)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1980s1990s-neural-networks-and-robotics" class="md-nav__link">
+    <span class="md-ellipsis">
+      1980s–1990s: Neural Networks and Robotics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1980s–1990s: Neural Networks and Robotics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hans-moravec-1988" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hans Moravec (1988)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ray-kurzweil-1990" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray Kurzweil (1990)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2000s-the-new-millennium" class="md-nav__link">
+    <span class="md-ellipsis">
+      2000s: The New Millennium
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2000s: The New Millennium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ray-kurzweil-2005" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray Kurzweil (2005)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rodney-brooks-2008" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rodney Brooks (2008)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2010s-deep-learning-hype" class="md-nav__link">
+    <span class="md-ellipsis">
+      2010s: Deep Learning Hype
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2010s: Deep Learning Hype">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#self-driving-cars-20122016" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Driving Cars (2012–2016)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demis-hassabis-2017" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demis Hassabis (2017)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andrew-ng-2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      Andrew Ng (2016)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2020s-large-language-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      2020s: Large Language Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2020s: Large Language Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agi-timeline-predictions-20202025" class="md-nav__link">
+    <span class="md-ellipsis">
+      AGI Timeline Predictions (2020–2025)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatbot-companions-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chatbot Companions (2023)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-in-overly-optimistic-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns in Overly Optimistic Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-for-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons for Today
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/tracking-ai-course/blob/master/docs/appendices/overly-optimistic-ai-claims.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="overly-optimistic-ai-predictions">Overly Optimistic AI Predictions</h1>
+<p>A curated list of famous predictions about artificial intelligence
+that turned out to be far too optimistic in their timelines
+or scope. Understanding these historical misjudgments helps
+us calibrate our expectations for current AI forecasts.</p>
+<h2 id="1950s1960s-the-dawn-of-ai">1950s–1960s: The Dawn of AI</h2>
+<h3 id="herbert-simon-1957">Herbert Simon (1957)</h3>
+<blockquote>
+<p>"Within ten years a digital computer will be the world's chess champion."</p>
+</blockquote>
+<p><strong>Reality:</strong> It took 40 years. Deep Blue defeated Garry Kasparov in 1997.</p>
+<h3 id="herbert-simon-1965">Herbert Simon (1965)</h3>
+<blockquote>
+<p>"Machines will be capable, within twenty years, of doing any work a man can do."</p>
+</blockquote>
+<p><strong>Reality:</strong> Over 60 years later, general-purpose human-level AI remains unrealized.</p>
+<h3 id="marvin-minsky-1967">Marvin Minsky (1967)</h3>
+<blockquote>
+<p>"Within a generation the problem of creating 'artificial intelligence' will substantially be solved."</p>
+</blockquote>
+<p><strong>Reality:</strong> A generation later, the AI field was deep in its second "AI Winter."</p>
+<h3 id="herbert-simon-and-allen-newell-1958">Herbert Simon and Allen Newell (1958)</h3>
+<blockquote>
+<p>"Within ten years a computer will discover and prove an important new mathematical theorem."</p>
+</blockquote>
+<p><strong>Reality:</strong> While automated theorem provers have made contributions, truly important novel mathematical discoveries by machines remained elusive for decades.</p>
+<h2 id="1960s1970s-machine-translation-and-vision">1960s–1970s: Machine Translation and Vision</h2>
+<h3 id="early-machine-translation-optimists-1954">Early Machine Translation Optimists (1954)</h3>
+<p>At the Georgetown-IBM experiment demonstration, researchers predicted that machine translation would be a solved problem within three to five years.</p>
+<p><strong>Reality:</strong> The ALPAC report of 1966 declared machine translation a failure, and funding was slashed. Useful machine translation didn't arrive until statistical methods in the 2000s and neural methods in the 2010s.</p>
+<h3 id="marvin-minsky-1966">Marvin Minsky (1966)</h3>
+<p>Assigned computer vision as a summer project to an undergraduate student, expecting the fundamental problems of object recognition to be solved in one summer.</p>
+<p><strong>Reality:</strong> Computer vision remained an unsolved grand challenge for over 50 years. Superhuman image classification didn't arrive until deep learning in the 2010s.</p>
+<h3 id="hubert-dreyfus-warning-1965">Hubert Dreyfus Warning (1965)</h3>
+<p>While not an optimistic prediction himself, Dreyfus published "Alchemy and AI" arguing that AI researchers were wildly overestimating progress. He was widely ridiculed by the AI community at the time but proved largely correct about the timeline.</p>
+<h2 id="1970s1980s-expert-systems-era">1970s–1980s: Expert Systems Era</h2>
+<h3 id="edward-feigenbaum-1981">Edward Feigenbaum (1981)</h3>
+<blockquote>
+<p>"In the kind of intelligent behavior we are going to need in the future, machines are going to be far more intelligent than the most intelligent humans."</p>
+</blockquote>
+<p>Feigenbaum predicted expert systems would revolutionize every industry within the decade.</p>
+<p><strong>Reality:</strong> The expert system bubble burst by the late 1980s, contributing to the second AI Winter. The systems were brittle, expensive to maintain, and couldn't handle knowledge outside their narrow domains.</p>
+<h3 id="japans-fifth-generation-computer-project-1982">Japan's Fifth Generation Computer Project (1982)</h3>
+<p>The Japanese government launched a $400 million project to create computers that could converse, translate languages, interpret pictures, and reason like humans — all within ten years.</p>
+<p><strong>Reality:</strong> The project was widely considered a failure by its 1992 conclusion. Most of its ambitious goals were not achieved.</p>
+<h2 id="1980s1990s-neural-networks-and-robotics">1980s–1990s: Neural Networks and Robotics</h2>
+<h3 id="hans-moravec-1988">Hans Moravec (1988)</h3>
+<blockquote>
+<p>"I am confident that this bottom-up route to artificial intelligence will one day successfully scale the mountain of human intelligence. I believe that by 2010 we will see mobile robots as big as people but with cognitive abilities similar to those of a lizard."</p>
+</blockquote>
+<p>He predicted human-level intelligence in robots by 2040.</p>
+<p><strong>Reality:</strong> By 2010, the most advanced robots were far below lizard-level general cognition. His timeline continues to be debated.</p>
+<h3 id="ray-kurzweil-1990">Ray Kurzweil (1990)</h3>
+<blockquote>
+<p>"By 1998, a computer will defeat the world chess champion."</p>
+</blockquote>
+<p><strong>Reality:</strong> Close — it happened in 1997. This is one of the rare predictions that was approximately correct.</p>
+<h2 id="2000s-the-new-millennium">2000s: The New Millennium</h2>
+<h3 id="ray-kurzweil-2005">Ray Kurzweil (2005)</h3>
+<p>In <em>The Singularity Is Near</em>, Kurzweil predicted:</p>
+<ul>
+<li>By 2009: Most text would be created using continuous speech recognition</li>
+<li>By 2014: Computers would be largely invisible, embedded everywhere</li>
+<li>By 2029: Machines will achieve human-level intelligence</li>
+</ul>
+<p><strong>Reality:</strong> Speech recognition didn't become mainstream for text creation. While computing did become more embedded, many of the specific predictions were off. The 2029 prediction remains to be seen.</p>
+<h3 id="rodney-brooks-2008">Rodney Brooks (2008)</h3>
+<p>Even the famously cautious Brooks predicted home robots would be doing household chores by the mid-2010s.</p>
+<p><strong>Reality:</strong> Roombas vacuum floors, but general-purpose home robots that can fold laundry, do dishes, and clean remain largely experimental as of the mid-2020s.</p>
+<h2 id="2010s-deep-learning-hype">2010s: Deep Learning Hype</h2>
+<h3 id="self-driving-cars-20122016">Self-Driving Cars (2012–2016)</h3>
+<p>Multiple executives made bold predictions:</p>
+<ul>
+<li><strong>Elon Musk (2015):</strong> "We're probably less than two years away from complete autonomy."</li>
+<li><strong>Elon Musk (2016):</strong> "By the end of next year, a Tesla will be able to drive from LA to New York fully autonomously."</li>
+<li><strong>Chris Urmson, Google (2015):</strong> Predicted his young son would never need a driver's license.</li>
+<li><strong>Lyft President John Zimmer (2016):</strong> "By 2025, private car ownership will all but end in major U.S. cities."</li>
+</ul>
+<p><strong>Reality:</strong> As of 2026, fully autonomous vehicles operate only in limited geofenced areas. Level 5 autonomy remains unrealized. Most people still own cars.</p>
+<h3 id="demis-hassabis-2017">Demis Hassabis (2017)</h3>
+<blockquote>
+<p>"I think AI will be one of the most transformative technologies in human history. We could have AI that cures most diseases within the next decade."</p>
+</blockquote>
+<p><strong>Reality:</strong> AI has made genuine contributions to drug discovery (AlphaFold for protein folding), but curing "most diseases" within a decade was premature.</p>
+<h3 id="andrew-ng-2016">Andrew Ng (2016)</h3>
+<blockquote>
+<p>"If a typical person can do a mental task with less than one second of thought, we can probably automate it using AI either now or in the near future."</p>
+</blockquote>
+<p><strong>Reality:</strong> While this framing was more careful than most, many sub-second human tasks (understanding sarcasm in context, recognizing obscured objects, common-sense physical reasoning) remained challenging for AI systems for years.</p>
+<h2 id="2020s-large-language-models">2020s: Large Language Models</h2>
+<h3 id="agi-timeline-predictions-20202025">AGI Timeline Predictions (2020–2025)</h3>
+<p>Numerous researchers and executives have predicted artificial general intelligence (AGI) is imminent:</p>
+<ul>
+<li><strong>Shane Legg, DeepMind Co-founder (2011):</strong> 50% chance of AGI by 2028</li>
+<li><strong>Elon Musk (2024):</strong> "AI will be smarter than any single human next year"</li>
+<li><strong>Sam Altman (2023):</strong> Suggested AGI could arrive within the decade</li>
+<li><strong>Dario Amodei (2024):</strong> Described a future where AI could compress a century of biological research into 5–10 years</li>
+</ul>
+<p><strong>Reality:</strong> These predictions are still playing out, but the consistent pattern of moving goalposts and definitional ambiguity around "AGI" echoes earlier eras.</p>
+<h3 id="chatbot-companions-2023">Chatbot Companions (2023)</h3>
+<p>Many predicted that AI chatbots would replace therapists, teachers, and personal assistants within a year or two.</p>
+<p><strong>Reality:</strong> While AI chatbots have found genuine uses, they have also generated controversy around hallucinations, harmful advice, and the limits of parasocial relationships. Professional roles remain intact.</p>
+<h2 id="patterns-in-overly-optimistic-predictions">Patterns in Overly Optimistic Predictions</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Moravec's Paradox</strong></td>
+<td>Tasks easy for humans (vision, movement) proved hardest for AI, while tasks hard for humans (chess, calculation) proved easier</td>
+</tr>
+<tr>
+<td><strong>Moving Goalposts</strong></td>
+<td>Once AI achieves a capability, critics redefine intelligence to exclude it</td>
+</tr>
+<tr>
+<td><strong>Demo to Deployment Gap</strong></td>
+<td>Impressive demonstrations rarely translate to reliable real-world deployment on predicted timelines</td>
+</tr>
+<tr>
+<td><strong>Narrow vs. General</strong></td>
+<td>AI excels in narrow domains but generalizing across domains takes far longer than predicted</td>
+</tr>
+<tr>
+<td><strong>The Last 10% Problem</strong></td>
+<td>Getting from 90% accuracy to 99.9% reliability often takes as long as the first 90%</td>
+</tr>
+<tr>
+<td><strong>Hype Cycle Dynamics</strong></td>
+<td>New breakthroughs trigger inflated expectations, followed by disillusionment, before productive reality sets in</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lessons-for-today">Lessons for Today</h2>
+<ol>
+<li><strong>Timelines are almost always too short.</strong> Even correct directional predictions tend to be off by factors of 2x to 10x on timing.</li>
+<li><strong>Narrow success does not imply general capability.</strong> Beating humans at chess did not lead to beating humans at conversation.</li>
+<li><strong>The hardest problems are often invisible.</strong> Common sense, physical intuition, and contextual understanding are deceptively difficult.</li>
+<li><strong>Economic and social adoption lags behind technical capability.</strong> Even when technology works, deployment, regulation, and human adaptation take time.</li>
+<li><strong>Skeptics are often wrong about what, optimists are often wrong about when.</strong> AI has achieved remarkable things — just not on the timeline predicted.</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../slides/tracking-ai/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tracking AI Slides">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Tracking AI Slides
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../prompts/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Intro
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
