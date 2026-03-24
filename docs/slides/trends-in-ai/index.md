@@ -36,7 +36,7 @@ skills will be important in an AI dominated future.
 > *Within a generation the problem of creating 'artificial intelligence' will substantially be solved.*<br/>
 > Marvin Minsky (1967)
 
-[Overly Optimistic AI Claims](../../appendices/overly-optimistic-ai-claims.md)
+[Overly Optimistic AI Claims](../../appendices/overly-optimistic-ai-claims)
 
 ## AI Systems Thinking
 
@@ -45,6 +45,19 @@ skills will be important in an AI dominated future.
 ## AI Flywheel
 
 <iframe src="../../sims/ai-flywheel/main.html" width="100%" height="470px" scrolling="no"></iframe>
+
+## Traditional AI Benchmarks
+
+<iframe src="../../sims/mmlu-timeline/main.html" height="550px" scrolling="no"
+  style="overflow: hidden;"></iframe>
+
+Many AI benchmarks show LLM capabilities approaching human-level skills like the [MMLU benchmark](../../sims/mmlu-timeline/index.md).
+
+## Some AI Benchmark Compare LLMs with Each Other in an Arena
+
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/lm-arena-timeline/main.html"  height="450px" scrolling="no"></iframe>
+
+[LM Arena Benchmark](../../sims/lm-arena-timeline/index.md)
 
 ## METR Task Horizons
 
@@ -108,6 +121,14 @@ Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing 
 70 intelligent interactive textbook case studies
 
 [Intelligent Textbook Case Studies](https://dmccreary.github.io/intelligent-textbooks/case-studies/)
+
+## World Models are Coming
+
+Instead of building a model of language and try to infer the world through language, build a world model directly.
+
+![World Model](../../img/world-model.png)
+
+[Yann Lecun and World Models](../../stories/yann-lecun/index.md)
 
 ## What Does This Mean for My Career?
 
