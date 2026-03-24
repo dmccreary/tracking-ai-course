@@ -349,7 +349,69 @@
             background: #9575cd !important;
         }
 
+        /* Side navigation arrows */
+        .slide-area {
+            display: flex;
+            align-items: stretch;
+            gap: 10px;
+            flex: 1;
+            min-height: 0;
+        }
+
+        .side-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            width: 50px;
+            min-width: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #90a4ae;
+            font-size: 1.8em;
+            user-select: none;
+        }
+
+        .side-nav:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+        }
+
+        .side-nav:disabled {
+            opacity: 0.15;
+            cursor: not-allowed;
+        }
+
+        .side-nav-prev:hover:not(:disabled) {
+            background: rgba(92, 107, 192, 0.3);
+            color: #7986cb;
+        }
+
+        .side-nav-next:hover:not(:disabled) {
+            background: rgba(38, 166, 154, 0.3);
+            color: #4db6ac;
+        }
+
+        .side-nav .key-hint {
+            display: block;
+            font-size: 0.35em;
+            margin-top: 4px;
+            opacity: 0.6;
+            letter-spacing: 0;
+        }
+
         @media (max-width: 768px) {
+            .side-nav {
+                width: 36px;
+                min-width: 36px;
+                font-size: 1.3em;
+            }
+
+            .side-nav .key-hint {
+                display: none;
+            }
             .slide-container {
                 padding: 20px;
             }
@@ -396,10 +458,18 @@
             <input type="file" id="file-input" accept=".md,.txt" style="display: none;" onchange="handleFileSelect(event)">
         </div>
 
-        <div class="slide-container">
-            <div id="slide-content" class="slide-content">
-                <div class="loading">Loading slides...</div>
+        <div class="slide-area">
+            <button class="side-nav side-nav-prev" id="side-prev-btn" onclick="prevSlide()" title="Previous slide (Left Arrow)">
+                &#9664;<span class="key-hint">&larr;</span>
+            </button>
+            <div class="slide-container">
+                <div id="slide-content" class="slide-content">
+                    <div class="loading">Loading slides...</div>
+                </div>
             </div>
+            <button class="side-nav side-nav-next" id="side-next-btn" onclick="nextSlide()" title="Next slide (Right Arrow)">
+                &#9654;<span class="key-hint">&rarr;</span>
+            </button>
         </div>
         <div class="navigation">
             <button class="nav-btn prev" id="prev-btn" onclick="prevSlide()">PREV</button>
@@ -718,6 +788,10 @@
             // Update button states
             prevBtn.disabled = currentSlide === 0;
             nextBtn.disabled = currentSlide === slides.length - 1;
+
+            // Update side navigation buttons
+            document.getElementById('side-prev-btn').disabled = currentSlide === 0;
+            document.getElementById('side-next-btn').disabled = currentSlide === slides.length - 1;
 
             // Update URL hash for bookmarking
             window.location.hash = `slide-${currentSlide + 1}`;

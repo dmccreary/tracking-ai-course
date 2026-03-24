@@ -90,6 +90,10 @@ nav:
     - List of Slides: slides/index.md
     - Tracking AI: slides/tracking-ai/index.md
   
+  - Appendices:
+    - List of Appendices: appendices/index.md
+    - Overly Optimistic AI Claims: appendices/overly-optimistic-ai-claims.md
+
   - Prompts:
     - Intro: prompts/index.md
     - Concept Enumeration: prompts/03-concept-enumeration.md

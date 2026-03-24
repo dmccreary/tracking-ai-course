@@ -1,0 +1,3 @@
+# Modern Desktop
+!!! prompt
+Please generate a image of a wide-landscape desktop computer with 15 shell script screens of different colors all running. 10 of the screens have the word "planning" like "planning tests" "planning integration" "planning API" "planning UI" "planning data layer" "planning data model" "planning user guide" "planning reports" "planning dashboard", and 5 of the screens have the phrase "writing code" like "writing rules" "writing UI" "writing queries" "writing graph algorithm" and "writing analysis"
