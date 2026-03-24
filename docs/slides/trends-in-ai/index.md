@@ -51,6 +51,12 @@ The METR.org studies show that AI task completion has been doubling every 7 mont
 <iframe src="../../sims/projecting-ai/main.html" width="100%" height="700px" scrolling="no"></iframe>
 We can now project this trend line out until 2030.  The results are sometimes difficult to believe. In 2030 tasks that take 1,000 days will be possible with 50% chance of correctness.
 
+## Case Study: Interactive Intelligent Textbooks
+
+## What Does This Mean for My Career?
+
+If AI can design both hardware and software, what engineering positions will all be in demand?
+
 
 
 
