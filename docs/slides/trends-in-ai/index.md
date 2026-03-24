@@ -31,29 +31,35 @@ skills will be important in an AI dominated future.
 
 <iframe src="../../sims/power-wall/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
+## AI Progress Is Difficult to Predict
+
+> *Within a generation the problem of creating 'artificial intelligence' will substantially be solved.*<br/>
+> Marvin Minsky (1967)
+
+
+[Overly Optimistic AI Claims](../../appendicies/overly-optimistic-ai-claims.md)
+
 ## AI Systems Thinking
 
 <iframe src="../../sims/ai-causes//main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 ## AI Flywheel
 
-<iframe src="../../sims/ai-flywheel/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-flywheel/main.html" width="100%" height="470px" scrolling="no"></iframe>
 
 ## METR Task Horizons
-
 
 <iframe src="../../sims/ai-doubling-rate/main.html" width="100%" height="700px" scrolling="no"></iframe>
 The METR.org studies show that AI task completion has been doubling every 7 months since 2019.
 
-
 ## Projecting AI
 
-<iframe src="../../sims/projecting-ai/main.html" width="100%" height="700px" scrolling="no"></iframe>
+<iframe src="../../sims/projecting-ai/main.html" width="100%" height="750px" scrolling="no"></iframe>
 We can now project this trend line out until 2030.  The results are sometimes difficult to believe. In 2030 tasks that take 1,000 days will be possible with 50% chance of correctness.
 
 ## Modern Desktop
 
-![](../../img/fifteen-agent-desktop.png){ width="400px"}
+![](../../img/fifteen-agent-desktop.png)
 
 Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing planning and 5 are writing code.
 
@@ -62,8 +68,6 @@ Boris Cherny said his desktop has 15 agents running concurrently.  10 are doing 
 70 intelligent interactive textbook case studies
 
 [Intelligent Textbook Cas Studies](https://dmccreary.github.io/intelligent-textbooks/case-studies/)
-
-
 
 ## What Does This Mean for My Career?
 
