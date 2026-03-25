@@ -128,7 +128,7 @@ Instead of building a model of language and try to infer the world through langu
 
 ![World Model](../../img/world-model.png)
 
-[Yann Lecun and World Models](../../stories/yann-lecun/index.md)
+[Yann Lecun and World Models](../../stories/yann-lecun/index)
 
 ## What Does This Mean for My Career?
 
