@@ -2,10 +2,6 @@
 title: Tracking AI
 description: An online interactive resource for helping strategic decision makers understand how the exponential growth of AI capabilities will impact their organization
 image: /img/cover.png
-og:image: /img/cover.png
-twitter:image: /img/cover.png
-social:
-   cards: false
 hide:
   - toc
 ---
