@@ -91,6 +91,10 @@ nav:
     - Tracking AI: slides/tracking-ai/index.md
     - Trends in AI: slides/trends-in-ai/index.md
   
+  - Articles/Blog Posts:
+    - List of Articles: articles/index.md
+    - Stages of AI Acceptance: articles/tracking-ai/index.md
+
   - Appendices:
     - List of Appendices: appendices/index.md
     - Overly Optimistic AI Claims: appendices/overly-optimistic-ai-claims.md
