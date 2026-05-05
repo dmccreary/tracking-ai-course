@@ -57,6 +57,7 @@ nav:
     - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
     - AI Capability Maturity Model: sims/ai-cmm/index.md
     - AI Causes of Acceleration: sims/ai-causes/index.md
+    - CLD Viewer: sims/cld-viewer/index.md
     - AI Doubling Rate: sims/ai-doubling-rate/index.md
     - AI Flywheel: sims/ai-flywheel/index.md
     - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
@@ -84,6 +85,7 @@ nav:
     - Technology Adoption Curve: sims/technology-adoption/index.md
     - Technology Hype Cycle: sims/hype-cycle/index.md
     - Tokenizer: sims/tokenizer/index.md
+    - Winner-Takes-All CLD: sims/winner-takes-all-cld/index.md
     - MicroSim Templates: sims/templates/index.md
 
   - Slides:
@@ -97,7 +99,8 @@ nav:
 
   - Articles/Blog Posts:
     - List of Articles: articles/index.md
-    - Stages of AI Acceptance: articles/tracking-ai/index.md
+    - Winner Takes All: articles/winner-takes-all.md
+    - Stages of AI Acceptance: articles/stages-of-ai-acceptance.md
 
   - Appendices:
     - List of Appendices: appendices/index.md
