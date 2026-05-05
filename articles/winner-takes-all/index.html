@@ -1,0 +1,1766 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A causal-loop analysis of whether one AI lab can pull permanently ahead — and what would have to be true for that to happen.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/tracking-ai-course/articles/winner-takes-all/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../stages-of-ai-acceptance/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Winner Takes All? A Systems View of the AI Race - Tracking AI Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-KTYGHZCPM3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-KTYGHZCPM3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-KTYGHZCPM3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Winner Takes All? A Systems View of the AI Race - Tracking AI Course" >
+      
+        <meta  property="og:description"  content="A causal-loop analysis of whether one AI lab can pull permanently ahead — and what would have to be true for that to happen." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/articles/winner-takes-all.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/tracking-ai-course/articles/winner-takes-all/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Winner Takes All? A Systems View of the AI Race - Tracking AI Course" >
+      
+        <meta  name="twitter:description"  content="A causal-loop analysis of whether one AI lab can pull permanently ahead — and what would have to be true for that to happen." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/articles/winner-takes-all.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#winner-takes-all" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Tracking AI Course" class="md-header__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tracking AI Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Winner Takes All? A Systems View of the AI Race
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tracking AI Course" class="md-nav__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Tracking AI Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About This Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../slides/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Slides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Stories
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../slides/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Slides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../labs/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Labs
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Articles/Blog Posts
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Articles/Blog Posts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Winner Takes All
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Winner Takes All
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-start-the-ai-flywheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where We Start: The AI Flywheel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r1-the-runaway-hypothesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      R1 — The Runaway Hypothesis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r2-autonomous-research-the-supercritical-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      R2 — Autonomous Research (the supercritical loop)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r3-capital-compute-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      R3 — Capital → Compute → Capability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r4-the-data-flywheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      R4 — The Data Flywheel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b1-compute-constraint" class="md-nav__link">
+    <span class="md-ellipsis">
+      B1 — Compute Constraint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b2-evaluation-bottleneck" class="md-nav__link">
+    <span class="md-ellipsis">
+      B2 — Evaluation Bottleneck
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3-diffusion-fast-follow" class="md-nav__link">
+    <span class="md-ellipsis">
+      B3 — Diffusion / Fast-Follow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b4-cost-performance-friction" class="md-nav__link">
+    <span class="md-ellipsis">
+      B4 — Cost-Performance Friction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-2026-picture-where-are-we-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      The 2026 Picture: Where Are We Today?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-leverage-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Leverage Point
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-watch" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Watch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bottom-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bottom Line
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stages-of-ai-acceptance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stages of AI Acceptance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendices/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-start-the-ai-flywheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where We Start: The AI Flywheel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r1-the-runaway-hypothesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      R1 — The Runaway Hypothesis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r2-autonomous-research-the-supercritical-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      R2 — Autonomous Research (the supercritical loop)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r3-capital-compute-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      R3 — Capital → Compute → Capability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r4-the-data-flywheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      R4 — The Data Flywheel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b1-compute-constraint" class="md-nav__link">
+    <span class="md-ellipsis">
+      B1 — Compute Constraint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b2-evaluation-bottleneck" class="md-nav__link">
+    <span class="md-ellipsis">
+      B2 — Evaluation Bottleneck
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3-diffusion-fast-follow" class="md-nav__link">
+    <span class="md-ellipsis">
+      B3 — Diffusion / Fast-Follow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b4-cost-performance-friction" class="md-nav__link">
+    <span class="md-ellipsis">
+      B4 — Cost-Performance Friction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-2026-picture-where-are-we-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      The 2026 Picture: Where Are We Today?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-leverage-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Leverage Point
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-watch" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Watch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bottom-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bottom Line
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/tracking-ai-course/blob/master/docs/articles/winner-takes-all.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="winner-takes-all">Winner Takes All?</h1>
+<p><em>A systems view of the AI race — May 2026</em></p>
+<p>There is a quiet hypothesis circulating in frontier AI: that one company, sometime soon, will train a model roughly <strong>ten times better</strong> than anything else at generating code. That company will then point that model at its own training stack — its data pipelines, its evaluation harness, its next-gen architecture search — and pull away from the field faster than anyone can catch up.</p>
+<p>If you only draw the simple version of that loop, the conclusion is inescapable: the leader wins, permanently. But the simple loop is a trap. The real system has at least four reinforcing loops <em>and</em> four-or-five balancing ones, and the question of whether the industry tips into a single dominant player is really a question about <strong>which loops dominate, and when.</strong></p>
+<p>This article walks through the loops one at a time. We start with the canonical <strong>AI Flywheel</strong> that everyone agrees on, then build up the runaway hypothesis (R1), the supercritical loop (R2), the capital loop where Google's $40B Anthropic commitment plugs in (R3), and the lock-in mechanism (R4). Then we add the four balancing forces that keep the system from already tipping (B1–B4). Only at the end do we put it all together into the full diagram.</p>
+<p>Each diagram below is a live, interactive vis-network rendering. <strong>Drag any node</strong> to rearrange. Click a node, edge, or R/B marker for details.</p>
+<hr />
+<h2 id="where-we-start-the-ai-flywheel">Where We Start: The AI Flywheel</h2>
+<p>Before there was a winner-takes-all hypothesis, there was the <strong>AI Flywheel</strong> — the standard story for why machine-learning products tend to run away from non-ML competitors.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=ai-flywheel-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=ai-flywheel-cld&amp;menu=true">Open the AI Flywheel diagram</a></p>
+<p>Data trains a model, the model produces predictions, predictions generate user feedback, feedback becomes new data. It is a single reinforcing loop. It is enough to explain why Netflix, Google Search, and TikTok do not get caught.</p>
+<p>But it does not explain what is happening at frontier AI labs. The flywheel is about <strong>product</strong> improvement. The winner-takes-all hypothesis is about something stronger: it is about the <em>lab itself</em> getting better at the work of building labs.</p>
+<hr />
+<h2 id="r1-the-runaway-hypothesis">R1 — The Runaway Hypothesis</h2>
+<p>The version of the story that gets told at conferences is a single loop:</p>
+<ul>
+<li>A lab ships a model that is dramatically better at writing code.</li>
+<li>That model makes the lab's own engineers dramatically more productive.</li>
+<li>Productive engineers ship the next model faster, and that model is even better.</li>
+<li>Repeat.</li>
+</ul>
+<iframe src="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld&amp;menu=true">Open R1: Runaway Hypothesis</a></p>
+<p>In CLD language this is <strong>R1: Recursive Self-Improvement</strong>: <code>Model Capability → Code Generation Quality → R&amp;D Productivity → Model Capability</code>. It is real. It is already happening at every frontier lab to some degree. And on its own, it does predict winner-takes-all dynamics.</p>
+<p>The mistake is stopping there. R1 is one loop in a system of nine.</p>
+<hr />
+<h2 id="r2-autonomous-research-the-supercritical-loop">R2 — Autonomous Research (the supercritical loop)</h2>
+<p>R1 still routes through human engineers — the model writes code, but humans decide what experiments to run. R2 is what happens when that step disappears.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=autonomous-research-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=autonomous-research-cld&amp;menu=true">Open R2: Autonomous Research</a></p>
+<p>If the model can design, run, and interpret its <em>own</em> ML experiments, the research loop closes inside the company and <strong>decouples from human pace.</strong> This is the loop that, if it ever becomes self-sustaining, can overpower the balancing loops because it can iterate faster than competitors can read the papers.</p>
+<p>R2 is currently <em>emerging</em> at frontier labs but is not yet load-bearing. That status is the single most important variable in this entire analysis. A model genuinely 10× ahead at code generation — the persistent rumor about Anthropic's "Mythos" — would matter not because of R1, but because of what it would do to <strong>R2</strong>: it would be the first credible candidate to close this loop.</p>
+<hr />
+<h2 id="r3-capital-compute-capability">R3 — Capital → Compute → Capability</h2>
+<p>The financial loop. Better models win share, share becomes revenue and strategic investment, and that capital buys compute.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=capital-compute-cld" height="560px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=capital-compute-cld&amp;menu=true">Open R3: Capital → Compute</a></p>
+<p>Google's recent commitment of <strong>up to $40B to Anthropic</strong> is exactly this loop being amplified — not by organic revenue, but by a strategic partner who wants Anthropic to keep pace with OpenAI and xAI on training scale.</p>
+<p>A persistent capital advantage <strong>weakens the compute constraint (B1, below) for the leader specifically</strong>, while it keeps biting everyone else. That asymmetry is how oligopoly tips toward duopoly, and duopoly toward monopoly.</p>
+<hr />
+<h2 id="r4-the-data-flywheel">R4 — The Data Flywheel</h2>
+<p>R4 is the lock-in loop. Real users, agents, and enterprise integrations produce a kind of training signal that <strong>simply does not exist outside the company that owns the deployment.</strong></p>
+<iframe src="../../sims/cld-viewer/main.html?file=data-flywheel-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=data-flywheel-cld&amp;menu=true">Open R4: Data Flywheel</a></p>
+<p>This is structurally similar to the original AI Flywheel above, but the unit of measurement is different: it is not "user clicks improve recommendations," it is "agent traces, preference signal, and error corrections improve the next frontier model." Public benchmarks plateau; private data flywheels do not. R4 is the most plausible structural reason a single winner could emerge: even if a competitor matches the architecture, they cannot match the data trail.</p>
+<hr />
+<h2 id="b1-compute-constraint">B1 — Compute Constraint</h2>
+<p>If only R1–R4 existed, we would already have a single winner. We don't. The first reason is physical.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=compute-constraint-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=compute-constraint-cld&amp;menu=true">Open B1: Compute Constraint</a></p>
+<p>Pushing the frontier raises the compute bill. Compute is constrained by chip supply, datacenter buildouts, and electricity contracts measured in <strong>gigawatts</strong>. B1 slows everyone, including the leader, and is the single biggest reason recursive self-improvement has not yet gone vertical. R3 weakens B1 for capital-rich players — but does not eliminate it.</p>
+<hr />
+<h2 id="b2-evaluation-bottleneck">B2 — Evaluation Bottleneck</h2>
+<p>As models get more capable, they also get harder to <em>evaluate</em>.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld&amp;menu=true">Open B2: Evaluation Bottleneck</a></p>
+<p>Benchmark gaming, contamination, reward hacking, and hard-to-detect regressions all compound. The system can't reliably tell whether the new model is actually better, which means improvement gets noisier and slower at exactly the moment the runaway loop wants it to be cleaner and faster. B2 is the loop most underrated by people excited about R2: <strong>you cannot self-improve faster than you can self-evaluate.</strong></p>
+<hr />
+<h2 id="b3-diffusion-fast-follow">B3 — Diffusion / Fast-Follow</h2>
+<p>Even when AI writes most of the code, ideas still propagate.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=diffusion-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=diffusion-cld&amp;menu=true">Open B3: Diffusion</a></p>
+<p>Papers leak, employees move, prompts get exfiltrated, and inference traces get reverse-engineered. The leader's relative advantage decays continuously. The faster the leader moves, the more visible the breakthrough, the faster competitors copy it. B3 is why every previous "permanent moat" claim in software has eventually collapsed.</p>
+<hr />
+<h2 id="b4-cost-performance-friction">B4 — Cost-Performance Friction</h2>
+<p>The frontier model is not always the most-used model.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=cost-performance-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=cost-performance-cld&amp;menu=true">Open B4: Cost-Performance</a></p>
+<p>As capability rises, so does inference cost. Most production agents will route to a cheaper model that is "good enough," which <strong>chokes R4 (the data flywheel) for the leader.</strong> B4 is why the cheapest competent model often beats the smartest expensive one in market terms — a real-world counterweight to the runaway hypothesis.</p>
+<p>(There is a fifth balancing force worth naming — <strong>market fragmentation by use case</strong>: regulated industries, sovereign-AI requirements, on-device constraints. It does not fit cleanly on a single diagram, but a field of "good enough specialists" is a structural defense against a single global winner.)</p>
+<hr />
+<h2 id="the-2026-picture-where-are-we-today">The 2026 Picture: Where Are We Today?</h2>
+<p>Reading the system as it stood in May 2026:</p>
+<table>
+<thead>
+<tr>
+<th>Loop</th>
+<th>Status</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1 — Recursive Self-Improvement</td>
+<td><strong>Strong</strong></td>
+<td>Every frontier lab uses its own model in its own pipeline.</td>
+</tr>
+<tr>
+<td>R2 — Autonomous Research</td>
+<td><strong>Emerging</strong></td>
+<td>Real but not yet self-sustaining. The supercritical question.</td>
+</tr>
+<tr>
+<td>R3 — Capital → Compute</td>
+<td><strong>Strong, asymmetric</strong></td>
+<td>The Google–Anthropic deal makes R3 highly asymmetric.</td>
+</tr>
+<tr>
+<td>R4 — Data Flywheel</td>
+<td><strong>Strong, accelerating</strong></td>
+<td>Agent traces are creating private signal that did not exist 18 months ago.</td>
+</tr>
+<tr>
+<td>B1 — Compute Constraint</td>
+<td><strong>Very strong</strong></td>
+<td>Power and chip supply are still the binding constraint.</td>
+</tr>
+<tr>
+<td>B2 — Evaluation Bottleneck</td>
+<td><strong>Very strong</strong></td>
+<td>Reliable measurement is harder, not easier, year over year.</td>
+</tr>
+<tr>
+<td>B3 — Diffusion</td>
+<td><strong>Weakening</strong></td>
+<td>Talent mobility helps, but post-training tricks now leak more slowly.</td>
+</tr>
+<tr>
+<td>B4 — Cost-Performance</td>
+<td><strong>Strong</strong></td>
+<td>Cheap-and-good models still dominate production deployment volume.</td>
+</tr>
+</tbody>
+</table>
+<p>The reinforcing loops are getting stronger. The balancing loops are mostly holding. The system is <strong>close to a phase boundary, but not across it.</strong> That is consistent with the observed market shape: an oligopoly with leapfrogging, not a monopoly.</p>
+<hr />
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Now we can draw the full system. Every loop above appears in the diagram below — the four reinforcing loops trying to run away, the four balancing loops keeping them in check, and <strong>Model Capability</strong> at the center of all of them.</p>
+<iframe src="../../sims/cld-viewer/main.html?file=winner-takes-all-cld" height="720px" width="100%" scrolling="no" loading="lazy"
+  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/cld-viewer/main.html?file=winner-takes-all-cld&amp;menu=true">Open the full system diagram</a></p>
+<p>This is the same system, just drawn all at once. It is busy on purpose — the point of putting all eight loops together is to <em>see</em> that any single loop in isolation is misleading. The runaway story (R1 alone) predicts a single winner. The diffusion story (B3 alone) predicts permanent oligopoly. Reality is the interaction of all of them.</p>
+<hr />
+<h2 id="the-leverage-point">The Leverage Point</h2>
+<p>Strip away the loops and the entire system reduces to one question:</p>
+<blockquote>
+<p><strong>Does AI improvement remain externally constrained, or become internally self-sustaining?</strong></p>
+</blockquote>
+<ul>
+<li>If improvement is <strong>externally constrained</strong> — by compute, by evaluation, by human research bandwidth — then competition persists and the market stays an oligopoly. R3 may produce a strong leader, but B1, B2, and B3 keep the gap finite.</li>
+<li>If improvement becomes <strong>internally self-sustaining</strong> — meaning <strong>R2 closes</strong> — then the leader's iteration speed exceeds the rate at which competitors can copy. B3 stops mattering. B1 stops mattering for the leader specifically (because R3 has already given them privileged compute access). B2 is the last balancing loop standing, and it is not enough on its own.</li>
+</ul>
+<p>That phase transition is the actual "winner-takes-all" event. Not the 10× code model — the moment the autonomous-research loop closes inside the company.</p>
+<hr />
+<h2 id="what-to-watch">What to Watch</h2>
+<p>Three concrete signals would tell you the system is tipping:</p>
+<ol>
+<li><strong>Internal research throughput diverging from headcount.</strong> If a lab is shipping training-stack improvements faster than its human researchers could plausibly produce them, R2 is real.</li>
+<li><strong>Compute access asymmetry that survives a market downturn.</strong> R3 only matters if it persists when the macro environment is bad. The Google–Anthropic deal is a stress test.</li>
+<li><strong>Private benchmarks pulling away from public ones.</strong> If internal evals show acceleration that public benchmarks no longer reflect, R4 is producing capability the rest of the market literally cannot see.</li>
+</ol>
+<p>If two of those three flip at the same time, the loop dominance has shifted, and the question stops being whether winner-takes-all happens and starts being who.</p>
+<hr />
+<h2 id="bottom-line">Bottom Line</h2>
+<p>The single-loop story — <em>better model → better engineers → better model</em> — is correct but incomplete. The actual system has at least four reinforcing loops trying to run away and four-or-five balancing loops trying to keep them in check. As of May 2026, the balancing loops are still load-bearing, but two of the reinforcing ones (R2 and R3) are strengthening fast.</p>
+<p>The Google–Anthropic capital injection and the Mythos rumor matter not because either guarantees a winner, but because both push on the <strong>specific</strong> loops most likely to tip the system. Whether that tip happens is, in the end, a question about a single threshold: does autonomous self-improvement close the loop inside the company, or doesn't it?</p>
+<p>The diagrams above are the cleanest tool I have for thinking about that question. The system is not a slogan — it's a structure.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: List of Articles">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                List of Articles
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../stages-of-ai-acceptance/" class="md-footer__link md-footer__link--next" aria-label="Next: Stages of AI Acceptance">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Stages of AI Acceptance
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
