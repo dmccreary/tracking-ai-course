@@ -713,7 +713,7 @@ The process by which existing roles and positions evolve in their responsibiliti
 
 The complexity and variability of any domain is the result of repition, composition, transformation, instantiation of a small number of "kernels of structure".
 
-* See also: [Isomorphism](./isomorphism)
+* See also: [Isomorphism](#isomorphism)
 
 #### Knowledge Application
 The process of using acquired information, understanding, and expertise to solve problems, make decisions, or improve processes in specific contexts.
