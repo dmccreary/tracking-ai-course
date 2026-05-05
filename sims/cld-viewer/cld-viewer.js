@@ -118,6 +118,28 @@ function attachCustomZoom(container) {
     }, { passive: false });
 }
 
+// Wait until an element has real layout dimensions before invoking the
+// callback. Critical for iframes that load while off-screen — without this
+// vis-network can initialize against a 0x0 container and silently never
+// render the canvas, even after the iframe later gets its real size.
+function whenSized(el, cb, attempts) {
+    attempts = attempts || 0;
+    if (el.clientWidth > 0 && el.clientHeight > 0) { cb(); return; }
+    if (attempts > 600) { cb(); return; } // ~10s ceiling, then try anyway
+    requestAnimationFrame(function () { whenSized(el, cb, attempts + 1); });
+}
+
+// Tell the parent window we're done initializing this CLD. The article uses
+// this signal to advance its per-iframe load queue precisely when the
+// previous diagram has actually finished rendering.
+function notifyParentReady(id) {
+    try {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'cld-ready', id: id || '' }, '*');
+        }
+    } catch (e) { /* cross-origin guard, ignore */ }
+}
+
 function initializeNetwork() {
     const container = document.getElementById('network');
     const options = {
@@ -174,9 +196,62 @@ function initializeNetwork() {
         }
     };
 
-    network = new vis.Network(container, {}, options);
+    // Defer vis-network init until the container actually has dimensions.
+    // An iframe loaded while off-screen can hit this code with clientWidth=0,
+    // and vis-network silently never recovers from a zero-size init.
+    whenSized(container, function () {
+        network = new vis.Network(container, {}, options);
 
-    attachCustomZoom(container);
+        // Create the title overlay AFTER vis-network initializes — vis wipes
+        // the container's contents on init, so an overlay placed in HTML would
+        // vanish. #network is position:relative so this absolutely-positioned
+        // div anchors to the diagram canvas in both iframe and fullscreen
+        // modes.
+        let overlay = document.getElementById('diagram-title-overlay');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'diagram-title-overlay';
+            overlay.className = 'diagram-title-overlay';
+        }
+        container.appendChild(overlay);
+
+        attachCustomZoom(container);
+
+        attachResizeObserver(container);
+
+        // If a CLD is already queued from a URL parameter, render it now.
+        if (pendingURLLoad) {
+            const fn = pendingURLLoad;
+            pendingURLLoad = null;
+            fn();
+        }
+    });
+}
+
+let pendingURLLoad = null;
+
+function attachResizeObserver(container) {
+
+    // Anti-loop guards: only react when the size genuinely changes — calling
+    // setSize on identical dimensions can in rare cases re-fire the observer.
+    if ('ResizeObserver' in window) {
+        let hasFitted = false;
+        let lastW = 0, lastH = 0;
+        const ro = new ResizeObserver(entries => {
+            if (!network) return;
+            const rect = entries[0].contentRect;
+            if (rect.width <= 0 || rect.height <= 0) return;
+            if (rect.width === lastW && rect.height === lastH) return;
+            lastW = rect.width; lastH = rect.height;
+            network.setSize(rect.width + 'px', rect.height + 'px');
+            network.redraw();
+            if (cldData && !hasFitted) {
+                network.fit({ animation: false });
+                hasFitted = true;
+            }
+        });
+        ro.observe(container);
+    }
 
     network.on('click', function(params) {
         if (params.nodes.length > 0) {
@@ -193,7 +268,11 @@ function loadCLD(data) {
     try {
         cldData = data;
         
-        document.getElementById('diagram-title').textContent = data.metadata.title;
+        const title = (data.metadata && data.metadata.title) || '';
+        const headerEl = document.getElementById('diagram-title');
+        if (headerEl) headerEl.textContent = title;
+        const overlayEl = document.getElementById('diagram-title-overlay');
+        if (overlayEl) overlayEl.textContent = title;
 
         const visNodes = data.nodes.map(node => ({
             id: node.id,
@@ -269,16 +348,26 @@ function loadCLD(data) {
         edges = new vis.DataSet(visEdges);
 
         network.setData({ nodes: nodes, edges: edges });
-        
-        // Center the diagram with animation
+
+        // Center the diagram. Use no animation when embedded in an iframe so
+        // the parent's load queue can advance immediately on the cld-ready
+        // signal (see notifyParentReady below).
+        const inIframe = (function () { try { return window.parent !== window; } catch (e) { return true; } })();
         network.fit({
-            animation: { duration: 500, easingFunction: "easeInOutQuad" }
+            animation: inIframe ? false : { duration: 500, easingFunction: "easeInOutQuad" }
         });
-        
+
         showDefaultDetails();
-        
+
+        // Tell the parent (article page) we are fully rendered. Wait one frame
+        // so vis-network has actually painted before the parent advances.
+        requestAnimationFrame(function () {
+            notifyParentReady((data.metadata && data.metadata.id) || '');
+        });
+
     } catch (error) {
         showError('Error loading CLD data: ' + error.message);
+        notifyParentReady('error');
     }
 }
 
@@ -530,15 +619,27 @@ function getURLParameter(name) {
 
 async function loadFileFromURL() {
     const filename = getURLParameter('file');
-    if (filename) {
-        try {
-            // Remove .json extension if it was included in the URL parameter
-            const cleanFilename = filename.replace('.json', '');
-            const data = await loadCLDFromFile(cleanFilename);
+    if (!filename) {
+        // Bare viewer with no file — still tell the parent we are "ready" so
+        // the article's load queue does not stall waiting for us.
+        notifyParentReady('empty');
+        return;
+    }
+    try {
+        // Remove .json extension if it was included in the URL parameter
+        const cleanFilename = filename.replace('.json', '');
+        const data = await loadCLDFromFile(cleanFilename);
+        // The network may not exist yet — initializeNetwork() defers creation
+        // until the container has dimensions (whenSized). Queue the render so
+        // it runs as soon as the network is available.
+        if (network) {
             loadCLD(data);
-        } catch (error) {
-            showError(`Failed to load file from URL parameter: ${error.message}`);
+        } else {
+            pendingURLLoad = function () { loadCLD(data); };
         }
+    } catch (error) {
+        showError(`Failed to load file from URL parameter: ${error.message}`);
+        notifyParentReady('error');
     }
 }
 

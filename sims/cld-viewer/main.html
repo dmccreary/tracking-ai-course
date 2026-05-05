@@ -99,6 +99,26 @@
             height: 600px;
             background: aliceblue;
             border: 1px solid #e9ecef;
+            position: relative;
+        }
+
+        /* Title overlay is created in JS as a child of #network so vis-network
+           cannot wipe it during init. position:absolute references #network. */
+        .diagram-title-overlay {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font: 24px Arial, Helvetica, sans-serif;
+            color: black;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* The old in-flow title bar is replaced by the overlay in all modes. */
+        .diagram-title {
+            display: none;
         }
         
         .details-panel {

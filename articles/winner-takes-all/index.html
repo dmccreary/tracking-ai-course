@@ -77,7 +77,7 @@
       
         <meta  property="og:description"  content="A causal-loop analysis of whether one AI lab can pull permanently ahead — and what would have to be true for that to happen." >
       
-        <meta  property="og:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/articles/winner-takes-all.png" >
+        <meta property="og:image" content="https://dmccreary.github.io/tracking-ai-course/articles/winner-takes-all.png">
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -93,7 +93,7 @@
       
         <meta  name="twitter:description"  content="A causal-loop analysis of whether one AI lab can pull permanently ahead — and what would have to be true for that to happen." >
       
-        <meta  name="twitter:image"  content="https://dmccreary.github.io/tracking-ai-course/assets/images/social/articles/winner-takes-all.png" >
+        <meta name="twitter:image" content="https://dmccreary.github.io/tracking-ai-course/articles/winner-takes-all.png">
       
     
     
@@ -1483,11 +1483,11 @@
 <p>Each diagram below is a live, interactive vis-network rendering. <strong>Drag any node</strong> to rearrange. Click a node, edge, or R/B marker for details.</p>
 <hr />
 <h2 id="where-we-start-the-ai-flywheel">Where We Start: The AI Flywheel</h2>
-<p>Before there was a winner-takes-all hypothesis, there was the <strong>AI Flywheel</strong> — the standard story for why machine-learning products tend to run away from non-ML competitors.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=ai-flywheel-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<p>Before there was a winner-takes-all hypothesis, we need to start with a simple example.
+In our Systems Thinking textbook we usually start with the classic archetype the <strong>AI Flywheel</strong> — the standard story for why machine-learning products tend to run away from non-ML competitors.</p>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/ai-flywheel-cld.json" data-cld="ai-flywheel-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=ai-flywheel-cld&amp;menu=true">Open the AI Flywheel diagram</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=ai-flywheel-cld&amp;menu=true">Open the AI Flywheel Causal Loop Diagram Fullscreen</a></p>
 <p>Data trains a model, the model produces predictions, predictions generate user feedback, feedback becomes new data. It is a single reinforcing loop. It is enough to explain why Netflix, Google Search, and TikTok do not get caught.</p>
 <p>But it does not explain what is happening at frontier AI labs. The flywheel is about <strong>product</strong> improvement. The winner-takes-all hypothesis is about something stronger: it is about the <em>lab itself</em> getting better at the work of building labs.</p>
 <hr />
@@ -1499,69 +1499,61 @@
 <li>Productive engineers ship the next model faster, and that model is even better.</li>
 <li>Repeat.</li>
 </ul>
-<iframe data-src="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/runaway-hypothesis-cld.json" data-cld="runaway-hypothesis-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld&amp;menu=true">Open R1: Runaway Hypothesis</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld&amp;menu=true">Open R1: Runaway Hypothesis Causal Loop Diagram Fullscreen</a></p>
 <p>In CLD language this is <strong>R1: Recursive Self-Improvement</strong>: <code>Model Capability → Code Generation Quality → R&amp;D Productivity → Model Capability</code>. It is real. It is already happening at every frontier lab to some degree. And on its own, it does predict winner-takes-all dynamics.</p>
 <p>The mistake is stopping there. R1 is one loop in a system of nine.</p>
 <hr />
 <h2 id="r2-autonomous-research-the-supercritical-loop">R2 — Autonomous Research (the supercritical loop)</h2>
 <p>R1 still routes through human engineers — the model writes code, but humans decide what experiments to run. R2 is what happens when that step disappears.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=autonomous-research-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/autonomous-research-cld.json" data-cld="autonomous-research-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=autonomous-research-cld&amp;menu=true">Open R2: Autonomous Research</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=autonomous-research-cld&amp;menu=true">Open R2: Autonomous Research Causal Loop Diagram Fullscreen</a></p>
 <p>If the model can design, run, and interpret its <em>own</em> ML experiments, the research loop closes inside the company and <strong>decouples from human pace.</strong> This is the loop that, if it ever becomes self-sustaining, can overpower the balancing loops because it can iterate faster than competitors can read the papers.</p>
 <p>R2 is currently <em>emerging</em> at frontier labs but is not yet load-bearing. That status is the single most important variable in this entire analysis. A model genuinely 10× ahead at code generation — the persistent rumor about Anthropic's "Mythos" — would matter not because of R1, but because of what it would do to <strong>R2</strong>: it would be the first credible candidate to close this loop.</p>
 <hr />
 <h2 id="r3-capital-compute-capability">R3 — Capital → Compute → Capability</h2>
 <p>The financial loop. Better models win share, share becomes revenue and strategic investment, and that capital buys compute.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=capital-compute-cld" height="560px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/capital-compute-cld.json" data-cld="capital-compute-cld" style="height:560px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=capital-compute-cld&amp;menu=true">Open R3: Capital → Compute</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=capital-compute-cld&amp;menu=true">Open R3: Capital → Compute Causal Loop Diagram Fullscreen</a></p>
 <p>Google's recent commitment of <strong>up to $40B to Anthropic</strong> is exactly this loop being amplified — not by organic revenue, but by a strategic partner who wants Anthropic to keep pace with OpenAI and xAI on training scale.</p>
 <p>A persistent capital advantage <strong>weakens the compute constraint (B1, below) for the leader specifically</strong>, while it keeps biting everyone else. That asymmetry is how oligopoly tips toward duopoly, and duopoly toward monopoly.</p>
 <hr />
 <h2 id="r4-the-data-flywheel">R4 — The Data Flywheel</h2>
 <p>R4 is the lock-in loop. Real users, agents, and enterprise integrations produce a kind of training signal that <strong>simply does not exist outside the company that owns the deployment.</strong></p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=data-flywheel-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/data-flywheel-cld.json" data-cld="data-flywheel-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=data-flywheel-cld&amp;menu=true">Open R4: Data Flywheel</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=data-flywheel-cld&amp;menu=true">Open R4: Data Flywheel Causal Loop Diagram Fullscreen</a></p>
 <p>This is structurally similar to the original AI Flywheel above, but the unit of measurement is different: it is not "user clicks improve recommendations," it is "agent traces, preference signal, and error corrections improve the next frontier model." Public benchmarks plateau; private data flywheels do not. R4 is the most plausible structural reason a single winner could emerge: even if a competitor matches the architecture, they cannot match the data trail.</p>
 <hr />
 <h2 id="b1-compute-constraint">B1 — Compute Constraint</h2>
 <p>If only R1–R4 existed, we would already have a single winner. We don't. The first reason is physical.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=compute-constraint-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/compute-constraint-cld.json" data-cld="compute-constraint-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=compute-constraint-cld&amp;menu=true">Open B1: Compute Constraint</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=compute-constraint-cld&amp;menu=true">Open B1: Compute Constraint Causal Loop Diagram Fullscreen</a></p>
 <p>Pushing the frontier raises the compute bill. Compute is constrained by chip supply, datacenter buildouts, and electricity contracts measured in <strong>gigawatts</strong>. B1 slows everyone, including the leader, and is the single biggest reason recursive self-improvement has not yet gone vertical. R3 weakens B1 for capital-rich players — but does not eliminate it.</p>
 <hr />
 <h2 id="b2-evaluation-bottleneck">B2 — Evaluation Bottleneck</h2>
 <p>As models get more capable, they also get harder to <em>evaluate</em>.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/evaluation-bottleneck-cld.json" data-cld="evaluation-bottleneck-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld&amp;menu=true">Open B2: Evaluation Bottleneck</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld&amp;menu=true">Open B2: Evaluation Bottleneck Causal Loop Diagram Fullscreen</a></p>
 <p>Benchmark gaming, contamination, reward hacking, and hard-to-detect regressions all compound. The system can't reliably tell whether the new model is actually better, which means improvement gets noisier and slower at exactly the moment the runaway loop wants it to be cleaner and faster. B2 is the loop most underrated by people excited about R2: <strong>you cannot self-improve faster than you can self-evaluate.</strong></p>
 <hr />
 <h2 id="b3-diffusion-fast-follow">B3 — Diffusion / Fast-Follow</h2>
 <p>Even when AI writes most of the code, ideas still propagate.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=diffusion-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/diffusion-cld.json" data-cld="diffusion-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=diffusion-cld&amp;menu=true">Open B3: Diffusion</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=diffusion-cld&amp;menu=true">Open B3: Diffusion Causal Loop Diagram Fullscreen</a></p>
 <p>Papers leak, employees move, prompts get exfiltrated, and inference traces get reverse-engineered. The leader's relative advantage decays continuously. The faster the leader moves, the more visible the breakthrough, the faster competitors copy it. B3 is why every previous "permanent moat" claim in software has eventually collapsed.</p>
 <hr />
 <h2 id="b4-cost-performance-friction">B4 — Cost-Performance Friction</h2>
 <p>The frontier model is not always the most-used model.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=cost-performance-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/cost-performance-cld.json" data-cld="cost-performance-cld" style="height:520px"></div>
 
-<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=cost-performance-cld&amp;menu=true">Open B4: Cost-Performance</a></p>
+<p><a class="md-button" href="../../sims/cld-viewer/main.html?file=cost-performance-cld&amp;menu=true">Open B4: Cost-Performance Causal Loop Diagram Fullscreen</a></p>
 <p>As capability rises, so does inference cost. Most production agents will route to a cheaper model that is "good enough," which <strong>chokes R4 (the data flywheel) for the leader.</strong> B4 is why the cheapest competent model often beats the smartest expensive one in market terms — a real-world counterweight to the runaway hypothesis.</p>
 <p>(There is a fifth balancing force worth naming — <strong>market fragmentation by use case</strong>: regulated industries, sovereign-AI requirements, on-device constraints. It does not fit cleanly on a single diagram, but a field of "good enough specialists" is a structural defense against a single global winner.)</p>
 <hr />
@@ -1622,10 +1614,9 @@
 <hr />
 <h2 id="putting-it-all-together">Putting It All Together</h2>
 <p>Now we can draw the full system. Every loop above appears in the diagram below — the four reinforcing loops trying to run away, the four balancing loops keeping them in check, and <strong>Model Capability</strong> at the center of all of them.</p>
-<iframe data-src="../../sims/cld-viewer/main.html?file=winner-takes-all-cld" height="720px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+<div class="cld-inline" data-src="../../sims/cld-viewer/examples/winner-takes-all-cld.json" data-cld="winner-takes-all-cld" style="height:720px"></div>
 
-<p><a class="md-button md-button--primary" href="../../sims/cld-viewer/main.html?file=winner-takes-all-cld&amp;menu=true">Open the full system diagram</a></p>
+<p><a class="md-button md-button--primary" href="../../sims/cld-viewer/main.html?file=winner-takes-all-cld&amp;menu=true">Open AI Winner Takes All Causal Loop Diagram Fullscreen</a></p>
 <p>This is the same system, just drawn all at once. It is busy on purpose — the point of putting all eight loops together is to <em>see</em> that any single loop in isolation is misleading. The runaway story (R1 alone) predicts a single winner. The diffusion story (B3 alone) predicts permanent oligopoly. Reality is the interaction of all of them.</p>
 <hr />
 <h2 id="the-leverage-point">The Leverage Point</h2>
@@ -1653,59 +1644,31 @@
 <p>The Google–Anthropic capital injection and the Mythos rumor matter not because either guarantees a winner, but because both push on the <strong>specific</strong> loops most likely to tip the system. Whether that tip happens is, in the end, a question about a single threshold: does autonomous self-improvement close the loop inside the company, or doesn't it?</p>
 <p>The diagrams above are the cleanest tool I have for thinking about that question. The system is not a slogan — it's a structure.</p>
 <style>
-  iframe.lazy-cld {
-    background: #f8f9fa
-      linear-gradient(90deg, transparent 0, rgba(0,0,0,0.04) 50%, transparent 100%)
-      no-repeat;
-    background-size: 200% 100%;
-    animation: lazy-cld-shimmer 1.6s ease-in-out infinite;
+  /* Each .cld-inline div hosts a vis-network instance that fills it. The
+     network canvas is positioned absolute (set in cld-inline.js) so the
+     title overlay can sit on top of it without affecting layout. */
+  .cld-inline {
+    position: relative;
+    width: 100%;
+    background: aliceblue;
+    border: 2px solid blue;
+    margin-bottom: 1em;
+    overflow: hidden;
   }
-  iframe.lazy-cld.loaded {
-    background: none;
-    animation: none;
-  }
-  @keyframes lazy-cld-shimmer {
-    0%   { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+  .cld-inline-title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font: 24px Arial, Helvetica, sans-serif;
+    color: black;
+    pointer-events: none;
+    z-index: 10;
   }
 </style>
 
-<script>
-  // Reliable lazy-load for the CLD iframes. The browser's native loading="lazy"
-  // is just a hint — it eagerly pre-fetches more often than expected, which can
-  // saturate the per-host connection limit and break later iframes. Here we
-  // hold the src until the iframe scrolls within ~400px of the viewport.
-  (function () {
-    const iframes = document.querySelectorAll('iframe.lazy-cld[data-src]');
-    if (!iframes.length) return;
-
-    function load(iframe) {
-      if (iframe.dataset.loaded === '1') return;
-      iframe.dataset.loaded = '1';
-      iframe.src = iframe.dataset.src;
-      iframe.addEventListener('load', function () {
-        iframe.classList.add('loaded');
-      }, { once: true });
-    }
-
-    if (!('IntersectionObserver' in window)) {
-      // Old browser fallback: just load them all.
-      iframes.forEach(load);
-      return;
-    }
-
-    const io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          load(entry.target);
-          io.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '400px 0px', threshold: 0.01 });
-
-    iframes.forEach(function (iframe) { io.observe(iframe); });
-  })();
-</script>
+<script src="../cld-inline.js"></script>
 
 
 

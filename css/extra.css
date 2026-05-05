@@ -14,10 +14,12 @@
     overflow: hidden;
   }
   
-  /* Iframe styles */
+  /* Iframe styles — applied site-wide. Individual iframes should NOT set
+     border or overflow inline; rely on these rules instead. */
   iframe {
     width: 100%;
-    border: solid 2px blue;
+    overflow: hidden;
+    border: 2px solid blue;
   }
   
   
