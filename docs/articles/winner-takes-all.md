@@ -21,12 +21,13 @@ Each diagram below is a live, interactive vis-network rendering. **Drag any node
 
 ## Where We Start: The AI Flywheel
 
-Before there was a winner-takes-all hypothesis, there was the **AI Flywheel** — the standard story for why machine-learning products tend to run away from non-ML competitors.
+Before there was a winner-takes-all hypothesis, we need to start with a simple example.
+In our Systems Thinking textbook we usually start with the classic archetype the **AI Flywheel** — the standard story for why machine-learning products tend to run away from non-ML competitors.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=ai-flywheel-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open the AI Flywheel diagram](../../sims/cld-viewer/main.html?file=ai-flywheel-cld&menu=true){ .md-button }
+[Open the AI Flywheel Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=ai-flywheel-cld&menu=true){ .md-button }
 
 Data trains a model, the model produces predictions, predictions generate user feedback, feedback becomes new data. It is a single reinforcing loop. It is enough to explain why Netflix, Google Search, and TikTok do not get caught.
 
@@ -44,9 +45,9 @@ The version of the story that gets told at conferences is a single loop:
 - Repeat.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open R1: Runaway Hypothesis](../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld&menu=true){ .md-button }
+[Open R1: Runaway Hypothesis Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld&menu=true){ .md-button }
 
 In CLD language this is **R1: Recursive Self-Improvement**: `Model Capability → Code Generation Quality → R&D Productivity → Model Capability`. It is real. It is already happening at every frontier lab to some degree. And on its own, it does predict winner-takes-all dynamics.
 
@@ -59,9 +60,9 @@ The mistake is stopping there. R1 is one loop in a system of nine.
 R1 still routes through human engineers — the model writes code, but humans decide what experiments to run. R2 is what happens when that step disappears.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=autonomous-research-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open R2: Autonomous Research](../../sims/cld-viewer/main.html?file=autonomous-research-cld&menu=true){ .md-button }
+[Open R2: Autonomous Research Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=autonomous-research-cld&menu=true){ .md-button }
 
 If the model can design, run, and interpret its *own* ML experiments, the research loop closes inside the company and **decouples from human pace.** This is the loop that, if it ever becomes self-sustaining, can overpower the balancing loops because it can iterate faster than competitors can read the papers.
 
@@ -74,9 +75,9 @@ R2 is currently *emerging* at frontier labs but is not yet load-bearing. That st
 The financial loop. Better models win share, share becomes revenue and strategic investment, and that capital buys compute.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=capital-compute-cld" height="560px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open R3: Capital → Compute](../../sims/cld-viewer/main.html?file=capital-compute-cld&menu=true){ .md-button }
+[Open R3: Capital → Compute Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=capital-compute-cld&menu=true){ .md-button }
 
 Google's recent commitment of **up to $40B to Anthropic** is exactly this loop being amplified — not by organic revenue, but by a strategic partner who wants Anthropic to keep pace with OpenAI and xAI on training scale.
 
@@ -89,9 +90,9 @@ A persistent capital advantage **weakens the compute constraint (B1, below) for 
 R4 is the lock-in loop. Real users, agents, and enterprise integrations produce a kind of training signal that **simply does not exist outside the company that owns the deployment.**
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=data-flywheel-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open R4: Data Flywheel](../../sims/cld-viewer/main.html?file=data-flywheel-cld&menu=true){ .md-button }
+[Open R4: Data Flywheel Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=data-flywheel-cld&menu=true){ .md-button }
 
 This is structurally similar to the original AI Flywheel above, but the unit of measurement is different: it is not "user clicks improve recommendations," it is "agent traces, preference signal, and error corrections improve the next frontier model." Public benchmarks plateau; private data flywheels do not. R4 is the most plausible structural reason a single winner could emerge: even if a competitor matches the architecture, they cannot match the data trail.
 
@@ -102,9 +103,9 @@ This is structurally similar to the original AI Flywheel above, but the unit of 
 If only R1–R4 existed, we would already have a single winner. We don't. The first reason is physical.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=compute-constraint-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open B1: Compute Constraint](../../sims/cld-viewer/main.html?file=compute-constraint-cld&menu=true){ .md-button }
+[Open B1: Compute Constraint Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=compute-constraint-cld&menu=true){ .md-button }
 
 Pushing the frontier raises the compute bill. Compute is constrained by chip supply, datacenter buildouts, and electricity contracts measured in **gigawatts**. B1 slows everyone, including the leader, and is the single biggest reason recursive self-improvement has not yet gone vertical. R3 weakens B1 for capital-rich players — but does not eliminate it.
 
@@ -115,9 +116,9 @@ Pushing the frontier raises the compute bill. Compute is constrained by chip sup
 As models get more capable, they also get harder to *evaluate*.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open B2: Evaluation Bottleneck](../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld&menu=true){ .md-button }
+[Open B2: Evaluation Bottleneck Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld&menu=true){ .md-button }
 
 Benchmark gaming, contamination, reward hacking, and hard-to-detect regressions all compound. The system can't reliably tell whether the new model is actually better, which means improvement gets noisier and slower at exactly the moment the runaway loop wants it to be cleaner and faster. B2 is the loop most underrated by people excited about R2: **you cannot self-improve faster than you can self-evaluate.**
 
@@ -128,9 +129,9 @@ Benchmark gaming, contamination, reward hacking, and hard-to-detect regressions 
 Even when AI writes most of the code, ideas still propagate.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=diffusion-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open B3: Diffusion](../../sims/cld-viewer/main.html?file=diffusion-cld&menu=true){ .md-button }
+[Open B3: Diffusion Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=diffusion-cld&menu=true){ .md-button }
 
 Papers leak, employees move, prompts get exfiltrated, and inference traces get reverse-engineered. The leader's relative advantage decays continuously. The faster the leader moves, the more visible the breakthrough, the faster competitors copy it. B3 is why every previous "permanent moat" claim in software has eventually collapsed.
 
@@ -141,9 +142,9 @@ Papers leak, employees move, prompts get exfiltrated, and inference traces get r
 The frontier model is not always the most-used model.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=cost-performance-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open B4: Cost-Performance](../../sims/cld-viewer/main.html?file=cost-performance-cld&menu=true){ .md-button }
+[Open B4: Cost-Performance Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=cost-performance-cld&menu=true){ .md-button }
 
 As capability rises, so does inference cost. Most production agents will route to a cheaper model that is "good enough," which **chokes R4 (the data flywheel) for the leader.** B4 is why the cheapest competent model often beats the smartest expensive one in market terms — a real-world counterweight to the runaway hypothesis.
 
@@ -175,9 +176,9 @@ The reinforcing loops are getting stronger. The balancing loops are mostly holdi
 Now we can draw the full system. Every loop above appears in the diagram below — the four reinforcing loops trying to run away, the four balancing loops keeping them in check, and **Model Capability** at the center of all of them.
 
 <iframe data-src="../../sims/cld-viewer/main.html?file=winner-takes-all-cld" height="720px" width="100%" scrolling="no" class="lazy-cld"
-  style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
+></iframe>
 
-[Open the full system diagram](../../sims/cld-viewer/main.html?file=winner-takes-all-cld&menu=true){ .md-button .md-button--primary }
+[Open AI Winner Takes All Causal Loop Diagram Fullscreen](../../sims/cld-viewer/main.html?file=winner-takes-all-cld&menu=true){ .md-button .md-button--primary }
 
 This is the same system, just drawn all at once. It is busy on purpose — the point of putting all eight loops together is to *see* that any single loop in isolation is misleading. The runaway story (R1 alone) predicts a single winner. The diffusion story (B3 alone) predicts permanent oligopoly. Reality is the interaction of all of them.
 

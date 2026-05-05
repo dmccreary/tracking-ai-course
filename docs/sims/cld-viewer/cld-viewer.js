@@ -176,6 +176,18 @@ function initializeNetwork() {
 
     network = new vis.Network(container, {}, options);
 
+    // Create the title overlay AFTER vis-network initializes — vis wipes the
+    // container's contents on init, so an overlay placed in HTML would vanish.
+    // #network is position:relative so this absolutely-positioned div anchors
+    // to the diagram canvas in both iframe and fullscreen modes.
+    let overlay = document.getElementById('diagram-title-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'diagram-title-overlay';
+        overlay.className = 'diagram-title-overlay';
+    }
+    container.appendChild(overlay);
+
     attachCustomZoom(container);
 
     network.on('click', function(params) {
@@ -193,7 +205,11 @@ function loadCLD(data) {
     try {
         cldData = data;
         
-        document.getElementById('diagram-title').textContent = data.metadata.title;
+        const title = (data.metadata && data.metadata.title) || '';
+        const headerEl = document.getElementById('diagram-title');
+        if (headerEl) headerEl.textContent = title;
+        const overlayEl = document.getElementById('diagram-title-overlay');
+        if (overlayEl) overlayEl.textContent = title;
 
         const visNodes = data.nodes.map(node => ({
             id: node.id,
