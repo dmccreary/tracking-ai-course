@@ -23,7 +23,7 @@ Each diagram below is a live, interactive vis-network rendering. **Drag any node
 
 Before there was a winner-takes-all hypothesis, there was the **AI Flywheel** — the standard story for why machine-learning products tend to run away from non-ML competitors.
 
-<iframe src="../../sims/cld-viewer/main.html?file=ai-flywheel-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=ai-flywheel-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open the AI Flywheel diagram](../../sims/cld-viewer/main.html?file=ai-flywheel-cld&menu=true){ .md-button }
@@ -43,7 +43,7 @@ The version of the story that gets told at conferences is a single loop:
 - Productive engineers ship the next model faster, and that model is even better.
 - Repeat.
 
-<iframe src="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open R1: Runaway Hypothesis](../../sims/cld-viewer/main.html?file=runaway-hypothesis-cld&menu=true){ .md-button }
@@ -58,7 +58,7 @@ The mistake is stopping there. R1 is one loop in a system of nine.
 
 R1 still routes through human engineers — the model writes code, but humans decide what experiments to run. R2 is what happens when that step disappears.
 
-<iframe src="../../sims/cld-viewer/main.html?file=autonomous-research-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=autonomous-research-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open R2: Autonomous Research](../../sims/cld-viewer/main.html?file=autonomous-research-cld&menu=true){ .md-button }
@@ -73,7 +73,7 @@ R2 is currently *emerging* at frontier labs but is not yet load-bearing. That st
 
 The financial loop. Better models win share, share becomes revenue and strategic investment, and that capital buys compute.
 
-<iframe src="../../sims/cld-viewer/main.html?file=capital-compute-cld" height="560px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=capital-compute-cld" height="560px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open R3: Capital → Compute](../../sims/cld-viewer/main.html?file=capital-compute-cld&menu=true){ .md-button }
@@ -88,7 +88,7 @@ A persistent capital advantage **weakens the compute constraint (B1, below) for 
 
 R4 is the lock-in loop. Real users, agents, and enterprise integrations produce a kind of training signal that **simply does not exist outside the company that owns the deployment.**
 
-<iframe src="../../sims/cld-viewer/main.html?file=data-flywheel-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=data-flywheel-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open R4: Data Flywheel](../../sims/cld-viewer/main.html?file=data-flywheel-cld&menu=true){ .md-button }
@@ -101,7 +101,7 @@ This is structurally similar to the original AI Flywheel above, but the unit of 
 
 If only R1–R4 existed, we would already have a single winner. We don't. The first reason is physical.
 
-<iframe src="../../sims/cld-viewer/main.html?file=compute-constraint-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=compute-constraint-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open B1: Compute Constraint](../../sims/cld-viewer/main.html?file=compute-constraint-cld&menu=true){ .md-button }
@@ -114,7 +114,7 @@ Pushing the frontier raises the compute bill. Compute is constrained by chip sup
 
 As models get more capable, they also get harder to *evaluate*.
 
-<iframe src="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open B2: Evaluation Bottleneck](../../sims/cld-viewer/main.html?file=evaluation-bottleneck-cld&menu=true){ .md-button }
@@ -127,7 +127,7 @@ Benchmark gaming, contamination, reward hacking, and hard-to-detect regressions 
 
 Even when AI writes most of the code, ideas still propagate.
 
-<iframe src="../../sims/cld-viewer/main.html?file=diffusion-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=diffusion-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open B3: Diffusion](../../sims/cld-viewer/main.html?file=diffusion-cld&menu=true){ .md-button }
@@ -140,7 +140,7 @@ Papers leak, employees move, prompts get exfiltrated, and inference traces get r
 
 The frontier model is not always the most-used model.
 
-<iframe src="../../sims/cld-viewer/main.html?file=cost-performance-cld" height="520px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=cost-performance-cld" height="520px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open B4: Cost-Performance](../../sims/cld-viewer/main.html?file=cost-performance-cld&menu=true){ .md-button }
@@ -174,7 +174,7 @@ The reinforcing loops are getting stronger. The balancing loops are mostly holdi
 
 Now we can draw the full system. Every loop above appears in the diagram below — the four reinforcing loops trying to run away, the four balancing loops keeping them in check, and **Model Capability** at the center of all of them.
 
-<iframe src="../../sims/cld-viewer/main.html?file=winner-takes-all-cld" height="720px" width="100%" scrolling="no" loading="lazy"
+<iframe data-src="../../sims/cld-viewer/main.html?file=winner-takes-all-cld" height="720px" width="100%" scrolling="no" class="lazy-cld"
   style="overflow: hidden; border: 1px solid #dee2e6;"></iframe>
 
 [Open the full system diagram](../../sims/cld-viewer/main.html?file=winner-takes-all-cld&menu=true){ .md-button .md-button--primary }
@@ -215,3 +215,58 @@ The single-loop story — *better model → better engineers → better model* �
 The Google–Anthropic capital injection and the Mythos rumor matter not because either guarantees a winner, but because both push on the **specific** loops most likely to tip the system. Whether that tip happens is, in the end, a question about a single threshold: does autonomous self-improvement close the loop inside the company, or doesn't it?
 
 The diagrams above are the cleanest tool I have for thinking about that question. The system is not a slogan — it's a structure.
+
+<style>
+  iframe.lazy-cld {
+    background: #f8f9fa
+      linear-gradient(90deg, transparent 0, rgba(0,0,0,0.04) 50%, transparent 100%)
+      no-repeat;
+    background-size: 200% 100%;
+    animation: lazy-cld-shimmer 1.6s ease-in-out infinite;
+  }
+  iframe.lazy-cld.loaded {
+    background: none;
+    animation: none;
+  }
+  @keyframes lazy-cld-shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+</style>
+
+<script>
+  // Reliable lazy-load for the CLD iframes. The browser's native loading="lazy"
+  // is just a hint — it eagerly pre-fetches more often than expected, which can
+  // saturate the per-host connection limit and break later iframes. Here we
+  // hold the src until the iframe scrolls within ~400px of the viewport.
+  (function () {
+    const iframes = document.querySelectorAll('iframe.lazy-cld[data-src]');
+    if (!iframes.length) return;
+
+    function load(iframe) {
+      if (iframe.dataset.loaded === '1') return;
+      iframe.dataset.loaded = '1';
+      iframe.src = iframe.dataset.src;
+      iframe.addEventListener('load', function () {
+        iframe.classList.add('loaded');
+      }, { once: true });
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      // Old browser fallback: just load them all.
+      iframes.forEach(load);
+      return;
+    }
+
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          load(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '400px 0px', threshold: 0.01 });
+
+    iframes.forEach(function (iframe) { io.observe(iframe); });
+  })();
+</script>
