@@ -6,7 +6,7 @@
     "description": "A causal loop diagram of the reinforcing and balancing forces that determine whether the AI industry tips toward a single dominant player or remains an oligopoly with leapfrogging.",
     "version": "1.0.0",
     "created_date": "2026-05-05",
-    "updated_date": "2026-05-05T13:20:38.772Z",
+    "updated_date": "2026-05-05T13:35:11.108Z",
     "author": "Tracking AI Course",
     "tags": [
       "ai",
@@ -72,8 +72,8 @@
       "id": "market_share",
       "label": "Market Share",
       "position": {
-        "x": -320,
-        "y": -90
+        "x": -365,
+        "y": -54
       },
       "type": "variable",
       "description": "Share of paid frontier-model usage and enterprise contracts."
@@ -398,7 +398,7 @@
       ],
       "position": {
         "x": 280,
-        "y": -10
+        "y": 37
       },
       "is_primary": true
     },
@@ -479,8 +479,8 @@
         "model_capability"
       ],
       "position": {
-        "x": 28,
-        "y": 405
+        "x": 32,
+        "y": 353
       }
     },
     {
@@ -511,8 +511,8 @@
         "model_capability"
       ],
       "position": {
-        "x": 62,
-        "y": 229
+        "x": 75,
+        "y": 222
       }
     }
   ]

@@ -50,10 +50,15 @@ async function loadCLDFromFile(filename) {
     }
 }
 
-// Custom wheel-zoom handler. vis-network's built-in zoomView is far too
-// sensitive on Mac trackpads (every two-finger flick fires ~50 wheel events).
-// This handler caps per-event magnitude and uses a small per-tick scale step,
-// while keeping the world point under the cursor anchored.
+// Custom wheel-zoom handler.
+// - Vertical scroll (deltaY) is left alone so the page scrolls normally over
+//   the embedded diagram instead of getting hijacked.
+// - Horizontal scroll (deltaX, e.g. two-finger sideways swipe on a Mac
+//   trackpad) zooms.
+// - Pinch gestures (wheel events with ctrlKey set, which is how Mac and most
+//   browsers report pinch) also zoom.
+// In all zoom cases we cap per-event magnitude and keep the world point
+// under the cursor anchored.
 function attachCustomZoom(container) {
     const ZOOM_PER_TICK = 0.04;   // per-event step. Lower = less sensitive.
     const MIN_SCALE = 0.1;
@@ -61,10 +66,20 @@ function attachCustomZoom(container) {
 
     container.addEventListener('wheel', function(event) {
         if (!network) return;
+
+        const isPinch = event.ctrlKey;
+        const dx = event.deltaX;
+        const dy = event.deltaY;
+        const isHorizontalDominant = Math.abs(dx) > Math.abs(dy) && dx !== 0;
+
+        // If it's not a zoom gesture, do nothing — let the page scroll.
+        if (!isPinch && !isHorizontalDominant) return;
+
         event.preventDefault();
 
-        // Normalize delta across browsers and input devices.
-        let delta = event.deltaY;
+        // Pick the relevant axis: pinch uses dy (browser convention),
+        // horizontal-swipe zoom uses dx.
+        let delta = isPinch ? dy : dx;
         if (event.deltaMode === 1) delta *= 16;       // line mode
         else if (event.deltaMode === 2) delta *= 400; // page mode
 
