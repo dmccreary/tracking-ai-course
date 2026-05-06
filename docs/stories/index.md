@@ -52,4 +52,12 @@ hide:
 
     [:octicons-arrow-right-24: Read the Yann LeCun Story](./yann-lecun/index.md)
 
+-   ![Grandma and the AI Race Cover](./grandma-and-the-ai-race/cover.png)
+
+    **Eight Forces in Grandma's Kitchen**
+
+    A high-school student named Maya visits her grandmother on a Saturday afternoon and tries to explain the "winner takes all" AI race using sourdough, gardens, and family recipes. Eight forces pulling on the future of AI, told entirely in kitchen metaphors.
+
+    [:octicons-arrow-right-24: Read Grandma and the AI Race](./grandma-and-the-ai-race/index.md)
+
 </div>
