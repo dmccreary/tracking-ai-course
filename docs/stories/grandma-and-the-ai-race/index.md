@@ -6,6 +6,8 @@ og:image: /stories/grandma-and-the-ai-race/cover.png
 twitter:image: /stories/grandma-and-the-ai-race/cover.png
 social:
    cards: false
+hide:
+   toc
 ---
 
 # Eight Forces in Grandma's Kitchen
