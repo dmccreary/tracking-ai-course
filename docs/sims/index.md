@@ -90,6 +90,12 @@ Interactive visualizations demonstrating AI capabilities, growth patterns, and s
 
     Interactive visualization of five levels of intelligent textbooks from static to AI-driven.
 
+-   **[Eight AI Forces](./eight-ai-forces/index.md)**
+
+    ![Eight AI Forces](./eight-ai-forces/eight-forces.png)
+
+    Interactive infographic of the four reinforcing and four balancing loops that determine whether one AI lab can run away with the field, with a description-driven quiz.
+
 -   **[Four AI Futures](./four-futures/index.md)**
 
     ![Four AI Futures](./four-futures/four-futures.png)
