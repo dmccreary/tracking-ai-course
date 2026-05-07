@@ -68,6 +68,7 @@ nav:
     - Bloom's Taxonomy: sims/blooms-taxonomy/index.md
     - Book Generation Workflow: sims/book-gen-workflow/index.md
     - Book Levels: sims/book-levels/index.md
+    - Eight AI Forces: sims/eight-ai-forces/index.md
     - Four AI Futures: sims/four-futures/index.md
     - GenAI Idea Funnel: sims/idea-funnel/index.md
     - LM Arena Timeline: sims/lm-arena-timeline/index.md
@@ -86,6 +87,7 @@ nav:
     - Technology Hype Cycle: sims/hype-cycle/index.md
     - Tokenizer: sims/tokenizer/index.md
     - Winner-Takes-All CLD: sims/winner-takes-all-cld/index.md
+    - Eight AI Forces: sims/eight-ai-forces/index.md
     - MicroSim Templates: sims/templates/index.md
 
   - Slides:
@@ -123,6 +125,9 @@ nav:
   - Contact: contact.md
  
 # Dan McCreary's MicroSite Standards from here down
+
+exclude_docs: |
+  sims/eight-ai-forces/image-prompt.md
 
 theme:
   name: material
