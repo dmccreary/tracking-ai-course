@@ -643,7 +643,15 @@ class DiagramSim {
 
     const labelEl = document.getElementById('infobox-label');
     labelEl.className = 'prompt-label';
-    labelEl.innerHTML = 'Click on: <em>' + target.label + '</em>';
+    // If the callout supplies a name-free quiz_description, use it as the
+    // prompt so the student must identify the structure from a description
+    // rather than its label. Falls back to the label for backwards
+    // compatibility with sims that don't define quiz_description.
+    if (target.quiz_description) {
+      labelEl.innerHTML = 'Find the force this describes:<br><em>' + target.quiz_description + '</em>';
+    } else {
+      labelEl.innerHTML = 'Click on: <em>' + target.label + '</em>';
+    }
 
     for (const callout of this.data.callouts) {
       this.markers.get(callout.id).onclick = () => this.handleAnswer(callout, target);
