@@ -48,6 +48,26 @@ class DiagramSim {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       this.data        = await res.json();
       this.showNumbers = this.data.showNumbers !== false;
+      // showMarkerNumbers controls only the digit shown INSIDE the colored
+      // marker on the image. Defaults to showNumbers so existing sims are
+      // unchanged. Set to false when the marker should remain a clickable
+      // colored dot but should NOT display its number over the image — the
+      // number then appears only in the side label panels.
+      this.showMarkerNumbers = (this.data.showMarkerNumbers !== undefined)
+        ? this.data.showMarkerNumbers !== false
+        : this.showNumbers;
+      // When markers carry no numbers, also hide their default colored
+      // chrome over the image — they become transparent click hotspots that
+      // stay clickable but don't cover the underlying icons. Quiz-state
+      // classes (.quiz-unknown, .correct, .incorrect) re-add visible chrome
+      // via CSS so the quiz interaction still works.
+      if (!this.showMarkerNumbers) document.body.classList.add('markers-no-chrome');
+      // hideLabelsInQuiz controls whether panel label text is masked during
+      // quiz mode. Default true preserves the classic "name the structure"
+      // quiz where the student has no visible labels to read off. Set false
+      // when the quiz prompt is description-driven and the labels next to
+      // the image are the answer key the student is meant to scan.
+      this.hideLabelsInQuiz = this.data.hideLabelsInQuiz !== false;
       this.layout      = this.data.layout || 'side-panel';
       this.injectTitle();
     } catch (err) {
@@ -166,6 +186,19 @@ class DiagramSim {
     }
 
     this.titleEl.textContent = this.data.title;
+
+    // Optional subtitle — rendered as a sibling element directly under the
+    // title. Skipped silently if data.subtitle is absent.
+    if (this.data.subtitle) {
+      let sub = document.getElementById('sim-subtitle');
+      if (!sub) {
+        sub = document.createElement('div');
+        sub.id = 'sim-subtitle';
+        sub.className = 'sim-subtitle';
+        this.titleEl.parentNode.insertBefore(sub, this.titleEl.nextSibling);
+      }
+      sub.textContent = this.data.subtitle;
+    }
   }
 
   // ── Top-bottom layout DOM setup ───────────────────────────────────────────
@@ -229,7 +262,7 @@ class DiagramSim {
     for (const callout of this.data.callouts) {
       const btn = document.createElement('button');
       btn.className = 'marker';
-      btn.textContent = this.showNumbers ? callout.id : '';
+      btn.textContent = this.showMarkerNumbers ? callout.id : '';
       btn.setAttribute('aria-label', callout.label);
       btn.style.left = callout.x + '%';
       btn.style.top  = callout.y + '%';
@@ -278,6 +311,30 @@ class DiagramSim {
     this.labelPanelLeft.innerHTML  = '';
     this.labelPanelRight.innerHTML = '';
     this.labelRows.clear();
+
+    // Optional per-panel header titles (data.panelTitleLeft / panelTitleRight)
+    // Optional small parenthetical sub-line (data.panelSubtitleLeft / panelSubtitleRight)
+    const buildPanelHeader = (titleText, subtitleText) => {
+      const h = document.createElement('div');
+      h.className   = 'panel-title';
+      h.textContent = titleText;
+      if (subtitleText) {
+        const sub = document.createElement('div');
+        sub.className   = 'panel-subtitle';
+        sub.textContent = subtitleText;
+        h.appendChild(sub);
+      }
+      return h;
+    };
+    if (this.data.panelTitleLeft) {
+      this.labelPanelLeft.appendChild(
+        buildPanelHeader(this.data.panelTitleLeft, this.data.panelSubtitleLeft));
+    }
+    if (this.data.panelTitleRight) {
+      this.labelPanelRight.appendChild(
+        buildPanelHeader(this.data.panelTitleRight, this.data.panelSubtitleRight));
+    }
+
     for (const callout of this.data.callouts) {
       const row = this.buildLabelRow(callout);
       row.dataset.panel = callout.panel || 'right';
@@ -515,7 +572,7 @@ class DiagramSim {
 
     for (const btn of this.markers.values()) {
       btn.className     = 'marker';
-      btn.textContent   = this.showNumbers ? this.data.callouts.find(c => c.id == btn.dataset.id).id : '';
+      btn.textContent   = this.showMarkerNumbers ? this.data.callouts.find(c => c.id == btn.dataset.id).id : '';
       btn.onpointerdown = null;
       btn.onpointerenter = null;
       btn.onpointerleave = null;
@@ -585,7 +642,7 @@ class DiagramSim {
 
     const tipEl = document.getElementById('infobox-ap-tip');
     if (callout.ap_tip) {
-      tipEl.innerHTML    = '<strong>college placement Exam Tip:</strong> ' + callout.ap_tip;
+      tipEl.innerHTML    = '<strong>Influence Weight:</strong> ' + callout.ap_tip;
       tipEl.style.display = 'block';
     } else {
       tipEl.style.display = 'none';
@@ -609,10 +666,17 @@ class DiagramSim {
     this.updateScore();
 
     for (const callout of this.data.callouts) {
-      this.labelRows.get(callout.id).querySelector('.label-text').classList.add('quiz-hidden');
+      if (this.hideLabelsInQuiz) {
+        this.labelRows.get(callout.id).querySelector('.label-text').classList.add('quiz-hidden');
+      }
       const btn = this.markers.get(callout.id);
       btn.classList.add('quiz-unknown');
-      btn.textContent = '?';
+      // Only render the "?" placeholder when the marker has visible chrome
+      // to wrap it. In showMarkerNumbers:false mode the marker is a fully
+      // invisible click hotspot — adding a "?" character would either flash
+      // briefly or get announced by screen readers despite being styled
+      // transparent. Skip setting textContent so neither happens.
+      btn.textContent = this.showMarkerNumbers ? '?' : '';
     }
 
     this.showNextQuestion();
@@ -632,8 +696,14 @@ class DiagramSim {
     for (const row of this.labelRows.values()) row.classList.remove('active');
     this.clearLineHighlights();
 
-    this.labelRows.get(target.id).classList.add('active');
-    this.applyLineHighlight(target.id);
+    // The active-row highlight and leader-line highlight both point at the
+    // target. They're only safe when the label text is hidden — otherwise
+    // they give the answer away before the student clicks. Skip them when
+    // hideLabelsInQuiz is false (description-driven quiz mode).
+    if (this.hideLabelsInQuiz) {
+      this.labelRows.get(target.id).classList.add('active');
+      this.applyLineHighlight(target.id);
+    }
 
     document.getElementById('infobox-prompt').style.display  = 'none';
     document.getElementById('infobox-content').style.display = 'block';
@@ -675,7 +745,7 @@ class DiagramSim {
 
       clickedBtn.classList.remove('quiz-unknown');
       clickedBtn.classList.add('correct');
-      clickedBtn.textContent = this.showNumbers ? target.id : '';
+      clickedBtn.textContent = this.showMarkerNumbers ? target.id : '';
 
       const path = this.leaderLines.get(target.id);
       if (path) {
@@ -691,11 +761,14 @@ class DiagramSim {
 
       const tipEl = document.getElementById('infobox-ap-tip');
       if (target.ap_tip) {
-        tipEl.innerHTML    = '<strong>college placement Exam Tip:</strong> ' + target.ap_tip;
+        tipEl.innerHTML    = '<strong>Influence Weight:</strong> ' + target.ap_tip;
         tipEl.style.display = 'block';
       }
 
-      setTimeout(() => { this.quizIndex++; this.showNextQuestion(); }, 1800);
+      this.showCorrectModal(() => {
+        this.quizIndex++;
+        this.showNextQuestion();
+      });
 
     } else {
       // ── Wrong ──
@@ -720,7 +793,56 @@ class DiagramSim {
     document.getElementById('infobox-ap-tip').style.display  = 'none';
     document.getElementById('quiz-restart').style.display    = 'inline-block';
 
-    this.launchCelebration();
+    // Celebrate only on a perfect score — partial scores get a quiet finish.
+    if (this.quizCorrect === this.quizQueue.length) {
+      this.launchCelebration();
+    }
+  }
+
+  // ── Per-question correct-answer modal ─────────────────────────────────────
+
+  showCorrectModal(onContinue) {
+    const overlay = document.createElement('div');
+    overlay.className = 'correct-modal-overlay';
+
+    const modal = document.createElement('div');
+    modal.className = 'correct-modal';
+
+    const star = document.createElement('div');
+    star.className   = 'correct-modal-star';
+    star.textContent = '★';   // ★
+
+    const msg = document.createElement('div');
+    msg.className   = 'correct-modal-msg';
+    msg.textContent = 'Correct!';
+
+    const btn = document.createElement('button');
+    btn.className   = 'correct-modal-btn';
+    btn.textContent = 'OK';
+
+    const dismiss = () => {
+      document.removeEventListener('keydown', onKey);
+      overlay.remove();
+      onContinue();
+    };
+    const onKey = (e) => {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') {
+        e.preventDefault();
+        dismiss();
+      }
+    };
+
+    btn.onclick = dismiss;
+    document.addEventListener('keydown', onKey);
+
+    modal.appendChild(star);
+    modal.appendChild(msg);
+    modal.appendChild(btn);
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    // Focus the OK button so Enter/Space/Esc dismiss without a mouse.
+    btn.focus();
   }
 
   // ── Celebration animation ─────────────────────────────────────────────────
@@ -931,7 +1053,7 @@ class DiagramSim {
         if (textSpan) textSpan.dataset.id = String(newId);
 
         markerBtn.dataset.id  = String(newId);
-        markerBtn.textContent = this.showNumbers ? String(newId) : '';
+        markerBtn.textContent = this.showMarkerNumbers ? String(newId) : '';
         markerBtn.setAttribute('aria-label', callout.label);
 
         newMarkers.set(newId, markerBtn);

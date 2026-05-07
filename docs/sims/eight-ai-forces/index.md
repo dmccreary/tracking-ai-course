@@ -7,7 +7,7 @@ hide:
 
 # Eight AI Forces
 
-<iframe src="./main.html" height="720px" width="100%"
+<iframe src="./main.html" height="652px" width="100%"
   style="overflow: hidden; border: 2px solid blue;"></iframe>
 
 [Open the Eight AI Forces Diagram Fullscreen](./main.html){ .md-button .md-button--primary }

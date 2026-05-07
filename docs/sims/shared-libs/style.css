@@ -11,9 +11,107 @@ body {
   font-size: 26px;
   font-weight: 700;
   color: #123b12;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   letter-spacing: 0.01em;
   text-align: center;
+}
+
+.sim-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #4a5568;
+  margin: 0 0 14px;
+  text-align: center;
+  font-style: italic;
+}
+
+.panel-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #1F2937;
+  text-align: center;
+  padding: 6px 4px 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.panel-subtitle {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* ── Per-question correct-answer modal ───────────────────────────────────── */
+.correct-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+  animation: correctFadeIn 0.18s ease-out;
+}
+.correct-modal {
+  background: white;
+  border-radius: 14px;
+  padding: 28px 56px 24px;
+  text-align: center;
+  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.35);
+  animation: correctPopIn 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+  min-width: 240px;
+}
+.correct-modal-star {
+  font-size: 84px;
+  line-height: 1;
+  color: #FFD700;
+  text-shadow:
+    0 0 14px rgba(255, 215, 0, 0.65),
+    0 0 28px rgba(255, 215, 0, 0.35);
+  animation: correctStarSpin 0.55s ease-out;
+}
+.correct-modal-msg {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2A8040;
+  margin: 10px 0 18px;
+  letter-spacing: 0.02em;
+}
+.correct-modal-btn {
+  padding: 10px 36px;
+  background: #2A8040;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s, transform 0.08s;
+}
+.correct-modal-btn:hover  { background: #1f5c1f; }
+.correct-modal-btn:active { transform: translateY(1px); }
+.correct-modal-btn:focus  {
+  outline: 3px solid rgba(42, 128, 64, 0.35);
+  outline-offset: 2px;
+}
+@keyframes correctFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes correctPopIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+@keyframes correctStarSpin {
+  from { transform: rotate(-220deg) scale(0.3); }
+  to   { transform: rotate(0)        scale(1);   }
 }
 
 /* ── Controls bar ───────────────────────────────────── */
@@ -130,6 +228,40 @@ body {
 /* Disable hover-scale and transition during drag calibration */
 .marker.edit-mode,
 .marker.edit-mode:hover        { transform: translate(-50%, -50%); transition: none; }
+
+/* ── markers-no-chrome mode ──────────────────────────────────────────────
+   Set by diagram.js when data.showMarkerNumbers === false. The default
+   marker becomes a transparent click hotspot so the underlying image icons
+   stay visible. Quiz-state classes and edit mode still get visible chrome
+   so the quiz interaction and calibration workflow keep working. */
+body.markers-no-chrome .marker {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+body.markers-no-chrome .marker:hover,
+body.markers-no-chrome .marker.active {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate(-50%, -50%);
+}
+/* Quiz-unknown and correct: stay invisible — feedback comes from the
+   description prompt, the modal, and the row-highlight in the side panels.
+   Incorrect still flashes (red shake) so the user sees a wrong click at the
+   click site itself. Edit mode still shows its orange chrome for drag
+   calibration. */
+body.markers-no-chrome .marker.quiz-unknown,
+body.markers-no-chrome .marker.correct {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+body.markers-no-chrome .marker.incorrect,
+body.markers-no-chrome .marker.edit-mode {
+  border-color: white;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.35);
+}
 
 @keyframes shake {
   0%,100% { transform: translate(-50%,-50%) translateX(0); }
