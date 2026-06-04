@@ -1,6 +1,7 @@
 ---
 title: Eight AI Forces
 description: Interactive infographic showing the four reinforcing and four balancing loops that determine whether AI capability runs away or stays in oligopoly.
+image: sims/eight-ai-forces/eight-ai-forces.png
 hide:
   - toc
 ---
