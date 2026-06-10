@@ -96,7 +96,10 @@ The website includes:
 tracking-ai-course/
 ├── docs/                    # Course content and documentation
 │   ├── chapters/           # Individual course chapters
-│   ├── sims/              # Interactive MicroSims
+│   ├── sims/               # MicroSims
+│   │   ├── shared/         #   ← git submodule → dmccreary/shared-microsims
+│   │   ├── learning-graph/ #   this course's own learning-graph viewer (not shared)
+│   │   └── index.md        #   MicroSim gallery
 │   ├── stories/           # Case studies and narratives
 │   ├── prompts/           # AI prompts and exercises
 │   └── img/               # Images and graphics
@@ -105,6 +108,11 @@ tracking-ai-course/
 ├── src/                    # Source code utilities
 └── plugins/               # Custom MkDocs plugins
 ```
+
+Most MicroSims live in the **[shared-microsims](https://github.com/dmccreary/shared-microsims)**
+repository and are mounted here as a git submodule at `docs/sims/shared/`, so they
+can be reused by other textbooks without copy-paste drift. See
+[Shared MicroSims](#-shared-microsims) below.
 
 ## 🔧 Technical Setup
 
@@ -117,9 +125,12 @@ This course website is built using:
 ### Local Development
 
 ```bash
-# Clone the repository
-git clone https://github.com/dmccreary/tracking-ai-course.git
+# Clone the repository WITH its shared-microsims submodule
+git clone --recurse-submodules https://github.com/dmccreary/tracking-ai-course.git
 cd tracking-ai-course
+
+# (If you cloned without --recurse-submodules, run this once:)
+git submodule update --init docs/sims/shared
 
 # Install dependencies
 pip install mkdocs mkdocs-material
@@ -127,6 +138,36 @@ pip install mkdocs mkdocs-material
 # Serve locally
 mkdocs serve
 ```
+
+> If `docs/sims/shared/` is empty, the shared MicroSims won't load — run the
+> `git submodule update --init` line above.
+
+## 🔌 Shared MicroSims
+
+Most MicroSims in this course live in the central
+**[shared-microsims](https://github.com/dmccreary/shared-microsims)** repository and
+are pulled in as a git submodule mounted at `docs/sims/shared/` (so they appear at
+`/tracking-ai-course/sims/shared/<sim-name>/`). This keeps a single source of truth
+shared with other textbooks instead of duplicating files.
+
+Course-specific MicroSims (the `learning-graph` viewer) stay as ordinary
+directories under `docs/sims/`.
+
+**To fix or improve a shared MicroSim**, edit it in the `shared-microsims` repo —
+never inside `docs/sims/shared/` here (that leaves the submodule on a detached
+HEAD). Then pull the update into this course:
+
+```bash
+cd docs/sims/shared && git checkout main && git pull   # get latest shared sims
+cd ../../..
+git add docs/sims/shared                               # record the new pinned commit
+git commit -m "Update shared MicroSims"
+mkdocs gh-deploy                                        # build + publish
+```
+
+The course stays pinned to a specific commit of `shared-microsims` until you run
+those steps, so shared-sim changes never land in the published site unexpectedly.
+Full maintainer guide: <https://github.com/dmccreary/shared-microsims#readme>.
 
 ## 📊 Course Features
 

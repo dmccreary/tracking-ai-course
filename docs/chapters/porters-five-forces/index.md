@@ -1,6 +1,6 @@
 # Porter's Five Forces Analysis for Educational Institutions in the Age of AI
 
-<iframe src="../../sims/porters-five-forces/main.html" height="510px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/shared/porters-five-forces/main.html" height="510px" scrolling="no" style="overflow: hidden;"></iframe>
 
 ## Introduction
 

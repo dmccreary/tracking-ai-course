@@ -55,41 +55,41 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
-    - AI Capability Maturity Model: sims/ai-cmm/index.md
-    - AI Causes of Acceleration: sims/ai-causes/index.md
-    - CLD Viewer: sims/cld-viewer/index.md
-    - AI Doubling Rate: sims/ai-doubling-rate/index.md
-    - AI Flywheel: sims/ai-flywheel/index.md
-    - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
-    - AI SWOT Analysis: sims/swot/index.md
-    - AI Task Horizons: sims/ai-task-horizons/index.md
-    - AI Timeline: sims/timeline/index.md
-    - Autoregressive: sims/autoregressive/index.md
-    - Bloom's Taxonomy: sims/blooms-taxonomy/index.md
-    - Book Generation Workflow: sims/book-gen-workflow/index.md
-    - Book Levels: sims/book-levels/index.md
-    - Eight AI Forces: sims/eight-ai-forces/index.md
-    - Four AI Futures: sims/four-futures/index.md
-    - GenAI Idea Funnel: sims/idea-funnel/index.md
-    - LM Arena Timeline: sims/lm-arena-timeline/index.md
+    - AI Benchmarks Timeline: sims/shared/ai-benchmarks-timeline/index.md
+    - AI Capability Maturity Model: sims/shared/ai-cmm/index.md
+    - AI Causes of Acceleration: sims/shared/ai-causes/index.md
+    - CLD Viewer: sims/shared/cld-viewer/index.md
+    - AI Doubling Rate: sims/shared/ai-doubling-rate/index.md
+    - AI Flywheel: sims/shared/ai-flywheel/index.md
+    - AI Pace Accelerating: sims/shared/ai-pace-accelerating/index.md
+    - AI SWOT Analysis: sims/shared/swot/index.md
+    - AI Task Horizons: sims/shared/ai-task-horizons/index.md
+    - AI Timeline: sims/shared/timeline/index.md
+    - Autoregressive: sims/shared/autoregressive/index.md
+    - Bloom's Taxonomy: sims/shared/blooms-taxonomy/index.md
+    - Book Generation Workflow: sims/shared/book-gen-workflow/index.md
+    - Book Levels: sims/shared/book-levels/index.md
+    - Eight AI Forces: sims/shared/eight-ai-forces/index.md
+    - Four AI Futures: sims/shared/four-futures/index.md
+    - GenAI Idea Funnel: sims/shared/idea-funnel/index.md
+    - LM Arena Timeline: sims/shared/lm-arena-timeline/index.md
     - Learning Graph:
       - Introduction: sims/learning-graph/index.md
       - Concept List: sims/learning-graph/concept-list.md
       - Quality Metrics: sims/learning-graph/quality-metrics.md
       - Taxonomy Distribution: sims/learning-graph/taxonomy-distribution.md
       - MicroSim Quality Report: sims/learning-graph/microsim-quality-report.md
-    - MMLU Timeline: sims/mmlu-timeline/index.md
-    - Moore's Law: sims/moores-law/index.md
-    - Porter's Five Forces: sims/porters-five-forces/index.md
-    - Power Wall: sims/power-wall/index.md
-    - Projecting AI: sims/projecting-ai/index.md
-    - Technology Adoption Curve: sims/technology-adoption/index.md
-    - Technology Hype Cycle: sims/hype-cycle/index.md
-    - Tokenizer: sims/tokenizer/index.md
-    - Winner-Takes-All CLD: sims/winner-takes-all-cld/index.md
-    - Eight AI Forces: sims/eight-ai-forces/index.md
-    - MicroSim Templates: sims/templates/index.md
+    - MMLU Timeline: sims/shared/mmlu-timeline/index.md
+    - Moore's Law: sims/shared/moores-law/index.md
+    - Porter's Five Forces: sims/shared/porters-five-forces/index.md
+    - Power Wall: sims/shared/power-wall/index.md
+    - Projecting AI: sims/shared/projecting-ai/index.md
+    - Technology Adoption Curve: sims/shared/technology-adoption/index.md
+    - Technology Hype Cycle: sims/shared/hype-cycle/index.md
+    - Tokenizer: sims/shared/tokenizer/index.md
+    - Winner-Takes-All CLD: sims/shared/winner-takes-all-cld/index.md
+    - Eight AI Forces: sims/shared/eight-ai-forces/index.md
+    - MicroSim Templates: sims/shared/templates/index.md
 
   - Slides:
     - List of Slides: slides/index.md
@@ -128,7 +128,7 @@ nav:
 # Dan McCreary's MicroSite Standards from here down
 
 exclude_docs: |
-  sims/eight-ai-forces/image-prompt.md
+  sims/shared/eight-ai-forces/image-prompt.md
 
 theme:
   name: material

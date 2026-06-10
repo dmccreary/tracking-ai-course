@@ -21,15 +21,15 @@ skills will be important in an AI dominated future.
 
 ## Four Futures
 
-<iframe src="../../sims/four-futures/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/four-futures/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 ## Moore's Law
 
-<iframe src="../../sims/moores-law/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/moores-law/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 ## Power Wall
 
-<iframe src="../../sims/power-wall/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/power-wall/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 ## AI Progress Is Difficult to Predict
 
@@ -40,33 +40,33 @@ skills will be important in an AI dominated future.
 
 ## AI Systems Thinking
 
-<iframe src="../../sims/ai-causes//main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/ai-causes//main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 ## AI Flywheel
 
-<iframe src="../../sims/ai-flywheel/main.html" width="100%" height="470px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/ai-flywheel/main.html" width="100%" height="470px" scrolling="no"></iframe>
 
 ## Traditional AI Benchmarks
 
-<iframe src="../../sims/mmlu-timeline/main.html" height="550px" scrolling="no"
+<iframe src="../../sims/shared/mmlu-timeline/main.html" height="550px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
-Many AI benchmarks show LLM capabilities approaching human-level skills like the [MMLU benchmark](../../sims/mmlu-timeline/index).
+Many AI benchmarks show LLM capabilities approaching human-level skills like the [MMLU benchmark](../../sims/shared/mmlu-timeline/index).
 
 ## Some AI Benchmark Compare LLMs with Each Other in an Arena
 
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/lm-arena-timeline/main.html"  height="450px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/shared/lm-arena-timeline/main.html"  height="450px" scrolling="no"></iframe>
 
-[LM Arena Benchmark](../../sims/lm-arena-timeline/index)
+[LM Arena Benchmark](../../sims/shared/lm-arena-timeline/index)
 
 ## METR Task Horizons
 
-<iframe src="../../sims/ai-doubling-rate/main.html" width="100%" height="700px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/ai-doubling-rate/main.html" width="100%" height="700px" scrolling="no"></iframe>
 The METR.org studies show that AI task completion has been doubling every 7 months since 2019.
 
 ## Projecting AI
 
-<iframe src="../../sims/projecting-ai/main.html" width="100%" height="750px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/projecting-ai/main.html" width="100%" height="750px" scrolling="no"></iframe>
 We can now project this trend line out until 2030.  The results are sometimes difficult to believe. In 2030 tasks that take 1,000 days will be possible with 50% chance of correctness.
 
 ## Modern Desktop

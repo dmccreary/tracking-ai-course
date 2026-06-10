@@ -4,7 +4,7 @@ Although models like the MMLU are useful, they can be biased toward models
 that specifically train on their sample questions.  Ideally we would have
 an objective testing that would not be easy for a model to trick.
 
-<iframe src="../../sims/lm-arena-timeline/main.html" height="450px" scrolling="no"
+<iframe src="../../sims/shared/lm-arena-timeline/main.html" height="450px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ## The Bradley-Terry Model and Its Use in LMArena

@@ -2,7 +2,7 @@
 
 The **MMLU (Massive Multitask Language Understanding)** benchmark is currently the **most referenced** and **most reputable** benchmark for evaluating the general intelligence of large language models (LLMs), regardless of size.
 
-<iframe src="../../sims/mmlu-timeline/main.html" height="550px" scrolling="no"
+<iframe src="../../sims/shared/mmlu-timeline/main.html" height="550px" scrolling="no"
   style="overflow: hidden;"></iframe>
 
 ## About the MMLU

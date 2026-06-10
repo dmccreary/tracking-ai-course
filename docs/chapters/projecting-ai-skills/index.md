@@ -2,7 +2,7 @@
 
 What skill will be needed in the year 2030?
 
-If we look at the [data](../../sims/ai-doubling-rate/index.md) we can make the assumption that
+If we look at the [data](../../sims/shared/ai-doubling-rate/index.md) we can make the assumption that
 AI capabilities are doubling every seven months.  This prompt will help us extrapolate these trends to find the skills that will be relevent in 2030.
 
 ## Doubling Assumpiton Prompt

@@ -237,7 +237,7 @@ Technologies that can operate and make decisions independently with minimal huma
 #### Autoregressive
 A mathematical or computational model in which the current value or token in a sequence is predicted using a function of previous values or tokens in that same sequence.
 
-See also [Autoregressive MicroSim](./sims/autoregressive/index.md)
+See also [Autoregressive MicroSim](./sims/shared/autoregressive/index.md)
 
 #### BERT (Bidirectional Encoder Representations from Transformers)
 A natural language processing model developed by Google that introduced bidirectional training to better understand context in language by considering words both before and after a given word.
@@ -779,7 +779,7 @@ The efficiency, effectiveness, and output quality of employees whose primary rol
 
 An artificial intelligence system trained on vast text datasets using deep learning techniques to recognize, summarize, translate, predict, and generate human-like text based on contextual patterns.
 
-**Example:** The [MMUL timeline](./sims/mmlu-timeline/index.md) shows how large language models evolved from specialized research tools to widely accessible applications between 2018 and 2023.
+**Example:** The [MMUL timeline](./sims/shared/mmlu-timeline/index.md) shows how large language models evolved from specialized research tools to widely accessible applications between 2018 and 2023.
 
 #### Learning Acceleration
 The process of increasing the rate at which individuals acquire knowledge, develop skills, or achieve educational objectives through targeted interventions or technologies.
@@ -851,7 +851,7 @@ An observation that the number of transistors in integrated circuits doubles app
 
 **Example:** The course examines how Moore's Law has influenced AI development, enabling increasingly complex neural networks as computational power has grown exponentially.
 
-[See Moore's Law MicroSim](./sims/moores-law/index.md)
+[See Moore's Law MicroSim](./sims/shared/moores-law/index.md)
 
 #### Multi-Agent Systems
 Computational frameworks where multiple artificial intelligence entities interact, cooperate, or compete to solve problems or perform tasks that may be beyond the capabilities of individual agents.
@@ -877,7 +877,7 @@ MMLU currently the **most referenced** and **most reputable** benchmark for eval
 
 See also:
 * [MMLU Chapter](./chapters/mmlu/index.md)
-* [MMLU MicroSim](./sims/mmlu-timeline/index.md)
+* [MMLU MicroSim](./sims/shared/mmlu-timeline/index.md)
 
 #### Narrow AI
 Artificial intelligence systems designed to perform specific tasks or solve particular problems within well-defined constraints, as opposed to general intelligence capable of handling diverse challenges.

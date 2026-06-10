@@ -24,7 +24,7 @@ Created a comprehensive MicroSim that replicates the interactive chart from METR
 
 ## Files Created
 
-### 1. `/docs/sims/ai-task-horizons/main.html` (1.9KB)
+### 1. `/docs/sims/shared/ai-task-horizons/main.html` (1.9KB)
 - Clean HTML structure with minimal inline content
 - Links to external CSS and JavaScript files
 - Chart.js CDN import (v4.4.0)
@@ -32,7 +32,7 @@ Created a comprehensive MicroSim that replicates the interactive chart from METR
 - Interactive control buttons (scale toggle, success probability toggle)
 - Legend showing frontier vs non-frontier models
 
-### 2. `/docs/sims/ai-task-horizons/style.css` (2.1KB)
+### 2. `/docs/sims/shared/ai-task-horizons/style.css` (2.1KB)
 - Modern, responsive design
 - Aliceblue background with blue border
 - Button styles with hover effects
@@ -40,7 +40,7 @@ Created a comprehensive MicroSim that replicates the interactive chart from METR
 - Flexbox layouts for controls and legend
 - Mobile-responsive media queries (@max-width: 768px)
 
-### 3. `/docs/sims/ai-task-horizons/script.js` (6.3KB)
+### 3. `/docs/sims/shared/ai-task-horizons/script.js` (6.3KB)
 - Complete dataset of 30 AI models (14 frontier, 16 non-frontier)
 - Time horizons in minutes (50% and 80% success rates)
 - Chart.js scatter plot configuration
@@ -50,7 +50,7 @@ Created a comprehensive MicroSim that replicates the interactive chart from METR
 - Responsive chart with custom tooltips
 - Chronological sorting by model release date
 
-### 4. `/docs/sims/ai-task-horizons/index.md` (6.4KB)
+### 4. `/docs/sims/shared/ai-task-horizons/index.md` (6.4KB)
 - Comprehensive documentation
 - Embedded iframe (588px height)
 - Model data tables with time horizons
@@ -138,7 +138,7 @@ Created a comprehensive MicroSim that replicates the interactive chart from METR
 
 ### Phase 1: Initial Setup
 1. Used `chartjs-generator` skill to create foundation
-2. Created directory structure: `/docs/sims/ai-task-horizons/`
+2. Created directory structure: `/docs/sims/shared/ai-task-horizons/`
 3. Built initial HTML with embedded CSS/JavaScript
 
 ### Phase 2: Bug Fixes
@@ -293,10 +293,10 @@ const modelData = {
 ## Files Modified
 
 ### New Files Created
-- `/docs/sims/ai-task-horizons/main.html`
-- `/docs/sims/ai-task-horizons/style.css`
-- `/docs/sims/ai-task-horizons/script.js`
-- `/docs/sims/ai-task-horizons/index.md`
+- `/docs/sims/shared/ai-task-horizons/main.html`
+- `/docs/sims/shared/ai-task-horizons/style.css`
+- `/docs/sims/shared/ai-task-horizons/script.js`
+- `/docs/sims/shared/ai-task-horizons/index.md`
 
 ### Existing Files Modified
 - `/docs/sims/index.md` - Added comprehensive entries for all 24 MicroSims
@@ -307,7 +307,7 @@ const modelData = {
 
 ### Embedding in Web Pages
 ```html
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/ai-task-horizons/main.html"
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/shared/ai-task-horizons/main.html"
         width="100%"
         height="588">
 </iframe>

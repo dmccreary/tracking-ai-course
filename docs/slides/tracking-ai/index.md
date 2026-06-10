@@ -35,7 +35,7 @@ What does the evidence show about how AI is growing in capabilities?
 
 ## Slide 3: Visualizing Four Future Growth Rates
 
-<iframe src="../../sims/four-futures/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/four-futures/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 ## Slide 4: METR: Measuring Task Complexity
 
@@ -54,10 +54,10 @@ This task/time database can form the basis of objective measures of AI capabilit
 
 The METR.org studies show that AI task completion has been doubling every 7 months since 2019.
 
-<iframe src="../../sims/ai-doubling-rate/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/ai-doubling-rate/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 ## Slide 5: Projecting AI
 
 We can now project this trend line out until 2030.  The results are sometimes difficult to believe.
 
-<iframe src="../../sims/projecting-ai/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/shared/projecting-ai/main.html" width="100%" height="500px" scrolling="no"></iframe>

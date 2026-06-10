@@ -1,0 +1,3 @@
+[submodule "docs/sims/shared"]
+	path = docs/sims/shared
+	url = https://github.com/dmccreary/shared-microsims
