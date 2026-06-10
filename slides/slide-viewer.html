@@ -705,8 +705,8 @@
         function resolveRelativePath(sourceDir, relativePath) {
             // Combine sourceDir with relativePath and normalize
             // sourceDir: "tracking-ai/"
-            // relativePath: "../../sims/four-futures/main.html"
-            // Result should be: "../sims/four-futures/main.html" (relative to slides/)
+            // relativePath: "../../sims/shared/four-futures/main.html"
+            // Result should be: "../sims/shared/four-futures/main.html" (relative to slides/)
 
             const parts = (sourceDir + relativePath).split('/');
             const resolved = [];

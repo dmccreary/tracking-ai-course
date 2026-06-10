@@ -1287,7 +1287,7 @@
 <h1 id="add-social-media-metadata">Add Social Media Metadata</h1>
 <div class="admonition prompt">
 <p class="admonition-title">Prompt</p>
-<p>Add yml metadata to the @docs/sims/projecting-ai/index.md
+<p>Add yml metadata to the @docs/sims/shared/projecting-ai/index.md
 Include the title, description and image for social media open graph previews using projecting-ai.png in that folder.<br>
 Also put the metadata in the main.html but using standardized header metadata tags.</p>
 </div>
@@ -1295,10 +1295,10 @@ Also put the metadata in the main.html but using standardized header metadata ta
 <h2 id="date">Date</h2>
 <p>2025-11-16</p>
 <h2 id="prompt">Prompt</h2>
-<p>User requested: "add yml metadata to the @docs/sims/projecting-ai/index.md and include the image for social media preview using projecting-ai.png in that folder. Also put the metadata in the main.html but using header metadata tags"</p>
+<p>User requested: "add yml metadata to the @docs/sims/shared/projecting-ai/index.md and include the image for social media preview using projecting-ai.png in that folder. Also put the metadata in the main.html but using header metadata tags"</p>
 <h2 id="actions-taken">Actions Taken</h2>
 <h3 id="1-updated-indexmd-with-yaml-frontmatter">1. Updated index.md with YAML Frontmatter</h3>
-<p>Added YAML metadata to the top of <code>/docs/sims/projecting-ai/index.md</code>:</p>
+<p>Added YAML metadata to the top of <code>/docs/sims/shared/projecting-ai/index.md</code>:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1311,11 +1311,11 @@ Also put the metadata in the main.html but using standardized header metadata ta
 </code></pre></div></td></tr></tbody></table></div>
 <p><strong>Note</strong>: User subsequently updated the image paths to:
 </p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/sims/projecting-ai/projecting-ai.png</span>
-<span class="nt">og:image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/sims/projecting-ai/projecting-ai.png</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/sims/shared/projecting-ai/projecting-ai.png</span>
+<span class="nt">og:image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/sims/shared/projecting-ai/projecting-ai.png</span>
 </code></pre></div></td></tr></tbody></table></div><p></p>
 <h3 id="2-updated-mainhtml-with-html-meta-tags">2. Updated main.html with HTML Meta Tags</h3>
-<p>Added comprehensive metadata tags to the <code>&lt;head&gt;</code> section of <code>/docs/sims/projecting-ai/main.html</code>:</p>
+<p>Added comprehensive metadata tags to the <code>&lt;head&gt;</code> section of <code>/docs/sims/shared/projecting-ai/main.html</code>:</p>
 <h4 id="standard-meta-tags">Standard Meta Tags</h4>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Interactive visualization showing exponential growth of AI task completion capabilities from 2019 to 2030, with time on the horizontal axis and projected horizons based on 7-month doubling time"</span><span class="p">&gt;</span>
@@ -1329,10 +1329,10 @@ Also put the metadata in the main.html but using standardized header metadata ta
 <span class="normal">5</span>
 <span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- Open Graph / Facebook --&gt;</span>
 <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"og:type"</span> <span class="na">content</span><span class="o">=</span><span class="s">"website"</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"og:url"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/projecting-ai/main.html"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"og:url"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/shared/projecting-ai/main.html"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"og:title"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Projecting AI Task Completion to 2030"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"og:description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Interactive visualization showing exponential growth of AI task completion capabilities from 2019 to 2030, with time on the horizontal axis and projected horizons based on 7-month doubling time"</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"og:image"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/projecting-ai/projecting-ai.png"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"og:image"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/shared/projecting-ai/projecting-ai.png"</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h4 id="twitter-card-tags">Twitter Card Tags</h4>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1342,10 +1342,10 @@ Also put the metadata in the main.html but using standardized header metadata ta
 <span class="normal">5</span>
 <span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- Twitter --&gt;</span>
 <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"twitter:card"</span> <span class="na">content</span><span class="o">=</span><span class="s">"summary_large_image"</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"twitter:url"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/projecting-ai/main.html"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"twitter:url"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/shared/projecting-ai/main.html"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"twitter:title"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Projecting AI Task Completion to 2030"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"twitter:description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Interactive visualization showing exponential growth of AI task completion capabilities from 2019 to 2030, with time on the horizontal axis and projected horizons based on 7-month doubling time"</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"twitter:image"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/projecting-ai/projecting-ai.png"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">"twitter:image"</span> <span class="na">content</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/shared/projecting-ai/projecting-ai.png"</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h3 id="3-additional-user-edits">3. Additional User Edits</h3>
 <p>The user also made the following changes:
@@ -1354,8 +1354,8 @@ Also put the metadata in the main.html but using standardized header metadata ta
 - Updated image paths in index.md to use absolute paths from site root</p>
 <h2 id="files-modified">Files Modified</h2>
 <ol>
-<li><code>/Users/dan/Documents/ws/tracking-ai-course/docs/sims/projecting-ai/index.md</code></li>
-<li><code>/Users/dan/Documents/ws/tracking-ai-course/docs/sims/projecting-ai/main.html</code></li>
+<li><code>/Users/dan/Documents/ws/tracking-ai-course/docs/sims/shared/projecting-ai/index.md</code></li>
+<li><code>/Users/dan/Documents/ws/tracking-ai-course/docs/sims/shared/projecting-ai/main.html</code></li>
 </ol>
 <h2 id="outcome">Outcome</h2>
 <p>Both files now have proper metadata for social media sharing:

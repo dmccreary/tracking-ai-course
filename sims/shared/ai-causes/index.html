@@ -1,0 +1,3068 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A causal loop diagram showing how AI feedback is accelerating AI progress.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/tracking-ai-course/sims/shared/ai-causes/">
+      
+      
+        <link rel="prev" href="../ai-cmm/">
+      
+      
+        <link rel="next" href="../cld-viewer/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Causes of AI Acceleration - Tracking AI Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-KTYGHZCPM3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-KTYGHZCPM3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-KTYGHZCPM3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Causes of AI Acceleration - Tracking AI Course">
+      
+        <meta property="og:description" content="A causal loop diagram showing how AI feedback is accelerating AI progress.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/tracking-ai-course/sims/ai-causes/ai-causes.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/tracking-ai-course/sims/shared/ai-causes/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Causes of AI Acceleration - Tracking AI Course">
+      
+        <meta name="twitter:description" content="A causal loop diagram showing how AI feedback is accelerating AI progress.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/tracking-ai-course/sims/ai-causes/ai-causes.png">
+      
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#causes-of-ai-acceleration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Tracking AI Course" class="md-header__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tracking AI Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Causes of AI Acceleration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Tracking AI Course" class="md-nav__button md-logo" aria-label="Tracking AI Course" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    Tracking AI Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/tracking-ai-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About This Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../slides/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Slides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../stories/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Stories
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            MicroSims
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-benchmarks-timeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Benchmarks Timeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-cmm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Capability Maturity Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AI Causes of Acceleration
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    AI Causes of Acceleration
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai-acceleration-feedback-loop-strategic-planning-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Acceleration Feedback Loop: Strategic Planning Lesson
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-lesson-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Lesson Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-interactive-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opening: Interactive Exploration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-learning-module-1-understanding-the-four-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Learning Module 1: Understanding the Four Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Learning Module 1: Understanding the Four Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#training-data-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Data Deep Dive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-algorithms-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Algorithms Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-hardware-examination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better Hardware Examination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-ai-outcomes-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better AI Outcomes Focus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-learning-module-2-systems-thinking-and-feedback-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Learning Module 2: Systems Thinking and Feedback Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Learning Module 2: Systems Thinking and Feedback Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-reinforcement-loop-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive Reinforcement Loop Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leverage-point-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leverage Point Identification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-learning-module-3-organizational-strategy-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Learning Module 3: Organizational Strategy Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Learning Module 3: Organizational Strategy Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-state-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current State Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategic-options-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Options Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration-strategy-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceleration Strategy Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-and-action-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application and Action Planning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application and Action Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cross-industry-case-study-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Industry Case Study Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-assessment-and-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Assessment and Mitigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-roadmap-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Roadmap Creation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesis-and-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synthesis and Commitment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synthesis and Commitment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategy-presentation-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategy Presentation Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-commitment-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Commitment Planning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-and-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing and Next Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Closing and Next Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-insights-synthesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Insights Synthesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-item-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Item Development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success-metrics-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Metrics Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessment-and-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment and Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessment and Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immediate Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow-up Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-for-continued-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources for Continued Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources for Continued Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Reading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#professional-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professional Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cld-viewer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CLD Viewer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-doubling-rate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Doubling Rate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-flywheel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Flywheel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-pace-accelerating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Pace Accelerating
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI SWOT Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-task-horizons/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Task Horizons
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Timeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoregressive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autoregressive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blooms-taxonomy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bloom's Taxonomy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../book-gen-workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Generation Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../book-levels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Levels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eight-ai-forces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eight AI Forces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../four-futures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Four AI Futures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../idea-funnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Idea Funnel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lm-arena-timeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LM Arena Timeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mmlu-timeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MMLU Timeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moores-law/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moore's Law
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../porters-five-forces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Porter's Five Forces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power-wall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Wall
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projecting-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projecting AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technology-adoption/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Technology Adoption Curve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hype-cycle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Technology Hype Cycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tokenizer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tokenizer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../winner-takes-all-cld/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Winner-Takes-All CLD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eight-ai-forces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eight AI Forces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MicroSim Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../slides/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Slides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../labs/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Labs
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../articles/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Articles/Blog Posts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../appendices/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai-acceleration-feedback-loop-strategic-planning-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Acceleration Feedback Loop: Strategic Planning Lesson
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-lesson-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Lesson Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-interactive-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opening: Interactive Exploration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-learning-module-1-understanding-the-four-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Learning Module 1: Understanding the Four Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Learning Module 1: Understanding the Four Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#training-data-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Data Deep Dive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-algorithms-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Algorithms Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-hardware-examination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better Hardware Examination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-ai-outcomes-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better AI Outcomes Focus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-learning-module-2-systems-thinking-and-feedback-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Learning Module 2: Systems Thinking and Feedback Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Learning Module 2: Systems Thinking and Feedback Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-reinforcement-loop-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive Reinforcement Loop Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leverage-point-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leverage Point Identification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-learning-module-3-organizational-strategy-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Learning Module 3: Organizational Strategy Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Learning Module 3: Organizational Strategy Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-state-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current State Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategic-options-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Options Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration-strategy-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceleration Strategy Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-and-action-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application and Action Planning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application and Action Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cross-industry-case-study-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Industry Case Study Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-assessment-and-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Assessment and Mitigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-roadmap-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Roadmap Creation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesis-and-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synthesis and Commitment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synthesis and Commitment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategy-presentation-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategy Presentation Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-commitment-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Commitment Planning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-and-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing and Next Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Closing and Next Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-insights-synthesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Insights Synthesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-item-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Item Development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success-metrics-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Metrics Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessment-and-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment and Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessment and Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immediate Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow-up Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-for-continued-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources for Continued Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources for Continued Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Reading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#professional-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professional Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/tracking-ai-course/blob/master/docs/sims/shared/ai-causes/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="causes-of-ai-acceleration">Causes of AI Acceleration</h1>
+<iframe src="./main.html" height="570px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/tracking-ai-course/sims/ai-causes/main.html"</span>  <span class="na">height</span><span class="o">=</span><span class="s">"570px"</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span>
+  <span class="na">style</span><span class="o">=</span><span class="s">"overflow: hidden;"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><a class="md-button md-button--primary" href="main.html">Run the Causes of AI Acceleration MicroSim</a></p>
+<p><a href="https://editor.p5js.org/dmccreary/sketches/8JrE0llQ1">Edit Causes of AI Acceleration MicroSim</a></p>
+<h2 id="ai-acceleration-feedback-loop-strategic-planning-lesson">AI Acceleration Feedback Loop: Strategic Planning Lesson</h2>
+<div class="admonition prompt">
+<p class="admonition-title">Prompt</p>
+<p>There is a MicroSim in the file ai-causes.js that shows the feedback between Training Data, New Algorithms, and Better Hardware and Better AI.</p>
+<p>This is a Causal Loop Diagram (CDL) from Systems Thinking that 
+explains the positive reinforcement loops that contribute to Better AI.</p>
+<p>Please generate a detailed lesson plan for members of an AI strategy planning team to help them study each of the parts of this diagram.  Do not put in estimated times.</p>
+</div>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this lesson, participants will:</p>
+<ul>
+<li>Understand the three key components of AI acceleration and their definitions</li>
+<li>Analyze how positive feedback loops create exponential improvement in AI systems</li>
+<li>Apply systems thinking principles to identify leverage points in AI strategy</li>
+<li>Evaluate how their organization can participate in or benefit from these acceleration cycles</li>
+<li>Develop strategic recommendations based on feedback loop analysis</li>
+</ul>
+<h2 id="pre-lesson-preparation">Pre-Lesson Preparation</h2>
+<p><strong>Required Materials:</strong></p>
+<ul>
+<li>Access to the AI Acceleration MicroSim (ai-causes.js)</li>
+<li>Systems thinking reference materials</li>
+<li>Organizational AI assessment worksheet</li>
+<li>Flip chart paper and markers for group activities</li>
+</ul>
+<p><strong>Pre-Reading:</strong></p>
+<ul>
+<li>Review organizational current state of AI adoption</li>
+<li>Gather data on current training data assets, algorithm capabilities, and hardware resources</li>
+</ul>
+<h2 id="lesson-structure">Lesson Structure</h2>
+<h3 id="opening-interactive-exploration">Opening: Interactive Exploration</h3>
+<p><strong>Activity: MicroSim Exploration</strong></p>
+<p>Participants individually explore the AI Acceleration MicroSim, hovering over each component to read the descriptions. Have them take notes on initial observations about relationships between components.</p>
+<p><strong>Debrief Questions:</strong></p>
+<ul>
+<li>What surprised you about the relationships shown?</li>
+<li>Which component do you think is most important for your organization?</li>
+<li>What feedback loops do you already see in your current AI initiatives?</li>
+</ul>
+<h3 id="core-learning-module-1-understanding-the-four-components">Core Learning Module 1: Understanding the Four Components</h3>
+<h4 id="training-data-deep-dive">Training Data Deep Dive</h4>
+<p><strong>Component Analysis:</strong>
+- Definition and scope of training data in AI systems
+- Quality vs. quantity considerations
+- Synthetic data generation capabilities
+- Data labeling and curation automation</p>
+<p><strong>Strategic Questions:</strong></p>
+<ul>
+<li>What data assets does our organization currently possess?</li>
+<li>How could better AI help us generate or improve our training data?</li>
+<li>What data partnerships or acquisition strategies should we consider?</li>
+<li>How do we ensure data quality and compliance in our acceleration strategy?</li>
+</ul>
+<p><strong>Case Study Discussion:</strong></p>
+<p>Examine how organizations like Autonomous Vehicles (autopilot data), Google (search data), or Amazon (product review data) have created training data advantages that compound over time.</p>
+<h4 id="new-algorithms-analysis">New Algorithms Analysis</h4>
+<p><strong>Component Analysis:</strong></p>
+<ul>
+<li>Evolution from manual algorithm design to automated discovery</li>
+<li>AutoML and neural architecture search capabilities</li>
+<li>AI-assisted research and development processes</li>
+<li>Open source vs. proprietary algorithm strategies</li>
+</ul>
+<p><strong>Strategic Questions:</strong></p>
+<ul>
+<li>What is our current algorithmic capability and how does it compare to competitors?</li>
+<li>Should we invest in algorithm development or focus on implementation?</li>
+<li>How can we leverage AI to discover better algorithms for our specific use cases?</li>
+<li>What partnerships with research institutions or tech companies make sense?</li>
+</ul>
+<p><strong>Innovation Exercise:</strong></p>
+<p>Brainstorm specific algorithms or AI techniques that could transform your organization's core processes.</p>
+<h4 id="better-hardware-examination">Better Hardware Examination</h4>
+<p><strong>Component Analysis:</strong></p>
+<ul>
+<li>Specialized AI hardware: GPUs, TPUs, neuromorphic chips</li>
+<li>Edge computing and distributed AI processing</li>
+<li>AI-designed chips and hardware optimization</li>
+<li>Cost-performance tradeoffs in hardware selection</li>
+</ul>
+<p><strong>Strategic Questions:</strong></p>
+<ul>
+<li>What are our current computational constraints?</li>
+<li>Should we invest in on-premise hardware or leverage cloud resources?</li>
+<li>How do we stay current with rapidly evolving hardware capabilities?</li>
+<li>What hardware partnerships or procurement strategies optimize our AI acceleration?</li>
+</ul>
+<p><strong>Technical Assessment:</strong></p>
+<p>Evaluate your organization's current hardware infrastructure against AI workload requirements.</p>
+<h4 id="better-ai-outcomes-focus">Better AI Outcomes Focus</h4>
+<p><strong>Component Analysis:</strong></p>
+<ul>
+<li>Defining "better" AI for your organizational context</li>
+<li>Measuring AI improvement: accuracy, efficiency, generalization</li>
+<li>Integration challenges and change management</li>
+<li>Competitive advantages from superior AI capabilities</li>
+</ul>
+<p><strong>Strategic Questions:</strong></p>
+<ul>
+<li>How do we define and measure "better AI" for our specific goals?</li>
+<li>What would transformative AI capability look like in our industry?</li>
+<li>How do we ensure AI improvements translate to business value?</li>
+<li>What competitive moats can we build through AI excellence?</li>
+</ul>
+<h3 id="core-learning-module-2-systems-thinking-and-feedback-loops">Core Learning Module 2: Systems Thinking and Feedback Loops</h3>
+<h4 id="positive-reinforcement-loop-analysis">Positive Reinforcement Loop Analysis</h4>
+<p><strong>Concept Introduction:</strong></p>
+<ul>
+<li>Systems thinking fundamentals</li>
+<li>Positive vs. negative feedback loops</li>
+<li>Exponential growth patterns</li>
+<li>Tipping points and acceleration phases</li>
+</ul>
+<p><strong>Loop Mapping Exercise:</strong></p>
+<p>Working in teams, participants map out additional feedback loops they observe in AI development, both within and external to the four main components.</p>
+<p><strong>Discussion Points:</strong></p>
+<ul>
+<li>Why do these feedback loops create exponential rather than linear improvement?</li>
+<li>What factors could slow down or break these acceleration cycles?</li>
+<li>How do network effects amplify these feedback loops?</li>
+<li>What are the implications for competitive dynamics in AI-driven industries?</li>
+</ul>
+<h4 id="leverage-point-identification">Leverage Point Identification</h4>
+<p><strong>Framework Application:</strong></p>
+<p>Using Donella Meadows' leverage points framework, identify where organizations can most effectively intervene in the AI acceleration system.</p>
+<p><strong>Strategic Intervention Analysis:</strong></p>
+<ul>
+<li><strong>Paradigm Level:</strong> Changing beliefs about AI's role in your organization</li>
+<li><strong>Goal Level:</strong> Shifting metrics and success definitions</li>
+<li><strong>Power Level:</strong> Altering decision-making authority for AI initiatives</li>
+<li><strong>Rules Level:</strong> Modifying policies and procedures around AI development</li>
+<li><strong>Information Level:</strong> Improving data flows and feedback mechanisms</li>
+<li><strong>Parameter Level:</strong> Adjusting budgets, timelines, and resource allocation</li>
+</ul>
+<p><strong>Team Exercise:</strong></p>
+<p>Each team identifies the top three leverage points their organization should focus on to accelerate AI development.</p>
+<h3 id="core-learning-module-3-organizational-strategy-development">Core Learning Module 3: Organizational Strategy Development</h3>
+<h4 id="current-state-assessment">Current State Assessment</h4>
+<p><strong>Assessment Framework:</strong></p>
+<p>Participants evaluate their organization's position in each of the four acceleration components:</p>
+<p><strong>Training Data Maturity:</strong></p>
+<ul>
+<li>Data collection capabilities</li>
+<li>Data quality and governance</li>
+<li>Data accessibility and integration</li>
+<li>Synthetic data generation capacity</li>
+</ul>
+<p><strong>Algorithm Development Capability:</strong></p>
+<ul>
+<li>In-house AI/ML expertise</li>
+<li>Research and development processes</li>
+<li>External partnerships and collaborations</li>
+<li>Algorithm deployment and scaling ability</li>
+</ul>
+<p><strong>Hardware and Infrastructure:</strong></p>
+<ul>
+<li>Current computational resources</li>
+<li>Scalability and flexibility</li>
+<li>Cost efficiency</li>
+<li>Technology refresh cycles</li>
+</ul>
+<p><strong>AI System Quality:</strong></p>
+<ul>
+<li>Current AI application performance</li>
+<li>Integration with business processes</li>
+<li>User adoption and satisfaction</li>
+<li>Competitive positioning</li>
+</ul>
+<h4 id="strategic-options-analysis">Strategic Options Analysis</h4>
+<p><strong>Build vs. Buy vs. Partner Framework:</strong>
+For each component, analyze strategic options:</p>
+<p><strong>Build (Internal Development):</strong></p>
+<ul>
+<li>When to invest in internal capability development</li>
+<li>Resource requirements and timelines</li>
+<li>Risk assessment and mitigation strategies</li>
+<li>Long-term competitive advantage considerations</li>
+</ul>
+<p><strong>Buy (Acquisition or Procurement):</strong></p>
+<ul>
+<li>Market analysis of available solutions</li>
+<li>Integration challenges and costs</li>
+<li>Vendor dependency risks</li>
+<li>Speed-to-market advantages</li>
+</ul>
+<p><strong>Partner (Collaborative Approach):</strong></p>
+<ul>
+<li>Strategic partnership opportunities</li>
+<li>Joint venture and consortium options</li>
+<li>Academic and research collaborations</li>
+<li>Ecosystem participation strategies</li>
+</ul>
+<h4 id="acceleration-strategy-design">Acceleration Strategy Design</h4>
+<p><strong>Strategy Workshop:</strong>
+Teams develop comprehensive strategies addressing:</p>
+<p><strong>Investment Prioritization:</strong></p>
+<ul>
+<li>Which component offers the highest return on investment?</li>
+<li>What sequence of investments creates the strongest reinforcement effects?</li>
+<li>How do we balance short-term needs with long-term acceleration?</li>
+</ul>
+<p><strong>Resource Allocation:</strong></p>
+<ul>
+<li>Budget distribution across the four components</li>
+<li>Talent acquisition and development priorities</li>
+<li>Infrastructure and technology investments</li>
+<li>External partnership and collaboration budgets</li>
+</ul>
+<p><strong>Timeline and Milestones:</strong></p>
+<ul>
+<li>Phase-gate approach to AI acceleration</li>
+<li>Key performance indicators for each component</li>
+<li>Decision points and strategy adjustment triggers</li>
+<li>Integration checkpoints and feedback mechanisms</li>
+</ul>
+<h3 id="application-and-action-planning">Application and Action Planning</h3>
+<h4 id="cross-industry-case-study-analysis">Cross-Industry Case Study Analysis</h4>
+<p><strong>Comparative Analysis:</strong>
+Examine how different industries leverage the AI acceleration feedback loop:</p>
+<ul>
+<li><strong>Technology Companies:</strong> Data advantage and algorithm innovation</li>
+<li><strong>Financial Services:</strong> Risk modeling and fraud detection acceleration</li>
+<li><strong>Healthcare:</strong> Drug discovery and diagnostic improvement cycles</li>
+<li><strong>Manufacturing:</strong> Predictive maintenance and quality optimization</li>
+<li><strong>Retail:</strong> Personalization and supply chain optimization</li>
+</ul>
+<p><strong>Lessons Learned Discussion:</strong></p>
+<ul>
+<li>What patterns emerge across successful AI acceleration strategies?</li>
+<li>How do industry-specific factors influence acceleration approaches?</li>
+<li>What mistakes and pitfalls should we avoid based on others' experiences?</li>
+</ul>
+<h4 id="risk-assessment-and-mitigation">Risk Assessment and Mitigation</h4>
+<p><strong>Risk Categories:</strong></p>
+<ul>
+<li><strong>Technical Risks:</strong> Algorithm bias, data quality issues, infrastructure failures</li>
+<li><strong>Competitive Risks:</strong> Falling behind in the acceleration race, vendor lock-in</li>
+<li><strong>Organizational Risks:</strong> Change resistance, talent shortages, cultural barriers</li>
+<li><strong>External Risks:</strong> Regulatory changes, market disruption, economic factors</li>
+</ul>
+<p><strong>Mitigation Strategy Development:</strong>
+For each identified risk, develop specific mitigation approaches and contingency plans.</p>
+<h4 id="implementation-roadmap-creation">Implementation Roadmap Creation</h4>
+<p><strong>90-Day Quick Wins:</strong>
+Identify immediate actions that can begin building acceleration momentum:</p>
+<ul>
+<li>Data audit and quality improvement initiatives</li>
+<li>Pilot projects with high learning potential</li>
+<li>Strategic partnership discussions</li>
+<li>Team capability assessments</li>
+</ul>
+<p><strong>One-Year Strategic Initiatives:</strong>
+Develop major initiatives that will significantly impact acceleration:</p>
+<ul>
+<li>Data platform development or enhancement</li>
+<li>Algorithm development programs or partnerships</li>
+<li>Infrastructure upgrades or cloud migration</li>
+<li>Organizational restructuring for AI excellence</li>
+</ul>
+<p><strong>Three-Year Transformation Goals:</strong>
+Define long-term objectives that position the organization as an AI acceleration leader:</p>
+<ul>
+<li>Market leadership positions</li>
+<li>Proprietary data and algorithm advantages</li>
+<li>Ecosystem and partnership network development</li>
+<li>Cultural transformation and AI-first mindset</li>
+</ul>
+<h3 id="synthesis-and-commitment">Synthesis and Commitment</h3>
+<h4 id="strategy-presentation-preparation">Strategy Presentation Preparation</h4>
+<p><strong>Team Presentations:</strong>
+Each team prepares a presentation covering:</p>
+<ul>
+<li>Current state assessment summary</li>
+<li>Strategic priorities and rationale</li>
+<li>Implementation roadmap overview</li>
+<li>Resource requirements and investment case</li>
+<li>Success metrics and monitoring approach</li>
+</ul>
+<p><strong>Peer Review Process:</strong>
+Teams present to each other and provide constructive feedback on:
+- Strategic logic and coherence
+- Implementation feasibility
+- Risk assessment completeness
+- Competitive advantage sustainability</p>
+<h4 id="organizational-commitment-planning">Organizational Commitment Planning</h4>
+<p><strong>Leadership Alignment:</strong></p>
+<ul>
+<li>Executive sponsorship requirements</li>
+<li>Board-level communication needs</li>
+<li>Stakeholder engagement strategies</li>
+<li>Change management considerations</li>
+</ul>
+<p><strong>Resource Commitment:</strong></p>
+<ul>
+<li>Budget approval processes</li>
+<li>Talent acquisition and development plans</li>
+<li>Technology and infrastructure investments</li>
+<li>Partnership and collaboration agreements</li>
+</ul>
+<p><strong>Governance and Oversight:</strong></p>
+<ul>
+<li>AI strategy committee formation</li>
+<li>Progress monitoring and reporting systems</li>
+<li>Decision-making authorities and processes</li>
+<li>Strategy adjustment and adaptation mechanisms</li>
+</ul>
+<h3 id="closing-and-next-steps">Closing and Next Steps</h3>
+<h4 id="key-insights-synthesis">Key Insights Synthesis</h4>
+<p><strong>Individual Reflection:</strong>
+Participants document their top three insights about AI acceleration and how it applies to their organizational context.</p>
+<p><strong>Group Discussion:</strong>
+Share insights and identify common themes across different organizational perspectives.</p>
+<h4 id="action-item-development">Action Item Development</h4>
+<p><strong>Immediate Actions:</strong>
+Each participant commits to specific actions they will take within the next two weeks to advance their organization's AI acceleration strategy.</p>
+<p><strong>Follow-up Planning:</strong></p>
+<ul>
+<li>Schedule regular strategy review meetings</li>
+<li>Establish communication channels for ongoing collaboration</li>
+<li>Plan additional deep-dive sessions on specific components</li>
+<li>Coordinate cross-functional team formation</li>
+</ul>
+<h4 id="success-metrics-definition">Success Metrics Definition</h4>
+<p><strong>Individual Success Measures:</strong></p>
+<ul>
+<li>Personal learning objectives achievement</li>
+<li>Strategic planning confidence improvement</li>
+<li>Network and collaboration expansion</li>
+</ul>
+<p><strong>Organizational Success Measures:</strong></p>
+<ul>
+<li>Strategy development and approval progress</li>
+<li>Implementation milestone achievement</li>
+<li>AI capability improvement metrics</li>
+<li>Competitive positioning enhancement</li>
+</ul>
+<h2 id="assessment-and-evaluation">Assessment and Evaluation</h2>
+<h3 id="immediate-assessment">Immediate Assessment</h3>
+<ul>
+<li>Strategy presentation quality and completeness</li>
+<li>Participation in discussions and exercises</li>
+<li>Demonstration of systems thinking concepts</li>
+<li>Quality of action planning and commitment</li>
+</ul>
+<h3 id="follow-up-evaluation">Follow-up Evaluation</h3>
+<ul>
+<li>Implementation progress on committed actions</li>
+<li>Strategy refinement and adaptation</li>
+<li>Organizational AI acceleration metrics</li>
+<li>Long-term competitive advantage development</li>
+</ul>
+<h2 id="resources-for-continued-learning">Resources for Continued Learning</h2>
+<h3 id="recommended-reading">Recommended Reading</h3>
+<ul>
+<li>"The Fifth Discipline" by Peter Senge (systems thinking)</li>
+<li>"Competing in the Age of AI" by Marco Iansiti and Karim Lakhani</li>
+<li>Industry-specific AI acceleration case studies</li>
+<li>Technical papers on AI hardware and algorithm advancement</li>
+</ul>
+<h3 id="professional-development">Professional Development</h3>
+<ul>
+<li>Systems thinking workshops and certification</li>
+<li>AI strategy and leadership programs</li>
+<li>Technical deep-dive sessions on specific acceleration components</li>
+<li>Cross-industry AI acceleration conferences and forums</li>
+</ul>
+<p>This lesson plan provides a comprehensive framework for understanding and applying the AI acceleration feedback loop to organizational strategy. The interactive and hands-on approach ensures participants not only understand the concepts but can immediately apply them to their strategic planning processes.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../ai-cmm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AI Capability Maturity Model">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                AI Capability Maturity Model
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cld-viewer/" class="md-footer__link md-footer__link--next" aria-label="Next: CLD Viewer">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                CLD Viewer
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
