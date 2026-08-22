@@ -2,8 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(node -e \"try { require\\('fs'\\).readFileSync\\('/Users/dan/Documents/ws/tracking-ai-course/docs/sims/cld-viewer/cld-viewer.js', 'utf8'\\); new Function\\(require\\('fs'\\).readFileSync\\('/Users/dan/Documents/ws/tracking-ai-course/docs/sims/cld-viewer/cld-viewer.js', 'utf8'\\)\\); console.log\\('cld-viewer.js: syntax OK'\\); } catch\\(e\\) { console.error\\('cld-viewer.js syntax error:', e.message\\); process.exit\\(1\\); }\")",
-      "Bash(mkdir -p ~/Documents/ws/claude-skills/skills/causal-loop-diagram-generator/assets/cld-viewer/examples ~/Documents/ws/claude-skills/skills/causal-loop-diagram-generator/references)",
-      "Read(//Users/dan/Documents/ws/claude-skills/skills/**)",
+      "Bash(mkdir -p ~/Documents/ws/ibook-skills/skills/causal-loop-diagram-generator/assets/cld-viewer/examples ~/Documents/ws/ibook-skills/skills/causal-loop-diagram-generator/references)",
+      "Read(//Users/dan/Documents/ws/ibook-skills/skills/**)",
       "Bash(pip install *)",
       "Bash(mkdocs build *)"
     ]
