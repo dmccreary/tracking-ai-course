@@ -1,0 +1,772 @@
+{
+  "meta": {
+    "title": "AI Model Release Data",
+    "description": "Shared dataset of major AI model releases across 11 frontier labs, powering multiple MicroSims in this course.",
+    "totalReleases": 249,
+    "labs": [
+      "OpenAI",
+      "Mistral",
+      "Google",
+      "Anthropic",
+      "Qwen",
+      "DeepSeek",
+      "SpaceXAI",
+      "Meta",
+      "Z.ai",
+      "Moonshot AI",
+      "NVIDIA"
+    ]
+  },
+  "source": {
+    "name": "AI Release Tracker",
+    "url": "https://aireleasetracker.com/analytics",
+    "retrieved": "2026-09-11",
+    "note": "Figures reflect data as of 11 Sep 2026. Update this file periodically to keep the MicroSims current."
+  },
+  "years": [
+    {
+      "label": "2022",
+      "value": 1,
+      "partial": false
+    },
+    {
+      "label": "2023",
+      "value": 22,
+      "partial": false
+    },
+    {
+      "label": "2024",
+      "value": 58,
+      "partial": false
+    },
+    {
+      "label": "2025",
+      "value": 92,
+      "partial": false
+    },
+    {
+      "label": "2026 (YTD)",
+      "value": 76,
+      "partial": true,
+      "asOf": "Sep 11, 2026"
+    }
+  ],
+  "months": [
+    {
+      "label": "Nov 22",
+      "monthName": "November",
+      "year": 2022,
+      "value": 1,
+      "cumulative": 1,
+      "partial": false
+    },
+    {
+      "label": "Dec 22",
+      "monthName": "December",
+      "year": 2022,
+      "value": 0,
+      "cumulative": 1,
+      "partial": false
+    },
+    {
+      "label": "Jan 23",
+      "monthName": "January",
+      "year": 2023,
+      "value": 0,
+      "cumulative": 1,
+      "partial": false
+    },
+    {
+      "label": "Feb 23",
+      "monthName": "February",
+      "year": 2023,
+      "value": 1,
+      "cumulative": 2,
+      "partial": false
+    },
+    {
+      "label": "Mar 23",
+      "monthName": "March",
+      "year": 2023,
+      "value": 4,
+      "cumulative": 6,
+      "partial": false
+    },
+    {
+      "label": "Apr 23",
+      "monthName": "April",
+      "year": 2023,
+      "value": 0,
+      "cumulative": 6,
+      "partial": false
+    },
+    {
+      "label": "May 23",
+      "monthName": "May",
+      "year": 2023,
+      "value": 0,
+      "cumulative": 6,
+      "partial": false
+    },
+    {
+      "label": "Jun 23",
+      "monthName": "June",
+      "year": 2023,
+      "value": 0,
+      "cumulative": 6,
+      "partial": false
+    },
+    {
+      "label": "Jul 23",
+      "monthName": "July",
+      "year": 2023,
+      "value": 2,
+      "cumulative": 8,
+      "partial": false
+    },
+    {
+      "label": "Aug 23",
+      "monthName": "August",
+      "year": 2023,
+      "value": 3,
+      "cumulative": 11,
+      "partial": false
+    },
+    {
+      "label": "Sep 23",
+      "monthName": "September",
+      "year": 2023,
+      "value": 1,
+      "cumulative": 12,
+      "partial": false
+    },
+    {
+      "label": "Oct 23",
+      "monthName": "October",
+      "year": 2023,
+      "value": 1,
+      "cumulative": 13,
+      "partial": false
+    },
+    {
+      "label": "Nov 23",
+      "monthName": "November",
+      "year": 2023,
+      "value": 6,
+      "cumulative": 19,
+      "partial": false
+    },
+    {
+      "label": "Dec 23",
+      "monthName": "December",
+      "year": 2023,
+      "value": 4,
+      "cumulative": 23,
+      "partial": false
+    },
+    {
+      "label": "Jan 24",
+      "monthName": "January",
+      "year": 2024,
+      "value": 3,
+      "cumulative": 26,
+      "partial": false
+    },
+    {
+      "label": "Feb 24",
+      "monthName": "February",
+      "year": 2024,
+      "value": 7,
+      "cumulative": 33,
+      "partial": false
+    },
+    {
+      "label": "Mar 24",
+      "monthName": "March",
+      "year": 2024,
+      "value": 4,
+      "cumulative": 37,
+      "partial": false
+    },
+    {
+      "label": "Apr 24",
+      "monthName": "April",
+      "year": 2024,
+      "value": 2,
+      "cumulative": 39,
+      "partial": false
+    },
+    {
+      "label": "May 24",
+      "monthName": "May",
+      "year": 2024,
+      "value": 4,
+      "cumulative": 43,
+      "partial": false
+    },
+    {
+      "label": "Jun 24",
+      "monthName": "June",
+      "year": 2024,
+      "value": 6,
+      "cumulative": 49,
+      "partial": false
+    },
+    {
+      "label": "Jul 24",
+      "monthName": "July",
+      "year": 2024,
+      "value": 6,
+      "cumulative": 55,
+      "partial": false
+    },
+    {
+      "label": "Aug 24",
+      "monthName": "August",
+      "year": 2024,
+      "value": 2,
+      "cumulative": 57,
+      "partial": false
+    },
+    {
+      "label": "Sep 24",
+      "monthName": "September",
+      "year": 2024,
+      "value": 8,
+      "cumulative": 65,
+      "partial": false
+    },
+    {
+      "label": "Oct 24",
+      "monthName": "October",
+      "year": 2024,
+      "value": 6,
+      "cumulative": 71,
+      "partial": false
+    },
+    {
+      "label": "Nov 24",
+      "monthName": "November",
+      "year": 2024,
+      "value": 5,
+      "cumulative": 76,
+      "partial": false
+    },
+    {
+      "label": "Dec 24",
+      "monthName": "December",
+      "year": 2024,
+      "value": 5,
+      "cumulative": 81,
+      "partial": false
+    },
+    {
+      "label": "Jan 25",
+      "monthName": "January",
+      "year": 2025,
+      "value": 8,
+      "cumulative": 89,
+      "partial": false
+    },
+    {
+      "label": "Feb 25",
+      "monthName": "February",
+      "year": 2025,
+      "value": 6,
+      "cumulative": 95,
+      "partial": false
+    },
+    {
+      "label": "Mar 25",
+      "monthName": "March",
+      "year": 2025,
+      "value": 7,
+      "cumulative": 102,
+      "partial": false
+    },
+    {
+      "label": "Apr 25",
+      "monthName": "April",
+      "year": 2025,
+      "value": 12,
+      "cumulative": 114,
+      "partial": false
+    },
+    {
+      "label": "May 25",
+      "monthName": "May",
+      "year": 2025,
+      "value": 5,
+      "cumulative": 119,
+      "partial": false
+    },
+    {
+      "label": "Jun 25",
+      "monthName": "June",
+      "year": 2025,
+      "value": 6,
+      "cumulative": 125,
+      "partial": false
+    },
+    {
+      "label": "Jul 25",
+      "monthName": "July",
+      "year": 2025,
+      "value": 6,
+      "cumulative": 131,
+      "partial": false
+    },
+    {
+      "label": "Aug 25",
+      "monthName": "August",
+      "year": 2025,
+      "value": 11,
+      "cumulative": 142,
+      "partial": false
+    },
+    {
+      "label": "Sep 25",
+      "monthName": "September",
+      "year": 2025,
+      "value": 9,
+      "cumulative": 151,
+      "partial": false
+    },
+    {
+      "label": "Oct 25",
+      "monthName": "October",
+      "year": 2025,
+      "value": 3,
+      "cumulative": 154,
+      "partial": false
+    },
+    {
+      "label": "Nov 25",
+      "monthName": "November",
+      "year": 2025,
+      "value": 8,
+      "cumulative": 162,
+      "partial": false
+    },
+    {
+      "label": "Dec 25",
+      "monthName": "December",
+      "year": 2025,
+      "value": 11,
+      "cumulative": 173,
+      "partial": false
+    },
+    {
+      "label": "Jan 26",
+      "monthName": "January",
+      "year": 2026,
+      "value": 1,
+      "cumulative": 174,
+      "partial": false
+    },
+    {
+      "label": "Feb 26",
+      "monthName": "February",
+      "year": 2026,
+      "value": 11,
+      "cumulative": 185,
+      "partial": false
+    },
+    {
+      "label": "Mar 26",
+      "monthName": "March",
+      "year": 2026,
+      "value": 8,
+      "cumulative": 193,
+      "partial": false
+    },
+    {
+      "label": "Apr 26",
+      "monthName": "April",
+      "year": 2026,
+      "value": 13,
+      "cumulative": 206,
+      "partial": false
+    },
+    {
+      "label": "May 26",
+      "monthName": "May",
+      "year": 2026,
+      "value": 4,
+      "cumulative": 210,
+      "partial": false
+    },
+    {
+      "label": "Jun 26",
+      "monthName": "June",
+      "year": 2026,
+      "value": 11,
+      "cumulative": 221,
+      "partial": false
+    },
+    {
+      "label": "Jul 26",
+      "monthName": "July",
+      "year": 2026,
+      "value": 8,
+      "cumulative": 229,
+      "partial": false
+    },
+    {
+      "label": "Aug 26",
+      "monthName": "August",
+      "year": 2026,
+      "value": 12,
+      "cumulative": 241,
+      "partial": false
+    },
+    {
+      "label": "Sep 26",
+      "monthName": "September",
+      "year": 2026,
+      "value": 8,
+      "cumulative": 249,
+      "partial": true
+    }
+  ],
+  "quarters": [
+    {
+      "label": "Q4 22",
+      "total": 1,
+      "byLab": {
+        "OpenAI": 1,
+        "Mistral": 0,
+        "Google": 0,
+        "Anthropic": 0,
+        "Qwen": 0,
+        "DeepSeek": 0,
+        "SpaceXAI": 0,
+        "Meta": 0,
+        "Z.ai": 0,
+        "Moonshot AI": 0,
+        "NVIDIA": 0
+      }
+    },
+    {
+      "label": "Q1 23",
+      "total": 5,
+      "byLab": {
+        "OpenAI": 1,
+        "Mistral": 0,
+        "Google": 1,
+        "Anthropic": 1,
+        "Qwen": 0,
+        "DeepSeek": 0,
+        "SpaceXAI": 0,
+        "Meta": 1,
+        "Z.ai": 1,
+        "Moonshot AI": 0,
+        "NVIDIA": 0
+      }
+    },
+    {
+      "label": "Q2 23",
+      "total": 0,
+      "byLab": {
+        "OpenAI": 0,
+        "Mistral": 0,
+        "Google": 0,
+        "Anthropic": 0,
+        "Qwen": 0,
+        "DeepSeek": 0,
+        "SpaceXAI": 0,
+        "Meta": 0,
+        "Z.ai": 0,
+        "Moonshot AI": 0,
+        "NVIDIA": 0
+      }
+    },
+    {
+      "label": "Q3 23",
+      "total": 6,
+      "byLab": {
+        "OpenAI": 0,
+        "Mistral": 1,
+        "Google": 0,
+        "Anthropic": 2,
+        "Qwen": 1,
+        "DeepSeek": 0,
+        "SpaceXAI": 0,
+        "Meta": 2,
+        "Z.ai": 0,
+        "Moonshot AI": 0,
+        "NVIDIA": 0
+      }
+    },
+    {
+      "label": "Q4 23",
+      "total": 11,
+      "byLab": {
+        "OpenAI": 1,
+        "Mistral": 2,
+        "Google": 2,
+        "Anthropic": 1,
+        "Qwen": 1,
+        "DeepSeek": 2,
+        "SpaceXAI": 1,
+        "Meta": 0,
+        "Z.ai": 0,
+        "Moonshot AI": 1,
+        "NVIDIA": 0
+      }
+    },
+    {
+      "label": "Q1 24",
+      "total": 14,
+      "byLab": {
+        "OpenAI": 0,
+        "Mistral": 2,
+        "Google": 3,
+        "Anthropic": 3,
+        "Qwen": 1,
+        "DeepSeek": 2,
+        "SpaceXAI": 1,
+        "Meta": 1,
+        "Z.ai": 1,
+        "Moonshot AI": 0,
+        "NVIDIA": 0
+      }
+    },
+    {
+      "label": "Q2 24",
+      "total": 12,
+      "byLab": {
+        "OpenAI": 1,
+        "Mistral": 2,
+        "Google": 2,
+        "Anthropic": 1,
+        "Qwen": 1,
+        "DeepSeek": 2,
+        "SpaceXAI": 0,
+        "Meta": 1,
+        "Z.ai": 1,
+        "Moonshot AI": 0,
+        "NVIDIA": 1
+      }
+    },
+    {
+      "label": "Q3 24",
+      "total": 16,
+      "byLab": {
+        "OpenAI": 3,
+        "Mistral": 5,
+        "Google": 2,
+        "Anthropic": 0,
+        "Qwen": 1,
+        "DeepSeek": 1,
+        "SpaceXAI": 1,
+        "Meta": 2,
+        "Z.ai": 1,
+        "Moonshot AI": 0,
+        "NVIDIA": 0
+      }
+    },
+    {
+      "label": "Q4 24",
+      "total": 16,
+      "byLab": {
+        "OpenAI": 1,
+        "Mistral": 4,
+        "Google": 1,
+        "Anthropic": 2,
+        "Qwen": 2,
+        "DeepSeek": 4,
+        "SpaceXAI": 0,
+        "Meta": 1,
+        "Z.ai": 0,
+        "Moonshot AI": 0,
+        "NVIDIA": 1
+      }
+    },
+    {
+      "label": "Q1 25",
+      "total": 21,
+      "byLab": {
+        "OpenAI": 4,
+        "Mistral": 3,
+        "Google": 5,
+        "Anthropic": 1,
+        "Qwen": 2,
+        "DeepSeek": 2,
+        "SpaceXAI": 2,
+        "Meta": 0,
+        "Z.ai": 0,
+        "Moonshot AI": 1,
+        "NVIDIA": 1
+      }
+    },
+    {
+      "label": "Q2 25",
+      "total": 23,
+      "byLab": {
+        "OpenAI": 7,
+        "Mistral": 5,
+        "Google": 2,
+        "Anthropic": 2,
+        "Qwen": 1,
+        "DeepSeek": 1,
+        "SpaceXAI": 0,
+        "Meta": 2,
+        "Z.ai": 0,
+        "Moonshot AI": 2,
+        "NVIDIA": 1
+      }
+    },
+    {
+      "label": "Q3 25",
+      "total": 26,
+      "byLab": {
+        "OpenAI": 7,
+        "Mistral": 0,
+        "Google": 0,
+        "Anthropic": 2,
+        "Qwen": 3,
+        "DeepSeek": 3,
+        "SpaceXAI": 5,
+        "Meta": 0,
+        "Z.ai": 3,
+        "Moonshot AI": 2,
+        "NVIDIA": 1
+      }
+    },
+    {
+      "label": "Q4 25",
+      "total": 22,
+      "byLab": {
+        "OpenAI": 4,
+        "Mistral": 6,
+        "Google": 2,
+        "Anthropic": 2,
+        "Qwen": 0,
+        "DeepSeek": 1,
+        "SpaceXAI": 3,
+        "Meta": 0,
+        "Z.ai": 1,
+        "Moonshot AI": 2,
+        "NVIDIA": 1
+      }
+    },
+    {
+      "label": "Q1 26",
+      "total": 20,
+      "byLab": {
+        "OpenAI": 6,
+        "Mistral": 1,
+        "Google": 2,
+        "Anthropic": 2,
+        "Qwen": 3,
+        "DeepSeek": 0,
+        "SpaceXAI": 3,
+        "Meta": 0,
+        "Z.ai": 1,
+        "Moonshot AI": 1,
+        "NVIDIA": 1
+      }
+    },
+    {
+      "label": "Q2 26",
+      "total": 28,
+      "byLab": {
+        "OpenAI": 6,
+        "Mistral": 1,
+        "Google": 2,
+        "Anthropic": 5,
+        "Qwen": 4,
+        "DeepSeek": 2,
+        "SpaceXAI": 2,
+        "Meta": 1,
+        "Z.ai": 2,
+        "Moonshot AI": 2,
+        "NVIDIA": 1
+      }
+    }
+  ],
+  "labTotals": [
+    {
+      "lab": "OpenAI",
+      "value": 44
+    },
+    {
+      "lab": "Mistral",
+      "value": 32
+    },
+    {
+      "lab": "Google",
+      "value": 30
+    },
+    {
+      "lab": "Anthropic",
+      "value": 27
+    },
+    {
+      "lab": "Qwen",
+      "value": 24
+    },
+    {
+      "lab": "DeepSeek",
+      "value": 23
+    },
+    {
+      "lab": "SpaceXAI",
+      "value": 20
+    },
+    {
+      "lab": "Meta",
+      "value": 15
+    },
+    {
+      "lab": "Z.ai",
+      "value": 13
+    },
+    {
+      "lab": "Moonshot AI",
+      "value": 12
+    },
+    {
+      "lab": "NVIDIA",
+      "value": 9
+    }
+  ],
+  "dayOfWeek": [
+    {
+      "day": "Monday",
+      "value": 48,
+      "weekend": false
+    },
+    {
+      "day": "Tuesday",
+      "value": 61,
+      "weekend": false
+    },
+    {
+      "day": "Wednesday",
+      "value": 50,
+      "weekend": false
+    },
+    {
+      "day": "Thursday",
+      "value": 62,
+      "weekend": false
+    },
+    {
+      "day": "Friday",
+      "value": 24,
+      "weekend": false
+    },
+    {
+      "day": "Saturday",
+      "value": 3,
+      "weekend": true
+    },
+    {
+      "day": "Sunday",
+      "value": 1,
+      "weekend": true
+    }
+  ]
+}

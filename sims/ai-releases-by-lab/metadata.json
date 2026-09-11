@@ -1,0 +1,61 @@
+{
+  "title": "AI Model Releases by Lab",
+  "creator": "Dan McCreary",
+  "subject": "AI Capability Tracking",
+  "description": "Horizontal bar leaderboard of total major AI model releases per lab since November 2022.",
+  "date": "2026-09-11",
+  "educational": {
+    "gradeLevel": [
+      "Adult",
+      "Professional"
+    ],
+    "subjectArea": "AI Strategy",
+    "topic": "AI Lab Leaderboard",
+    "learningObjectives": [
+      "Interpret a ranked horizontal bar chart",
+      "Recognize the limitations of release count as a leadership proxy"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "5-10 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Chart.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 560
+    },
+    "responsive": true,
+    "dependencies": [
+      "chart.js@4.4.4",
+      "chartjs-plugin-datalabels@2"
+    ],
+    "dataFile": "../ai-release-data/data.json",
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "Which lab has shipped the most major models since November 2022?",
+      "What does release count NOT tell you about a lab's competitiveness?"
+    ],
+    "commonMisconceptions": [
+      "Equating release count with capability leadership or model quality"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to propose a complementary metric to release count"
+    ]
+  },
+  "chapter": "",
+  "dataSource": {
+    "name": "AI Release Tracker",
+    "url": "https://aireleasetracker.com/analytics",
+    "retrieved": "2026-09-11",
+    "note": "Chart values live in ../ai-release-data/data.json, shared with five other MicroSims."
+  }
+}

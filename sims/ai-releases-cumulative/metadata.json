@@ -1,0 +1,60 @@
+{
+  "title": "Combined Cumulative AI Model Releases",
+  "creator": "Dan McCreary",
+  "subject": "AI Capability Tracking",
+  "description": "Line chart of the compounding total of major AI model releases across 11 labs, month by month since November 2022.",
+  "date": "2026-09-11",
+  "educational": {
+    "gradeLevel": [
+      "Adult",
+      "Professional"
+    ],
+    "subjectArea": "AI Strategy",
+    "topic": "Cumulative AI Model Releases",
+    "learningObjectives": [
+      "Interpret a cumulative (running total) line chart",
+      "Contrast a rate chart with a cumulative chart of the same underlying data"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "5-10 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Chart.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 470
+    },
+    "responsive": true,
+    "dependencies": [
+      "chart.js@4.4.4"
+    ],
+    "dataFile": "../ai-release-data/data.json",
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "How does the cumulative curve's steepness change over time?",
+      "Why does a cumulative view make growth look more dramatic than a per-year bar chart?"
+    ],
+    "commonMisconceptions": [
+      "Mistaking a steep cumulative curve for a steep per-period rate, when the rate could be flat or even declining"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to extrapolate the end-of-2026 cumulative total from the current slope"
+    ]
+  },
+  "chapter": "",
+  "dataSource": {
+    "name": "AI Release Tracker",
+    "url": "https://aireleasetracker.com/analytics",
+    "retrieved": "2026-09-11",
+    "note": "Chart values live in ../ai-release-data/data.json, shared with five other MicroSims."
+  }
+}

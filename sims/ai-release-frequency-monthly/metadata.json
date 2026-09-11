@@ -1,0 +1,60 @@
+{
+  "title": "AI Release Frequency Per Month",
+  "creator": "Dan McCreary",
+  "subject": "AI Capability Tracking",
+  "description": "Line chart of new AI models shipped each calendar month since November 2022, showing month-to-month release cadence.",
+  "date": "2026-09-11",
+  "educational": {
+    "gradeLevel": [
+      "Adult",
+      "Professional"
+    ],
+    "subjectArea": "AI Strategy",
+    "topic": "Monthly AI Release Cadence",
+    "learningObjectives": [
+      "Read a noisy monthly time series",
+      "Distinguish short-term volatility from long-term trend"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "5-10 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Chart.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 470
+    },
+    "responsive": true,
+    "dependencies": [
+      "chart.js@4.4.4"
+    ],
+    "dataFile": "../ai-release-data/data.json",
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "Which months had unusually high or low release counts?",
+      "Why doesn't a slow month mean AI progress is slowing down?"
+    ],
+    "commonMisconceptions": [
+      "Reading a single low month as evidence the overall trend has reversed"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to distinguish noise from trend using this chart"
+    ]
+  },
+  "chapter": "",
+  "dataSource": {
+    "name": "AI Release Tracker",
+    "url": "https://aireleasetracker.com/analytics",
+    "retrieved": "2026-09-11",
+    "note": "Chart values live in ../ai-release-data/data.json, shared with five other MicroSims."
+  }
+}
