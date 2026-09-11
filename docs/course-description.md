@@ -23,6 +23,7 @@ This course is targeting a general audience that has little knowledge of AI tech
 - Key terminology for measuring AI tools - one shot, reasoning, agents
 - Objective capability measurement, accuracy, responsiveness, cost
 - Defining exponential growth in the context of AI development
+- Recursive self-improvement: how frontier models increasingly help design, train, and evaluate their own successors, and why this feedback loop is central to debates over AI capability trajectories
 - Case studies of breakthrough moments in AI development
 
 ### Afternoon: Content Generation Revolution

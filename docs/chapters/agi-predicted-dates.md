@@ -61,6 +61,18 @@ This table only includes recent prediction (2022–2025)
 | **Ajeya Cotra**                        | **2040** – Forecasted **50% chance of AGI by 2040**, in an analysis updated in 2022 (significantly sooner than her 2020 estimate of 2050).                                | Senior AI research analyst at Open Philanthropy (a think tank); known for rigorous modeling of AI progress (*“biological anchors”* report for AGI timelines).           |
 | **AI Impacts (2023 Expert Survey)**    | **2047** – The 2023 survey of 2,778 AI researchers by AI Impacts found a median guess of **50% chance by 2047** for human-level AI (down from 2059 in their 2022 survey). | Large-scale academic survey (conducted by the nonprofit AI Impacts and researchers like Katja Grace); provides aggregated expert opinion from hundreds of AI academics. |
 
+## Recursive Self-Improvement: A Mechanism Behind the Predictions
+
+Many of the more aggressive AGI timelines above are not simple extrapolations of benchmark scores — they assume a *feedback loop* in AI development called **[recursive self-improvement](../glossary.md#recursive-self-improvement)**. In its current, human-supervised, tool-assisted form, this is already happening: frontier labs prompt their best available model to generate and filter synthetic training data, write and debug the code used for training and evaluation, and grade candidate outputs used in reinforcement learning — all in service of producing the next model generation.
+
+The open question is what happens if that loop tightens further. If a model can meaningfully accelerate its own research-and-development pipeline with less human oversight in the decision loop, capability growth could compound faster than the historical trend line — which is close to the mechanism behind Ray Kurzweil's "Singularity" and Dario Amodei's description of future AI as "a country of geniuses in a data center." It is also one reason near-term predictions (2025–2028) diverge so sharply from the more conservative 2040s–2060s estimates: the two camps disagree less about current benchmark trends and more about how strong this feedback loop will turn out to be.
+
+For a deeper, systems-thinking treatment of this dynamic:
+
+- [Winner Takes All? A Systems View of the AI Race](../articles/winner-takes-all.md) — labels this loop **R1: Recursive Self-Improvement** and walks through the reinforcing and balancing forces (compute constraints, evaluation difficulty, idea diffusion) that determine whether it accelerates smoothly or hits the brakes
+- [Eight AI Forces MicroSim](../sims/shared/eight-ai-forces/index.md) and the [Winner-Takes-All Causal Loop Diagram](../sims/shared/winner-takes-all-cld/index.md) — interactive views of the same loop
+- [Grandma and the AI Race](../stories/grandma-and-the-ai-race/index.md) — a plain-language introduction to recursive self-improvement and the other forces shaping AI's pace
+
 ## References
 
 1.  [Ray Kurzweil predicts AGI by 2029](https://www.theguardian.com/technology/article/2024/jun/29/ray-kurzweil-google-ai-the-singularity-is-nearer) -- June 29, 2024 -- *The Guardian* -- Futurist and former Google engineer known for accurate tech trend forecasting.

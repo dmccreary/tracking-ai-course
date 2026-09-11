@@ -24,7 +24,7 @@ This learning graph supports a three-day intensive course on **Exponential AI: S
 
 ## Learning Graph Statistics
 
-- **Total Concepts**: 250
+- **Total Concepts**: 252
 - **Foundational Concepts**: 3 (Artificial Intelligence, Exponential Growth, Knowledge Organizations)
 - **Taxonomy Categories**: 12
 - **Maximum Learning Path**: 23 concepts

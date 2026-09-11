@@ -1622,6 +1622,12 @@
       "label": "Moore's Law",
       "group": "hist",
       "cis": 1
+    },
+    {
+      "id": 252,
+      "label": "Recursive Self-Improvement",
+      "group": "future",
+      "cis": 1
     }
   ],
   "edges": [
@@ -4096,6 +4102,18 @@
     {
       "from": 251,
       "to": 2
+    },
+    {
+      "from": 252,
+      "to": 4
+    },
+    {
+      "from": 252,
+      "to": 20
+    },
+    {
+      "from": 252,
+      "to": 136
     }
   ]
 }

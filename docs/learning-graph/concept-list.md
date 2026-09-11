@@ -1,9 +1,9 @@
 # Concept List
 
-This page contains the 250 concepts used in the Tracking AI Course learning graph.
+This page contains the 252 concepts used in the Tracking AI Course learning graph.
 Each concept is a short Title Case label designed to be displayed in a network graph visualization.
 
-## Concepts (1-250)
+## Concepts (1-252)
 
 1. Artificial Intelligence
 2. Exponential Growth
@@ -255,3 +255,5 @@ Each concept is a short Title Case label designed to be displayed in a network g
 248. Innovation Strategy
 249. Technology Roadmap
 250. Future Readiness
+251. Moore's Law
+252. Recursive Self-Improvement
