@@ -249,3 +249,5 @@ ConceptID,ConceptLabel,Dependencies,TaxonomyID
 248,Innovation Strategy,72|167|198|247,8
 249,Technology Roadmap,164|201|212|248,8
 250,Future Readiness,20|73|164|201|248|249,8
+251,Moore's Law,2,2
+252,Recursive Self-Improvement,4|20|136,11
