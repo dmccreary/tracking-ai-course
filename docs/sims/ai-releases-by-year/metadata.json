@@ -1,0 +1,61 @@
+{
+  "title": "AI Model Releases by Year",
+  "creator": "Dan McCreary",
+  "subject": "AI Capability Tracking",
+  "description": "Interactive bar chart of major AI model releases per year across 11 frontier labs, showing the accelerating release pace from 2022 through partial-year 2026.",
+  "date": "2026-09-10",
+  "educational": {
+    "gradeLevel": [
+      "Adult",
+      "Professional"
+    ],
+    "subjectArea": "AI Strategy",
+    "topic": "AI Model Releases by Year",
+    "learningObjectives": [
+      "Interpret a year-over-year bar chart of AI model release counts",
+      "Explain why a partial-year figure should not be compared directly to a full-year figure without adjustment"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "5-10 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Chart.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 470
+    },
+    "responsive": true,
+    "dependencies": [
+      "chart.js@4.4.4",
+      "chartjs-plugin-datalabels@2"
+    ],
+    "dataFile": "../ai-release-data/data.json",
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "How has the pace of major AI model releases changed since 2022?",
+      "Why is the 2026 total marked differently from prior years?"
+    ],
+    "commonMisconceptions": [
+      "Comparing the partial 2026 total directly to full-year totals without noting it covers only part of the year"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to project the full-year 2026 total from the partial figure"
+    ]
+  },
+  "chapter": "",
+  "dataSource": {
+    "name": "AI Release Tracker",
+    "url": "https://aireleasetracker.com/analytics",
+    "retrieved": "2026-09-11",
+    "note": "Chart values live in ../ai-release-data/data.json, shared with five other MicroSims."
+  }
+}

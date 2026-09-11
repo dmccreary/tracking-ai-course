@@ -1,0 +1,60 @@
+{
+  "title": "AI Model Releases by Lab Over Time",
+  "creator": "Dan McCreary",
+  "subject": "AI Capability Tracking",
+  "description": "Stacked area chart of quarterly AI model releases broken down by lab, showing the field getting more crowded since November 2022.",
+  "date": "2026-09-11",
+  "educational": {
+    "gradeLevel": [
+      "Adult",
+      "Professional"
+    ],
+    "subjectArea": "AI Strategy",
+    "topic": "Competitive Landscape of AI Labs",
+    "learningObjectives": [
+      "Read a stacked area chart with many series",
+      "Distinguish growth in total volume from growth in competitive crowding"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10-15 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Chart.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 560
+    },
+    "responsive": true,
+    "dependencies": [
+      "chart.js@4.4.4"
+    ],
+    "dataFile": "../ai-release-data/data.json",
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "Which labs have entered the frontier-model race since 2022?",
+      "Is one lab pulling away, or is the field getting more competitive?"
+    ],
+    "commonMisconceptions": [
+      "Assuming a rising total stack means every lab is growing equally, when a few labs may dominate the increase"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to identify the quarter a specific lab first appears and discuss why"
+    ]
+  },
+  "chapter": "",
+  "dataSource": {
+    "name": "AI Release Tracker",
+    "url": "https://aireleasetracker.com/analytics",
+    "retrieved": "2026-09-11",
+    "note": "Chart values live in ../ai-release-data/data.json, shared with five other MicroSims."
+  }
+}

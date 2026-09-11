@@ -150,6 +150,12 @@ Interactive visualizations demonstrating AI capabilities, growth patterns, and s
 
     Interactive visualization showing exponential growth of AI task completion capabilities from 2019 to 2030.
 
+-   **[Second Half of the Chess Board](./second-half-of-chessboard/index.md)**
+
+    ![Second Half of the Chess Board](./second-half-of-chessboard/second-half-of-chessboard.png)
+
+    Interactive chessboard showing rice grains doubling on every square, illustrating why exponential growth explodes in the second half of the board.
+
 -   **[Technology Adoption Curve](./shared/technology-adoption/index.md)**
 
     ![Technology Adoption Curve](./shared/technology-adoption/technology-adoption.png)

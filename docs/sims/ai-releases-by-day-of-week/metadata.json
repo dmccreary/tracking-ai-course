@@ -1,0 +1,61 @@
+{
+  "title": "AI Model Releases by Day of Week",
+  "creator": "Dan McCreary",
+  "subject": "AI Capability Tracking",
+  "description": "Bar chart showing which days of the week AI labs ship major model releases on, highlighting the weekday-heavy shipping cadence.",
+  "date": "2026-09-11",
+  "educational": {
+    "gradeLevel": [
+      "Adult",
+      "Professional"
+    ],
+    "subjectArea": "AI Strategy",
+    "topic": "AI Release Shipping Cadence",
+    "learningObjectives": [
+      "Interpret a simple categorical bar chart",
+      "Connect a data pattern to plausible organizational behavior"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "5 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Chart.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 470
+    },
+    "responsive": true,
+    "dependencies": [
+      "chart.js@4.4.4",
+      "chartjs-plugin-datalabels@2"
+    ],
+    "dataFile": "../ai-release-data/data.json",
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "Which day of the week has the most AI model releases?",
+      "Why might releases drop off on weekends?"
+    ],
+    "commonMisconceptions": [
+      "Assuming AI releases happen at a constant rate regardless of day"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to propose an organizational reason for the weekday pattern"
+    ]
+  },
+  "chapter": "",
+  "dataSource": {
+    "name": "AI Release Tracker",
+    "url": "https://aireleasetracker.com/analytics",
+    "retrieved": "2026-09-11",
+    "note": "Chart values live in ../ai-release-data/data.json, shared with five other MicroSims."
+  }
+}

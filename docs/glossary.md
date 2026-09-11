@@ -1009,6 +1009,17 @@ The ability of artificial intelligence systems to apply logical operations, make
 
 **Example:** The benchmark visualization shows dramatic improvements in reasoning capabilities between 2021 and 2025, particularly for multi-step mathematical and scientific problems.
 
+#### Recursive Self-Improvement
+The process by which an artificial intelligence system contributes to designing, training, or refining its own successor systems, creating a feedback loop in which each model generation helps produce a more capable one.
+
+In current practice, frontier large language models are already used as tools within the pipeline that produces the next model generation: generating and filtering synthetic training data, writing and debugging the code used for training and evaluation, grading or ranking candidate outputs used in reinforcement learning, and assisting researchers with architecture search and experiment design. This human-supervised, tool-assisted form of recursive self-improvement is distinct from the more speculative long-term scenario of a fully autonomous system redesigning itself without human oversight.
+
+**Example:** AI labs prompt their current frontier model to generate synthetic reasoning traces and coding examples, which are then used as training data to teach the next model generation stronger problem-solving skills — a practice sometimes described as models "teaching" their successors.
+
+* See also [Reasoning Capabilities](#reasoning-capabilities)
+* See also [Fine-Tuning](#fine-tuning)
+* See also [AGI Timeline Predictions](#agi-timeline-predictions)
+
 #### Report Generation
 The automated creation of structured documents summarizing data, findings, analyses, or recommendations in standardized formats.
 

@@ -1,0 +1,64 @@
+{
+  "title": "Second Half of the Chess Board",
+  "creator": "Dan McCreary",
+  "subject": "AI Capability Tracking",
+  "description": "Interactive chessboard MicroSim illustrating exponential growth through the classic wheat-and-chessboard story: one grain of rice on square 1, doubling on every square through square 64, with a slider that reveals squares one doubling step at a time.",
+  "date": "2026-09-10",
+  "educational": {
+    "gradeLevel": [
+      "Adult",
+      "Professional"
+    ],
+    "subjectArea": "AI Strategy",
+    "topic": "Exponential Growth",
+    "learningObjectives": [
+      "Explain why linear intuition fails to predict exponential (doubling) growth",
+      "Identify the point at which a doubling sequence becomes economically significant",
+      "Connect the second-half-of-the-chessboard metaphor to the trajectory of AI capability growth"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "5-10 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 630
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js@1.11.10"
+    ],
+    "dataFile": "",
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "How many grains of rice are on square 32, and how does that compare to square 33?",
+      "Why does the same doubling rule feel harmless for the first half of the board but overwhelming in the second half?",
+      "What does this metaphor suggest about how organizations underestimate the pace of AI capability growth?"
+    ],
+    "commonMisconceptions": [
+      "Assuming a doubling process grows at a roughly constant, easy-to-plan-for rate",
+      "Believing that because early growth looks small, later growth will stay proportionally small"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to predict the grain count on square 40 before moving the slider there",
+      "Have learners explain in their own words why the second half of the board is where 'the real economic impact' occurs"
+    ]
+  },
+  "chapter": "",
+  "dataSource": {
+    "name": "Wheat and chessboard problem (traditional)",
+    "url": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem",
+    "retrieved": "2026-09-10",
+    "note": "Grain counts are computed directly as powers of two (2^0 through 2^63); no external dataset is used."
+  }
+}
