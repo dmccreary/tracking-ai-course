@@ -2,7 +2,7 @@
   "title": "Second Half of the Chess Board",
   "creator": "Dan McCreary",
   "subject": "AI Capability Tracking",
-  "description": "Interactive chessboard MicroSim illustrating exponential growth through the classic wheat-and-chessboard story: one grain of rice on square 1, doubling on every square through square 64, with a slider that reveals squares one doubling step at a time.",
+  "description": "Interactive chessboard MicroSim illustrating exponential growth through the classic rice-on-the-chessboard story: one grain of rice on square 1, doubling on every square through square 64, with a slider that reveals squares one doubling step at a time.",
   "date": "2026-09-10",
   "educational": {
     "gradeLevel": [

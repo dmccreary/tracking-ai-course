@@ -170,8 +170,13 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
   # enable LaTeX equation rendering
+  # Currency-safe: inline math requires \(...\) (not bare $...$), so dollar
+  # amounts like $85,900 in prose don't get misread as math delimiters.
+  # Block math still accepts $$...$$ or \[...\].
   - pymdownx.arithmatex:
       generic: true
+      inline_syntax: ['round']
+      block_syntax: ['dollar', 'square']
   # enable icons (octicons, material, fontawesome)
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji

@@ -25,9 +25,9 @@ $$
 
 where:
 
-   - $p_i$ is the positive real value score of model i
-   - $p_j$ is the positive real-valued score of model j
-   - $P(i > j)$ is the probability that model i is preferred over model j
+   - \(p_i\) is the positive real value score of model i
+   - \(p_j\) is the positive real-valued score of model j
+   - \(P(i > j)\) is the probability that model i is preferred over model j
 
 
 [Wikipedia](https://en.wikipedia.org/wiki/Bradley--Terry_model) The model allows us to infer relationships between all competitors, even if not all have directly competed against each other.
