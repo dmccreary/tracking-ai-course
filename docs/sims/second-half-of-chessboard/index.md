@@ -4,8 +4,6 @@ description: Interactive chessboard MicroSim showing rice grains doubling on eve
 image: /sims/second-half-of-chessboard/second-half-of-chessboard.png
 og:image: /sims/second-half-of-chessboard/second-half-of-chessboard.png
 twitter:image: /sims/second-half-of-chessboard/second-half-of-chessboard.png
-social:
-   cards: false
 quality_score: 0
 ---
 

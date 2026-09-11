@@ -4,8 +4,6 @@ description: A high-school student uses sourdough, gardens, and family recipes t
 image: /stories/grandma-and-the-ai-race/cover.png
 og:image: /stories/grandma-and-the-ai-race/cover.png
 twitter:image: /stories/grandma-and-the-ai-race/cover.png
-social:
-   cards: false
 hide:
    toc
 ---
