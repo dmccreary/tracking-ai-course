@@ -44,12 +44,12 @@ published yearly totals, and everything sums to the published grand total of
 
 ## Dependent MicroSims
 
-- [`ai-releases-by-year`](../ai-releases-by-year/) — uses `years`
-- [`ai-releases-cumulative`](../ai-releases-cumulative/) — uses `months` (`cumulative`)
-- [`ai-release-frequency-monthly`](../ai-release-frequency-monthly/) — uses `months` (`value`)
-- [`ai-releases-by-lab-over-time`](../ai-releases-by-lab-over-time/) — uses `quarters`
-- [`ai-releases-by-lab`](../ai-releases-by-lab/) — uses `labTotals`
-- [`ai-releases-by-day-of-week`](../ai-releases-by-day-of-week/) — uses `dayOfWeek`
+- [`ai-releases-by-year`](../ai-releases-by-year/index.md) — uses `years`
+- [`ai-releases-cumulative`](../ai-releases-cumulative/index.md) — uses `months` (`cumulative`)
+- [`ai-release-frequency-monthly`](../ai-release-frequency-monthly/index.md) — uses `months` (`value`)
+- [`ai-releases-by-lab-over-time`](../ai-releases-by-lab-over-time/index.md) — uses `quarters`
+- [`ai-releases-by-lab`](../ai-releases-by-lab/index.md) — uses `labTotals`
+- [`ai-releases-by-day-of-week`](../ai-releases-by-day-of-week/index.md) — uses `dayOfWeek`
 
 ## Updating
 

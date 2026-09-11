@@ -59,10 +59,15 @@ nav:
     - AI Capability Maturity Model: sims/shared/ai-cmm/index.md
     - AI Causes of Acceleration: sims/shared/ai-causes/index.md
     - CLD Viewer: sims/shared/cld-viewer/index.md
+    - Combined Cumulative AI Model Releases: sims/ai-releases-cumulative/index.md
     - AI Doubling Rate: sims/shared/ai-doubling-rate/index.md
     - AI Flywheel: sims/shared/ai-flywheel/index.md
+    - AI Model Releases by Day of Week: sims/ai-releases-by-day-of-week/index.md
+    - AI Model Releases by Lab: sims/ai-releases-by-lab/index.md
+    - AI Model Releases by Lab Over Time: sims/ai-releases-by-lab-over-time/index.md
     - AI Model Releases by Year: sims/ai-releases-by-year/index.md
     - AI Pace Accelerating: sims/shared/ai-pace-accelerating/index.md
+    - AI Release Frequency Per Month: sims/ai-release-frequency-monthly/index.md
     - AI SWOT Analysis: sims/shared/swot/index.md
     - AI Task Horizons: sims/shared/ai-task-horizons/index.md
     - AI Timeline: sims/shared/timeline/index.md
