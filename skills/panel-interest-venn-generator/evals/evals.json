@@ -1,0 +1,8 @@
+{
+  "skill_name": "panel-interest-venn-generator",
+  "evals": [
+    {"id": 1, "prompt": "I'm on the Twin Cities ACM AI panel Oct 28 with Arun Batchu, Rajeev Bukralia and Senthil Kumaran. Make an interest overlap MicroSim."},
+    {"id": 2, "prompt": "I just agreed to speak on a 3-person panel about AI in K-12 at the Minnesota EdTech summit. Who else is on it and how do our interests overlap?"},
+    {"id": 3, "prompt": "Build a Venn diagram for my panel next month with two professors whose names I'll paste below."}
+  ]
+}
