@@ -132,6 +132,12 @@ Interactive visualizations demonstrating AI capabilities, growth patterns, and s
 
     Interactive infographic showing transistor growth with linear and log scale views.
 
+-   **[Panelist Interest Venn Diagram](./panelist-interest-venn/index.md)**
+
+    ![Panelist Interest Venn Diagram](./panelist-interest-venn/panelist-interest-venn.png)
+
+    Interactive four-set Venn diagram of shared interests among the Twin Cities ACM AI panelists.
+
 -   **[Porter's Five Forces](./shared/porters-five-forces/index.md)**
 
     ![Porter's Five Forces](./shared/porters-five-forces/porters-five-forces.png)
